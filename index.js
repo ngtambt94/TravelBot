@@ -37,7 +37,7 @@ app.get('/webhook/', function (req, res) {
 
 // recommended to inject access tokens as environmental variables, e.g.
 // const token = process.env.FB_PAGE_ACCESS_TOKEN
-const token = "EAAVV3f7r14EBAGPlMUbXLYPHyd3sE4kE7eWlq1BxyBQkft0ZBzGSdnZCJoyz2JLN8JEv4SWzQrE1LkMTzWCcwtRytQIJYu5ZCGwKYphqU8tubzSfisMptz1bXpcFvZCAfCYhm4ZBfTXGs9iQIIkmYySCvecJ07VXs6MMbCkoOP3CeydHtZBfLp"
+const token = "EAABwygPtwy4BAPaOdoKNANZB9G3YZBmZAKclAWiZBXhZBy0J0ZCZBeRZAnyFi2ylRsPk4zcDw2UMrx1PrX3ysqvdORDJfaI6D60iwiujeiFU7CfTuykvi01YmpNu0mZChFpwphs5NcSnuvgNmiebxQzKN1EKoKQoXI7W2irkFzf9RE2XceCPvKAK3"
 
 // bot reply when page has message
 function sendTextMessage(sender, text) {
