@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+	<!-- chào hỏi -->
+	<category>
+		<pattern>XIN CHAO *</pattern>
+		<template><random><li>Xin chào! Mình có thể giúp gì cho bạn?</li><li>Xin chào! Mình là TravelBot</li><li>Hii! Chào mừng bạn trở lại.</li></random></template>
+	</category>
+	<category>
+		<pattern>* XIN CHAO</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>CHAO *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>HI *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>HII *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>HELLO *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>HALO *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>HELO *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>* BAN * KHOE KHONG *</pattern>
+		<template><random><li>Không thể tốt hơn!</li><li>Mình luôn sẵn sàng giúp đỡ bạn!</li><li>Khỏe re luôn. Hôm nay bạn cần gì?</li></random></template>
+	</category>
+	<category>
+		<pattern>HOW ARE YOU *</pattern>
+		<template><random><li>Không thể tốt hơn!</li><li>Mình luôn sẵn sàng giúp đỡ bạn!</li><li>Khỏe re luôn. Hôm nay bạn cần gì?</li></random></template>
+	</category>
+	<category>
+		<pattern>HOM NAY * THE NAO *</pattern>
+		<template><random><li>Không thể tốt hơn!</li><li>Mình luôn sẵn sàng giúp đỡ bạn!</li><li>Khỏe re luôn. Hôm nay bạn cần gì?</li></random></template>
+	</category>
+	<!-- thông tin thêm -->
+	<category>
+		<pattern>TAM LA AI</pattern>
+		<template>
+			Tam Nguyen là sinh viên Khoa học máy tính, khóa 39, Trường Đại học Cần Thơ
+		</template>
+	</category>
+	<category>
+		<pattern>* TAM LA *</pattern>
+		<template><srai>TAM LA AI</srai></template>
+	</category>
+	<category>
+		<pattern>* TAM NGUYEN LA *</pattern>
+		<template><srai>TAM LA AI</srai></template>
+	</category>
+	<category>
+		<pattern>* LA * TAM</pattern>
+		<template><srai>TAM LA AI</srai></template>
+	</category>
+	<category>
+		<pattern>TAM * BAN GAI *</pattern>
+		<template>
+			Tất nhiên là có rồi! Đẹp trai vậy mà?!
+		</template>
+	</category>
+	<category>
+		<pattern>BAN GAI TAM</pattern>
+		<template>
+			Quyen Tran cute
+		</template>
+	</category>
+	<category>
+		<pattern>* BAN GAI * TAM *</pattern>
+		<template><srai>BAN GAI TAM</srai></template>
+	</category>
+	<category>
+		<pattern>* BAN GAI TAM</pattern>
+		<template><srai>BAN GAI TAM</srai></template>
+	</category>
+	<category>
+		<pattern>* QUYEN TRAN *</pattern>
+		<template>
+			Quyen Tran là bạn gái Tam Nguyen. Mình không thể thông tin thêm.
+		</template>
+	</category>
+	<!-- trợ giúp -->
+	<category>
+		<pattern>* HELP *</pattern>
+		<template>
+			Hi bạn! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
+		</template>
+	</category>
+	<category>
+		<pattern>* GIUP *</pattern>
+		<template>Hi bạn! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...</template>
+	</category>
+	<category>
+		<pattern>* CAN YOU HELP ME *</pattern>
+		<template>
+			Tất nhiên rồi! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
+		</template>
+	</category>
+	<category>
+		<pattern>* WHO ARE YOU *</pattern>
+		<template>
+			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
+		</template>
+	</category>	
+	<category>
+		<pattern>* LA AI *</pattern>
+		<template>
+			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
+		</template>
+	</category>
+	<category>
+		<pattern>* LA * GI *</pattern>
+		<template>
+			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
+		</template>
+	</category>
+	<category>
+		<pattern>* GIOI THIEU *</pattern>
+		<template>Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...</template>
+	</category>
+	<category>
+		<pattern>* TAO * BAN</pattern>
+		<template>Tam Nguyen đã tạo ra mình</template>
+	</category>
+	<category>
+		<pattern>* AD *</pattern>
+		<template><random><li>TravelBot ở đây! Bạn cần giúp gì?</li><li>Dạ em ở đây ạ. Em có thể giúp gì ạ?</li><li>Travel sẵn sàng phục vụ!</li></random></template>
+	</category>
+	<category>
+		<pattern>* AD * DAU *</pattern>
+		<template><random><li>TravelBot ở đây! Bạn cần giúp gì?</li><li>Dạ em ở đây ạ. Em có thể giúp gì ạ?</li><li>Travel sẵn sàng phục vụ!</li></random></template>
+	</category>
+	<category>
+		<pattern>* MAY *</pattern>
+		<template>
+			Sao kêu mình bằng mày?!		
+		</template>
+	</category>
+	<category>
+		<pattern>* WTF *</pattern>
+		<template>
+			Mình là người văn minh thì đừng nên nói bậy nè!
+		</template>
+	</category>
+	<category>
+		<pattern>* WHAT THE FUCK *</pattern>
+		<template><srai>WTF *</srai></template>
+	</category>
+	<category>
+		<pattern>* FUCK *</pattern>
+		<template><srai>WTF *</srai></template>
+	</category>
+	<category>
+		<pattern>* SHIT *</pattern>
+		<template><srai>WTF *</srai></template>
+	</category>
+	<!-- CẢM ƠN -->
+	<category>
+		<pattern>CAM ON</pattern>
+		<template>
+			Cảm ơn bạn đã sử dụng TravelBot. Hẹn gặp lại.
+		</template>
+	</category>
+	<category>
+		<pattern>* CAM ON *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<!-- ĐỊA ĐIỂM VUI CHƠI -->
+	<category>
+		<pattern>DIA DIEM CAN THO</pattern>
+		<template>
+			TOP 5 ĐỊA ĐIỂM VUI CHƠI Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
+			1. Làng du lịch sinh thái Mỹ Khánh
+			2. Thiền viền Trúc Lâm Phương Nam
+			3. Chợ nổi Cái Răng
+			4. Bến Ninh Kiều
+			5. Cồn Sơn
+		</template>
+	</category>
+	<category>
+		<pattern>* CAN THO * DIA DIEM *</pattern>
+		<template><srai>DIA DIEM CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA DIEM * CAN THO *</pattern>
+		<template><srai>DIA DIEM CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* DI CHOI * CAN THO *</pattern>
+		<template><srai>DIA DIEM CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * DI CHOI *</pattern>
+		<template><srai>DIA DIEM CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO NAO CHOI * CAN THO *</pattern>
+		<template><srai>DIA DIEM CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * CHO NAO CHOI *</pattern>
+		<template><srai>DIA DIEM CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CHOI O * CAN THO *</pattern>
+		<template><srai>DIA DIEM CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * CHOI O *</pattern>
+		<template><srai>DIA DIEM CAN THO</srai></template>
+	</category>
+	<!-- NHÀ HÀNG CẦN THƠ -->
+	<category>
+		<pattern>NHA HANG CAN THO</pattern>
+		<template>
+			TOP 5 NHÀ HÀNG Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
+			1. Hoa Sứ: phường Cái Khế, quận Ninh Kiều, Cần Thơ
+			2. Mekong: 2/2 đường Nguyễn Trãi, quận Ninh Kiều, Cần Thơ
+			3. Nam Bộ: 1 đường Ngô Quyền, quận Ninh Kiều, Cần Thơ
+			4. Hoa Cau: 4 đường Hai Bà Trưng, quận Ninh Kiều, Cần Thơ
+			5. Ninh Kiều: 2 đường Hai Bà Trưng, quận Bình Thủy, Cần Thơ
+		</template>
+	</category>
+	<category>
+		<pattern>* CAN THO * NHA HANG *</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG * CAN THO *</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* QUAN * CAN THO *</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * QUAN *</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* AN O * CAN THO *</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * AN O *</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO NAO * CAN THO *</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * CHO NAO *</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* DI AN * CAN THO *</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * DI AN *</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * AN * DAU</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<!-- MÓN ĂN CẦN THƠ -->
+	<category>
+		<pattern>MON NGON CAN THO</pattern>
+		<template>
+			TOP 5 MÓN ĂN Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
+			1. Lẩu mắm Dạ Lý: đường 3/2.
+			2. Bánh cống Cô Út: 86/38, đường Lý Tự Trọng, phường An Cư, quận Ninh Kiều.
+			3. Nem nướng Thanh Vân: 17, Đại lộ Hòa Bình,quận Ninh Kiều.
+			4. Bánh xèo 7 tới: Đường Cái Sơn Hàng Bàng, Q.Cái Răng, TP Cần Thơ.
+			5. Vịt nấu chao: quán Kim Liên, Thành Giao hẻm 1, đường Lý Tự Trọng.
+		</template>
+	</category>
+	<category>
+		<pattern>* AN * CAN THO *</pattern>
+		<template><srai>MON NGON CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * AN *</pattern>
+		<template><srai>MON NGON CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* MON * CAN THO *</pattern>
+		<template><srai>MON NGON CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * MON *</pattern>
+		<template><srai>MON NGON CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* NGON * CAN THO *</pattern>
+		<template><srai>MON NGON CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * NGON *</pattern>
+		<template><srai>MON NGON CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* DAC SAN * CAN THO *</pattern>
+		<template><srai>MON NGON CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * DAC SAN *</pattern>
+		<template><srai>MON NGON CAN THO</srai></template>
+	</category>
+	<!-- KHÁCH SẠN Ở CẦN THƠ -->
+	<category>
+		<pattern>KHACH SAN CAN THO</pattern>
+		<template>
+			TOP 5 KHÁCH SẠN Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
+			1. Fortuneland: 141 Trần Văn Kheo , Cái Khê, Ninh Kiều, Cần Thơ
+			2. Holiday One Cần Thơ : 59-61-63-65 Phạm Ngọc Thạch, P.Cái Khế, Q.Ninh Kiều, TP. Cần Thơ
+			3. Viva green:  26 Hai Bà Trưng, Tân An, Ninh Kiều, Cần Thơ
+			4. Asia Cần Thơ:  91 Châu Văn Liêm, Cần Thơ
+			5. Khách sạn Madella: 48 Ngô Quyền, Tân An, Ninh Kiều, Cần Thơ
+		</template>
+	</category>
+	<category>
+		<pattern>* CAN THO * KHACH SAN *</pattern>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * CAN THO *</pattern>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * NGHI *</pattern>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * CAN THO *</pattern>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * NGU *</pattern>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * CAN THO *</pattern>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * MOTEL *</pattern>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * CAN THO *</pattern>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<!-- HOMESTAY CẦN THƠ-->
+	<category>
+		<pattern>HOMESTAY CAN THO</pattern>
+		<template>
+			Có thể bạn quan tâm:
+			Hưng Homestay: Khu vực Thạnh Huế, phường Thường Thạnh, quận Cái Răng, TP. Cần Thơ. SĐT: 0903849881
+		</template>
+	</category>
+	<category>
+		<pattern>* HOMESTAY * CAN THO *</pattern>
+		<template><srai>HOMESTAY CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * HOMESTAY *</pattern>
+		<template><srai>HOMESTAY CAN THO</srai></template>
+	</category>
+	<!-- HOẠT ĐỘNG CẦN THƠ -->
+	<category>
+		<pattern>HOAT DONG CAN THO</pattern>
+		<template>
+			TOP 5 HOẠT ĐỘNG Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
+			1. Tham quan, ăn uống, mua sắm ở Chợ Cần Thơ và Chợ đêm
+			2. Đi bộ dọc bến Ninh Kiều và Cầu Tình yêu
+			3. Tắm biển Cần Thơ
+			4. Ngắm cảnh sông trong đêm trên du thuyền
+			5. Cầu nguyện ở chùa Ông - ngôi chùa linh thiêng ở Cần Thơ
+		</template>
+	</category>
+	<category>
+		<pattern>* HOAT DONG * CAN THO *</pattern>
+		<template><srai>HOAT DONG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * HOAT DONG *</pattern>
+		<template><srai>HOAT DONG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CHOI * CAN THO *</pattern>
+		<template><srai>HOAT DONG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * CHOI *</pattern>
+		<template><srai>HOAT DONG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* LAM * CAN THO *</pattern>
+		<template><srai>HOAT DONG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * LAM *</pattern>
+		<template><srai>HOAT DONG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* VUI * CAN THO *</pattern>
+		<template><srai>HOAT DONG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * VUI *</pattern>
+		<template><srai>HOAT DONG CAN THO</srai></template>
+	</category>
+	<!-- LỄ HỘI CẦN THƠ-->
+	<category>
+		<pattern>LE HOI CAN THO</pattern>
+		<template>
+			TOP CÁC LỄ HỘI Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
+			1. Lễ hội đình Bình Thủy:  14/4 - 15/4 và 15/12  âm lịch
+			2. Lễ đấu đèn: mỗi 10 năm tổ chức một lần
+		</template>
+	</category>
+	<category>
+		<pattern>* LE HOI * CAN THO *</pattern>
+		<template><srai>LE HOI CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * LE HOI *</pattern>
+		<template><srai>LE HOI CAN THO</srai></template>
+	</category>
+	<!-- QUÀ TẶNG CẦN THƠ -->
+	<category>
+		<pattern>QUA CAN THO</pattern>
+		<template>
+			TOP 5 MÓN QUÀ PHỔ BIẾN Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
+			1. Bánh tét lá cẩm
+			2. Ca cao Phong Điền
+			3. Nem nướng Thanh Vân
+			4. Rượu Mận Sáu Tia Cần Thơ
+			5. Bánh tráng Thuận Hưng
+		</template>
+	</category>
+	<category>
+		<pattern>* QUA * CAN THO *</pattern>
+		<template><srai>QUA CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * QUA *</pattern>
+		<template><srai>QUA CAN THO</srai></template>
+	</category>
+</aiml>
