@@ -9,10 +9,10 @@ aimlInterpreter.loadAIMLFilesIntoArray(['./aiml.xml']);
 var mysql = require('mysql');
 
 var conn = mysql.createConnection({
-    host    : "45.117.169.92",
-    user    : "dbquyen_travel",
-    password: "Travelbot@123",
-    database: "dbquyen_travelbot"
+  host    : "45.117.169.92",
+  user    : "dbquyen_travel",
+  password: "Travelbot@123",
+  database: "dbquyen_travelbot"
 });
 
 // messenger facebook
@@ -201,64 +201,21 @@ function sendListMessage(sender){
       "type": "template",
       "payload": {
         "template_type": "list",
-        "top_element_style": "compact",
+        "top_element_style": "COMPACT",
         "elements": [
-          {
-            "title": "Classic T-Shirt Collection",
-            "subtitle": "See all our colors",
-            "image_url": "https://peterssendreceiveapp.ngrok.io/img/collection.png",          
-            "buttons": [
-              {
-                "title": "View",
-                "type": "web_url",
-                "url": "https://peterssendreceiveapp.ngrok.io/collection",
-                "messenger_extensions": true,
-                "webview_height_ratio": "tall",
-                "fallback_url": "https://peterssendreceiveapp.ngrok.io/"            
-              }
-            ]
-          },
-          {
-            "title": "Classic White T-Shirt",
-            "subtitle": "See all our colors",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://peterssendreceiveapp.ngrok.io/view?item=100",
-              "messenger_extensions": true,
-              "webview_height_ratio": "tall",
-              "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
-            }
-          },
-          {
-            "title": "Classic Blue T-Shirt",
-            "image_url": "https://peterssendreceiveapp.ngrok.io/img/blue-t-shirt.png",
-            "subtitle": "100% Cotton, 200% Comfortable",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://peterssendreceiveapp.ngrok.io/view?item=101",
-              "messenger_extensions": true,
-              "webview_height_ratio": "tall",
-              "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
-            },
-            "buttons": [
-              {
-                "title": "Shop Now",
-                "type": "web_url",
-                "url": "https://peterssendreceiveapp.ngrok.io/shop?item=101",
-                "messenger_extensions": true,
-                "webview_height_ratio": "tall",
-                "fallback_url": "https://peterssendreceiveapp.ngrok.io/"            
-              }
-            ]        
-          }
-        ],
-         "buttons": [
+        {
+          "title": "Demo list",
+          "subtitle": "Bánh cống",
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/02.jpg",          
+          "buttons": [
           {
             "title": "View More",
             "type": "postback",
-            "payload": "payload"            
+            "payload": "payload" 
           }
-        ]  
+          ],
+        }
+        ]
       }
     }
   }
@@ -311,13 +268,13 @@ app.post('/webhook', function (req, res) {
       // hàm callback trả về đáp án
       var callback = function(answer, wildCardArray, input){
         if (temp === 'image') {
-            sendGenericMessage(sender);
+          sendGenericMessage(sender);
         }
         else if (temp === 'list') {
-            sendListMessage(sender);
+          sendListMessage(sender);
         }
         else if (answer !== undefined && answer !== '') {
-            sendTextMessage(sender, answer);
+          sendTextMessage(sender, answer);
         }
         // không tìm thấy đáp án         
         else{
