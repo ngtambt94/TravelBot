@@ -77,7 +77,7 @@ function sendImageMessage(sender){
     "attachment": {
       "type": "image",
       "payload": {
-        "url": "source/img/banhcong.jpg"
+        "url": "./source/img/banhcong.jpg"
       }
     }
   }
