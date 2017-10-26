@@ -167,6 +167,10 @@ function sendGenericMessage(sender) {
             "type": "web_url",
             "url": "https://www.facebook.com/2TQ-Chatbot-173993989838993/",
             "title": "Ghé thăm fanpage"
+          }, {
+            "type": "postback",
+            "title": "Postback",
+            "payload": "Payload for first element in a generic bubble",
           },
           {
           "title": "Menu giúp đỡ",
@@ -176,12 +180,12 @@ function sendGenericMessage(sender) {
             "type": "web_url",
             "url": "https://www.facebook.com/2TQ-Chatbot-173993989838993/",
             "title": "Ghé thăm fanpage"
-          },
-           {
+          }, {
             "type": "postback",
             "title": "Postback",
             "payload": "Payload for first element in a generic bubble",
-          }],
+          }
+          ],
         }]
       }
     }
