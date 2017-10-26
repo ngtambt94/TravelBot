@@ -226,13 +226,12 @@ app.post('/webhook', function (req, res) {
       // hàm callback trả về đáp án
       var callback = function(answer, wildCardArray, input){
         if (answer !== undefined && answer !== '') {
-          if (answer === 'image') {
-            sendImageMessage(sender);
-          }
-          else
             sendTextMessage(sender, answer);
         }
         // không tìm thấy đáp án
+        if (answer === 'image') {
+            sendImageMessage(sender);
+        }
         else{
           sendTextMessage(sender, "Xin lỗi! Mình chưa hiểu rõ ý của bạn. Vui lòng nhập help để biết mình có thể giúp gì cho bạn.");
         }
