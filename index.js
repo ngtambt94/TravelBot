@@ -201,21 +201,17 @@ function sendListMessage(sender){
       "type": "template",
       "payload": {
         "template_type": "list",
-        "top_element_style": "COMPACT",
-        "elements": [
-        {
+        "top_element_style": "compact",
+        "elements": [{
           "title": "Demo list",
           "subtitle": "Bánh cống",
           "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/02.jpg",          
-          "buttons": [
-          {
+          "buttons": [{
             "title": "View More",
             "type": "postback",
-            "payload": "payload" 
-          }
-          ],
-        }
-        ]
+            "payload": "payload",
+          }],
+        }]
       }
     }
   }
