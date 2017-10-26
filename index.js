@@ -229,7 +229,7 @@ app.post('/webhook', function (req, res) {
             sendTextMessage(sender, answer);
         }
         // không tìm thấy đáp án
-        if (answer === 'image') {
+        else if (answer === 'image') {
             sendImageMessage(sender);
         }
         else{
