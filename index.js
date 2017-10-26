@@ -163,24 +163,10 @@ function sendGenericMessage(sender) {
           "title": "Menu giúp đỡ",
           "subtitle": "Đây là những điều mình có thể làm",
           "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
-          "buttons": [{
-            "type": "web_url",
-            "url": "https://www.facebook.com/2TQ-Chatbot-173993989838993/",
-            "title": "Ghé thăm fanpage"
-          }, {
-            "type": "postback",
-            "title": "Postback",
-            "payload": "Payload for first element in a generic bubble",
-          }],
         }, {
           "title": "Menu",
           "subtitle": "Bánh bèo",
           "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhbeo.jpg",
-          "buttons": [{
-            "type": "postback",
-            "title": "Postback",
-            "payload": "Payload for second element in a generic bubble",
-          }],
         }]
       }
     }
