@@ -162,7 +162,7 @@ function sendGenericMessage(sender) {
         "elements": [{
           "title": "Menu giúp đỡ",
           "subtitle": "Đây là những điều mình có thể làm",
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/02.jpg",
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
           "buttons": [{
             "type": "web_url",
             "url": "https://www.facebook.com/2TQ-Chatbot-173993989838993/",
@@ -205,7 +205,7 @@ function sendListMessage(sender){
         "elements": [{
           "title": "Demo list",
           "subtitle": "Bánh cống",
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/02.jpg",          
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",          
           "buttons": [{
             "title": "View More",
             "type": "postback",
@@ -266,7 +266,7 @@ app.post('/webhook', function (req, res) {
         if (temp === 'image') {
           sendGenericMessage(sender);
         }
-        else if (temp === 'list') {
+        else if (temp === 'hey') {
           sendListMessage(sender);
         }
         else if (answer !== undefined && answer !== '') {
