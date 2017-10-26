@@ -5,6 +5,16 @@ var aimlInterpreter = new AIMLInterpreter({name:'Tam Nguyen', age:'23'});
 aimlInterpreter.loadAIMLFilesIntoArray(['./aiml.xml']);
 
 
+// Connect database
+var mysql = require('mysql');
+
+var conn = mysql.createConnection({
+    host    : "45.117.169.92",
+    user    : "dbquyen_travel",
+    password: "Travelbot@123",
+    database: "dbquyen_travelbot"
+});
+
 // messenger facebook
 'use strict'
 
@@ -62,11 +72,12 @@ function sendTextMessage(sender, text) {
 
 // send image
 function sendImageMessage(sender){
+
   let messageData = {
     "attachment": {
       "type": "image",
       "payload": {
-        "url": "http://i.imgur.com/648mzEV.jpg"
+        "url": "source/img/banhcong.jpg"
       }
     }
   }
@@ -183,7 +194,7 @@ function sendGenericMessage(sender) {
 }
 
 
-// chuyển đổi tiếng việt không dấu
+// chuyển đổi tiếng việt không dấu và loại bỏ dấu câu
 function convert(str){
   str = str.toLowerCase();
   str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
@@ -215,7 +226,11 @@ app.post('/webhook', function (req, res) {
       // hàm callback trả về đáp án
       var callback = function(answer, wildCardArray, input){
         if (answer !== undefined && answer !== '') {
-          sendTextMessage(sender, answer);
+          if (answer === 'image') {
+            sendImageMessage(sender);
+          }
+          else
+            sendTextMessage(sender, answer);
         }
         // không tìm thấy đáp án
         else{
