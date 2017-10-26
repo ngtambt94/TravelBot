@@ -211,6 +211,16 @@ function sendListMessage(sender){
             "type": "postback",
             "payload": "payload",
           }],
+        },
+        {
+          "title": "Menu",
+          "subtitle": "Bánh bèo",
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhbeo.jpg",
+          "buttons": [{
+            "type": "postback",
+            "title": "Postback",
+            "payload": "Payload for second element in a generic bubble",
+          }],
         }]
       }
     }
