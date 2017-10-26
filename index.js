@@ -195,13 +195,11 @@ function abc(sender) {
       "type": "template",
       "payload": {
         "template_type": "generic",
-        "elements": [
-        {
+        "elements": [{
           "title": "Menu giúp đỡ",
           "subtitle": "Đây là những điều mình có thể làm",
           "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
-        }
-        ]
+        }]
       }
     }
   }
@@ -235,13 +233,11 @@ function sendListMessage(sender){
           "title": "Bánh cống",
           "subtitle": "See all our colors",
           "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhbeo.jpg",          
-          "buttons": [
-          {
+          "buttons": [{
             "title": "View More",
             "type": "postback",
-            "payload": "payload"         
-          }
-          ]
+            "payload": "payload",         
+          }],
         }]
       }
     }
