@@ -162,7 +162,7 @@ function sendGenericMessage(sender) {
         "elements": [{
           "title": "Menu giúp đỡ",
           "subtitle": "Đây là những điều mình có thể làm",
-          "image_url": "http://i.imgur.com/648mzEV.jpg",
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/02.jpg",
           "buttons": [{
             "type": "web_url",
             "url": "https://www.facebook.com/2TQ-Chatbot-173993989838993/",
@@ -226,7 +226,7 @@ app.post('/webhook', function (req, res) {
       // hàm callback trả về đáp án
       var callback = function(answer, wildCardArray, input){
         if (temp === 'image') {
-            sendImageMessage(sender);
+            sendGenericMessage(sender);
         }
         else if (answer !== undefined && answer !== '') {
             sendTextMessage(sender, answer);
