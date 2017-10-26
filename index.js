@@ -296,6 +296,9 @@ app.post('/webhook', function (req, res) {
         else if (temp === 'hey') {
           abc(sender);
         }
+        else if (temp === 'thu') {
+          sendListMessage(sender);
+        }
         else if (answer !== undefined && answer !== '') {
           sendTextMessage(sender, answer);
         }
