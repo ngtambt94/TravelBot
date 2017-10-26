@@ -77,7 +77,7 @@ function sendImageMessage(sender){
     "attachment": {
       "type": "image",
       "payload": {
-        "url": "./source/img/banhcong.jpg"
+        "url": "https://github.com/ngtambt94/TravelBot/blob/master/source/img/02.jpg"
       }
     }
   }
