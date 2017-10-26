@@ -72,12 +72,12 @@ function sendTextMessage(sender, text) {
 
 // send image
 function sendImageMessage(sender){
-
+  let a = "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/02.jpg";
   let messageData = {
     "attachment": {
       "type": "image",
       "payload": {
-        "url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/02.jpg"
+        "url": a
       }
     }
   }
