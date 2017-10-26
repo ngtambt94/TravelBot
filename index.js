@@ -189,6 +189,40 @@ function sendGenericMessage(sender) {
 }
 
 
+function abc(sender) {
+  let messageData = {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [
+        {
+          "title": "Menu giúp đỡ",
+          "subtitle": "Đây là những điều mình có thể làm",
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
+        }
+        ]
+      }
+    }
+  }
+  request({
+    url: 'https://graph.facebook.com/v2.6/me/messages',
+    qs: {access_token:token},
+    method: 'POST',
+    json: {
+      recipient: {id:sender},
+      message: messageData,
+    }
+  }, function(error, response, body) {
+    if (error) {
+      console.log('Error sending messages: ', error)
+    } else if (response.body.error) {
+      console.log('Error: ', response.body.error)
+    }
+  })
+}
+
+
 // send list
 function sendListMessage(sender){
   let messageData = {
@@ -264,7 +298,7 @@ app.post('/webhook', function (req, res) {
           sendGenericMessage(sender);
         }
         else if (temp === 'hey') {
-          sendListMessage(sender);
+          abc(sender);
         }
         else if (answer !== undefined && answer !== '') {
           sendTextMessage(sender, answer);
