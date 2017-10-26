@@ -194,6 +194,91 @@ function sendGenericMessage(sender) {
 }
 
 
+// send list
+function sendListMessage(sender){
+  let messageData = {
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "list",
+        "top_element_style": "compact",
+        "elements": [
+          {
+            "title": "Classic T-Shirt Collection",
+            "subtitle": "See all our colors",
+            "image_url": "https://peterssendreceiveapp.ngrok.io/img/collection.png",          
+            "buttons": [
+              {
+                "title": "View",
+                "type": "web_url",
+                "url": "https://peterssendreceiveapp.ngrok.io/collection",
+                "messenger_extensions": true,
+                "webview_height_ratio": "tall",
+                "fallback_url": "https://peterssendreceiveapp.ngrok.io/"            
+              }
+            ]
+          },
+          {
+            "title": "Classic White T-Shirt",
+            "subtitle": "See all our colors",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://peterssendreceiveapp.ngrok.io/view?item=100",
+              "messenger_extensions": true,
+              "webview_height_ratio": "tall",
+              "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
+            }
+          },
+          {
+            "title": "Classic Blue T-Shirt",
+            "image_url": "https://peterssendreceiveapp.ngrok.io/img/blue-t-shirt.png",
+            "subtitle": "100% Cotton, 200% Comfortable",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://peterssendreceiveapp.ngrok.io/view?item=101",
+              "messenger_extensions": true,
+              "webview_height_ratio": "tall",
+              "fallback_url": "https://peterssendreceiveapp.ngrok.io/"
+            },
+            "buttons": [
+              {
+                "title": "Shop Now",
+                "type": "web_url",
+                "url": "https://peterssendreceiveapp.ngrok.io/shop?item=101",
+                "messenger_extensions": true,
+                "webview_height_ratio": "tall",
+                "fallback_url": "https://peterssendreceiveapp.ngrok.io/"            
+              }
+            ]        
+          }
+        ],
+         "buttons": [
+          {
+            "title": "View More",
+            "type": "postback",
+            "payload": "payload"            
+          }
+        ]  
+      }
+    }
+  }
+  request({
+    url: 'https://graph.facebook.com/v2.6/me/messages',
+    qs: {access_token:token},
+    method: 'POST',
+    json: {
+      recipient: {id:sender},
+      message: messageData,
+    }
+  }, function(error, response, body) {
+    if (error) {
+      console.log('Error sending messages: ', error)
+    } else if (response.body.error) {
+      console.log('Error: ', response.body.error)
+    }
+  }) 
+}
+
 // chuyển đổi tiếng việt không dấu và loại bỏ dấu câu
 function convert(str){
   str = str.toLowerCase();
@@ -227,6 +312,9 @@ app.post('/webhook', function (req, res) {
       var callback = function(answer, wildCardArray, input){
         if (temp === 'image') {
             sendGenericMessage(sender);
+        }
+        else if (temp === 'list') {
+            sendListMessage(sender);
         }
         else if (answer !== undefined && answer !== '') {
             sendTextMessage(sender, answer);
