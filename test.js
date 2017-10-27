@@ -45,10 +45,15 @@ conn.connect(function (err){
           "subtitle": results[1]['food_diachi'],
           "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[1]['food_hinhanh'],
         }];
-        return x;
+        var y = "hello";
+        console.log(typeof x);
+        console.log(typeof y);
+        if (typeof y === "string") {
+          console.log("True");
+        }
       });
     });
-    console.log(x);
+    // console.log(x);
 
 // var callback = function(answer, wildCardArray, input){
 //     // console.log(answer);

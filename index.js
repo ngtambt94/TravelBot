@@ -354,7 +354,11 @@ app.post('/webhook', function (req, res) {
         }
         else if (answer !== undefined && answer !== '') {
           // sendTextMessage(sender, answer);
-          findFood(sender, answer);
+          if (typeof answer === "string") {
+            sendTextMessage(sender, answer);
+          }
+          else
+            findFood(sender, answer);
         }
         // không tìm thấy đáp án         
         else{
