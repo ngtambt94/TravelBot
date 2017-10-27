@@ -224,12 +224,7 @@
 	<category>
 		<pattern>NHA HANG CAN THO</pattern>
 		<template>
-			TOP 5 NHÀ HÀNG Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
-			1. Hoa Sứ: phường Cái Khế, quận Ninh Kiều, Cần Thơ
-			2. Mekong: 2/2 đường Nguyễn Trãi, quận Ninh Kiều, Cần Thơ
-			3. Nam Bộ: 1 đường Ngô Quyền, quận Ninh Kiều, Cần Thơ
-			4. Hoa Cau: 4 đường Hai Bà Trưng, quận Ninh Kiều, Cần Thơ
-			5. Ninh Kiều: 2 đường Hai Bà Trưng, quận Bình Thủy, Cần Thơ
+			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh, restaurant_website from restaurants where place_id = 11 limit 0, 5
 		</template>
 	</category>
 	<category>

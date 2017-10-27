@@ -338,15 +338,6 @@ app.post('/webhook', function (req, res) {
         temp += convert(text[j]);
       }
       // hàm callback trả về đáp án
-      var input2 = [{
-        "title": "Bánh Cống",
-        "subtitle": "86/38, đường Lý Tự Trọng, phường An Cư, quận Ninh Kiều.",
-        "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
-      }, {
-        "title": "Bánh bèo",
-        "subtitle": "17, Đại lộ Hòa Bình,quận Ninh Kiều",
-        "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhbeo.jpg",
-      }]
       var callback = function(answer, wildCardArray, input){
         if (temp === 'image') {
           // sendGenericMessage(sender);
