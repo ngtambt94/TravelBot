@@ -470,7 +470,7 @@
 		<pattern>* BEN TRE * CHOI O *</pattern>
 		<template><srai>DIA DIEM BEN TRE</srai></template>
 	</category>
-	<!-- NHÀ HÀNG CẦN THƠ -->
+	<!-- NHÀ HÀNG BẾN TRE -->
 	<category>
 		<pattern>NHA HANG BEN TRE</pattern>
 		<template>
@@ -521,7 +521,7 @@
 		<pattern>* BEN TRE * AN * DAU</pattern>
 		<template><srai>NHA HANG BEN TRE</srai></template>
 	</category>
-	<!-- MÓN ĂN CẦN THƠ -->
+	<!-- MÓN ĂN BẾN TRE -->
 	<category>
 		<pattern>MON NGON BEN TRE</pattern>
 		<template>
@@ -560,7 +560,7 @@
 		<pattern>* BEN TRE * DAC SAN *</pattern>
 		<template><srai>MON NGON BEN TRE</srai></template>
 	</category>
-	<!-- KHÁCH SẠN Ở CẦN THƠ -->
+	<!-- KHÁCH SẠN Ở BẾN TRE -->
 	<category>
 		<pattern>KHACH SAN BEN TRE</pattern>
 		<template>
@@ -599,7 +599,7 @@
 		<pattern>* MOTEL * BEN TRE *</pattern>
 		<template><srai>KHACH SAN BEN TRE</srai></template>
 	</category>
-	<!-- HOMESTAY CẦN THƠ-->
+	<!-- HOMESTAY BẾN TRE-->
 	<category>
 		<pattern>HOMESTAY BEN TRE</pattern>
 		<template>
@@ -615,7 +615,7 @@
 		<pattern>* BEN TRE * HOMESTAY *</pattern>
 		<template><srai>HOMESTAY BEN TRE</srai></template>
 	</category>
-	<!-- HOẠT ĐỘNG CẦN THƠ -->
+	<!-- HOẠT ĐỘNG BẾN TRE -->
 	<category>
 		<pattern>HOAT DONG BEN TRE</pattern>
 		<template>
@@ -654,7 +654,7 @@
 		<pattern>* BEN TRE * VUI *</pattern>
 		<template><srai>HOAT DONG BEN TRE</srai></template>
 	</category>
-	<!-- LỄ HỘI CẦN THƠ-->
+	<!-- LỄ HỘI BẾN TRE-->
 	<category>
 		<pattern>LE HOI BEN TRE</pattern>
 		<template>
@@ -669,7 +669,7 @@
 		<pattern>* BEN TRE * LE HOI *</pattern>
 		<template><srai>LE HOI BEN TRE</srai></template>
 	</category>
-	<!-- QUÀ TẶNG CẦN THƠ -->
+	<!-- QUÀ TẶNG BẾN TRE -->
 	<category>
 		<pattern>QUA BEN TRE</pattern>
 		<template>
@@ -683,5 +683,259 @@
 	<category>
 		<pattern>* BEN TRE * QUA *</pattern>
 		<template><srai>QUA BEN TRE</srai></template>
+	</category>
+	<!-- ĐÀ LẠT -->
+	<!-- ĐỊA ĐIỂM VUI CHƠI -->
+	<category>
+		<pattern>DIA DIEM DA LAT</pattern>
+		<template>
+			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* DA LAT * DIA DIEM *</pattern>
+		<template><srai>DIA DIEM DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA DIEM * DA LAT *</pattern>
+		<template><srai>DIA DIEM DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DI CHOI * DA LAT *</pattern>
+		<template><srai>DIA DIEM DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * DI CHOI *</pattern>
+		<template><srai>DIA DIEM DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO NAO CHOI * DA LAT *</pattern>
+		<template><srai>DIA DIEM DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * CHO NAO CHOI *</pattern>
+		<template><srai>DIA DIEM DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* CHOI O * DA LAT *</pattern>
+		<template><srai>DIA DIEM DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * CHOI O *</pattern>
+		<template><srai>DIA DIEM DA LAT</srai></template>
+	</category>
+	<!-- NHÀ HÀNG ĐÀ LẠT -->
+	<category>
+		<pattern>NHA HANG DA LAT</pattern>
+		<template>
+			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NHA HANG *</pattern>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG * DA LAT *</pattern>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* QUAN * DA LAT *</pattern>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * QUAN *</pattern>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* AN O * DA LAT *</pattern>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * AN O *</pattern>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO NAO * DA LAT *</pattern>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * CHO NAO *</pattern>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DI AN * DA LAT *</pattern>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * DI AN *</pattern>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * AN * DAU</pattern>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<!-- MÓN ĂN ĐÀ LẠT -->
+	<category>
+		<pattern>MON NGON DA LAT</pattern>
+		<template>
+			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* AN * DA LAT *</pattern>
+		<template><srai>MON NGON DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * AN *</pattern>
+		<template><srai>MON NGON DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* MON * DA LAT *</pattern>
+		<template><srai>MON NGON DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * MON *</pattern>
+		<template><srai>MON NGON DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGON * DA LAT *</pattern>
+		<template><srai>MON NGON DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGON *</pattern>
+		<template><srai>MON NGON DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DAC SAN * DA LAT *</pattern>
+		<template><srai>MON NGON DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * DAC SAN *</pattern>
+		<template><srai>MON NGON DA LAT</srai></template>
+	</category>
+	<!-- KHÁCH SẠN Ở ĐÀ LẠT -->
+	<category>
+		<pattern>KHACH SAN DA LAT</pattern>
+		<template>
+			select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* DA LAT * KHACH SAN *</pattern>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * DA LAT *</pattern>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGHI *</pattern>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * DA LAT *</pattern>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGU *</pattern>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * DA LAT *</pattern>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * MOTEL *</pattern>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * DA LAT *</pattern>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<!-- HOMESTAY ĐÀ LẠT-->
+	<category>
+		<pattern>HOMESTAY DA LAT</pattern>
+		<template>
+			Có thể bạn quan tâm:
+			Hưng Homestay: Khu vực Thạnh Huế, phường Thường Thạnh, quận Cái Răng, TP. ĐÀ LẠT. SĐT: 09038498822
+		</template>
+	</category>
+	<category>
+		<pattern>* HOMESTAY * DA LAT *</pattern>
+		<template><srai>HOMESTAY DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * HOMESTAY *</pattern>
+		<template><srai>HOMESTAY DA LAT</srai></template>
+	</category>
+	<!-- HOẠT ĐỘNG ĐÀ LẠT -->
+	<category>
+		<pattern>HOAT DONG DA LAT</pattern>
+		<template>
+			select activity_ten as food_ten, activity_mota as food_diachi, activity_hinhanh as food_hinhanh from activities, localactivities where activities.activity_id = localactivities.activity_id and place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* HOAT DONG * DA LAT *</pattern>
+		<template><srai>HOAT DONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * HOAT DONG *</pattern>
+		<template><srai>HOAT DONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* CHOI * DA LAT *</pattern>
+		<template><srai>HOAT DONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * CHOI *</pattern>
+		<template><srai>HOAT DONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* LAM * DA LAT *</pattern>
+		<template><srai>HOAT DONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * LAM *</pattern>
+		<template><srai>HOAT DONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* VUI * DA LAT *</pattern>
+		<template><srai>HOAT DONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * VUI *</pattern>
+		<template><srai>HOAT DONG DA LAT</srai></template>
+	</category>
+	<!-- LỄ HỘI ĐÀ LẠT-->
+	<category>
+		<pattern>LE HOI DA LAT</pattern>
+		<template>
+			select festival_ten as food_ten, festival_mota as food_diachi, festival_hinhanh as food_hinhanh from festivals where place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* LE HOI * DA LAT *</pattern>
+		<template><srai>LE HOI DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * LE HOI *</pattern>
+		<template><srai>LE HOI DA LAT</srai></template>
+	</category>
+	<!-- QUÀ TẶNG ĐÀ LẠT -->
+	<category>
+		<pattern>QUA DA LAT</pattern>
+		<template>
+			select gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh from gifts, localgifts where gifts.gift_id = localgifts.gift_id and place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* QUA * DA LAT *</pattern>
+		<template><srai>QUA DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * QUA *</pattern>
+		<template><srai>QUA DA LAT</srai></template>
 	</category>
 </aiml>
