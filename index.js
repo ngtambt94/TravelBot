@@ -222,13 +222,13 @@ function abc(sender) {
 
 
 // send list
-function sendListMessage(sender){
+function xyz(sender){
   let messageData = {
     "attachment": {
       "type": "template",
       "payload": {
         "template_type": "list",
-        "top_element_style": "compact",
+        "top_element_style": "large",
         "elements": [{
           "title": "Bánh cống",
           "subtitle": "See all our colors",
@@ -297,7 +297,7 @@ app.post('/webhook', function (req, res) {
           abc(sender);
         }
         else if (temp === 'thu') {
-          sendListMessage(sender);
+          xyz(sender);
         }
         else if (answer !== undefined && answer !== '') {
           sendTextMessage(sender, answer);
