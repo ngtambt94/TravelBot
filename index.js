@@ -161,7 +161,7 @@ function findFood(sender, answer) {
         sendTextMessage(sender, answer);
       }
       else{
-        sendTextMessage(sender, "Đây là top 5 kết quả có thể bạn quan tâm: ");
+        sendTextMessage(sender, "Top các kết quả có thể bạn quan tâm: ");
         var kq = [{
           "title": results[0]['food_ten'],
           "subtitle": results[0]['food_diachi'],

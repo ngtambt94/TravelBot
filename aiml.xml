@@ -180,12 +180,7 @@
 	<category>
 		<pattern>DIA DIEM CAN THO</pattern>
 		<template>
-			TOP 5 ĐỊA ĐIỂM VUI CHƠI Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
-			1. Làng du lịch sinh thái Mỹ Khánh
-			2. Thiền viền Trúc Lâm Phương Nam
-			3. Chợ nổi Cái Răng
-			4. Bến Ninh Kiều
-			5. Cồn Sơn
+			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 11 limit 0, 5
 		</template>
 	</category>
 	<category>
@@ -224,7 +219,7 @@
 	<category>
 		<pattern>NHA HANG CAN THO</pattern>
 		<template>
-			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh, restaurant_website from restaurants where place_id = 11 limit 0, 5
+			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 11 limit 0, 5
 		</template>
 	</category>
 	<category>
@@ -314,12 +309,7 @@
 	<category>
 		<pattern>KHACH SAN CAN THO</pattern>
 		<template>
-			TOP 5 KHÁCH SẠN Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
-			1. Fortuneland: 141 Trần Văn Kheo , Cái Khê, Ninh Kiều, Cần Thơ
-			2. Holiday One Cần Thơ : 59-61-63-65 Phạm Ngọc Thạch, P.Cái Khế, Q.Ninh Kiều, TP. Cần Thơ
-			3. Viva green:  26 Hai Bà Trưng, Tân An, Ninh Kiều, Cần Thơ
-			4. Asia Cần Thơ:  91 Châu Văn Liêm, Cần Thơ
-			5. Khách sạn Madella: 48 Ngô Quyền, Tân An, Ninh Kiều, Cần Thơ
+			select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 limit 0, 5
 		</template>
 	</category>
 	<category>
@@ -374,12 +364,7 @@
 	<category>
 		<pattern>HOAT DONG CAN THO</pattern>
 		<template>
-			TOP 5 HOẠT ĐỘNG Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
-			1. Tham quan, ăn uống, mua sắm ở Chợ Cần Thơ và Chợ đêm
-			2. Đi bộ dọc bến Ninh Kiều và Cầu Tình yêu
-			3. Tắm biển Cần Thơ
-			4. Ngắm cảnh sông trong đêm trên du thuyền
-			5. Cầu nguyện ở chùa Ông - ngôi chùa linh thiêng ở Cần Thơ
+			select activity_ten as food_ten, activity_mota as food_diachi, activity_hinhanh as food_hinhanh from activities, localactivities where activities.activity_id = localactivities.activity_id and place_id = 11 limit 0, 5
 		</template>
 	</category>
 	<category>
@@ -418,9 +403,7 @@
 	<category>
 		<pattern>LE HOI CAN THO</pattern>
 		<template>
-			TOP CÁC LỄ HỘI Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
-			1. Lễ hội đình Bình Thủy:  14/4 - 15/4 và 15/12  âm lịch
-			2. Lễ đấu đèn: mỗi 10 năm tổ chức một lần
+			select festival_ten as food_ten, festival_mota as food_diachi, festival_hinhanh as food_hinhanh from festivals where place_id = 11 limit 0, 5
 		</template>
 	</category>
 	<category>
@@ -435,12 +418,7 @@
 	<category>
 		<pattern>QUA CAN THO</pattern>
 		<template>
-			TOP 5 MÓN QUÀ PHỔ BIẾN Ở CẦN THƠ BẠN CÓ THỂ QUAN TÂM:
-			1. Bánh tét lá cẩm
-			2. Ca cao Phong Điền
-			3. Nem nướng Thanh Vân
-			4. Rượu Mận Sáu Tia Cần Thơ
-			5. Bánh tráng Thuận Hưng
+			select gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh from gifts, localgifts where gifts.gift_id = localgifts.gift_id and place_id = 11 limit 0, 5
 		</template>
 	</category>
 	<category>
