@@ -153,7 +153,22 @@ function sendVideoMessage(sender){
 }
 
 // menu help of bot
-function sendGenericMessage(sender, input1) {
+function sendGenericMessage(sender, answer) {
+  var sql = answer;
+  conn.connect(function (err){
+    conn.query(sql, function (err,results, fields) {
+      var input1 = [{
+        "title": results[0]['food_ten'],
+        "subtitle": results[0]['food_diachi'],
+        "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[0]['food_hinhanh'],
+      }, {
+        "title": results[1]['food_ten'],
+        "subtitle": results[1]['food_diachi'],
+        "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[1]['food_hinhanh'],
+      }];
+    });
+  });
+
   let messageData = {
     "attachment": {
       "type": "template",
@@ -281,18 +296,18 @@ app.post('/webhook', function (req, res) {
         temp += convert(text[j]);
       }
       // hàm callback trả về đáp án
-      var input1 = [{
-          "title": "Bánh Cống",
-          "subtitle": "86/38, đường Lý Tự Trọng, phường An Cư, quận Ninh Kiều.",
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
-        }, {
-          "title": "Bánh bèo",
-          "subtitle": "17, Đại lộ Hòa Bình,quận Ninh Kiều",
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhbeo.jpg",
-        }]
+      var input2 = [{
+        "title": "Bánh Cống",
+        "subtitle": "86/38, đường Lý Tự Trọng, phường An Cư, quận Ninh Kiều.",
+        "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
+      }, {
+        "title": "Bánh bèo",
+        "subtitle": "17, Đại lộ Hòa Bình,quận Ninh Kiều",
+        "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhbeo.jpg",
+      }]
       var callback = function(answer, wildCardArray, input){
         if (temp === 'image') {
-          sendGenericMessage(sender, input1);
+          sendGenericMessage(sender, answer);
         }
         else if (temp === 'hey') {
           abc(sender);
@@ -301,7 +316,8 @@ app.post('/webhook', function (req, res) {
           xyz(sender);
         }
         else if (answer !== undefined && answer !== '') {
-          sendTextMessage(sender, answer);
+          // sendTextMessage(sender, answer);
+          sendGenericMessage(sender, answer);
         }
         // không tìm thấy đáp án         
         else{

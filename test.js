@@ -24,10 +24,13 @@ conn.connect(function (err){
     //nếu có nỗi thì in ra
     if (err) throw err.stack;
     //nếu thành công
-    var sql = "SELECT place_ten FROM places WHERE place_id = 1";
+    var sql = "select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5";
     conn.query(sql, function (err,results, fields) {
         // if (err) throw err;
-        console.log(results);
+        console.log(results[0]['food_ten']);
+        // for (var i = 0; i < results.length; i++) {
+        //   console.log(i);
+        // }
     });
 });
 
