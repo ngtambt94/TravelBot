@@ -164,7 +164,7 @@ function sendGenericMessage(sender, answer) {
         "buttons": [{
           "title": "Chi Tiết",
           "type": "web_url",
-          "url": "https://www.google.com/search?q=lau%20mam%20da%20ly"   
+          "url": "https://www.google.com/search?q=" + results[0]['food_ten']
         }],
       }, {
         "title": results[1]['food_ten'],
