@@ -153,21 +153,13 @@ function sendVideoMessage(sender){
 }
 
 // menu help of bot
-function sendGenericMessage(sender) {
+function sendGenericMessage(sender, input) {
   let messageData = {
     "attachment": {
       "type": "template",
       "payload": {
         "template_type": "generic",
-        "elements": [{
-          "title": "Bánh Cống",
-          "subtitle": "86/38, đường Lý Tự Trọng, phường An Cư, quận Ninh Kiều.",
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
-        }, {
-          "title": "Bánh bèo",
-          "subtitle": "17, Đại lộ Hòa Bình,quận Ninh Kiều",
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhbeo.jpg",
-        }]
+        "elements": input,
       }
     }
   }
@@ -289,9 +281,18 @@ app.post('/webhook', function (req, res) {
         temp += convert(text[j]);
       }
       // hàm callback trả về đáp án
+      var input = [{
+          "title": "Bánh Cống",
+          "subtitle": "86/38, đường Lý Tự Trọng, phường An Cư, quận Ninh Kiều.",
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
+        }, {
+          "title": "Bánh bèo",
+          "subtitle": "17, Đại lộ Hòa Bình,quận Ninh Kiều",
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhbeo.jpg",
+        }]
       var callback = function(answer, wildCardArray, input){
         if (temp === 'image') {
-          sendGenericMessage(sender);
+          sendGenericMessage(sender, input);
         }
         else if (temp === 'hey') {
           abc(sender);
