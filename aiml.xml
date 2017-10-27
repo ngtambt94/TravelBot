@@ -176,6 +176,7 @@
 		<pattern>* CAM ON *</pattern>
 		<template><srai>CAM ON</srai></template>
 	</category>
+	<!-- CẦN THƠ -->
 	<!-- ĐỊA ĐIỂM VUI CHƠI -->
 	<category>
 		<pattern>DIA DIEM CAN THO</pattern>
@@ -428,5 +429,259 @@
 	<category>
 		<pattern>* CAN THO * QUA *</pattern>
 		<template><srai>QUA CAN THO</srai></template>
+	</category>
+	<!-- BẾN TRE -->
+	<!-- ĐỊA ĐIỂM VUI CHƠI -->
+	<category>
+		<pattern>DIA DIEM BEN TRE</pattern>
+		<template>
+			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * DIA DIEM *</pattern>
+		<template><srai>DIA DIEM BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA DIEM * BEN TRE *</pattern>
+		<template><srai>DIA DIEM BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* DI CHOI * BEN TRE *</pattern>
+		<template><srai>DIA DIEM BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * DI CHOI *</pattern>
+		<template><srai>DIA DIEM BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO NAO CHOI * BEN TRE *</pattern>
+		<template><srai>DIA DIEM BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * CHO NAO CHOI *</pattern>
+		<template><srai>DIA DIEM BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* CHOI O * BEN TRE *</pattern>
+		<template><srai>DIA DIEM BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * CHOI O *</pattern>
+		<template><srai>DIA DIEM BEN TRE</srai></template>
+	</category>
+	<!-- NHÀ HÀNG CẦN THƠ -->
+	<category>
+		<pattern>NHA HANG BEN TRE</pattern>
+		<template>
+			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 1 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NHA HANG *</pattern>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG * BEN TRE *</pattern>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* QUAN * BEN TRE *</pattern>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * QUAN *</pattern>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* AN O * BEN TRE *</pattern>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * AN O *</pattern>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO NAO * BEN TRE *</pattern>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * CHO NAO *</pattern>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* DI AN * BEN TRE *</pattern>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * DI AN *</pattern>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * AN * DAU</pattern>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<!-- MÓN ĂN CẦN THƠ -->
+	<category>
+		<pattern>MON NGON BEN TRE</pattern>
+		<template>
+			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* AN * BEN TRE *</pattern>
+		<template><srai>MON NGON BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * AN *</pattern>
+		<template><srai>MON NGON BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* MON * BEN TRE *</pattern>
+		<template><srai>MON NGON BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * MON *</pattern>
+		<template><srai>MON NGON BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGON * BEN TRE *</pattern>
+		<template><srai>MON NGON BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGON *</pattern>
+		<template><srai>MON NGON BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* DAC SAN * BEN TRE *</pattern>
+		<template><srai>MON NGON BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * DAC SAN *</pattern>
+		<template><srai>MON NGON BEN TRE</srai></template>
+	</category>
+	<!-- KHÁCH SẠN Ở CẦN THƠ -->
+	<category>
+		<pattern>KHACH SAN BEN TRE</pattern>
+		<template>
+			select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * KHACH SAN *</pattern>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * BEN TRE *</pattern>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGHI *</pattern>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * BEN TRE *</pattern>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGU *</pattern>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * BEN TRE *</pattern>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * MOTEL *</pattern>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * BEN TRE *</pattern>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<!-- HOMESTAY CẦN THƠ-->
+	<category>
+		<pattern>HOMESTAY BEN TRE</pattern>
+		<template>
+			Có thể bạn quan tâm:
+			Hưng Homestay: Khu vực Thạnh Huế, phường Thường Thạnh, quận Cái Răng, TP. Cần Thơ. SĐT: 0903849881
+		</template>
+	</category>
+	<category>
+		<pattern>* HOMESTAY * BEN TRE *</pattern>
+		<template><srai>HOMESTAY BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * HOMESTAY *</pattern>
+		<template><srai>HOMESTAY BEN TRE</srai></template>
+	</category>
+	<!-- HOẠT ĐỘNG CẦN THƠ -->
+	<category>
+		<pattern>HOAT DONG BEN TRE</pattern>
+		<template>
+			select activity_ten as food_ten, activity_mota as food_diachi, activity_hinhanh as food_hinhanh from activities, localactivities where activities.activity_id = localactivities.activity_id and place_id = 1 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* HOAT DONG * BEN TRE *</pattern>
+		<template><srai>HOAT DONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * HOAT DONG *</pattern>
+		<template><srai>HOAT DONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* CHOI * BEN TRE *</pattern>
+		<template><srai>HOAT DONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * CHOI *</pattern>
+		<template><srai>HOAT DONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* LAM * BEN TRE *</pattern>
+		<template><srai>HOAT DONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * LAM *</pattern>
+		<template><srai>HOAT DONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* VUI * BEN TRE *</pattern>
+		<template><srai>HOAT DONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * VUI *</pattern>
+		<template><srai>HOAT DONG BEN TRE</srai></template>
+	</category>
+	<!-- LỄ HỘI CẦN THƠ-->
+	<category>
+		<pattern>LE HOI BEN TRE</pattern>
+		<template>
+			select festival_ten as food_ten, festival_mota as food_diachi, festival_hinhanh as food_hinhanh from festivals where place_id = 1 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* LE HOI * BEN TRE *</pattern>
+		<template><srai>LE HOI BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * LE HOI *</pattern>
+		<template><srai>LE HOI BEN TRE</srai></template>
+	</category>
+	<!-- QUÀ TẶNG CẦN THƠ -->
+	<category>
+		<pattern>QUA BEN TRE</pattern>
+		<template>
+			select gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh from gifts, localgifts where gifts.gift_id = localgifts.gift_id and place_id = 1 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* QUA * BEN TRE *</pattern>
+		<template><srai>QUA BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * QUA *</pattern>
+		<template><srai>QUA BEN TRE</srai></template>
 	</category>
 </aiml>
