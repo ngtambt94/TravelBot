@@ -153,8 +153,8 @@ function sendVideoMessage(sender){
 }
 
 // menu help of bot
-function sendGenericMessage(sender, answer) {
-  var sql = answer;
+function sendGenericMessage(sender) {
+  var sql = "select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5";
   conn.connect(function (err){
     conn.query(sql, function (err,results, fields) {
       var input1 = [{
@@ -307,7 +307,7 @@ app.post('/webhook', function (req, res) {
       }]
       var callback = function(answer, wildCardArray, input){
         if (temp === 'image') {
-          sendGenericMessage(sender, answer);
+          sendGenericMessage(sender);
         }
         else if (temp === 'hey') {
           abc(sender);
@@ -316,8 +316,8 @@ app.post('/webhook', function (req, res) {
           xyz(sender);
         }
         else if (answer !== undefined && answer !== '') {
-          // sendTextMessage(sender, answer);
-          sendGenericMessage(sender, answer);
+          sendTextMessage(sender, answer);
+          // sendGenericMessage(sender, answer);
         }
         // không tìm thấy đáp án         
         else{
