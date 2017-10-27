@@ -153,7 +153,7 @@ function sendVideoMessage(sender){
 }
 
 // menu help of bot
-function sendGenericMessage(sender, answer) {
+function findFood(sender, answer) {
   var sql = "" + answer;
   conn.connect(function (err){
     conn.query(sql, function (err,results, fields) {
@@ -170,6 +170,38 @@ function sendGenericMessage(sender, answer) {
         "title": results[1]['food_ten'],
         "subtitle": results[1]['food_diachi'],
         "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[1]['food_hinhanh'],
+        "buttons": [{
+          "title": "Chi Tiết",
+          "type": "web_url",
+          "url": "https://www.google.com/search?q=" + results[1]['food_ten']
+        }],
+      }, {
+        "title": results[2]['food_ten'],
+        "subtitle": results[2]['food_diachi'],
+        "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[2]['food_hinhanh'],
+        "buttons": [{
+          "title": "Chi Tiết",
+          "type": "web_url",
+          "url": "https://www.google.com/search?q=" + results[2]['food_ten']
+        }],
+      }, {
+        "title": results[3]['food_ten'],
+        "subtitle": results[3]['food_diachi'],
+        "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[3]['food_hinhanh'],
+        "buttons": [{
+          "title": "Chi Tiết",
+          "type": "web_url",
+          "url": "https://www.google.com/search?q=" + results[3]['food_ten']
+        }],
+      }, {
+        "title": results[4]['food_ten'],
+        "subtitle": results[4]['food_diachi'],
+        "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[4]['food_hinhanh'],
+        "buttons": [{
+          "title": "Chi Tiết",
+          "type": "web_url",
+          "url": "https://www.google.com/search?q=" + results[4]['food_ten']
+        }],
       }];
       let messageData = {
         "attachment": {
@@ -322,7 +354,7 @@ app.post('/webhook', function (req, res) {
         }
         else if (answer !== undefined && answer !== '') {
           // sendTextMessage(sender, answer);
-          sendGenericMessage(sender, answer);
+          findFood(sender, answer);
         }
         // không tìm thấy đáp án         
         else{
