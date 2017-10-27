@@ -120,7 +120,7 @@
 		</template>
 	</category>
 	<category>
-		<pattern>* LA * GI *</pattern>
+		<pattern>* LA CAI * GI *</pattern>
 		<template>
 			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
 		</template>
