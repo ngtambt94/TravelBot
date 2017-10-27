@@ -6,10 +6,10 @@ aimlInterpreter.loadAIMLFilesIntoArray(['./aiml.xml']);
 var mysql = require('mysql');
 
 var conn = mysql.createConnection({
-    host    : "45.117.169.92",
-    user    : "dbquyen_travel",
-    password: "Travelbot@123",
-    database: "dbquyen_travelbot"
+  host    : "45.117.169.92",
+  user    : "dbquyen_travel",
+  password: "Travelbot@123",
+  database: "dbquyen_travelbot"
 });
 
 // var conn = mysql.createConnection({
@@ -19,20 +19,36 @@ var conn = mysql.createConnection({
 //     database: 'b24_20917246_tourdb'
 // });
 
-
+var x = [];
 conn.connect(function (err){
     //nếu có nỗi thì in ra
     if (err) throw err.stack;
     //nếu thành công
     var sql = "select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5";
-    conn.query(sql, function (err,results, fields) {
-        // if (err) throw err;
-        console.log(results[0]['food_ten']);
-        // for (var i = 0; i < results.length; i++) {
-        //   console.log(i);
-        // }
+//     conn.query(sql, function (err,results, fields) {
+//         // if (err) throw err;
+//         var x = "" + results[0]['food_ten'];
+//         console.log(x);
+//         // for (var i = 0; i < results.length; i++) {
+//         //   console.log(i);
+//         // }
+//     });
+// });
+
+      conn.query(sql, function (err,results, fields) {
+        let x = [{
+          "title": results[0]['food_ten'],
+          "subtitle": results[0]['food_diachi'],
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[0]['food_hinhanh'],
+        }, {
+          "title": results[1]['food_ten'],
+          "subtitle": results[1]['food_diachi'],
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[1]['food_hinhanh'],
+        }];
+        return x;
+      });
     });
-});
+    console.log(x);
 
 // var callback = function(answer, wildCardArray, input){
 //     // console.log(answer);
