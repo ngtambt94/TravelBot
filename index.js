@@ -160,12 +160,12 @@ function sendGenericMessage(sender) {
       "payload": {
         "template_type": "generic",
         "elements": [{
-          "title": "Menu giúp đỡ",
-          "subtitle": "Đây là những điều mình có thể làm",
+          "title": "Bánh Cống",
+          "subtitle": "86/38, đường Lý Tự Trọng, phường An Cư, quận Ninh Kiều.",
           "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
         }, {
-          "title": "Menu",
-          "subtitle": "Bánh bèo",
+          "title": "Bánh bèo",
+          "subtitle": "17, Đại lộ Hòa Bình,quận Ninh Kiều",
           "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhbeo.jpg",
         }]
       }
