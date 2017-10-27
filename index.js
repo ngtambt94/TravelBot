@@ -153,13 +153,13 @@ function sendVideoMessage(sender){
 }
 
 // menu help of bot
-function sendGenericMessage(sender, input) {
+function sendGenericMessage(sender, input1) {
   let messageData = {
     "attachment": {
       "type": "template",
       "payload": {
         "template_type": "generic",
-        "elements": input,
+        "elements": input1,
       }
     }
   }
@@ -281,7 +281,7 @@ app.post('/webhook', function (req, res) {
         temp += convert(text[j]);
       }
       // hàm callback trả về đáp án
-      var input = [{
+      var input1 = [{
           "title": "Bánh Cống",
           "subtitle": "86/38, đường Lý Tự Trọng, phường An Cư, quận Ninh Kiều.",
           "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
@@ -292,7 +292,7 @@ app.post('/webhook', function (req, res) {
         }]
       var callback = function(answer, wildCardArray, input){
         if (temp === 'image') {
-          sendGenericMessage(sender, input);
+          sendGenericMessage(sender, input1);
         }
         else if (temp === 'hey') {
           abc(sender);
