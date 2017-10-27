@@ -161,6 +161,11 @@ function sendGenericMessage(sender, answer) {
         "title": results[0]['food_ten'],
         "subtitle": results[0]['food_diachi'],
         "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[0]['food_hinhanh'],
+        "buttons": [{
+          "title": "Chi Tiết",
+          "type": "web_url",
+          "url": "https://www.google.com/search?q=lau%20mam%20da%20ly"   
+        }],
       }, {
         "title": results[1]['food_ten'],
         "subtitle": results[1]['food_diachi'],
