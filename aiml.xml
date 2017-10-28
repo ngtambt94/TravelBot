@@ -1020,4 +1020,18 @@
 			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5
 		</template>
 	</category>
+	<category>
+		<pattern>* NHA HANG *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, ...</that>
+		<template>
+			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 1 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* MON AN *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, ...</that>
+		<template>
+			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5
+		</template>
+	</category>
 </aiml>
