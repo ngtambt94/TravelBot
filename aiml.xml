@@ -938,8 +938,9 @@
 		<pattern>* DA LAT * QUA *</pattern>
 		<template><srai>QUA DA LAT</srai></template>
 	</category>
+	<!-- kịch bản từ khóa du lịch -->
 	<category>
-		<pattern>DU LICH</pattern>
+		<pattern>* DU LICH</pattern>
 		<template>Bạn muốn đi du lịch ở đâu</template>
 	</category>
 	<category>
@@ -948,8 +949,33 @@
 		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5</template>
 	</category>
 	<category>
-		<pattern>* CAN THO *</pattern>
+		<pattern>* DA LAT *</pattern>
 		<that>Bạn muốn đi du lịch ở đâu</that>
 		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 22 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>* CAN THO *</pattern>
+		<that>Bạn muốn đi du lịch ở đâu</that>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 11 limit 0, 5</template>
+	</category>
+	<!-- kịch bản từ khóa ăn -->
+	<category>
+		<pattern>* AN *</pattern>
+		<template>Bạn muốn đi ăn ở đâu</template>
+	</category>
+	<category>
+		<pattern>* BEN TRE *</pattern>
+		<that>Bạn muốn đi du lịch ở đâu</that>
+		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>* DA LAT *</pattern>
+		<that>Bạn muốn đi du lịch ở đâu</that>
+		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>* CAN THO *</pattern>
+		<that>Bạn muốn đi du lịch ở đâu</that>
+		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
 	</category>
 </aiml>
