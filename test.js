@@ -1,7 +1,7 @@
 AIMLInterpreter = require('./node_modules/aimlinterpreter/AIMLInterpreter');
 
 var aimlInterpreter = new AIMLInterpreter({name:'Tam Nguyen', age:'23'});
-aimlInterpreter.loadAIMLFilesIntoArray(['./aiml.xml']);
+aimlInterpreter.loadAIMLFilesIntoArray(['./node_modules/aimlinterpreter/aiml.xml']);
 
 var mysql = require('mysql');
 
@@ -49,7 +49,7 @@ conn.query(sql, function (err,results, fields) {
       "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[1]['food_hinhanh'],
     }];
   }
-  
+
         // var y = "hello";
         // console.log(typeof x);
         // console.log(typeof y);
@@ -60,6 +60,7 @@ conn.query(sql, function (err,results, fields) {
       });
 });
     // console.log(x);
+    
 
 // var callback = function(answer, wildCardArray, input){
 //     // console.log(answer);
