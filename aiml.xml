@@ -1008,4 +1008,16 @@
 		<that>Bạn muốn đi ăn ở đâu</that>
 		<template>Bên mình chưa có dữ liệu</template>
 	</category>
+	<!-- kịch bản du lịch theo địa danh bến tre -->
+	<category>
+		<pattern>* BEN TRE</pattern>
+		<template>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, ...</template>
+	</category>
+	<category>
+		<pattern>* DIA DIEM *</pattern>
+		<that>* BEN TRE</that>
+		<template>
+			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5
+		</template>
+	</category>
 </aiml>
