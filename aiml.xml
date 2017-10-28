@@ -377,11 +377,11 @@
 		<template><srai>HOAT DONG CAN THO</srai></template>
 	</category>
 	<category>
-		<pattern>* CHOI * CAN THO *</pattern>
+		<pattern>* CHOI GI * CAN THO *</pattern>
 		<template><srai>HOAT DONG CAN THO</srai></template>
 	</category>
 	<category>
-		<pattern>* CAN THO * CHOI *</pattern>
+		<pattern>* CAN THO * CHOI * GI *</pattern>
 		<template><srai>HOAT DONG CAN THO</srai></template>
 	</category>
 	<category>
@@ -631,11 +631,11 @@
 		<template><srai>HOAT DONG BEN TRE</srai></template>
 	</category>
 	<category>
-		<pattern>* CHOI * BEN TRE *</pattern>
+		<pattern>* CHOI GI * BEN TRE *</pattern>
 		<template><srai>HOAT DONG BEN TRE</srai></template>
 	</category>
 	<category>
-		<pattern>* BEN TRE * CHOI *</pattern>
+		<pattern>* BEN TRE * CHOI GI *</pattern>
 		<template><srai>HOAT DONG BEN TRE</srai></template>
 	</category>
 	<category>
@@ -885,11 +885,11 @@
 		<template><srai>HOAT DONG DA LAT</srai></template>
 	</category>
 	<category>
-		<pattern>* CHOI * DA LAT *</pattern>
+		<pattern>* CHOI GI * DA LAT *</pattern>
 		<template><srai>HOAT DONG DA LAT</srai></template>
 	</category>
 	<category>
-		<pattern>* DA LAT * CHOI *</pattern>
+		<pattern>* DA LAT * CHOI GI *</pattern>
 		<template><srai>HOAT DONG DA LAT</srai></template>
 	</category>
 	<category>
