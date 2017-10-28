@@ -385,11 +385,11 @@
 		<template><srai>HOAT DONG CAN THO</srai></template>
 	</category>
 	<category>
-		<pattern>* LAM * CAN THO *</pattern>
+		<pattern>* LAM GI * CAN THO *</pattern>
 		<template><srai>HOAT DONG CAN THO</srai></template>
 	</category>
 	<category>
-		<pattern>* CAN THO * LAM *</pattern>
+		<pattern>* CAN THO * LAM GI *</pattern>
 		<template><srai>HOAT DONG CAN THO</srai></template>
 	</category>
 	<category>
@@ -639,11 +639,11 @@
 		<template><srai>HOAT DONG BEN TRE</srai></template>
 	</category>
 	<category>
-		<pattern>* LAM * BEN TRE *</pattern>
+		<pattern>* LAM GI * BEN TRE *</pattern>
 		<template><srai>HOAT DONG BEN TRE</srai></template>
 	</category>
 	<category>
-		<pattern>* BEN TRE * LAM *</pattern>
+		<pattern>* BEN TRE * LAM GI *</pattern>
 		<template><srai>HOAT DONG BEN TRE</srai></template>
 	</category>
 	<category>
@@ -893,11 +893,11 @@
 		<template><srai>HOAT DONG DA LAT</srai></template>
 	</category>
 	<category>
-		<pattern>* LAM * DA LAT *</pattern>
+		<pattern>* LAM GI * DA LAT *</pattern>
 		<template><srai>HOAT DONG DA LAT</srai></template>
 	</category>
 	<category>
-		<pattern>* DA LAT * LAM *</pattern>
+		<pattern>* DA LAT * LAM GI *</pattern>
 		<template><srai>HOAT DONG DA LAT</srai></template>
 	</category>
 	<category>
