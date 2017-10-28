@@ -381,7 +381,7 @@
 		<template><srai>HOAT DONG CAN THO</srai></template>
 	</category>
 	<category>
-		<pattern>* CAN THO * CHOI * GI</pattern>
+		<pattern>* CAN THO * CHOI GI *</pattern>
 		<template><srai>HOAT DONG CAN THO</srai></template>
 	</category>
 	<category>
