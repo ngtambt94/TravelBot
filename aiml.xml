@@ -958,6 +958,11 @@
 		<that>Bạn muốn đi du lịch ở đâu</that>
 		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 11 limit 0, 5</template>
 	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>Bạn muốn đi du lịch ở đâu</that>
+		<template>Bên mình chưa có dữ liệu</template>
+	</category>
 	<!-- kịch bản từ khóa ăn -->
 	<category>
 		<pattern>* AN *</pattern>
