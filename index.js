@@ -353,6 +353,10 @@ app.post('/webhook', function (req, res) {
           // sendTextMessage(sender, answer);
             findFood(sender, answer);
         }
+        else if (answer === '') {
+          // sendTextMessage(sender, answer);
+          sendTextMessage(sender, "Bên mình chưa có dữ liệu!");
+        }
         // không tìm thấy đáp án         
         else{
           sendTextMessage(sender, "Xin lỗi! Mình chưa hiểu rõ ý của bạn. Vui lòng nhập help để biết mình có thể giúp gì cho bạn.");
