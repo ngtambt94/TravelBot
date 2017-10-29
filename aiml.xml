@@ -216,6 +216,22 @@
 		<pattern>* CAN THO * CHOI O *</pattern>
 		<template><srai>DIA DIEM CAN THO</srai></template>
 	</category>
+	<category>
+		<pattern>* CANH DEP * CAN THO *</pattern>
+		<template><srai>DIA DIEM CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * CANH DEP *</pattern>
+		<template><srai>DIA DIEM CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA DANH * CAN THO *</pattern>
+		<template><srai>DIA DIEM CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * DIA DANH *</pattern>
+		<template><srai>DIA DIEM CAN THO</srai></template>
+	</category>
 	<!-- NHÀ HÀNG CẦN THƠ -->
 	<category>
 		<pattern>NHA HANG CAN THO</pattern>
@@ -470,6 +486,22 @@
 		<pattern>* BEN TRE * CHOI O *</pattern>
 		<template><srai>DIA DIEM BEN TRE</srai></template>
 	</category>
+	<category>
+		<pattern>* CANH DEP * BEN TRE *</pattern>
+		<template><srai>DIA DIEM BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * CANH DEP *</pattern>
+		<template><srai>DIA DIEM BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA DANH * BEN TRE *</pattern>
+		<template><srai>DIA DIEM BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * DIA DANH *</pattern>
+		<template><srai>DIA DIEM BEN TRE</srai></template>
+	</category>
 	<!-- NHÀ HÀNG BẾN TRE -->
 	<category>
 		<pattern>NHA HANG BEN TRE</pattern>
@@ -722,6 +754,22 @@
 	</category>
 	<category>
 		<pattern>* DA LAT * CHOI O *</pattern>
+		<template><srai>DIA DIEM DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* CANH DEP * DA LAT *</pattern>
+		<template><srai>DIA DIEM DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * CANH DEP *</pattern>
+		<template><srai>DIA DIEM DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA DANH * DA LAT *</pattern>
+		<template><srai>DIA DIEM DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * DIA DANH *</pattern>
 		<template><srai>DIA DIEM DA LAT</srai></template>
 	</category>
 	<!-- NHÀ HÀNG ĐÀ LẠT -->
