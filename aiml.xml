@@ -1095,8 +1095,94 @@
 		<template><srai>KHACH SAN BEN TRE</srai></template>
 	</category>
 	<category>
-		<pattern>* QUA TANG *</pattern>
+		<pattern>* QUA *</pattern>
 		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
 		<template><srai>QUA BEN TRE</srai></template>
+	</category>
+	<!-- kịch bản du lịch cần thơ -->
+	<category>
+		<pattern>* CAN THO</pattern>
+		<template>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
+	</category>
+	<category>
+		<pattern>* DIA DIEM *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template>
+			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 11 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template>
+			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 11 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* MON *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template>
+			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* AN *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template>
+			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template><srai>QUA CAN THO</srai></template>
+	</category>
+	<!-- kịch bản du lịch đà lạt -->
+	<category>
+		<pattern>* DA LAT</pattern>
+		<template>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
+	</category>
+	<category>
+		<pattern>* DIA DIEM *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template>
+			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template>
+			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* MON *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template>
+			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* AN *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template>
+			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template><srai>QUA DA LAT</srai></template>
 	</category>
 </aiml>
