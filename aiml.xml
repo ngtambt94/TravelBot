@@ -197,6 +197,10 @@
 		<pattern>U</pattern>
 		<template><srai>UM</srai></template>
 	</category>
+	<category>
+		<pattern>UH</pattern>
+		<template><srai>UM</srai></template>
+	</category>
 	<!-- CẢM ƠN -->
 	<category>
 		<pattern>CAM ON</pattern>
