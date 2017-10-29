@@ -1058,7 +1058,7 @@
 	</category>
 	<!-- kịch bản du lịch theo địa danh bến tre -->
 	<category>
-		<pattern>* DU LICH * BEN TRE</pattern>
+		<pattern>* BEN TRE</pattern>
 		<template>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
 	</category>
 	<category>
