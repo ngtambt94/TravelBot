@@ -1024,6 +1024,11 @@
 		<template>Bạn muốn đi du lịch ở đâu</template>
 	</category>
 	<category>
+		<pattern>* BIET *</pattern>
+		<that>Bạn muốn đi du lịch ở đâu</that>
+		<template>Mình có 3 gợi ý: Cần Thơ, Bến Tre, Đà Lạt</template>
+	</category>
+	<category>
 		<pattern>* BEN TRE *</pattern>
 		<that>Bạn muốn đi du lịch ở đâu</that>
 		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5</template>
@@ -1041,6 +1046,31 @@
 	<!-- kịch bản đi đâu -->
 	<category>
 		<pattern>* DI DAU *</pattern>
+		<template>Bạn muốn đi đâu?</template>
+	</category>
+	<category>
+		<pattern>* BIET *</pattern>
+		<that>Bạn muốn đi đâu?</that>
+		<template>Mình có 3 gợi ý: Cần Thơ, Bến Tre, Đà Lạt</template>
+	</category>
+	<category>
+		<pattern>* BEN TRE *</pattern>
+		<that>Bạn muốn đi đâu?</that>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>* DA LAT *</pattern>
+		<that>Bạn muốn đi đâu?</that>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 22 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>* CAN THO *</pattern>
+		<that>Bạn muốn đi đâu?</that>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 11 limit 0, 5</template>
+	</category>
+	<!-- kịch bản đi chơi -->
+	<category>
+		<pattern>* DI CHOI *</pattern>
 		<template>Bạn muốn đi đâu?</template>
 	</category>
 	<category>
