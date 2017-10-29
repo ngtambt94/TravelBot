@@ -988,7 +988,7 @@
 	</category>
 	<!-- kịch bản từ khóa du lịch -->
 	<category>
-		<pattern>* DU LICH</pattern>
+		<pattern>* DU LICH *</pattern>
 		<template>Bạn muốn đi du lịch ở đâu</template>
 	</category>
 	<category>
