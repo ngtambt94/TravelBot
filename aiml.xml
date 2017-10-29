@@ -126,8 +126,22 @@
 		</template>
 	</category>
 	<category>
+		<pattern>* LA GI *</pattern>
+		<template>
+			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
+		</template>
+	</category>
+	<category>
 		<pattern>* GIOI THIEU *</pattern>
 		<template>Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...</template>
+	</category>
+	<category>
+		<pattern>* DEN TU *</pattern>
+		<template>Mình đến từ sự siêng năng và cần cù của Tam Nguyen!</template>
+	</category>
+	<category>
+		<pattern>* TU * DEN</pattern>
+		<template>Mình đến từ sự siêng năng và cần cù của Tam Nguyen!</template>
 	</category>
 	<category>
 		<pattern>* TAO * BAN</pattern>
@@ -164,6 +178,24 @@
 	<category>
 		<pattern>* SHIT *</pattern>
 		<template><srai>WTF *</srai></template>
+	</category>
+	<category>
+		<pattern>UM</pattern>
+		<template>
+			OK! Bạn cần gì nào?
+		</template>
+	</category>
+	<category>
+		<pattern>AH</pattern>
+		<template><srai>UM</srai></template>
+	</category>
+	<category>
+		<pattern>OH</pattern>
+		<template><srai>UM</srai></template>
+	</category>
+	<category>
+		<pattern>U</pattern>
+		<template><srai>UM</srai></template>
 	</category>
 	<!-- CẢM ƠN -->
 	<category>
