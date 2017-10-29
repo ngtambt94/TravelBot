@@ -1076,7 +1076,14 @@
 		</template>
 	</category>
 	<category>
-		<pattern>* MON AN *</pattern>
+		<pattern>* MON *</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template>
+			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>* AN *</pattern>
 		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
 		<template>
 			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5
