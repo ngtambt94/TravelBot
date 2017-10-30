@@ -368,7 +368,7 @@
 	<category>
 		<pattern>* CAO CAP *</pattern>
 		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
-		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 ORDER BY hotel_giatu desc LIMIT 0,5
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 ORDER BY hotel_chatluongsao desc LIMIT 0,5
 		</template>
 	</category>
 	<category>
@@ -644,7 +644,19 @@
 	<category>
 		<pattern>KHACH SAN BEN TRE</pattern>
 		<template>
-			select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 limit 0, 5
+			Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?
+		</template>
+	</category>
+	<category>
+		<pattern>* CAO CAP *</pattern>
+		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 ORDER BY hotel_chatluongsao desc LIMIT 0,5
+		</template>
+	</category>
+	<category>
+		<pattern>* RE *</pattern>
+		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 ORDER BY hotel_giatu LIMIT 0,5
 		</template>
 	</category>
 	<category>
@@ -914,7 +926,19 @@
 	<category>
 		<pattern>KHACH SAN DA LAT</pattern>
 		<template>
-			select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 limit 0, 5
+			Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?
+		</template>
+	</category>
+	<category>
+		<pattern>* CAO CAP *</pattern>
+		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 ORDER BY hotel_chatluongsao desc LIMIT 0,5
+		</template>
+	</category>
+	<category>
+		<pattern>* RE *</pattern>
+		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 ORDER BY hotel_giatu LIMIT 0,5
 		</template>
 	</category>
 	<category>
