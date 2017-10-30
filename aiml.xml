@@ -362,7 +362,7 @@
 	<category>
 		<pattern>KHACH SAN CAN THO</pattern>
 		<template>
-			Bạn muốn tìm khách sạn theo tiêu chí nào? Giá rẻ hay Cao cấp?
+			Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?
 		</template>
 	</category>
 	<category>
