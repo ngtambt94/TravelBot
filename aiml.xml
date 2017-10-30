@@ -378,6 +378,24 @@
 		</template>
 	</category>
 	<category>
+		<pattern>* QUA DEM * RE * CAN THO</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 ORDER BY hotel_giatu LIMIT 0,5
+		</template>
+	</category>
+	<category>
+		<pattern>* CAN THO * QUA DEM * RE</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 ORDER BY hotel_giatu LIMIT 0,5
+		</template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * CAN THO *</pattern>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * QUA DEM *</pattern>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
 		<pattern>* CAN THO * KHACH SAN *</pattern>
 		<template><srai>KHACH SAN CAN THO</srai></template>
 	</category>
@@ -660,6 +678,24 @@
 		</template>
 	</category>
 	<category>
+		<pattern>* QUA DEM * RE * BEN TRE</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 ORDER BY hotel_giatu LIMIT 0,5
+		</template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * QUA DEM * RE</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 ORDER BY hotel_giatu LIMIT 0,5
+		</template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * BEN TRE *</pattern>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * QUA DEM *</pattern>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
 		<pattern>* BEN TRE * KHACH SAN *</pattern>
 		<template><srai>KHACH SAN BEN TRE</srai></template>
 	</category>
@@ -940,6 +976,24 @@
 		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
 		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 ORDER BY hotel_giatu LIMIT 0,5
 		</template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * RE * DA LAT</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 ORDER BY hotel_giatu LIMIT 0,5
+		</template>
+	</category>
+	<category>
+		<pattern>* DA LAT * QUA DEM * RE</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 ORDER BY hotel_giatu LIMIT 0,5
+		</template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * DA LAT *</pattern>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * QUA DEM *</pattern>
+		<template><srai>KHACH SAN DA LAT</srai></template>
 	</category>
 	<category>
 		<pattern>* DA LAT * KHACH SAN *</pattern>
