@@ -202,6 +202,24 @@
 		<pattern>UH</pattern>
 		<template><srai>UM</srai></template>
 	</category>
+	<category>
+		<pattern>* THIET HON *</pattern>
+		<template>
+			Mình nói thiệt mà!
+		</template>
+	</category>
+	<category>
+		<pattern>* THIET KHONG *</pattern>
+		<template>
+			Tin mình đi!
+		</template>
+	</category>
+	<category>
+		<pattern>* THIET HA *</pattern>
+		<template>
+			Mình nói thiệt mà!
+		</template>
+	</category>
 	<!-- CẢM ƠN -->
 	<category>
 		<pattern>CAM ON</pattern>
@@ -1190,8 +1208,12 @@
 	</category>
 	<!-- kịch bản tui đi -->
 	<category>
-		<pattern>* TUI * DI</pattern>
+		<pattern>TUI DI</pattern>
 		<template>Bạn muốn đi đâu?</template>
+	</category>
+	<category>
+		<pattern>* TUI * DI</pattern>
+		<srai>TUI DI</srai>
 	</category>
 	<category>
 		<pattern>* BIET *</pattern>
@@ -1240,8 +1262,12 @@
 	</category>
 	<!-- kịch bản món ngon -->
 	<category>
-		<pattern>* MON *</pattern>
+		<pattern>MON NGON</pattern>
 		<template>Bạn muốn đi ăn ở đâu</template>
+	</category>
+	<category>
+		<pattern>* MON *</pattern>
+		<srai>MON NGON</srai>
 	</category>
 	<category>
 		<pattern>* BEN TRE *</pattern>
@@ -1391,5 +1417,34 @@
 		<pattern>* QUA *</pattern>
 		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
 		<template><srai>QUA DA LAT</srai></template>
+	</category>
+	<!-- kịch bản qua đêm -->
+	<category>
+		<pattern>QUA DEM</pattern>
+		<template>
+			Mình có 3 gợi ý: Bến Tre, Cần Thơ, Đà Lạt. Bạn muốn qua đêm ở đâu?
+		</template>
+	</category>
+	<!-- kịch bản địa điểm -->
+	<category>
+		<pattern>* DIA DIEM *</pattern>
+		<template>
+			Bạn muốn tìm địa điểm nào: ăn uống, qua đêm hay vui chơi?
+		</template>
+	</category>
+	<category>
+		<pattern>* AN *</pattern>
+		<that>Bạn muốn tìm địa điểm nào: ăn uống, qua đêm hay vui chơi?</that>
+		<template><srai>MON NGON</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM *</pattern>
+		<that>Bạn muốn tìm địa điểm nào: ăn uống, qua đêm hay vui chơi?</that>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* CHOI *</pattern>
+		<that>Bạn muốn tìm địa điểm nào: ăn uống, qua đêm hay vui chơi?</that>
+		<template><srai>TUI DI</srai></template>
 	</category>
 </aiml>
