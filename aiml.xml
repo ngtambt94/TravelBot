@@ -94,46 +94,47 @@
 	<category>
 		<pattern>* HELP *</pattern>
 		<template>
-			Hi bạn! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
+			Hi bạn! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
 		</template>
 	</category>
 	<category>
 		<pattern>* GIUP *</pattern>
-		<template>Hi bạn! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...</template>
+		<template>Hi bạn! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt</template>
 	</category>
 	<category>
 		<pattern>* CAN YOU HELP ME *</pattern>
 		<template>
-			Tất nhiên rồi! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
+			Tất nhiên rồi! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
 		</template>
 	</category>
 	<category>
 		<pattern>* WHO ARE YOU *</pattern>
 		<template>
-			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
+			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
 		</template>
 	</category>	
 	<category>
 		<pattern>* LA AI *</pattern>
 		<template>
-			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
+			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
 		</template>
 	</category>
 	<category>
 		<pattern>* LA CAI * GI *</pattern>
 		<template>
-			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
+			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
 		</template>
 	</category>
 	<category>
 		<pattern>* LA GI *</pattern>
 		<template>
-			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...
+			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
 		</template>
 	</category>
 	<category>
 		<pattern>* GIOI THIEU *</pattern>
-		<template>Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ...</template>
+		<template>Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
+		</template>
 	</category>
 	<category>
 		<pattern>* DEN TU *</pattern>
