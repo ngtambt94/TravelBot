@@ -1425,6 +1425,21 @@
 			Mình có 3 gợi ý: Bến Tre, Cần Thơ, Đà Lạt. Bạn muốn qua đêm ở đâu?
 		</template>
 	</category>
+	<category>
+		<pattern>* BEN TRE *</pattern>
+		<that>Mình có 3 gợi ý: Bến Tre, Cần Thơ, Đà Lạt. Bạn muốn qua đêm ở đâu?</that>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO *</pattern>
+		<that>Mình có 3 gợi ý: Bến Tre, Cần Thơ, Đà Lạt. Bạn muốn qua đêm ở đâu?</that>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT *</pattern>
+		<that>Mình có 3 gợi ý: Bến Tre, Cần Thơ, Đà Lạt. Bạn muốn qua đêm ở đâu?</that>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
 	<!-- kịch bản địa điểm -->
 	<category>
 		<pattern>* DIA DIEM *</pattern>
