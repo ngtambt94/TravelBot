@@ -1291,8 +1291,32 @@
 	</category>
 	<!-- kịch bản du lịch theo địa danh bến tre -->
 	<category>
-		<pattern>* BEN TRE</pattern>
+		<pattern>DU LICH BEN TRE</pattern>
 		<template>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
+	</category>
+	<category>
+		<pattern>* DU LICH * BEN TRE</pattern>
+		<template><srai>DU LICH BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* DI * BEN TRE</pattern>
+		<template><srai>DU LICH BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* DEN * BEN TRE</pattern>
+		<template><srai>DU LICH BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* TOI * BEN TRE</pattern>
+		<template><srai>DU LICH BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* GHE * BEN TRE</pattern>
+		<template><srai>DU LICH BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* THAM * BEN TRE</pattern>
+		<template><srai>DU LICH BEN TRE</srai></template>
 	</category>
 	<category>
 		<pattern>* DIA DIEM *</pattern>
@@ -1334,8 +1358,32 @@
 	</category>
 	<!-- kịch bản du lịch cần thơ -->
 	<category>
-		<pattern>* CAN THO</pattern>
+		<pattern>DU LICH CAN THO</pattern>
 		<template>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
+	</category>
+	<category>
+		<pattern>* DU LICH * CAN THO</pattern>
+		<template><srai>DU LICH CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* DI * CAN THO</pattern>
+		<template><srai>DU LICH CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* DEN * CAN THO</pattern>
+		<template><srai>DU LICH CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* TOI * CAN THO</pattern>
+		<template><srai>DU LICH CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* GHE * CAN THO</pattern>
+		<template><srai>DU LICH CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* THAM * CAN THO</pattern>
+		<template><srai>DU LICH CAN THO</srai></template>
 	</category>
 	<category>
 		<pattern>* DIA DIEM *</pattern>
@@ -1377,8 +1425,32 @@
 	</category>
 	<!-- kịch bản du lịch đà lạt -->
 	<category>
-		<pattern>* DA LAT</pattern>
+		<pattern>DU LICH DA LAT</pattern>
 		<template>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
+	</category>
+	<category>
+		<pattern>* DU LICH * DA LAT</pattern>
+		<template><srai>DU LICH DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DI * DA LAT</pattern>
+		<template><srai>DU LICH DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DEN * DA LAT</pattern>
+		<template><srai>DU LICH DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* TOI * DA LAT</pattern>
+		<template><srai>DU LICH DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* GHE * DA LAT</pattern>
+		<template><srai>DU LICH DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* THAM * DA LAT</pattern>
+		<template><srai>DU LICH DA LAT</srai></template>
 	</category>
 	<category>
 		<pattern>* DIA DIEM *</pattern>
@@ -1424,6 +1496,10 @@
 		<template>
 			Mình có 3 gợi ý: Bến Tre, Cần Thơ, Đà Lạt. Bạn muốn qua đêm ở đâu?
 		</template>
+	</category>
+	<category>
+		<pattern>* QUA DEM *</pattern>
+		<template><srai>QUA DEM</srai></template>
 	</category>
 	<category>
 		<pattern>* BEN TRE *</pattern>
