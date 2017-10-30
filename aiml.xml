@@ -374,7 +374,7 @@
 	<category>
 		<pattern>* RE *</pattern>
 		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
-		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 ORDER BY hotel_giatu desc LIMIT 0,5
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 ORDER BY hotel_giatu LIMIT 0,5
 		</template>
 	</category>
 	<category>
