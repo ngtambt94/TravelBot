@@ -1445,19 +1445,19 @@
 		<template>Mình có 3 gợi ý: Cần Thơ, Bến Tre, Đà Lạt</template>
 	</category>
 	<category>
-		<pattern>BEN TRE</pattern>
+		<pattern>* BEN TRE *</pattern>
 		<that>Bạn muốn đi du lịch ở đâu</that>
-		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5</template>
+		<template><srai>BEN TRE</srai></template>
 	</category>
 	<category>
-		<pattern>DA LAT</pattern>
+		<pattern>* DA LAT* </pattern>
 		<that>Bạn muốn đi du lịch ở đâu</that>
-		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 22 limit 0, 5</template>
+		<template><srai>DA LAT</srai></template>
 	</category>
 	<category>
-		<pattern>CAN THO</pattern>
+		<pattern>* CAN THO *</pattern>
 		<that>Bạn muốn đi du lịch ở đâu</that>
-		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 11 limit 0, 5</template>
+		<template><srai>CAN THO</srai></template>
 	</category>
 	<!-- kịch bản đi đâu -->
 	<category>
@@ -1472,17 +1472,17 @@
 	<category>
 		<pattern>* BEN TRE *</pattern>
 		<that>Bạn muốn đi đâu?</that>
-		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5</template>
+		<template><srai>BEN TRE</srai></template>
 	</category>
 	<category>
 		<pattern>* DA LAT *</pattern>
 		<that>Bạn muốn đi đâu?</that>
-		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 22 limit 0, 5</template>
+		<template><srai>DA LAT</srai></template>
 	</category>
 	<category>
 		<pattern>* CAN THO *</pattern>
 		<that>Bạn muốn đi đâu?</that>
-		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 11 limit 0, 5</template>
+		<template><srai>CAN THO</srai></template>
 	</category>
 	<!-- kịch bản đi chơi -->
 	<category>
@@ -1497,17 +1497,17 @@
 	<category>
 		<pattern>* BEN TRE *</pattern>
 		<that>Bạn muốn đi đâu?</that>
-		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5</template>
+		<template><srai>BEN TRE</srai></template>
 	</category>
 	<category>
 		<pattern>* DA LAT *</pattern>
 		<that>Bạn muốn đi đâu?</that>
-		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 22 limit 0, 5</template>
+		<template><srai>DA LAT</srai></template>
 	</category>
 	<category>
 		<pattern>* CAN THO *</pattern>
 		<that>Bạn muốn đi đâu?</that>
-		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 11 limit 0, 5</template>
+		<template><srai>CAN THO</srai></template>
 	</category>
 	<!-- kịch bản tui đi -->
 	<category>
@@ -1526,16 +1526,16 @@
 	<category>
 		<pattern>* BEN TRE *</pattern>
 		<that>Bạn muốn đi đâu?</that>
-		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5</template>
+		<template><srai>BEN TRE</srai></template>
 	</category>
 	<category>
 		<pattern>* DA LAT *</pattern>
 		<that>Bạn muốn đi đâu?</that>
-		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 22 limit 0, 5</template>
+		<template><srai>DA LAT</srai></template>
 	</category>
 	<category>
 		<pattern>* CAN THO *</pattern>
 		<that>Bạn muốn đi đâu?</that>
-		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 11 limit 0, 5</template>
+		<template><srai>CAN THO</srai></template>
 	</category>
 </aiml>
