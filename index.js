@@ -280,36 +280,33 @@ app.post('/webhook', function (req, res) {
     // kiểm tra sự kiện có tin nhắn đến
     if (event.message && event.message.text) {
       let text = event.message.text;
-      if (text.match(check)) {
-        sendTextMessage(sender, "Vui lòng đừng nhập icon cảm xúc! :)");
+      let temp = "";
+      var check = /^[()^;:-_<>*|]{2,1000}$/gi;
+      for (var j = 0; j < text.length; j++) {
+        temp += convert(text[j]);
       }
-      else{
-        let temp = "";
-        for (var j = 0; j < text.length; j++) {
-          temp += convert(text[j]);
+      // hàm callback trả về đáp án
+      var callback = function(answer, wildCardArray, input){
+        if (temp === 'img') {
+          // sendGenericMessage(sender);
+          listTest(sender);
         }
-        // hàm callback trả về đáp án
-        var callback = function(answer, wildCardArray, input){
-          if (temp === 'img') {
-            // sendGenericMessage(sender);
-            listTest(sender);
-          }
-          else if (answer !== undefined && answer !== '') {
-            // sendTextMessage(sender, answer);
-            findInfo(sender, answer);
-          }
-          else if (answer === '') {
-            // sendTextMessage(sender, answer);
-            sendTextMessage(sender, "Bên mình chưa có dữ liệu!");
-          }
-          // không tìm thấy đáp án         
-          else{
-            sendTextMessage(sender, "Xin lỗi! Mình chưa hiểu rõ ý của bạn. Vui lòng nhập help để biết mình có thể giúp gì cho bạn.");
-          }
-        };
-        // kiểm tra text với file aiml
-        aimlInterpreter.findAnswerInLoadedAIMLFiles(temp, callback);
-      }
+        else if (answer !== undefined && answer !== '') {
+          // sendTextMessage(sender, answer);
+          findInfo(sender, answer);
+        }
+        else if (answer === '') {
+          // sendTextMessage(sender, answer);
+          sendTextMessage(sender, "Bên mình chưa có dữ liệu!");
+        }
+        // không tìm thấy đáp án         
+        else{
+          sendTextMessage(sender, "Xin lỗi! Mình chưa hiểu rõ ý của bạn. Vui lòng nhập help để biết mình có thể giúp gì cho bạn.");
+        }
+      };
+
+      // kiểm tra text với file aiml
+      aimlInterpreter.findAnswerInLoadedAIMLFiles(temp, callback)
     }
   }
   res.sendStatus(200)
