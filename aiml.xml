@@ -231,6 +231,17 @@
 		<pattern>* CAM ON *</pattern>
 		<template><srai>CAM ON</srai></template>
 	</category>
+	<category>
+		<pattern>* THANK *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<!-- CHÚC NGỦ NGON -->
+	<category>
+		<pattern>NGU NGON</pattern>
+		<template>
+			Mình luôn thức để được phục vụ mọi người. Chúc bạn ngủ ngon :)
+		</template>
+	</category>
 	<!-- CẦN THƠ -->
 	<!-- ĐỊA ĐIỂM VUI CHƠI -->
 	<category>
