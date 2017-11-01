@@ -1164,64 +1164,14 @@
 		<template><srai>QUA DA LAT</srai></template>
 	</category>
 	<!-- KỊCH BẢN THEO TỪ KHÓA VÀ PHÂN CẤP -->
-	<!-- kịch bản từ khóa ăn -->
-	<category>
-		<pattern>* AN *</pattern>
-		<template>Bạn muốn ăn ở đâu</template>
-	</category>
-	<category>
-		<pattern>* BEN TRE *</pattern>
-		<that>Bạn muốn ăn ở đâu</that>
-		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5</template>
-	</category>
-	<category>
-		<pattern>* DA LAT *</pattern>
-		<that>Bạn muốn ăn ở đâu</that>
-		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5</template>
-	</category>
-	<category>
-		<pattern>* CAN THO *</pattern>
-		<that>Bạn muốn ăn ở đâu</that>
-		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
-	</category>
-	<category>
-		<pattern>*</pattern>
-		<that>Bạn muốn ăn ở đâu</that>
-		<template>Bên mình chưa có dữ liệu</template>
-	</category>
-	<!-- kịch bản món ngon -->
-	<category>
-		<pattern>MON NGON</pattern>
-		<template>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</template>
-	</category>
-	<category>
-		<pattern>* MON *</pattern>
-		<srai>MON NGON</srai>
-	</category>
-	<category>
-		<pattern>* BEN TRE *</pattern>
-		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
-		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5</template>
-	</category>
-	<category>
-		<pattern>* DA LAT *</pattern>
-		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
-		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5</template>
-	</category>
-	<category>
-		<pattern>* CAN THO *</pattern>
-		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
-		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
-	</category>
-	<category>
-		<pattern>*</pattern>
-		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
-		<template>Bên mình chưa có dữ liệu</template>
-	</category>
 	<!-- kịch bản du lịch theo địa danh bến tre -->
 	<category>
-		<pattern>* BEN TRE *</pattern>
+		<pattern>BEN TRE</pattern>
 		<template>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
+	</category>
+	<category>
+		<pattern>* BEN TRE *</pattern>
+		<template><srai>BEN TRE</srai></template>
 	</category>
 	<category>
 		<pattern>* DU LICH * BEN TRE</pattern>
@@ -1245,6 +1195,14 @@
 	</category>
 	<category>
 		<pattern>* THAM * BEN TRE</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* CO * GI * BEN TRE</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * CO * GI</pattern>
 		<template><srai>BEN TRE</srai></template>
 	</category>
 	<category>
@@ -1287,8 +1245,20 @@
 	</category>
 	<!-- kịch bản du lịch cần thơ -->
 	<category>
-		<pattern>* CAN THO *</pattern>
+		<pattern>CAN THO</pattern>
 		<template>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
+	</category>
+	<category>
+		<pattern>* CAN THO *</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CO * GI * CAN THO</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * CO * GI</pattern>
+		<template><srai>CAN THO</srai></template>
 	</category>
 	<category>
 		<pattern>* DU LICH * CAN THO</pattern>
@@ -1354,8 +1324,20 @@
 	</category>
 	<!-- kịch bản du lịch đà lạt -->
 	<category>
-		<pattern>* DA LAT *</pattern>
+		<pattern>DA LAT</pattern>
 		<template>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
+	</category>
+	<category>
+		<pattern>* DA LAT *</pattern>
+		<template><srai>DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* CO * GI * DA LAT</pattern>
+		<template><srai>DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * CO * GI</pattern>
+		<template><srai>DA LAT</srai></template>
 	</category>
 	<category>
 		<pattern>* DU LICH * DA LAT</pattern>
@@ -1418,6 +1400,60 @@
 		<pattern>* QUA *</pattern>
 		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
 		<template><srai>QUA DA LAT</srai></template>
+	</category>
+	<!-- kịch bản từ khóa ăn -->
+	<category>
+		<pattern>* AN *</pattern>
+		<template>Bạn muốn tìm món ăn ở Cần Thơ, Đà Lạt hay Bến Tre?</template>
+	</category>
+	<category>
+		<pattern>* BEN TRE *</pattern>
+		<that>Bạn muốn tìm món ăn ở Cần Thơ, Đà Lạt hay Bến Tre?</that>
+		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>* DA LAT *</pattern>
+		<that>Bạn muốn tìm món ăn ở Cần Thơ, Đà Lạt hay Bến Tre?</that>
+		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>* CAN THO *</pattern>
+		<that>Bạn muốn tìm món ăn ở Cần Thơ, Đà Lạt hay Bến Tre?</that>
+		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>Bạn muốn tìm món ăn ở Cần Thơ, Đà Lạt hay Bến Tre?</that>
+		<template>Bên mình chưa có dữ liệu</template>
+	</category>
+	<!-- kịch bản món ngon -->
+	<category>
+		<pattern>MON NGON</pattern>
+		<template>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</template>
+	</category>
+	<category>
+		<pattern>* MON *</pattern>
+		<srai>MON NGON</srai>
+	</category>
+	<category>
+		<pattern>* BEN TRE *</pattern>
+		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
+		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>* DA LAT *</pattern>
+		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
+		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>* CAN THO *</pattern>
+		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
+		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>*</pattern>
+		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
+		<template>Bên mình chưa có dữ liệu</template>
 	</category>
 	<!-- kịch bản qua đêm -->
 	<category>
