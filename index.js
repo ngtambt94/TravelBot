@@ -276,41 +276,32 @@ function abc(sender) {
 
 
 // send list
-function xyz(sender){
+function listTest(sender){
   let messageData = {
     "attachment": {
       "type": "template",
       "payload": {
         "template_type": "list",
         "top_element_style": "compact",
-        "elements": [{
-          "title": "Classic T-Shirt Collection",
-          "subtitle": "See all our colors",
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",          
-          "buttons": [
-          {
-            "title": "View",
-            "type": "web_url",
-            "url": "https://travelbot94.herokuapp.com",
-            "messenger_extensions": true,
-            "webview_height_ratio": "tall",
-            "fallback_url": "https://travelbot94.herokuapp.com"            
-          }
-          ]
-        },
+        "elements": [
         {
           "title": "Classic White T-Shirt",
-          "subtitle": "See all our colors",
+          "subtitle": "100% Cotton, 200% Comfortable",
           "default_action": {
             "type": "web_url",
-            "url": "https://travelbot94.herokuapp.com",
-            "messenger_extensions": true,
-            "webview_height_ratio": "tall",
-            "fallback_url": "https://travelbot94.herokuapp.com"
+            "url": "https://peterssendreceiveapp.ngrok.io/view?item=100"
+          },
+          "buttons": [
+          {
+            "title": "Buy",
+            "type": "web_url",
+            "url": "https://peterssendreceiveapp.ngrok.io/shop?item=100"                     
           }
-        }]
+          ]                
+        }
+        ]
       }
-    }
+    }    
   }
   request({
     url: 'https://graph.facebook.com/me/messages',
@@ -362,7 +353,7 @@ app.post('/webhook', function (req, res) {
       var callback = function(answer, wildCardArray, input){
         if (temp === 'img') {
           // sendGenericMessage(sender);
-          xyz(sender);
+          listTest(sender);
         }
         else if (temp === 'hey') {
           abc(sender);
