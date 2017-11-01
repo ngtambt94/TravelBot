@@ -281,7 +281,6 @@ app.post('/webhook', function (req, res) {
     if (event.message && event.message.text) {
       let text = event.message.text;
       let temp = "";
-      var check = /^[()^;:-_<>*|]{2,1000}$/gi;
       for (var j = 0; j < text.length; j++) {
         temp += convert(text[j]);
       }
