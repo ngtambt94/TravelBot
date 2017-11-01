@@ -159,7 +159,7 @@
 	<category>
 		<pattern>* MAY *</pattern>
 		<template>
-			Sao kêu mình bằng mày?!		
+			Sao kêu mình bằng mày?! :(		
 		</template>
 	</category>
 	<category>
@@ -224,7 +224,7 @@
 	<category>
 		<pattern>CAM ON</pattern>
 		<template>
-			Cảm ơn bạn đã sử dụng TravelBot. Hẹn gặp lại.
+			Cảm ơn bạn đã sử dụng TravelBot. Hẹn gặp lại. ;)
 		</template>
 	</category>
 	<category>
@@ -241,6 +241,14 @@
 		<template>
 			Mình luôn thức để được phục vụ mọi người. Chúc bạn ngủ ngon ;)
 		</template>
+	</category>
+	<category>
+		<pattern>* NGU NGON *</pattern>
+		<template><srai>NGU NGON</srai></template>
+	</category>
+	<category>
+		<pattern>* GOOD NIGHT *</pattern>
+		<template><srai>NGU NGON</srai></template>
 	</category>
 	<!-- CẦN THƠ -->
 	<!-- ĐỊA ĐIỂM VUI CHƠI -->
