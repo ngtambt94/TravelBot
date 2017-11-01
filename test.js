@@ -24,41 +24,58 @@ conn.connect(function (err){
     //nếu có nỗi thì in ra
     // if (err) throw err.stack;
     //nếu thành công
-    // var sql = "select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5";
-    var sql = "hello";    
- // conn.query(sql, function (err,results, fields) {
-//         // if (err) throw err;
-//         var x = "" + results[0]['food_ten'];
-//         console.log(x);
-//         // for (var i = 0; i < results.length; i++) {
-//         //   console.log(i);
-//         // }
-//     });
-// });
-
-conn.query(sql, function (err,results, fields) {
-  if (err) console.log("false");
-  else{
-    let x = [{
-      "title": results[0]['food_ten'],
-      "subtitle": results[0]['food_diachi'],
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[0]['food_hinhanh'],
-    }, {
-      "title": results[1]['food_ten'],
-      "subtitle": results[1]['food_diachi'],
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[1]['food_hinhanh'],
-    }];
-  }
-
-        // var y = "hello";
-        // console.log(typeof x);
-        // console.log(typeof y);
-        // if (typeof y === "string") {
-        //   console.log("True");
-        // }
-        // console.log(conn.);
+    var sql = "select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5";
+    // var sql = "hello";    
+    conn.query(sql, function (err,results, fields) {
+        // if (err) throw err;
+        // var x = "" + results[0]['food_ten'];
+        // console.log(x);
+        var x = [];
+        for (var i = 0; i < results.length; i++) {
+          x.push(
+            {
+              "title": results[i]['food_ten'],
+              "subtitle": results[i]['food_diachi'],
+              "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[i]['food_hinhanh'],
+              "buttons": [{
+              "title": "Chi Tiết",
+              "type": "web_url",
+              "url": "https://www.google.com/search?q=" + results[i]['food_ten']
+          }],
+            }
+          );
+        }
+        console.log(x);
       });
-});
+  });
+
+// conn.query(sql, function (err,results, fields) {
+//   // if (err) console.log("false");
+//   // else{
+//     let x = [];
+//     for (var i = 0; i < sizeof(results); i++) {
+//       console.log(i);
+//     }
+//     // let x = [{
+//     //   "title": results[0]['food_ten'],
+//     //   "subtitle": results[0]['food_diachi'],
+//     //   "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[0]['food_hinhanh'],
+//     // }, {
+//     //   "title": results[1]['food_ten'],
+//     //   "subtitle": results[1]['food_diachi'],
+//     //   "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[1]['food_hinhanh'],
+//     // }];
+//   // }
+
+//         // var y = "hello";
+//         // console.log(typeof x);
+//         // console.log(typeof y);
+//         // if (typeof y === "string") {
+//         //   console.log("True");
+//         // }
+//         // console.log(conn.);
+//       });
+// });
     // console.log(x);
     
 

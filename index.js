@@ -162,58 +162,27 @@ function findInfo(sender, answer) {
       }
       else{
         sendTextMessage(sender, "Top các kết quả có thể bạn quan tâm: ");
-        var kq = [{
-          "title": results[0]['food_ten'],
-          "subtitle": results[0]['food_diachi'],
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[0]['food_hinhanh'],
-          "buttons": [{
-            "title": "Chi Tiết",
-            "type": "web_url",
-            "url": "https://www.google.com/search?q=" + results[0]['food_ten']
-          }],
-        }, {
-          "title": results[1]['food_ten'],
-          "subtitle": results[1]['food_diachi'],
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[1]['food_hinhanh'],
-          "buttons": [{
-            "title": "Chi Tiết",
-            "type": "web_url",
-            "url": "https://www.google.com/search?q=" + results[1]['food_ten']
-          }],
-        }, {
-          "title": results[2]['food_ten'],
-          "subtitle": results[2]['food_diachi'],
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[2]['food_hinhanh'],
-          "buttons": [{
-            "title": "Chi Tiết",
-            "type": "web_url",
-            "url": "https://www.google.com/search?q=" + results[2]['food_ten']
-          }],
-        }, {
-          "title": results[3]['food_ten'],
-          "subtitle": results[3]['food_diachi'],
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[3]['food_hinhanh'],
-          "buttons": [{
-            "title": "Chi Tiết",
-            "type": "web_url",
-            "url": "https://www.google.com/search?q=" + results[3]['food_ten']
-          }],
-        }, {
-          "title": results[4]['food_ten'],
-          "subtitle": results[4]['food_diachi'],
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[4]['food_hinhanh'],
-          "buttons": [{
-            "title": "Chi Tiết",
-            "type": "web_url",
-            "url": "https://www.google.com/search?q=" + results[4]['food_ten']
-          }],
-        }];
+        var ketqua = [];
+        for (var i = 0; i < results.length; i++) {
+          ketqua.push(
+          {
+            "title": results[i]['food_ten'],
+            "subtitle": results[i]['food_diachi'],
+            "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[i]['food_hinhanh'],
+            "buttons": [{
+              "title": "Chi Tiết",
+              "type": "web_url",
+              "url": "https://www.google.com/search?q=" + results[i]['food_ten']
+            }],
+          }
+          );
+        }
         let messageData = {
           "attachment": {
             "type": "template",
             "payload": {
               "template_type": "generic",
-              "elements": kq,
+              "elements": ketqua,
             }
           }
         }
