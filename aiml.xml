@@ -248,6 +248,26 @@
 		<pattern>* THANK *</pattern>
 		<template><srai>CAM ON</srai></template>
 	</category>
+	<category>
+		<pattern>* BYE *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<category>
+		<pattern>* TAM BIET *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<category>
+		<pattern>* VINH BIET *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<category>
+		<pattern>* PIPI *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<category>
+		<pattern>* CHAO THAN AI *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
 	<!-- CHÚC NGỦ NGON -->
 	<category>
 		<pattern>NGU NGON</pattern>
