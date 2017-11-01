@@ -34,16 +34,20 @@
 		<template><srai>XIN CHAO *</srai></template>
 	</category>
 	<category>
+		<pattern>BAN KHOE KHONG</pattern>
+		<template><random><li>Không thể tốt hơn! :)</li><li>Mình luôn khỏe mạnh để sẵn sàng giúp đỡ bạn! ;)</li><li>Khỏe re luôn. Hôm nay bạn cần gì? ;)</li></random></template>
+	</category>
+	<category>
 		<pattern>* BAN * KHOE KHONG *</pattern>
-		<template><random><li>Không thể tốt hơn!</li><li>Mình luôn khỏe mạnh để sẵn sàng giúp đỡ bạn!</li><li>Khỏe re luôn. Hôm nay bạn cần gì?</li></random></template>
+		<template><srai>BAN KHOE KHONG</srai></template>
 	</category>
 	<category>
 		<pattern>HOW ARE YOU *</pattern>
-		<template><random><li>Không thể tốt hơn!</li><li>Mình luôn sẵn sàng giúp đỡ bạn!</li><li>Khỏe re luôn. Hôm nay bạn cần gì?</li></random></template>
+		<template><srai>BAN KHOE KHONG</srai></template>
 	</category>
 	<category>
 		<pattern>HOM NAY * THE NAO *</pattern>
-		<template><random><li>Không thể tốt hơn!</li><li>Mình luôn sẵn sàng giúp đỡ bạn!</li><li>Khỏe re luôn. Hôm nay bạn cần gì?</li></random></template>
+		<template><srai>BAN KHOE KHONG</srai></template>
 	</category>
 	<!-- thông tin thêm -->
 	<category>
@@ -92,69 +96,80 @@
 	</category>
 	<!-- trợ giúp -->
 	<category>
-		<pattern>* HELP *</pattern>
+		<pattern>HELP</pattern>
 		<template>
 			Hi bạn! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
 		</template>
 	</category>
 	<category>
+		<pattern>* HELP *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
 		<pattern>* GIUP *</pattern>
-		<template>Hi bạn! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt</template>
+		<template><srai>HELP</srai></template>
 	</category>
 	<category>
-		<pattern>* CAN YOU HELP ME *</pattern>
+		<pattern>* CUU *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>WHO ARE YOU</pattern>
 		<template>
-			Tất nhiên rồi! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
+			Mình là TravelBot! ;) Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
 		</template>
 	</category>
 	<category>
-		<pattern>* WHO ARE YOU *</pattern>
-		<template>
-			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
-		</template>
-	</category>	
+	<pattern>* WHO ARE YOU *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
 	<category>
 		<pattern>* LA AI *</pattern>
-		<template>
-			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
-		</template>
+		<template><srai>WHO ARE YOU</srai></template>
 	</category>
 	<category>
 		<pattern>* LA CAI * GI *</pattern>
-		<template>
-			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
-		</template>
+		<template><srai>WHO ARE YOU</srai></template>
 	</category>
 	<category>
 		<pattern>* LA GI *</pattern>
-		<template>
-			Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
-		</template>
+		<template><srai>WHO ARE YOU</srai></template>
 	</category>
 	<category>
 		<pattern>* GIOI THIEU *</pattern>
-		<template>Mình là TravelBot! Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
-		</template>
+		<template><srai>WHO ARE YOU</srai></template>
 	</category>
 	<category>
-		<pattern>* DEN TU *</pattern>
+		<pattern>* TEN * GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>DEN TU DAU</pattern>
 		<template>Mình đến từ sự siêng năng và cần cù của Tam Nguyen!</template>
+	</category>
+	<category>
+		<pattern>* DEN * TU DAU</pattern>
+		<template><srai>DEN TU DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DEN * NAO</pattern>
+		<template><srai>DEN TU DAU</srai></template>
 	</category>
 	<category>
 		<pattern>* TU * DEN</pattern>
-		<template>Mình đến từ sự siêng năng và cần cù của Tam Nguyen!</template>
+		<template><srai>DEN TU DAU</srai></template>
 	</category>
 	<category>
 		<pattern>* TAO * BAN</pattern>
 		<template>Tam Nguyen đã tạo ra mình</template>
 	</category>
 	<category>
-		<pattern>* AD *</pattern>
-		<template><random><li>TravelBot ở đây! Bạn cần giúp gì?</li><li>Dạ em ở đây ạ. Em có thể giúp gì ạ?</li><li>Travel sẵn sàng phục vụ!</li></random></template>
+		<pattern>AD</pattern>
+		<template><random><li>TravelBot ở đây! Bạn cần giúp gì? :)</li><li>Dạ em ở đây ạ. Em có thể giúp gì ạ? ;)</li><li>Travel sẵn sàng phục vụ! :)</li></random></template>
 	</category>
 	<category>
-		<pattern>* AD * DAU *</pattern>
-		<template><random><li>TravelBot ở đây! Bạn cần giúp gì?</li><li>Dạ em ở đây ạ. Em có thể giúp gì ạ?</li><li>Travel sẵn sàng phục vụ!</li></random></template>
+		<pattern>* AD *</pattern>
+		<template><srai>AD</srai></template>
 	</category>
 	<category>
 		<pattern>* MAY *</pattern>
@@ -203,22 +218,20 @@
 		<template><srai>UM</srai></template>
 	</category>
 	<category>
+		<pattern>THIET HON</pattern>
+		<template><random><li>Tin minh đi :)</li><li>Mình nói thiệt ;)</li><li>Thiệt mà! Phải tin mình chứ :)</li></random></template>
+	</category>
+	<category>
 		<pattern>* THIET HON *</pattern>
-		<template>
-			Mình nói thiệt mà!
-		</template>
+		<template><srai>THIET HON</srai></template>
 	</category>
 	<category>
 		<pattern>* THIET KHONG *</pattern>
-		<template>
-			Tin mình đi!
-		</template>
+		<template><srai>THIET HON</srai></template>
 	</category>
 	<category>
 		<pattern>* THIET HA *</pattern>
-		<template>
-			Mình nói thiệt mà!
-		</template>
+		<template><srai>THIET HON</srai></template>
 	</category>
 	<!-- CẢM ƠN -->
 	<category>
@@ -1150,6 +1163,7 @@
 		<pattern>* DA LAT * QUA *</pattern>
 		<template><srai>QUA DA LAT</srai></template>
 	</category>
+	<!-- KỊCH BẢN THEO TỪ KHÓA VÀ PHÂN CẤP -->
 	<!-- kịch bản từ khóa ăn -->
 	<category>
 		<pattern>* AN *</pattern>
@@ -1178,7 +1192,7 @@
 	<!-- kịch bản món ngon -->
 	<category>
 		<pattern>MON NGON</pattern>
-		<template>Bạn muốn đi ăn ở đâu</template>
+		<template>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</template>
 	</category>
 	<category>
 		<pattern>* MON *</pattern>
@@ -1186,27 +1200,27 @@
 	</category>
 	<category>
 		<pattern>* BEN TRE *</pattern>
-		<that>Bạn muốn đi ăn ở đâu</that>
+		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
 		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5</template>
 	</category>
 	<category>
 		<pattern>* DA LAT *</pattern>
-		<that>Bạn muốn đi ăn ở đâu</that>
+		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
 		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5</template>
 	</category>
 	<category>
 		<pattern>* CAN THO *</pattern>
-		<that>Bạn muốn đi ăn ở đâu</that>
+		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
 		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
 	</category>
 	<category>
 		<pattern>*</pattern>
-		<that>Bạn muốn đi ăn ở đâu</that>
+		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
 		<template>Bên mình chưa có dữ liệu</template>
 	</category>
 	<!-- kịch bản du lịch theo địa danh bến tre -->
 	<category>
-		<pattern>BEN TRE</pattern>
+		<pattern>* BEN TRE *</pattern>
 		<template>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
 	</category>
 	<category>
@@ -1273,7 +1287,7 @@
 	</category>
 	<!-- kịch bản du lịch cần thơ -->
 	<category>
-		<pattern>CAN THO</pattern>
+		<pattern>* CAN THO *</pattern>
 		<template>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
 	</category>
 	<category>
@@ -1340,7 +1354,7 @@
 	</category>
 	<!-- kịch bản du lịch đà lạt -->
 	<category>
-		<pattern>DA LAT</pattern>
+		<pattern>* DA LAT *</pattern>
 		<template>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
 	</category>
 	<category>
@@ -1456,82 +1470,82 @@
 	<!-- kịch bản từ khóa du lịch -->
 	<category>
 		<pattern>* DU LICH *</pattern>
-		<template>Bạn muốn đi du lịch ở đâu</template>
+		<template>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi du lịch ở đâu</template>
 	</category>
 	<category>
 		<pattern>* BIET *</pattern>
-		<that>Bạn muốn đi du lịch ở đâu</that>
+		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi du lịch ở đâu</that>
 		<template>Mình có 3 gợi ý: Cần Thơ, Bến Tre, Đà Lạt</template>
 	</category>
 	<category>
 		<pattern>* BEN TRE *</pattern>
-		<that>Bạn muốn đi du lịch ở đâu</that>
+		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi du lịch ở đâu</that>
 		<template><srai>BEN TRE</srai></template>
 	</category>
 	<category>
 		<pattern>* DA LAT* </pattern>
-		<that>Bạn muốn đi du lịch ở đâu</that>
+		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi du lịch ở đâu</that>
 		<template><srai>DA LAT</srai></template>
 	</category>
 	<category>
 		<pattern>* CAN THO *</pattern>
-		<that>Bạn muốn đi du lịch ở đâu</that>
+		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi du lịch ở đâu</that>
 		<template><srai>CAN THO</srai></template>
 	</category>
 	<!-- kịch bản đi đâu -->
 	<category>
 		<pattern>* DI DAU *</pattern>
-		<template>Bạn muốn đi đâu?</template>
+		<template>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đâu?</template>
 	</category>
 	<category>
 		<pattern>* BIET *</pattern>
-		<that>Bạn muốn đi đâu?</that>
+		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đâu?</that>
 		<template>Mình có 3 gợi ý: Cần Thơ, Bến Tre, Đà Lạt</template>
 	</category>
 	<category>
 		<pattern>* BEN TRE *</pattern>
-		<that>Bạn muốn đi đâu?</that>
+		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đâu?</that>
 		<template><srai>BEN TRE</srai></template>
 	</category>
 	<category>
 		<pattern>* DA LAT *</pattern>
-		<that>Bạn muốn đi đâu?</that>
+		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đâu?</that>
 		<template><srai>DA LAT</srai></template>
 	</category>
 	<category>
 		<pattern>* CAN THO *</pattern>
-		<that>Bạn muốn đi đâu?</that>
+		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đâu?</that>
 		<template><srai>CAN THO</srai></template>
 	</category>
 	<!-- kịch bản đi chơi -->
 	<category>
 		<pattern>* DI CHOI *</pattern>
-		<template>Bạn muốn đi đâu?</template>
+		<template>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đến đâu?</template>
 	</category>
 	<category>
 		<pattern>* BIET *</pattern>
-		<that>Bạn muốn đi đâu?</that>
+		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đến đâu?</that>
 		<template>Mình có 3 gợi ý: Cần Thơ, Bến Tre, Đà Lạt</template>
 	</category>
 	<category>
 		<pattern>* BEN TRE *</pattern>
-		<that>Bạn muốn đi đâu?</that>
+		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đến đâu?</that>
 		<template><srai>BEN TRE</srai></template>
 	</category>
 	<category>
 		<pattern>* DA LAT *</pattern>
-		<that>Bạn muốn đi đâu?</that>
+		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đến đâu?</that>
 		<template><srai>DA LAT</srai></template>
 	</category>
 	<category>
 		<pattern>* CAN THO *</pattern>
-		<that>Bạn muốn đi đâu?</that>
+		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đến đâu?</that>
 		<template><srai>CAN THO</srai></template>
 	</category>
 	<!-- kịch bản tui đi -->
 	<category>
 		<pattern>TUI DI</pattern>
-		<template>Bạn muốn đi đâu?</template>
+		<template>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi tới đâu?</template>
 	</category>
 	<category>
 		<pattern>* TUI * DI</pattern>
@@ -1539,22 +1553,22 @@
 	</category>
 	<category>
 		<pattern>* BIET *</pattern>
-		<that>Bạn muốn đi đâu?</that>
+		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi tới đâu?</that>
 		<template>Mình có 3 gợi ý: Cần Thơ, Bến Tre, Đà Lạt</template>
 	</category>
 	<category>
 		<pattern>* BEN TRE *</pattern>
-		<that>Bạn muốn đi đâu?</that>
+		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi tới đâu?</that>
 		<template><srai>BEN TRE</srai></template>
 	</category>
 	<category>
 		<pattern>* DA LAT *</pattern>
-		<that>Bạn muốn đi đâu?</that>
+		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi tới đâu?</that>
 		<template><srai>DA LAT</srai></template>
 	</category>
 	<category>
 		<pattern>* CAN THO *</pattern>
-		<that>Bạn muốn đi đâu?</that>
+		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi tới đâu?</that>
 		<template><srai>CAN THO</srai></template>
 	</category>
 </aiml>
