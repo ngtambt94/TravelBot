@@ -209,43 +209,6 @@ function findInfo(sender, answer) {
 }
 
 
-function abc(sender) {
-  let messageData = {
-    "attachment": {
-      "type": "template",
-      "payload": {
-        "template_type": "generic",
-        "elements": [{
-          "title": "Menu giúp đỡ",
-          "subtitle": "Đây là những điều mình có thể làm",
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
-          "buttons": [{
-            "title": "View More",
-            "type": "postback",
-            "payload": "cần thơ",         
-          }],
-        }]
-      }
-    }
-  }
-  request({
-    url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token:token},
-    method: 'POST',
-    json: {
-      recipient: {id:sender},
-      message: messageData,
-    }
-  }, function(error, response, body) {
-    if (error) {
-      console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-      console.log('Error: ', response.body.error)
-    }
-  })
-}
-
-
 // send list
 function listTest(sender){
   let messageData = {
@@ -312,39 +275,41 @@ app.post('/webhook', function (req, res) {
   for (let i = 0; i < messaging_events.length; i++) {
     let event = req.body.entry[0].messaging[i]
     let sender = event.sender.id
+    let check = /^[()^;:-_<>*|]{2,1000}$/gi;
 
     // kiểm tra sự kiện có tin nhắn đến
     if (event.message && event.message.text) {
       let text = event.message.text;
-      let temp = "";
-      for (var j = 0; j < text.length; j++) {
-        temp += convert(text[j]);
+      if (text.match(check)) {
+        sendTextMessage(sender, "Vui lòng đừng nhập icon cảm xúc! :)");
       }
-      // hàm callback trả về đáp án
-      var callback = function(answer, wildCardArray, input){
-        if (temp === 'img') {
-          // sendGenericMessage(sender);
-          listTest(sender);
+      else{
+        let temp = "";
+        for (var j = 0; j < text.length; j++) {
+          temp += convert(text[j]);
         }
-        else if (temp === 'hey') {
-          abc(sender);
-        }
-        else if (answer !== undefined && answer !== '') {
-          // sendTextMessage(sender, answer);
-          findInfo(sender, answer);
-        }
-        else if (answer === '') {
-          // sendTextMessage(sender, answer);
-          sendTextMessage(sender, "Bên mình chưa có dữ liệu!");
-        }
-        // không tìm thấy đáp án         
-        else{
-          sendTextMessage(sender, "Xin lỗi! Mình chưa hiểu rõ ý của bạn. Vui lòng nhập help để biết mình có thể giúp gì cho bạn.");
-        }
-      };
-
-      // kiểm tra text với file aiml
-      aimlInterpreter.findAnswerInLoadedAIMLFiles(temp, callback)
+        // hàm callback trả về đáp án
+        var callback = function(answer, wildCardArray, input){
+          if (temp === 'img') {
+            // sendGenericMessage(sender);
+            listTest(sender);
+          }
+          else if (answer !== undefined && answer !== '') {
+            // sendTextMessage(sender, answer);
+            findInfo(sender, answer);
+          }
+          else if (answer === '') {
+            // sendTextMessage(sender, answer);
+            sendTextMessage(sender, "Bên mình chưa có dữ liệu!");
+          }
+          // không tìm thấy đáp án         
+          else{
+            sendTextMessage(sender, "Xin lỗi! Mình chưa hiểu rõ ý của bạn. Vui lòng nhập help để biết mình có thể giúp gì cho bạn.");
+          }
+        };
+        // kiểm tra text với file aiml
+        aimlInterpreter.findAnswerInLoadedAIMLFiles(temp, callback);
+      }
     }
   }
   res.sendStatus(200)
