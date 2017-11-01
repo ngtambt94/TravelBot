@@ -153,7 +153,7 @@ function sendVideoMessage(sender){
 }
 
 // menu help of bot
-function findFood(sender, answer) {
+function findInfo(sender, answer) {
   var sql = "" + answer;
   conn.connect(function (err){
     conn.query(sql, function (err,results, fields) {
@@ -243,8 +243,7 @@ function abc(sender) {
     "attachment": {
       "type": "template",
       "payload": {
-        "template_type": "list",
-        "top_element_style": "large",
+        "template_type": "generic",
         "elements": [{
           "title": "Menu giúp đỡ",
           "subtitle": "Đây là những điều mình có thể làm",
@@ -252,7 +251,7 @@ function abc(sender) {
           "buttons": [{
             "title": "View More",
             "type": "postback",
-            "payload": "cần thơ có gì ăn",         
+            "payload": "cần thơ",         
           }],
         }]
       }
@@ -285,13 +284,30 @@ function xyz(sender){
         "template_type": "list",
         "top_element_style": "large",
         "elements": [{
-          "title": "Bánh cống",
-          "subtitle": "See all our colors",
-          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhbeo.jpg",          
-          "buttons": [{
-            "title": "View More",
-            "type": "postback",
-            "payload": "payload",         
+            "title": "Classic T-Shirt Collection",
+            "subtitle": "See all our colors",
+            "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",          
+            "buttons": [
+              {
+                "title": "View",
+                "type": "web_url",
+                "url": "https://travelbot94.herokuapp.com",
+                "messenger_extensions": true,
+                "webview_height_ratio": "tall",
+                "fallback_url": "https://travelbot94.herokuapp.com"            
+              }
+            ]
+          },
+          {
+            "title": "Classic White T-Shirt",
+            "subtitle": "See all our colors",
+            "default_action": {
+              "type": "web_url",
+              "url": "https://travelbot94.herokuapp.com",
+              "messenger_extensions": true,
+              "webview_height_ratio": "tall",
+              "fallback_url": "https://travelbot94.herokuapp.com"
+            }
           }],
         }]
       }
@@ -345,16 +361,16 @@ app.post('/webhook', function (req, res) {
       }
       // hàm callback trả về đáp án
       var callback = function(answer, wildCardArray, input){
-        if (temp === 'image') {
+        if (temp === 'img') {
           // sendGenericMessage(sender);
-          abc(sender);
+          xyz(sender);
         }
         else if (temp === 'hey') {
           abc(sender);
         }
         else if (answer !== undefined && answer !== '') {
           // sendTextMessage(sender, answer);
-            findFood(sender, answer);
+            findInfo(sender, answer);
         }
         else if (answer === '') {
           // sendTextMessage(sender, answer);
