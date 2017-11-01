@@ -30,7 +30,7 @@ conn.connect(function (err){
         // if (err) throw err;
         // var x = "" + results[0]['food_ten'];
         // console.log(x);
-        var c = /^[()^;:-_<>*|]{2,1000}$/gi;
+        var c = /[()^;:-_<>*|]{2,1000}$/;
       //   var x = [];
       //   for (var i = 0; i < results.length; i++) {
       //     x.push(
@@ -47,7 +47,7 @@ conn.connect(function (err){
       //     );
       //   }
       //   console.log(x);
-        var x = "dfbvf:df)fdbd;)dsjvjksdbvj:)";
+        var x = "halo ;)";
         if (x.match(c)) {
           console.log("True");
         }
