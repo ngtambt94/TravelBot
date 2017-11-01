@@ -282,7 +282,7 @@ function xyz(sender){
       "type": "template",
       "payload": {
         "template_type": "list",
-        "top_element_style": "large",
+        "top_element_style": "compact",
         "elements": [{
           "title": "Classic T-Shirt Collection",
           "subtitle": "See all our colors",
@@ -313,7 +313,7 @@ function xyz(sender){
     }
   }
   request({
-    url: 'https://graph.facebook.com/v2.6/me/messages',
+    url: 'https://graph.facebook.com/me/messages',
     qs: {access_token:token},
     method: 'POST',
     json: {
