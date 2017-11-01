@@ -251,7 +251,7 @@ function abc(sender) {
           "buttons": [{
             "title": "View More",
             "type": "postback",
-            "payload": "payload",         
+            "payload": "cần thơ có gì ăn",         
           }],
         }]
       }
