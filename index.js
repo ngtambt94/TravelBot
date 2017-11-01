@@ -284,31 +284,30 @@ function xyz(sender){
         "template_type": "list",
         "top_element_style": "large",
         "elements": [{
-            "title": "Classic T-Shirt Collection",
-            "subtitle": "See all our colors",
-            "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",          
-            "buttons": [
-              {
-                "title": "View",
-                "type": "web_url",
-                "url": "https://travelbot94.herokuapp.com",
-                "messenger_extensions": true,
-                "webview_height_ratio": "tall",
-                "fallback_url": "https://travelbot94.herokuapp.com"            
-              }
-            ]
-          },
+          "title": "Classic T-Shirt Collection",
+          "subtitle": "See all our colors",
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",          
+          "buttons": [
           {
-            "title": "Classic White T-Shirt",
-            "subtitle": "See all our colors",
-            "default_action": {
-              "type": "web_url",
-              "url": "https://travelbot94.herokuapp.com",
-              "messenger_extensions": true,
-              "webview_height_ratio": "tall",
-              "fallback_url": "https://travelbot94.herokuapp.com"
-            }
-          }],
+            "title": "View",
+            "type": "web_url",
+            "url": "https://travelbot94.herokuapp.com",
+            "messenger_extensions": true,
+            "webview_height_ratio": "tall",
+            "fallback_url": "https://travelbot94.herokuapp.com"            
+          }
+          ]
+        },
+        {
+          "title": "Classic White T-Shirt",
+          "subtitle": "See all our colors",
+          "default_action": {
+            "type": "web_url",
+            "url": "https://travelbot94.herokuapp.com",
+            "messenger_extensions": true,
+            "webview_height_ratio": "tall",
+            "fallback_url": "https://travelbot94.herokuapp.com"
+          }
         }]
       }
     }
@@ -370,7 +369,7 @@ app.post('/webhook', function (req, res) {
         }
         else if (answer !== undefined && answer !== '') {
           // sendTextMessage(sender, answer);
-            findInfo(sender, answer);
+          findInfo(sender, answer);
         }
         else if (answer === '') {
           // sendTextMessage(sender, answer);
