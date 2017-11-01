@@ -3,7 +3,7 @@
 	<!-- chào hỏi -->
 	<category>
 		<pattern>XIN CHAO *</pattern>
-		<template><random><li>Xin chào! ;) Mình có thể giúp gì cho bạn?</li><li>Halo! Mình là TravelBot</li><li>Hii! Chào mừng bạn đến với TravelBot.</li></random></template>
+		<template><random><li>Xin chào! ;) Mình có thể giúp gì cho bạn?</li><li>Halo! :) Mình là TravelBot</li><li>Hii! ;) Chào mừng bạn đến với TravelBot.</li></random></template>
 	</category>
 	<category>
 		<pattern>* XIN CHAO</pattern>
