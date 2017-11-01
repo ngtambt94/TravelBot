@@ -3,7 +3,7 @@
 	<!-- chào hỏi -->
 	<category>
 		<pattern>XIN CHAO *</pattern>
-		<template><random><li>Xin chào! Mình có thể giúp gì cho bạn?</li><li>Halo! Mình là TravelBot</li><li>Hii! Chào mừng bạn đến với TravelBot.</li></random></template>
+		<template><random><li>Xin chào! ;) Mình có thể giúp gì cho bạn?</li><li>Halo! Mình là TravelBot</li><li>Hii! Chào mừng bạn đến với TravelBot.</li></random></template>
 	</category>
 	<category>
 		<pattern>* XIN CHAO</pattern>
@@ -87,7 +87,7 @@
 	<category>
 		<pattern>* QUYEN TRAN *</pattern>
 		<template>
-			Quyen Tran là bạn gái Tam Nguyen. Mình không thể thông tin thêm.
+			Quyen Tran là bạn gái Tam Nguyen. Mình không thể thông tin thêm. ;)
 		</template>
 	</category>
 	<!-- trợ giúp -->
@@ -163,22 +163,22 @@
 		</template>
 	</category>
 	<category>
-		<pattern>* WTF *</pattern>
+		<pattern>WTF</pattern>
 		<template>
-			Mình là người văn minh thì đừng nên nói bậy nè!
+			Mình là người văn minh thì đừng nên nói bậy nè! ;)
 		</template>
 	</category>
 	<category>
-		<pattern>* WHAT THE FUCK *</pattern>
-		<template><srai>WTF *</srai></template>
+		<pattern>* WTF *</pattern>
+		<template><srai>WTF</srai></template>
 	</category>
 	<category>
 		<pattern>* FUCK *</pattern>
-		<template><srai>WTF *</srai></template>
+		<template><srai>WTF</srai></template>
 	</category>
 	<category>
 		<pattern>* SHIT *</pattern>
-		<template><srai>WTF *</srai></template>
+		<template><srai>WTF</srai></template>
 	</category>
 	<category>
 		<pattern>UM</pattern>
