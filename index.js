@@ -248,6 +248,11 @@ function abc(sender) {
           "title": "Menu giúp đỡ",
           "subtitle": "Đây là những điều mình có thể làm",
           "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
+          "buttons": [{
+            "title": "View More",
+            "type": "postback",
+            "payload": "payload",         
+          }],
         }]
       }
     }
@@ -345,9 +350,6 @@ app.post('/webhook', function (req, res) {
         }
         else if (temp === 'hey') {
           abc(sender);
-        }
-        else if (temp === 'thu') {
-          xyz(sender);
         }
         else if (answer !== undefined && answer !== '') {
           // sendTextMessage(sender, answer);
