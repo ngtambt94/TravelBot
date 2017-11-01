@@ -3,7 +3,7 @@
 	<!-- chào hỏi -->
 	<category>
 		<pattern>XIN CHAO *</pattern>
-		<template><random><li>Xin chào! Mình có thể giúp gì cho bạn?</li><li>Halo! Mình là TravelBot</li><li>Hii! Chào mừng bạn đến với TravelBot.</li></random></template>
+		<template><random><li>:) Xin chào! Mình có thể giúp gì cho bạn?</li><li>;) Halo! Mình là TravelBot</li><li>;) Hii! Chào mừng bạn đến với TravelBot.</li></random></template>
 	</category>
 	<category>
 		<pattern>* XIN CHAO</pattern>
@@ -35,11 +35,11 @@
 	</category>
 	<category>
 		<pattern>* BAN * KHOE KHONG *</pattern>
-		<template><random><li>Không thể tốt hơn!</li><li>Mình luôn sẵn sàng giúp đỡ bạn!</li><li>Khỏe re luôn. Hôm nay bạn cần gì?</li></random></template>
+		<template><random><li>:) Không thể tốt hơn!</li><li>;) Mình luôn khỏe mạnh để sẵn sàng giúp đỡ bạn!</li><li>;) Khỏe re luôn. Hôm nay bạn cần gì?</li></random></template>
 	</category>
 	<category>
 		<pattern>HOW ARE YOU *</pattern>
-		<template><random><li>Không thể tốt hơn!</li><li>Mình luôn sẵn sàng giúp đỡ bạn!</li><li>Khỏe re luôn. Hôm nay bạn cần gì?</li></random></template>
+		<template><random><li>;) Không thể tốt hơn!</li><li>;) Mình luôn sẵn sàng giúp đỡ bạn!</li><li>:) Khỏe re luôn. Hôm nay bạn cần gì?</li></random></template>
 	</category>
 	<category>
 		<pattern>HOM NAY * THE NAO *</pattern>
@@ -49,7 +49,7 @@
 	<category>
 		<pattern>TAM LA AI</pattern>
 		<template>
-			Tam Nguyen là sinh viên Khoa học máy tính, khóa 39, Trường Đại học Cần Thơ
+			:) Tam Nguyen là sinh viên Khoa học máy tính, khóa 39, Trường Đại học Cần Thơ
 		</template>
 	</category>
 	<category>
