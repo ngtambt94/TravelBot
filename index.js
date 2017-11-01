@@ -243,7 +243,8 @@ function abc(sender) {
     "attachment": {
       "type": "template",
       "payload": {
-        "template_type": "generic",
+        "template_type": "list",
+        "top_element_style": "large",
         "elements": [{
           "title": "Menu giúp đỡ",
           "subtitle": "Đây là những điều mình có thể làm",
