@@ -162,7 +162,9 @@ function findInfo(sender, answer) {
       }
       else{
         sendTextMessage(sender, "Top các kết quả có thể bạn quan tâm: ");
+        // khai báo mảng chứa lưu kết quả trả về
         var ketqua = [];
+        // thêm từng phần tử vào mảng
         for (var i = 0; i < results.length; i++) {
           ketqua.push(
           {
