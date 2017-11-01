@@ -286,7 +286,10 @@ app.post('/webhook', function (req, res) {
       }
       // hàm callback trả về đáp án
       var callback = function(answer, wildCardArray, input){
-        if (temp === 'img') {
+        if (text.match(check)) {
+          sendTextMessage(sender, "Vui lòng không nhập biểu tượng cảm xúc! ;)");
+        }
+        else if (temp === 'img') {
           // sendGenericMessage(sender);
           listTest(sender);
         }
