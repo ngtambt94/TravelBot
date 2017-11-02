@@ -164,11 +164,19 @@
 		<template><srai>WHO ARE YOU</srai></template>
 	</category>
 	<category>
+		<pattern>TRANG * CO GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
 		<pattern>TRANG * CO * GI *</pattern>
 		<template><srai>WHO ARE YOU</srai></template>
 	</category>
 	<category>
 		<pattern>TRANG * LAM * GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>WEB * CO GI *</pattern>
 		<template><srai>WHO ARE YOU</srai></template>
 	</category>
 	<category>
