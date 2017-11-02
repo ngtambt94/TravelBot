@@ -275,7 +275,7 @@ app.post('/webhook', function (req, res) {
   for (let i = 0; i < messaging_events.length; i++) {
     let event = req.body.entry[0].messaging[i]
     let sender = event.sender.id
-    let check = /[()^;:-_<>*|].{1,1000}$/;
+    let check = /[()^;:-_<>*|./?!@#$%&`~+={'"\}]{1,1000}$/;
 
     // kiểm tra sự kiện có tin nhắn đến
     if (event.message && event.message.text) {

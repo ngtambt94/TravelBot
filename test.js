@@ -20,17 +20,17 @@ var conn = mysql.createConnection({
 // });
 
 var x = [];
-conn.connect(function (err){
-    //nếu có nỗi thì in ra
-    // if (err) throw err.stack;
-    //nếu thành công
-    var sql = "select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5";
-    // var sql = "hello";    
-    conn.query(sql, function (err,results, fields) {
+// conn.connect(function (err){
+//     //nếu có nỗi thì in ra
+//     // if (err) throw err.stack;
+//     //nếu thành công
+//     var sql = "select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5";
+//     // var sql = "hello";    
+//     conn.query(sql, function (err,results, fields) {
         // if (err) throw err;
         // var x = "" + results[0]['food_ten'];
         // console.log(x);
-        var c = /[()^;:-_<>*|]{2,1000}$/;
+        var c = /[()^;:-_<>*|./?!@#$%&`~+={'"\}]{1,1000}$/;
       //   var x = [];
       //   for (var i = 0; i < results.length; i++) {
       //     x.push(
@@ -47,15 +47,15 @@ conn.connect(function (err){
       //     );
       //   }
       //   console.log(x);
-        var x = "halo ;)";
+        var x = ")";
         if (x.match(c)) {
           console.log("True");
         }
         else
           console.log("False");
-      });
+  //     });
 
-  });
+  // });
 
 // conn.query(sql, function (err,results, fields) {
 //   // if (err) console.log("false");
