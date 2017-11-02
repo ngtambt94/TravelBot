@@ -2,12 +2,6 @@
 <aiml>
 	<!-- chào hỏi -->
 	<category>
-		<pattern>* MAY *</pattern>
-		<template>
-			Sao kêu mình bằng mày?! :(		
-		</template>
-	</category>
-	<category>
 		<pattern>XIN CHAO *</pattern>
 		<template><random><li>Xin chào! ;) Mình có thể giúp gì cho bạn?</li><li>Halo! :) Mình là TravelBot</li><li>Hii! ;) Chào mừng bạn đến với TravelBot.</li></random></template>
 	</category>
@@ -104,7 +98,7 @@
 	<category>
 		<pattern>HELP</pattern>
 		<template>
-			Hi bạn! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
+			Chào bạn! Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
 		</template>
 	</category>
 	<category>
@@ -117,6 +111,26 @@
 	</category>
 	<category>
 		<pattern>* CUU *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>* TU VAN *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>E</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>BAN GI * OI *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO * HOI *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>* THAC MAC *</pattern>
 		<template><srai>HELP</srai></template>
 	</category>
 	<category>
@@ -147,6 +161,22 @@
 	</category>
 	<category>
 		<pattern>* TEN * GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>TRANG * CO * GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>TRANG * LAM * GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>WEB * CO * GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>WEB * LAM * GI *</pattern>
 		<template><srai>WHO ARE YOU</srai></template>
 	</category>
 	<category>
@@ -1626,5 +1656,12 @@
 		<pattern>* CAN THO *</pattern>
 		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi tới đâu?</that>
 		<template><srai>CAN THO</srai></template>
+	</category>
+	<!-- kêu mày -->
+	<category>
+		<pattern>* MAY *</pattern>
+		<template>
+			Sao kêu mình bằng mày?! :(		
+		</template>
 	</category>
 </aiml>
