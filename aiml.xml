@@ -329,6 +329,10 @@
 		<pattern>* NGU *</pattern>
 		<template><srai>NGU NGON</srai></template>
 	</category>
+	<category>
+		<pattern>* SLEEP *</pattern>
+		<template><srai>NGU NGON</srai></template>
+	</category>
 	<!-- CẦN THƠ -->
 	<!-- ĐỊA ĐIỂM VUI CHƠI -->
 	<category>
@@ -475,7 +479,7 @@
 		<pattern>* CAN THO * DAC SAN *</pattern>
 		<template><srai>MON NGON CAN THO</srai></template>
 	</category>
-	<!-- KHÁCH SẠN Ở CẦN THƠ -->
+	<!-- KHÁCH SẠN RẺ Ở CẦN THƠ -->
 	<category>
 		<pattern>KHACH SAN RE CAN THO</pattern>
 		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 ORDER BY hotel_giatu LIMIT 0,5
@@ -486,9 +490,42 @@
 		<template><srai>KHACH SAN RE CAN THO</srai></template>
 	</category>
 	<category>
-		<pattern>* CAN THO * KHACH SAN * RE </pattern>
+		<pattern>* CAN THO * KHACH SAN * RE</pattern>
 		<template><srai>KHACH SAN RE CAN THO</srai></template>
 	</category>
+	<category>
+		<pattern>* NGHI * RE * CAN THO</pattern>
+		<template><srai>KHACH SAN RE CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * NGHI * RE</pattern>
+		<template><srai>KHACH SAN RE CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * RE * CAN THO</pattern>
+		<template><srai>KHACH SAN RE CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * NGU * RE</pattern>
+		<template><srai>KHACH SAN RE CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * RE * CAN THO</pattern>
+		<template><srai>KHACH SAN RE CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * MOTEL * RE</pattern>
+		<template><srai>KHACH SAN RE CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * RE * CAN THO</pattern>
+		<template><srai>KHACH SAN RE CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * QUA DEM * RE</pattern>
+		<template><srai>KHACH SAN RE CAN THO</srai></template>
+	</category>
+	<!-- KHÁCH SẠN CẦN THƠ -->
 	<category>
 		<pattern>KHACH SAN CAN THO</pattern>
 		<template>
@@ -504,16 +541,6 @@
 	<category>
 		<pattern>* RE *</pattern>
 		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
-		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 ORDER BY hotel_giatu LIMIT 0,5
-		</template>
-	</category>
-	<category>
-		<pattern>* QUA DEM * RE * CAN THO</pattern>
-		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 ORDER BY hotel_giatu LIMIT 0,5
-		</template>
-	</category>
-	<category>
-		<pattern>* CAN THO * QUA DEM * RE</pattern>
 		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 ORDER BY hotel_giatu LIMIT 0,5
 		</template>
 	</category>
@@ -1685,51 +1712,7 @@
 		<pattern>* CAN THO *</pattern>
 		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi tới đâu?</that>
 		<template><srai>CAN THO</srai></template>
-	</category>
-	<!-- cảm thán buồn-->
-	<category>
-		<pattern>BUON</pattern>
-		<template>
-			Bạn có muốn đi du lịch không?	
-		</template>
-	</category>
-	<!-- trả lời tích cực -->
-	<category>
-		<pattern>* CO *</pattern>
-		<that>Bạn có muốn đi du lịch không?</that>
-		<template><srai>TUI DI</srai></template>
-	</category>
-	<category>
-		<pattern>* DUOC *</pattern>
-		<that>Bạn có muốn đi du lịch không?</that>
-		<template><srai>TUI DI</srai></template>
-	</category>
-	<category>
-		<pattern>* YES *</pattern>
-		<that>Bạn có muốn đi du lịch không?</that>
-		<template><srai>TUI DI</srai></template>
-	</category>
-	<!-- trả lời tiêu cực -->
-	<category>
-		<pattern>* KHONG *</pattern>
-		<that>Bạn có muốn đi du lịch không?</that>
-		<template>Vậy bạn có muốn đi ăn không?</template>
-	</category>
-	<category>
-		<pattern>* HONG *</pattern>
-		<that>Bạn có muốn đi du lịch không?</that>
-		<template>Vậy bạn có muốn đi ăn không?</template>
-	</category>
-	<category>
-		<pattern>* HK *</pattern>
-		<that>Bạn có muốn đi du lịch không?</that>
-		<template>Vậy bạn có muốn đi ăn không?</template>
-	</category>
-	<category>
-		<pattern>* NO *</pattern>
-		<that>Bạn có muốn đi du lịch không?</that>
-		<template>Vậy bạn có muốn đi ăn không?</template>
-	</category>
+	</category>	
 	<!-- kêu mày -->
 	<category>
 		<pattern>* MAY *</pattern>
