@@ -1690,23 +1690,23 @@
 	<category>
 		<pattern>BUON</pattern>
 		<template>
-			Bạn có muốn đi du lịch không		
+			Bạn có muốn đi du lịch không?	
 		</template>
 	</category>
 	<!-- trả lời tích cực -->
 	<category>
 		<pattern>* CO *</pattern>
-		<that>Bạn có muốn đi du lịch không</that>
+		<that>Bạn có muốn đi du lịch không?</that>
 		<template><srai>TUI DI</srai></template>
 	</category>
 	<category>
 		<pattern>* DUOC *</pattern>
-		<that>Bạn có muốn đi du lịch không</that>
+		<that>Bạn có muốn đi du lịch không?</that>
 		<template><srai>TUI DI</srai></template>
 	</category>
 	<category>
 		<pattern>* YES *</pattern>
-		<that>Bạn có muốn đi du lịch không</that>
+		<that>Bạn có muốn đi du lịch không?</that>
 		<template><srai>TUI DI</srai></template>
 	</category>
 	<!-- trả lời tiêu cực -->
@@ -1729,43 +1729,6 @@
 		<pattern>* NO *</pattern>
 		<that>Bạn có muốn đi du lịch không?</that>
 		<template>Vậy bạn có muốn đi ăn không?</template>
-	</category>
-	<!-- trả lời tích cực muốn đi ăn -->
-	<category>
-		<pattern>* CO *</pattern>
-		<that>Vậy bạn có muốn đi ăn không?</that>
-		<template><srai>MON NGON</srai></template>
-	</category>
-	<category>
-		<pattern>* YES *</pattern>
-		<that>Vậy bạn có muốn đi ăn không?</that>
-		<template><srai>MON NGON</srai></template>
-	</category>
-	<category>
-		<pattern>* DUOC *</pattern>
-		<that>Vậy bạn có muốn đi ăn không?</that>
-		<template><srai>MON NGON</srai></template>
-	</category>
-	<!-- trả lời tiêu cực không muốn đi ăn -->
-	<category>
-		<pattern>* KHONG *</pattern>
-		<that>Vậy bạn có muốn đi ăn không?</that>
-		<template>Vậy hãy trò chuyện với TravelBot ;)</template>
-	</category>
-	<category>
-		<pattern>* HONG *</pattern>
-		<that>Vậy bạn có muốn đi ăn không?</that>
-		<template>Vậy hãy trò chuyện với TravelBot ;)</template>
-	</category>
-	<category>
-		<pattern>* HK *</pattern>
-		<that>Vậy bạn có muốn đi ăn không?</that>
-		<template>Vậy hãy trò chuyện với TravelBot ;)</template>
-	</category>
-	<category>
-		<pattern>* NO *</pattern>
-		<that>Vậy bạn có muốn đi ăn không?</that>
-		<template>Vậy hãy trò chuyện với TravelBot ;)</template>
 	</category>
 	<!-- kêu mày -->
 	<category>
