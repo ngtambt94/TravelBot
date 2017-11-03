@@ -879,8 +879,7 @@
 	<category>
 		<pattern>HOMESTAY CAN THO</pattern>
 		<template>
-			Có thể bạn quan tâm:
-			Hưng Homestay: Khu vực Thạnh Huế, phường Thường Thạnh, quận Cái Răng, TP. Cần Thơ. SĐT: 0903849881
+			select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 and typehotel_id = 5
 		</template>
 	</category>
 	<category>
@@ -1533,8 +1532,7 @@
 	<category>
 		<pattern>HOMESTAY BEN TRE</pattern>
 		<template>
-			Có thể bạn quan tâm:
-			Hưng Homestay: Khu vực Thạnh Huế, phường Thường Thạnh, quận Cái Răng, TP. Cần Thơ. SĐT: 0903849881
+			select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 and typehotel_id = 5
 		</template>
 	</category>
 	<category>
@@ -2187,8 +2185,7 @@
 	<category>
 		<pattern>HOMESTAY DA LAT</pattern>
 		<template>
-			Có thể bạn quan tâm:
-			Hưng Homestay: Khu vực Thạnh Huế, phường Thường Thạnh, quận Cái Răng, TP. ĐÀ LẠT. SĐT: 09038498822
+			select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 and typehotel_id = 5
 		</template>
 	</category>
 	<category>
