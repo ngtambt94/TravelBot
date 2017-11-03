@@ -2538,6 +2538,14 @@
 		<srai>MON NGON</srai>
 	</category>
 	<category>
+		<pattern>* NHA HANG *</pattern>
+		<srai>MON NGON</srai>
+	</category>
+	<category>
+		<pattern>* QUAN *</pattern>
+		<srai>MON NGON</srai>
+	</category>
+	<category>
 		<pattern>* BEN TRE *</pattern>
 		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
 		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5</template>
