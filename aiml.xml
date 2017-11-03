@@ -1106,6 +1106,370 @@
 		<pattern>* BEN TRE * DAC SAN *</pattern>
 		<template><srai>MON NGON BEN TRE</srai></template>
 	</category>
+	<!-- KHÁCH SẠN RẺ NHẤT BẾN TRE -->
+	<category>
+		<pattern>KHACH SAN RE NHAT BEN TRE</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 and hotel_giatu = (select min(hotel_giatu) from hotels WHERE place_id = 1)
+		</template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * RE NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN RE NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * KHACH SAN * RE NHAT</pattern>
+		<template><srai>KHACH SAN RE NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * RE NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN RE NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGHI * RE NHAT</pattern>
+		<template><srai>KHACH SAN RE NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * RE NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN RE NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGU * RE NHAT</pattern>
+		<template><srai>KHACH SAN RE NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * RE NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN RE NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * MOTEL * RE NHAT</pattern>
+		<template><srai>KHACH SAN RE NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * RE NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN RE NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * QUA DEM * RE NHAT</pattern>
+		<template><srai>KHACH SAN RE NHAT BEN TRE</srai></template>
+	</category>
+	<!-- KHÁCH SẠN RẺ Ở BẾN TRE -->
+	<category>
+		<pattern>KHACH SAN RE BEN TRE</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 ORDER BY hotel_giatu LIMIT 0,5
+		</template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * RE * BEN TRE</pattern>
+		<template><srai>KHACH SAN RE BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * KHACH SAN * RE</pattern>
+		<template><srai>KHACH SAN RE BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * RE * BEN TRE</pattern>
+		<template><srai>KHACH SAN RE BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGHI * RE</pattern>
+		<template><srai>KHACH SAN RE BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * RE * BEN TRE</pattern>
+		<template><srai>KHACH SAN RE BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGU * RE</pattern>
+		<template><srai>KHACH SAN RE BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * RE * BEN TRE</pattern>
+		<template><srai>KHACH SAN RE BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * MOTEL * RE</pattern>
+		<template><srai>KHACH SAN RE BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * RE * BEN TRE</pattern>
+		<template><srai>KHACH SAN RE BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * QUA DEM * RE</pattern>
+		<template><srai>KHACH SAN RE BEN TRE</srai></template>
+	</category>
+	<!-- KHÁCH SẠN CAO CẤP NHẤT -->
+	<category>
+		<pattern>KHACH SAN CAO CAP NHAT BEN TRE</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 and hotel_chatluongsao = (select max(hotel_chatluongsao) from hotels WHERE place_id = 1)
+		</template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * CAO CAP NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * KHACH SAN * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * CAO CAP NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGHI * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * CAO CAP NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGU * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * CAO CAP NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * MOTEL * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * CAO CAP NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * QUA DEM * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT BEN TRE</srai></template>
+	</category>
+	<!-- KHÁCH SẠN TỐT NHẤT Ở BẾN TRE -->
+	<category>
+		<pattern>KHACH SAN TOT NHAT BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * TOT NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN TOT NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * KHACH SAN * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * TOT NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN TOT NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGHI * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * TOT NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN TOT NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGU * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * TOT NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN TOT NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * MOTEL * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * TOT NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN TOT NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * QUA DEM * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT BEN TRE</srai></template>
+	</category>
+	<!-- KHÁCH SẠN CHẤT LƯỢNG NHẤT BẾN TRE -->
+	<category>
+		<pattern>KHACH SAN CHAT LUONG NHAT BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * CHAT LUONG NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * KHACH SAN * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * CHAT LUONG NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGHI * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * CHAT LUONG NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGU * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * CHAT LUONG NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * MOTEL * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * CHAT LUONG NHAT * BEN TRE</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * QUA DEM * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT BEN TRE</srai></template>
+	</category>
+	<!-- khách sạn cao cấp -->
+	<category>
+		<pattern>KHACH SAN CAO CAP BEN TRE</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 ORDER BY hotel_chatluongsao desc LIMIT 0,5
+		</template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * CAO CAP * BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * KHACH SAN * CAO CAP</pattern>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * CAO CAP * BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGHI * CAO CAP</pattern>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * CAO CAP * BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGU * CAO CAP</pattern>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * CAO CAP * BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * MOTEL * CAO CAP</pattern>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * CAO CAP * BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * QUA DEM * CAO CAP</pattern>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<!-- KHÁCH SẠN TỐT Ở BẾN TRE -->
+	<category>
+		<pattern>KHACH SAN TOT BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * TOT * BEN TRE</pattern>
+		<template><srai>KHACH SAN TOT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * KHACH SAN * TOT</pattern>
+		<template><srai>KHACH SAN TOT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * TOT * BEN TRE</pattern>
+		<template><srai>KHACH SAN TOT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGHI * TOT</pattern>
+		<template><srai>KHACH SAN TOT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * TOT * BEN TRE</pattern>
+		<template><srai>KHACH SAN TOT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGU * TOT</pattern>
+		<template><srai>KHACH SAN TOT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * TOT * BEN TRE</pattern>
+		<template><srai>KHACH SAN TOT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * MOTEL * TOT</pattern>
+		<template><srai>KHACH SAN TOT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * TOT * BEN TRE</pattern>
+		<template><srai>KHACH SAN TOT BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * QUA DEM * TOT</pattern>
+		<template><srai>KHACH SAN TOT BEN TRE</srai></template>
+	</category>
+	<!-- KHÁCH SẠN CHẤT LƯỢNG BẾN TRE -->
+	<category>
+		<pattern>KHACH SAN CHAT LUONG BEN TRE</pattern>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * CHAT LUONG * BEN TRE</pattern>
+		<template><srai>KHACH SAN CHAT LUONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * KHACH SAN * CHAT LUONG</pattern>
+		<template><srai>KHACH SAN CHAT LUONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * CHAT LUONG * BEN TRE</pattern>
+		<template><srai>KHACH SAN CHAT LUONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGHI * CHAT LUONG</pattern>
+		<template><srai>KHACH SAN CHAT LUONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * CHAT LUONG * BEN TRE</pattern>
+		<template><srai>KHACH SAN CHAT LUONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * NGU * CHAT LUONG</pattern>
+		<template><srai>KHACH SAN CHAT LUONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * CHAT LUONG * BEN TRE</pattern>
+		<template><srai>KHACH SAN CHAT LUONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * MOTEL * CHAT LUONG</pattern>
+		<template><srai>KHACH SAN CHAT LUONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * CHAT LUONG * BEN TRE</pattern>
+		<template><srai>KHACH SAN CHAT LUONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * QUA DEM * CHAT LUONG</pattern>
+		<template><srai>KHACH SAN CHAT LUONG BEN TRE</srai></template>
+	</category>
 	<!-- KHÁCH SẠN Ở BẾN TRE -->
 	<category>
 		<pattern>KHACH SAN BEN TRE</pattern>
@@ -1122,16 +1486,6 @@
 	<category>
 		<pattern>* RE *</pattern>
 		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
-		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 ORDER BY hotel_giatu LIMIT 0,5
-		</template>
-	</category>
-	<category>
-		<pattern>* QUA DEM * RE * BEN TRE</pattern>
-		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 ORDER BY hotel_giatu LIMIT 0,5
-		</template>
-	</category>
-	<category>
-		<pattern>* BEN TRE * QUA DEM * RE</pattern>
 		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 ORDER BY hotel_giatu LIMIT 0,5
 		</template>
 	</category>
@@ -1406,6 +1760,370 @@
 		<pattern>* DA LAT * DAC SAN *</pattern>
 		<template><srai>MON NGON DA LAT</srai></template>
 	</category>
+	<!-- KHÁCH SẠN RẺ NHẤT ĐÀ LẠT -->
+	<category>
+		<pattern>KHACH SAN RE NHAT DA LAT</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 and hotel_giatu = (select min(hotel_giatu) from hotels WHERE place_id = 22)
+		</template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * RE NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN RE NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * KHACH SAN * RE NHAT</pattern>
+		<template><srai>KHACH SAN RE NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * RE NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN RE NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGHI * RE NHAT</pattern>
+		<template><srai>KHACH SAN RE NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * RE NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN RE NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGU * RE NHAT</pattern>
+		<template><srai>KHACH SAN RE NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * RE NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN RE NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * MOTEL * RE NHAT</pattern>
+		<template><srai>KHACH SAN RE NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * RE NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN RE NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * QUA DEM * RE NHAT</pattern>
+		<template><srai>KHACH SAN RE NHAT DA LAT</srai></template>
+	</category>
+	<!-- KHÁCH SẠN RẺ Ở ĐÀ LẠT -->
+	<category>
+		<pattern>KHACH SAN RE DA LAT</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 ORDER BY hotel_giatu LIMIT 0,5
+		</template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * RE * DA LAT</pattern>
+		<template><srai>KHACH SAN RE DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * KHACH SAN * RE</pattern>
+		<template><srai>KHACH SAN RE DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * RE * DA LAT</pattern>
+		<template><srai>KHACH SAN RE DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGHI * RE</pattern>
+		<template><srai>KHACH SAN RE DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * RE * DA LAT</pattern>
+		<template><srai>KHACH SAN RE DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGU * RE</pattern>
+		<template><srai>KHACH SAN RE DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * RE * DA LAT</pattern>
+		<template><srai>KHACH SAN RE DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * MOTEL * RE</pattern>
+		<template><srai>KHACH SAN RE DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * RE * DA LAT</pattern>
+		<template><srai>KHACH SAN RE DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * QUA DEM * RE</pattern>
+		<template><srai>KHACH SAN RE DA LAT</srai></template>
+	</category>
+	<!-- KHÁCH SẠN CAO CẤP NHẤT -->
+	<category>
+		<pattern>KHACH SAN CAO CAP NHAT DA LAT</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 and hotel_chatluongsao = (select max(hotel_chatluongsao) from hotels WHERE place_id = 22)
+		</template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * CAO CAP NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * KHACH SAN * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * CAO CAP NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGHI * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * CAO CAP NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGU * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * CAO CAP NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * MOTEL * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * CAO CAP NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * QUA DEM * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT DA LAT</srai></template>
+	</category>
+	<!-- KHÁCH SẠN TỐT NHẤT Ở ĐÀ LẠT -->
+	<category>
+		<pattern>KHACH SAN TOT NHAT DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * TOT NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * KHACH SAN * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * TOT NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGHI * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * TOT NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGU * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * TOT NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * MOTEL * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * TOT NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * QUA DEM * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT DA LAT</srai></template>
+	</category>
+	<!-- KHÁCH SẠN CHẤT LƯỢNG NHẤT ĐÀ LẠT -->
+	<category>
+		<pattern>KHACH SAN CHAT LUONG NHAT DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * CHAT LUONG NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * KHACH SAN * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * CHAT LUONG NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGHI * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * CHAT LUONG NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGU * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * CHAT LUONG NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * MOTEL * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * CHAT LUONG NHAT * DA LAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * QUA DEM * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT DA LAT</srai></template>
+	</category>
+	<!-- khách sạn cao cấp -->
+	<category>
+		<pattern>KHACH SAN CAO CAP DA LAT</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 ORDER BY hotel_chatluongsao desc LIMIT 0,5
+		</template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * CAO CAP * DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * KHACH SAN * CAO CAP</pattern>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * CAO CAP * DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGHI * CAO CAP</pattern>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * CAO CAP * DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGU * CAO CAP</pattern>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * CAO CAP * DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * MOTEL * CAO CAP</pattern>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * CAO CAP * DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * QUA DEM * CAO CAP</pattern>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<!-- KHÁCH SẠN TỐT Ở ĐÀ LẠT -->
+	<category>
+		<pattern>KHACH SAN TOT DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * TOT * DA LAT</pattern>
+		<template><srai>KHACH SAN TOT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * KHACH SAN * TOT</pattern>
+		<template><srai>KHACH SAN TOT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * TOT * DA LAT</pattern>
+		<template><srai>KHACH SAN TOT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGHI * TOT</pattern>
+		<template><srai>KHACH SAN TOT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * TOT * DA LAT</pattern>
+		<template><srai>KHACH SAN TOT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGU * TOT</pattern>
+		<template><srai>KHACH SAN TOT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * TOT * DA LAT</pattern>
+		<template><srai>KHACH SAN TOT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * MOTEL * TOT</pattern>
+		<template><srai>KHACH SAN TOT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * TOT * DA LAT</pattern>
+		<template><srai>KHACH SAN TOT DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * QUA DEM * TOT</pattern>
+		<template><srai>KHACH SAN TOT DA LAT</srai></template>
+	</category>
+	<!-- KHÁCH SẠN CHẤT LƯỢNG ĐÀ LẠT -->
+	<category>
+		<pattern>KHACH SAN CHAT LUONG DA LAT</pattern>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * CHAT LUONG * DA LAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * KHACH SAN * CHAT LUONG</pattern>
+		<template><srai>KHACH SAN CHAT LUONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * CHAT LUONG * DA LAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGHI * CHAT LUONG</pattern>
+		<template><srai>KHACH SAN CHAT LUONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * CHAT LUONG * DA LAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * NGU * CHAT LUONG</pattern>
+		<template><srai>KHACH SAN CHAT LUONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * CHAT LUONG * DA LAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * MOTEL * CHAT LUONG</pattern>
+		<template><srai>KHACH SAN CHAT LUONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * CHAT LUONG * DA LAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * QUA DEM * CHAT LUONG</pattern>
+		<template><srai>KHACH SAN CHAT LUONG DA LAT</srai></template>
+	</category>
 	<!-- KHÁCH SẠN Ở ĐÀ LẠT -->
 	<category>
 		<pattern>KHACH SAN DA LAT</pattern>
@@ -1422,16 +2140,6 @@
 	<category>
 		<pattern>* RE *</pattern>
 		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
-		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 ORDER BY hotel_giatu LIMIT 0,5
-		</template>
-	</category>
-	<category>
-		<pattern>* QUA DEM * RE * DA LAT</pattern>
-		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 ORDER BY hotel_giatu LIMIT 0,5
-		</template>
-	</category>
-	<category>
-		<pattern>* DA LAT * QUA DEM * RE</pattern>
 		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 ORDER BY hotel_giatu LIMIT 0,5
 		</template>
 	</category>
