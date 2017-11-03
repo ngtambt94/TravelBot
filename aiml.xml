@@ -1690,23 +1690,23 @@
 	<category>
 		<pattern>BUON</pattern>
 		<template>
-			Bạn có muốn đi du lịch không?		
+			Bạn có muốn đi du lịch không		
 		</template>
 	</category>
 	<!-- trả lời tích cực -->
 	<category>
 		<pattern>* CO *</pattern>
-		<that>Bạn có muốn đi du lịch không?</that>
+		<that>Bạn có muốn đi du lịch không</that>
 		<template><srai>TUI DI</srai></template>
 	</category>
 	<category>
 		<pattern>* DUOC *</pattern>
-		<that>Bạn có muốn đi du lịch không?</that>
+		<that>Bạn có muốn đi du lịch không</that>
 		<template><srai>TUI DI</srai></template>
 	</category>
 	<category>
 		<pattern>* YES *</pattern>
-		<that>Bạn có muốn đi du lịch không?</that>
+		<that>Bạn có muốn đi du lịch không</that>
 		<template><srai>TUI DI</srai></template>
 	</category>
 	<!-- trả lời tiêu cực -->
