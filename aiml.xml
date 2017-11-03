@@ -2300,6 +2300,10 @@
 		<template><srai>BEN TRE</srai></template>
 	</category>
 	<category>
+		<pattern>* O * BEN TRE</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
 		<pattern>* CO * GI * BEN TRE</pattern>
 		<template><srai>BEN TRE</srai></template>
 	</category>
@@ -2387,6 +2391,10 @@
 		<template><srai>CAN THO</srai></template>
 	</category>
 	<category>
+		<pattern>* O * CAN THO</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
 		<pattern>* DIA DIEM *</pattern>
 		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
 		<template>
@@ -2463,6 +2471,10 @@
 	</category>
 	<category>
 		<pattern>* THAM * DA LAT</pattern>
+		<template><srai>DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* O * DA LAT</pattern>
 		<template><srai>DA LAT</srai></template>
 	</category>
 	<category>
