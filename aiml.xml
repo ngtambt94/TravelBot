@@ -544,6 +544,142 @@
 		<pattern>* CAN THO * QUA DEM * RE</pattern>
 		<template><srai>KHACH SAN RE CAN THO</srai></template>
 	</category>
+	<!-- KHÁCH SẠN CAO CẤP NHẤT -->
+	<category>
+		<pattern>KHACH SAN CAO CAP NHAT CAN THO</pattern>
+		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 and hotel_chatluongsao = (select max(hotel_chatluongsao) from hotels WHERE place_id = 11)
+		</template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * CAO CAP NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * KHACH SAN * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * CAO CAP NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * NGHI * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * CAO CAP NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * NGU * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * CAO CAP NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * MOTEL * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * CAO CAP NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * QUA DEM * CAO CAP NHAT</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT CAN THO</srai></template>
+	</category>
+	<!-- KHÁCH SẠN TỐT NHẤT Ở CẦN THƠ -->
+	<category>
+		<pattern>KHACH SAN TOT NHAT CAN THO</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * TOT NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN TOT NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * KHACH SAN * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * TOT NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN TOT NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * NGHI * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * TOT NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN TOT NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * NGU * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * TOT NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN TOT NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * MOTEL * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * TOT NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN TOT NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * QUA DEM * TOT NHAT</pattern>
+		<template><srai>KHACH SAN TOT NHAT CAN THO</srai></template>
+	</category>
+	<!-- KHÁCH SẠN CHẤT LƯỢNG NHẤT CẦN THƠ -->
+	<category>
+		<pattern>KHACH SAN CHAT LUONG NHAT CAN THO</pattern>
+		<template><srai>KHACH SAN CAO CAP NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN * CHAT LUONG NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * KHACH SAN * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* NGHI * CHAT LUONG NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * NGHI * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* NGU * CHAT LUONG NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * NGU * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL * CHAT LUONG NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * MOTEL * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA DEM * CHAT LUONG NHAT * CAN THO</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * QUA DEM * CHAT LUONG NHAT</pattern>
+		<template><srai>KHACH SAN CHAT LUONG NHAT CAN THO</srai></template>
+	</category>
 	<!-- khách sạn cao cấp -->
 	<category>
 		<pattern>KHACH SAN CAO CAP CAN THO</pattern>
