@@ -271,7 +271,7 @@ function sendGenericMessage(sender) {
             "title": "web url"
           }, {
             "type": "postback",
-            "title": "Trả lời",
+            "title": "Postback",
             "payload": "Payload for first element in a generic bubble",
           }],
         }, {
