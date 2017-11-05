@@ -275,7 +275,7 @@ app.post('/webhook', function (req, res) {
   for (let i = 0; i < messaging_events.length; i++) {
     let event = req.body.entry[0].messaging[i]
     let sender = event.sender.id
-    let check = /[()^;:-_<>*|./?!@#$%&`~+={'"\}]{1,1000}$/;
+    let check = /[0-9()^;:-_<>*|./?!@#$%&`~+={'"\}]{1,1000}$/;
 
     // kiểm tra sự kiện có tin nhắn đến
     if (event.message && event.message.text) {
@@ -287,7 +287,7 @@ app.post('/webhook', function (req, res) {
       // hàm callback trả về đáp án
       var callback = function(answer, wildCardArray, input){
         if (text.match(check)) {
-          sendTextMessage(sender, "Vui lòng không nhập biểu tượng cảm xúc hoặc ký tự đặc biệt! ;)");
+          sendTextMessage(sender, "Vui lòng không nhập biểu tượng cảm xúc, chữ số và ký tự đặc biệt! ;)");
         }
         else if (temp === 'img') {
           // sendGenericMessage(sender);
