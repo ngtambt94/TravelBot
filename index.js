@@ -303,7 +303,7 @@ app.post('/webhook', function (req, res) {
         }
         // không tìm thấy đáp án         
         else{
-          sendTextMessage(sender, "Xin lỗi! Mình chưa hiểu rõ ý của bạn. Vui lòng nhập help để biết mình có thể giúp gì cho bạn.");
+          sendTextMessage(sender, "Xin lỗi! Mình chưa hiểu rõ ý của bạn. Vui lòng nhập help để được trợ giúp.");
         }
       };
 
