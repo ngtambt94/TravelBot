@@ -223,13 +223,13 @@ function listTest(sender){
           "subtitle": "100% Cotton, 200% Comfortable",
           "default_action": {
             "type": "web_url",
-            "url": "https://peterssendreceiveapp.ngrok.io/view?item=100"
+            "url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/"
           },
           "buttons": [
           {
             "title": "Buy",
             "type": "web_url",
-            "url": "https://peterssendreceiveapp.ngrok.io/shop?item=100"                     
+            "url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/"                     
           }
           ]                
         }
@@ -275,7 +275,7 @@ app.post('/webhook', function (req, res) {
   for (let i = 0; i < messaging_events.length; i++) {
     let event = req.body.entry[0].messaging[i]
     let sender = event.sender.id
-    let check = /[0-9()^;:-_<>*|./?!@#$%&`~+={'"\-}]{1,1000}$/;
+    let check = /[0-9()^;:_<>*|./?!@#$%&`~+='"\-{}]{1,1000}$/;
 
     // kiểm tra sự kiện có tin nhắn đến
     if (event.message && event.message.text) {
