@@ -30,7 +30,7 @@ var x = [];
         // if (err) throw err;
         // var x = "" + results[0]['food_ten'];
         // console.log(x);
-        var c = /[()^;:-_<>*|./?!@#$%&`~+={'"\}]{1,1000}$/;
+        var c = /[0-9()^;:-_<>*|./?!@#$%&`~+={'"\-}]{1,1000}$/;
       //   var x = [];
       //   for (var i = 0; i < results.length; i++) {
       //     x.push(
@@ -47,7 +47,7 @@ var x = [];
       //     );
       //   }
       //   console.log(x);
-        var x = ")";
+        var x = "--------jbvbsbv8739848932";
         if (x.match(c)) {
           console.log("True");
         }
