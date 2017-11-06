@@ -158,8 +158,11 @@ function findInfo(sender, answer) {
   conn.connect(function (err){
     conn.query(sql, function (err,results, fields) {
       if (err) {
-        if (sql === "Du lịch" || sql === "Tìm địa điểm") {
+        if (sql === "Du lịch") {
           DuLich(sender);
+        }
+        else if (sql === "Tìm địa điểm") {
+          DiaDiem(sender);
         }
         else if (sql === "Du lịch Bến Tre" || sql === "Du lịch Đà Lạt" || sql === "Du lịch Cần Thơ") {
           ThongTinDuLich(sender, sql);
@@ -238,6 +241,51 @@ function DuLich(sender) {
           "type": "postback",
           "title": "Đà Lạt",
           "payload": "Du lich Da Lat"
+        }
+        ]
+      }
+    }
+  }
+  request({
+    url: 'https://graph.facebook.com/v2.6/me/messages',
+    qs: {access_token:token},
+    method: 'POST',
+    json: {
+      recipient: {id:sender},
+      message: messageData,
+    }
+  }, function(error, response, body) {
+    if (error) {
+      console.log('Error sending messages: ', error)
+    } else if (response.body.error) {
+      console.log('Error: ', response.body.error)
+    }
+  })
+}
+
+// Hàm chọn button địa điểm
+function DiaDiem(sender) {
+  let messageData = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Bạn muốn tìm loại địa điểm nào?",
+        "buttons":[
+        {
+          "type": "postback",
+          "title": "Ăn uống",
+          "payload": "Tim mon an"
+        },
+        {
+          "type": "postback",
+          "title": "Vui chơi",
+          "payload": "Tim cho vui choi"
+        },
+        {
+          "type": "postback",
+          "title": "Nghỉ ngơi",
+          "payload": "Tim cho ngu"
         }
         ]
       }

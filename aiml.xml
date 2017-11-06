@@ -2611,17 +2611,17 @@
 		</template>
 	</category>
 	<category>
-		<pattern>* AN *</pattern>
+		<pattern>Tim mon an</pattern>
 		<that>Tìm địa điểm</that>
 		<template><srai>MON NGON</srai></template>
 	</category>
 	<category>
-		<pattern>* QUA DEM *</pattern>
+		<pattern>Tim cho ngu</pattern>
 		<that>Tìm địa điểm</that>
 		<template><srai>QUA DEM</srai></template>
 	</category>
 	<category>
-		<pattern>* CHOI *</pattern>
+		<pattern>Tim cho vui choi</pattern>
 		<that>Tìm địa điểm</that>
 		<template><srai>TUI DI</srai></template>
 	</category>
