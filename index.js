@@ -277,6 +277,16 @@ function Check(sender) {
           "type": "postback",
           "title": "Khách sạn",
           "payload": "Khách sạn Bến Tre"
+        },
+        {
+          "type": "postback",
+          "title": "Địa điểm vui chơi",
+          "payload": "Địa điểm Bến Tre"
+        },
+        {
+          "type": "postback",
+          "title": "Hoạt động",
+          "payload": "Hoạt động Bến Tre"
         }
         ]
       }
