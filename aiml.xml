@@ -2269,7 +2269,7 @@
 	<!-- kịch bản du lịch theo địa danh bến tre -->
 	<category>
 		<pattern>BEN TRE</pattern>
-		<template>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
+		<template>Du lịch Bến Tre</template>
 	</category>
 	<category>
 		<pattern>* BEN TRE *</pattern>

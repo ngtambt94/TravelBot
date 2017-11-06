@@ -158,7 +158,11 @@ function findInfo(sender, answer) {
   conn.connect(function (err){
     conn.query(sql, function (err,results, fields) {
       if (err) {
-        sendTextMessage(sender, answer);
+        if (sql === "Du lịch Bến Tre") {
+          test(sender);
+        }
+        else
+          sendTextMessage(sender, answer);
       }
       else{
         sendTextMessage(sender, ";) Top các kết quả có thể bạn quan tâm: ");
