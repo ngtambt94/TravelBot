@@ -463,7 +463,7 @@ function LuaChon(sender, sql) {
     }
     );
   }
-  else if (sql === "Tìm thông tin Cần thơ") {
+  else if (sql === "Tìm thông tin Cần Thơ") {
     sendTextMessage(sender, "Bạn muốn tìm thông tin gì ở Cần Thơ ;)");
 
     ketqua.push(
