@@ -268,7 +268,7 @@ function test(sender) {
           "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
           "buttons": [{
             "type": "postback",
-            "title": "Cần Thơ",
+            "title": "Can Tho",
             "payload": "Du lich Can Tho",
           }],
         }, {
