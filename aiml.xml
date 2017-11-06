@@ -819,19 +819,17 @@
 	<!-- KHÁCH SẠN CẦN THƠ -->
 	<category>
 		<pattern>KHACH SAN CAN THO</pattern>
-		<template>
-			Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?
-		</template>
+		<template>Tiêu chí khách sạn Cần Thơ</template>
 	</category>
 	<category>
 		<pattern>* CAO CAP *</pattern>
-		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
+		<that>Tiêu chí khách sạn Cần Thơ</that>
 		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 ORDER BY hotel_chatluongsao desc LIMIT 0,5
 		</template>
 	</category>
 	<category>
 		<pattern>* RE *</pattern>
-		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
+		<that>Tiêu chí khách sạn Cần Thơ</that>
 		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 11 ORDER BY hotel_giatu LIMIT 0,5
 		</template>
 	</category>
@@ -873,6 +871,14 @@
 	</category>
 	<category>
 		<pattern>* MOTEL * CAN THO *</pattern>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * TA TUC *</pattern>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* TA TUC * CAN THO *</pattern>
 		<template><srai>KHACH SAN CAN THO</srai></template>
 	</category>
 	<!-- HOMESTAY CẦN THƠ-->
@@ -1528,6 +1534,14 @@
 		<pattern>* MOTEL * BEN TRE *</pattern>
 		<template><srai>KHACH SAN BEN TRE</srai></template>
 	</category>
+	<category>
+		<pattern>* BEN TRE * TA TUC *</pattern>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* TA TUC * BEN TRE *</pattern>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
 	<!-- HOMESTAY BẾN TRE-->
 	<category>
 		<pattern>HOMESTAY BEN TRE</pattern>
@@ -2179,6 +2193,14 @@
 	</category>
 	<category>
 		<pattern>* MOTEL * DA LAT *</pattern>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * TA TUC *</pattern>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* TA TUC * DA LAT *</pattern>
 		<template><srai>KHACH SAN DA LAT</srai></template>
 	</category>
 	<!-- HOMESTAY ĐÀ LẠT-->

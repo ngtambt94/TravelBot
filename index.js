@@ -9,10 +9,10 @@ aimlInterpreter.loadAIMLFilesIntoArray(['./aiml.xml']);
 var mysql = require('mysql');
 
 var conn = mysql.createConnection({
-  host    : "45.117.169.92",
-  user    : "dbquyen_travel",
-  password: "Travelbot@123",
-  database: "dbquyen_travelbot"
+	host    : "45.117.169.92",
+	user    : "dbquyen_travel",
+	password: "Travelbot@123",
+	database: "dbquyen_travelbot"
 });
 
 // messenger facebook
@@ -33,16 +33,16 @@ app.use(bodyParser.json())
 
 // index
 app.get('/', function (req, res) {
-  res.send('Thiết lập webhook thành công!')
+	res.send('Thiết lập webhook thành công!')
 })
 
 // for facebook verification
 app.get('/webhook/', function (req, res) {
-  if (req.query['hub.verify_token'] === 'tamnguyen') {
-    res.send(req.query['hub.challenge'])
-  } else {
-    res.send('Error, wrong token')
-  }
+	if (req.query['hub.verify_token'] === 'tamnguyen') {
+		res.send(req.query['hub.challenge'])
+	} else {
+		res.send('Error, wrong token')
+	}
 })
 
 // recommended to inject access tokens as environmental variables, e.g.
@@ -51,622 +51,626 @@ const token = "EAABwygPtwy4BAPaOdoKNANZB9G3YZBmZAKclAWiZBXhZBy0J0ZCZBeRZAnyFi2yl
 
 // bot reply when page has message
 function sendTextMessage(sender, text) {
-  let messageData = { text:text }
-  
-  request({
-    url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token:token},
-    method: 'POST',
-    json: {
-      recipient: {id:sender},
-      message: messageData,
-    }
-  }, function(error, response, body) {
-    if (error) {
-      console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-      console.log('Error: ', response.body.error)
-    }
-  })
+	let messageData = { text:text }
+
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	})
 }
 
 // send image
 function sendImageMessage(sender){
-  let a = "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/02.jpg";
-  let messageData = {
-    "attachment": {
-      "type": "image",
-      "payload": {
-        "url": a
-      }
-    }
-  }
-  request({
-    url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token:token},
-    method: 'POST',
-    json: {
-      recipient: {id:sender},
-      message: messageData,
-    }
-  }, function(error, response, body) {
-    if (error) {
-      console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-      console.log('Error: ', response.body.error)
-    }
-  }) 
+	let a = "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/02.jpg";
+	let messageData = {
+		"attachment": {
+			"type": "image",
+			"payload": {
+				"url": a
+			}
+		}
+	}
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	}) 
 }
 
 // send audio
 function sendAudioMessage(sender){
-  let messageData = {
-    "attachment": {
-      "type": "audio",
-      "payload": {
-        "url": "https://mp3.zing.vn/bai-hat/Em-Gai-Mua-Huong-Tram/ZW8IZECW.html"
-      }
-    }
-  }
-  request({
-    url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token:token},
-    method: 'POST',
-    json: {
-      recipient: {id:sender},
-      message: messageData,
-    }
-  }, function(error, response, body) {
-    if (error) {
-      console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-      console.log('Error: ', response.body.error)
-    }
-  }) 
+	let messageData = {
+		"attachment": {
+			"type": "audio",
+			"payload": {
+				"url": "https://mp3.zing.vn/bai-hat/Em-Gai-Mua-Huong-Tram/ZW8IZECW.html"
+			}
+		}
+	}
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	}) 
 }
 
 // send video
 function sendVideoMessage(sender){
-  let messageData = {
-    "attachment": {
-      "type": "video",
-      "payload": {
-        "url": "https://www.youtube.com/embed/I3u09JnVKTU"
-      }
-    }
-  }
-  request({
-    url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token:token},
-    method: 'POST',
-    json: {
-      recipient: {id:sender},
-      message: messageData,
-    }
-  }, function(error, response, body) {
-    if (error) {
-      console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-      console.log('Error: ', response.body.error)
-    }
-  }) 
+	let messageData = {
+		"attachment": {
+			"type": "video",
+			"payload": {
+				"url": "https://www.youtube.com/embed/I3u09JnVKTU"
+			}
+		}
+	}
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	}) 
 }
 
 // hiển thị dữ liệu từ bot
 function findInfo(sender, answer) {
-  var sql = "" + answer;
-  conn.connect(function (err){
-    conn.query(sql, function (err,results, fields) {
-      if (err) {
-        if (sql === "Du lịch") {
-          DuLich(sender);
-        }
-        else if (sql === "Tìm địa điểm") {
-          DiaDiem(sender);
-        }
-        else if (sql === "Tìm chỗ ngủ") {
-          ChoNgu(sender);
-        }
-        else if (sql === "Tìm món ăn") {
-          MonAn(sender);
-        }
-        else if (sql === "Tìm thông tin Bến Tre" || sql === "Tìm thông tin Đà Lạt" || sql === "Tìm thông tin Cần Thơ") {
-          LuaChon(sender, sql);
-        }
-        else
-          sendTextMessage(sender, answer);
-      }
-      else{
-        sendTextMessage(sender, ";) Top các kết quả có thể bạn quan tâm: ");
+	var sql = "" + answer;
+	conn.connect(function (err){
+		conn.query(sql, function (err,results, fields) {
+			if (err) {
+				if (sql === "Du lịch") {
+					DuLich(sender);
+				}
+				else if (sql === "Tìm địa điểm") {
+					DiaDiem(sender);
+				}
+				else if (sql === "Tìm chỗ ngủ") {
+					ChoNgu(sender);
+				}
+				else if (sql === "Tìm món ăn") {
+					MonAn(sender);
+				}
+				else if (sql === "Tiêu chí khách sạn Cần Thơ" || sql === "Tiêu chí khách sạn Bến Tre" || sql === "Tiêu chí khách sạn Đà Lạt") {
+					HoTel(sender, sql);
+				}
+				else if (sql === "Tìm thông tin Bến Tre" || sql === "Tìm thông tin Đà Lạt" || sql === "Tìm thông tin Cần Thơ") {
+					LuaChon(sender, sql);
+				}
+				else
+					sendTextMessage(sender, answer);
+			}
+			else{
+				sendTextMessage(sender, ";) Top các kết quả có thể bạn quan tâm: ");
         // khai báo mảng chứa lưu kết quả trả về
         var ketqua = [];
         // thêm từng phần tử vào mảng
         for (var i = 0; i < results.length; i++) {
-          ketqua.push(
-          {
-            "title": results[i]['food_ten'],
-            "subtitle": results[i]['food_diachi'],
-            "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[i]['food_hinhanh'],
-            "buttons": [{
-              "title": "Chi Tiết",
-              "type": "web_url",
-              "url": "https://www.google.com/search?q=" + results[i]['food_ten']
-            }],
-          }
-          );
+        	ketqua.push(
+        	{
+        		"title": results[i]['food_ten'],
+        		"subtitle": results[i]['food_diachi'],
+        		"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[i]['food_hinhanh'],
+        		"buttons": [{
+        			"title": "Chi Tiết",
+        			"type": "web_url",
+        			"url": "https://www.google.com/search?q=" + results[i]['food_ten']
+        		}],
+        	}
+        	);
         }
         let messageData = {
-          "attachment": {
-            "type": "template",
-            "payload": {
-              "template_type": "generic",
-              "elements": ketqua,
-            }
-          }
+        	"attachment": {
+        		"type": "template",
+        		"payload": {
+        			"template_type": "generic",
+        			"elements": ketqua,
+        		}
+        	}
         }
         request({
-          url: 'https://graph.facebook.com/v2.6/me/messages',
-          qs: {access_token:token},
-          method: 'POST',
-          json: {
-            recipient: {id:sender},
-            message: messageData,
-          }
+        	url: 'https://graph.facebook.com/v2.6/me/messages',
+        	qs: {access_token:token},
+        	method: 'POST',
+        	json: {
+        		recipient: {id:sender},
+        		message: messageData,
+        	}
         }, function(error, response, body) {
-          if (error) {
-            console.log('Error sending messages: ', error)
-          } else if (response.body.error) {
-            console.log('Error: ', response.body.error)
-          }
+        	if (error) {
+        		console.log('Error sending messages: ', error)
+        	} else if (response.body.error) {
+        		console.log('Error: ', response.body.error)
+        	}
         })
-      }
-    });
-  });
+    }
+});
+	});
 }
 
 // Hàm chọn button tìm địa điểm du lịch
 function DuLich(sender) {
-  let messageData = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Bạn muốn đi du lịch ở đâu?",
-        "buttons":[
-        {
-          "type": "postback",
-          "title": "Cần Thơ",
-          "payload": "Du lich Can Tho"
-        },
-        {
-          "type": "postback",
-          "title": "Bến Tre",
-          "payload": "Du lich Ben Tre"
-        },
-        {
-          "type": "postback",
-          "title": "Đà Lạt",
-          "payload": "Du lich Da Lat"
-        }
-        ]
-      }
-    }
-  }
-  request({
-    url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token:token},
-    method: 'POST',
-    json: {
-      recipient: {id:sender},
-      message: messageData,
-    }
-  }, function(error, response, body) {
-    if (error) {
-      console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-      console.log('Error: ', response.body.error)
-    }
-  })
+	let messageData = {
+		"attachment":{
+			"type":"template",
+			"payload":{
+				"template_type":"button",
+				"text":"Bạn muốn đi du lịch ở đâu?",
+				"buttons":[
+				{
+					"type": "postback",
+					"title": "Cần Thơ",
+					"payload": "Du lich Can Tho"
+				},
+				{
+					"type": "postback",
+					"title": "Bến Tre",
+					"payload": "Du lich Ben Tre"
+				},
+				{
+					"type": "postback",
+					"title": "Đà Lạt",
+					"payload": "Du lich Da Lat"
+				}
+				]
+			}
+		}
+	}
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	})
 }
 
-// Hàm chọn button địa điểm
-function DiaDiem(sender) {
-  let messageData = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Bạn muốn tìm loại địa điểm nào?",
-        "buttons":[
-        {
-          "type": "postback",
-          "title": "Ăn uống",
-          "payload": "Tim mon an"
-        },
-        {
-          "type": "postback",
-          "title": "Du lịch",
-          "payload": "Tim cho vui choi"
-        },
-        {
-          "type": "postback",
-          "title": "Nghỉ ngơi",
-          "payload": "Tim khach san"
-        }
-        ]
-      }
-    }
-  }
-  request({
-    url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token:token},
-    method: 'POST',
-    json: {
-      recipient: {id:sender},
-      message: messageData,
-    }
-  }, function(error, response, body) {
-    if (error) {
-      console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-      console.log('Error: ', response.body.error)
-    }
-  })
+// Tiêu chí chọn khách sạn
+function HoTel(sender) {
+	var ketqua = [];
+	if (sql === "Tiêu chí khách sạn Cần Thơ") {
+		ketqua.push(
+		{
+			"type": "postback",
+			"title": "Rẻ",
+			"payload": "Khach san re Can Tho"
+		},
+		{
+			"type": "postback",
+			"title": "Cao Cấp",
+			"payload": "Khach san cao cap Can Tho"
+		}
+		);
+	}
+	let messageData = {
+		"attachment":{
+			"type":"template",
+			"payload":{
+				"template_type":"button",
+				"text":"Bạn muốn tìm loại địa điểm nào?",
+				"buttons":[
+				ketqua
+				]
+			}
+		}
+	}
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	})
 }
 
 // Tìm chỗ ngủ
 function ChoNgu(sender) {
-  let messageData = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Bạn muốn tìm chỗ ngủ ở đâu?",
-        "buttons":[
-        {
-          "type": "postback",
-          "title": "Bến Tre",
-          "payload": "Cho ngu o Ben Tre"
-        },
-        {
-          "type": "postback",
-          "title": "Cần Thơ",
-          "payload": "Cho ngu o Can Tho"
-        },
-        {
-          "type": "postback",
-          "title": "Đà Lạt",
-          "payload": "Cho ngu o Da Lat"
-        }
-        ]
-      }
-    }
-  }
-  request({
-    url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token:token},
-    method: 'POST',
-    json: {
-      recipient: {id:sender},
-      message: messageData,
-    }
-  }, function(error, response, body) {
-    if (error) {
-      console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-      console.log('Error: ', response.body.error)
-    }
-  })
+	let messageData = {
+		"attachment":{
+			"type":"template",
+			"payload":{
+				"template_type":"button",
+				"text":"Bạn muốn tìm chỗ ngủ ở đâu?",
+				"buttons":[
+				{
+					"type": "postback",
+					"title": "Bến Tre",
+					"payload": "Cho ngu o Ben Tre"
+				},
+				{
+					"type": "postback",
+					"title": "Cần Thơ",
+					"payload": "Cho ngu o Can Tho"
+				},
+				{
+					"type": "postback",
+					"title": "Đà Lạt",
+					"payload": "Cho ngu o Da Lat"
+				}
+				]
+			}
+		}
+	}
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	})
 }
 
 // Tìm món ăn
 function MonAn(sender) {
-  let messageData = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Bạn muốn tìm món ăn ở đâu?",
-        "buttons":[
-        {
-          "type": "postback",
-          "title": "Bến Tre",
-          "payload": "Mon an o Ben Tre"
-        },
-        {
-          "type": "postback",
-          "title": "Cần Thơ",
-          "payload": "Mon an o Can Tho"
-        },
-        {
-          "type": "postback",
-          "title": "Đà Lạt",
-          "payload": "Mon an o Da Lat"
-        }
-        ]
-      }
-    }
-  }
-  request({
-    url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token:token},
-    method: 'POST',
-    json: {
-      recipient: {id:sender},
-      message: messageData,
-    }
-  }, function(error, response, body) {
-    if (error) {
-      console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-      console.log('Error: ', response.body.error)
-    }
-  })
+	let messageData = {
+		"attachment":{
+			"type":"template",
+			"payload":{
+				"template_type":"button",
+				"text":"Bạn muốn tìm món ăn ở đâu?",
+				"buttons":[
+				{
+					"type": "postback",
+					"title": "Bến Tre",
+					"payload": "Mon an o Ben Tre"
+				},
+				{
+					"type": "postback",
+					"title": "Cần Thơ",
+					"payload": "Mon an o Can Tho"
+				},
+				{
+					"type": "postback",
+					"title": "Đà Lạt",
+					"payload": "Mon an o Da Lat"
+				}
+				]
+			}
+		}
+	}
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	})
 }
 
 // Lựa chọn các tiêu chí ở một địa điểm
 function LuaChon(sender, sql) {
-  var ketqua = [];
-  if (sql === "Tìm thông tin Bến Tre") {
-    sendTextMessage(sender, "Bạn muốn tìm thông tin gì ở Bến Tre ;)");
+	var ketqua = [];
+	if (sql === "Tìm thông tin Bến Tre") {
+		sendTextMessage(sender, "Bạn muốn tìm thông tin gì ở Bến Tre ;)");
 
-    ketqua.push(
-    {
-      "title": "Món ăn",
-      "subtitle": "Thông tin về các món ngon của Bến Tre",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin mon an Ben Tre"
-      }]
-    },
-    {
-      "title": "Địa điểm vui chơi",
-      "subtitle": "Thông tin về các địa điểm ở Bến Tre",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/cncr.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin dia diem Ben Tre"
-      }]
-    },
-    {
-      "title": "Nhà hàng",
-      "subtitle": "Thông tin về các nhà hàng ở Bến Tre",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/monngan.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin nha hang Ben Tre"
-      }]
-    },
-    {
-      "title": "Khách sạn",
-      "subtitle": "Thông tin về khách sạn ở Bến Tre",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/muongthanh.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin khach san Ben Tre"
-      }]
-    },
-    {
-      "title": "Quà tặng",
-      "subtitle": "Thông tin về các quà tặng nên mua về",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ntrai.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin qua tang Ben Tre"
-      }]
-    }
-    );
-  }
-  else if (sql === "Tìm thông tin Cần Thơ") {
-    sendTextMessage(sender, "Bạn muốn tìm thông tin gì ở Cần Thơ ;)");
+		ketqua.push(
+		{
+			"title": "Món ăn",
+			"subtitle": "Thông tin về các món ngon của Bến Tre",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin mon an Ben Tre"
+			}]
+		},
+		{
+			"title": "Địa điểm vui chơi",
+			"subtitle": "Thông tin về các địa điểm ở Bến Tre",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/cncr.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin dia diem Ben Tre"
+			}]
+		},
+		{
+			"title": "Nhà hàng",
+			"subtitle": "Thông tin về các nhà hàng ở Bến Tre",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/monngan.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin nha hang Ben Tre"
+			}]
+		},
+		{
+			"title": "Khách sạn",
+			"subtitle": "Thông tin về khách sạn ở Bến Tre",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/muongthanh.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin khach san Ben Tre"
+			}]
+		},
+		{
+			"title": "Quà tặng",
+			"subtitle": "Thông tin về các quà tặng nên mua về",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ntrai.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin qua tang Ben Tre"
+			}]
+		}
+		);
+	}
+	else if (sql === "Tìm thông tin Cần Thơ") {
+		sendTextMessage(sender, "Bạn muốn tìm thông tin gì ở Cần Thơ ;)");
 
-    ketqua.push(
-    {
-      "title": "Món ăn",
-      "subtitle": "Thông tin về các món ngon của Cần Thơ",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin mon an Can Tho"
-      }]
-    },
-    {
-      "title": "Địa điểm vui chơi",
-      "subtitle": "Thông tin về các địa điểm ở Cần Thơ",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/cncr.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin dia diem Can Tho"
-      }]
-    },
-    {
-      "title": "Nhà hàng",
-      "subtitle": "Thông tin về các nhà hàng ở Cần Thơ",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/monngan.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin nha hang Can Tho"
-      }]
-    },
-    {
-      "title": "Khách sạn",
-      "subtitle": "Thông tin về khách sạn ở Cần Thơ",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/muongthanh.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin khach san Can Tho"
-      }]
-    },
-    {
-      "title": "Quà tặng",
-      "subtitle": "Thông tin về các quà tặng nên mua về",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ntrai.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin qua tang Can Tho"
-      }]
-    }
-    );
-  }
-  else{
-    sendTextMessage(sender, "Bạn muốn tìm thông tin gì ở Đà Lạt ;)");
+		ketqua.push(
+		{
+			"title": "Món ăn",
+			"subtitle": "Thông tin về các món ngon của Cần Thơ",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin mon an Can Tho"
+			}]
+		},
+		{
+			"title": "Địa điểm vui chơi",
+			"subtitle": "Thông tin về các địa điểm ở Cần Thơ",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/cncr.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin dia diem Can Tho"
+			}]
+		},
+		{
+			"title": "Nhà hàng",
+			"subtitle": "Thông tin về các nhà hàng ở Cần Thơ",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/monngan.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin nha hang Can Tho"
+			}]
+		},
+		{
+			"title": "Khách sạn",
+			"subtitle": "Thông tin về khách sạn ở Cần Thơ",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/muongthanh.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin khach san Can Tho"
+			}]
+		},
+		{
+			"title": "Quà tặng",
+			"subtitle": "Thông tin về các quà tặng nên mua về",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ntrai.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin qua tang Can Tho"
+			}]
+		}
+		);
+	}
+	else{
+		sendTextMessage(sender, "Bạn muốn tìm thông tin gì ở Đà Lạt ;)");
 
-    ketqua.push(
-    {
-      "title": "Món ăn",
-      "subtitle": "Thông tin về các món ngon của Đà Lạt",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin mon an Da Lat"
-      }]
-    },
-    {
-      "title": "Địa điểm vui chơi",
-      "subtitle": "Thông tin về các địa điểm ở Đà Lạt",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/cncr.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin dia diem Da Lat"
-      }]
-    },
-    {
-      "title": "Nhà hàng",
-      "subtitle": "Thông tin về các nhà hàng ở Đà Lạt",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/monngan.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin nha hang Da Lat"
-      }]
-    },
-    {
-      "title": "Khách sạn",
-      "subtitle": "Thông tin về khách sạn ở Đà Lạt",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/muongthanh.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin khach san Da Lat"
-      }]
-    },
-    {
-      "title": "Quà tặng",
-      "subtitle": "Thông tin về các quà tặng nên mua về",
-      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ntrai.jpg",
-      "buttons": [{
-        "type": "postback",
-        "title": "Chi Tiết",
-        "payload": "Thong tin qua tang Da Lat"
-      }]
-    }
-    );
-  }
-  let messageData = {
-    "attachment": {
-      "type": "template",
-      "payload": {
-        "template_type": "generic",
-        "elements": ketqua
-      }
-    }
-  }
-  request({
-    url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token:token},
-    method: 'POST',
-    json: {
-      recipient: {id:sender},
-      message: messageData,
-    }
-  }, function(error, response, body) {
-    if (error) {
-      console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-      console.log('Error: ', response.body.error)
-    }
-  })
+		ketqua.push(
+		{
+			"title": "Món ăn",
+			"subtitle": "Thông tin về các món ngon của Đà Lạt",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin mon an Da Lat"
+			}]
+		},
+		{
+			"title": "Địa điểm vui chơi",
+			"subtitle": "Thông tin về các địa điểm ở Đà Lạt",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/cncr.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin dia diem Da Lat"
+			}]
+		},
+		{
+			"title": "Nhà hàng",
+			"subtitle": "Thông tin về các nhà hàng ở Đà Lạt",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/monngan.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin nha hang Da Lat"
+			}]
+		},
+		{
+			"title": "Khách sạn",
+			"subtitle": "Thông tin về khách sạn ở Đà Lạt",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/muongthanh.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin khach san Da Lat"
+			}]
+		},
+		{
+			"title": "Quà tặng",
+			"subtitle": "Thông tin về các quà tặng nên mua về",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ntrai.jpg",
+			"buttons": [{
+				"type": "postback",
+				"title": "Chi Tiết",
+				"payload": "Thong tin qua tang Da Lat"
+			}]
+		}
+		);
+	}
+	let messageData = {
+		"attachment": {
+			"type": "template",
+			"payload": {
+				"template_type": "generic",
+				"elements": ketqua
+			}
+		}
+	}
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	})
 }
 
 
 
 // chuyển đổi tiếng việt không dấu và loại bỏ dấu câu
 function Convert(str){
-  str = str.toLowerCase();
-  str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
-  str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
-  str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
-  str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
-  str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
-  str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
-  str = str.replace(/đ/g, "d");
-  str = str.replace(/!|\?|\.|;|,/g, "");
-  return str;
+	str = str.toLowerCase();
+	str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
+	str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
+	str = str.replace(/ì|í|ị|ỉ|ĩ/g, "i");
+	str = str.replace(/ò|ó|ọ|ỏ|õ|ô|ồ|ố|ộ|ổ|ỗ|ơ|ờ|ớ|ợ|ở|ỡ/g, "o");
+	str = str.replace(/ù|ú|ụ|ủ|ũ|ư|ừ|ứ|ự|ử|ữ/g, "u");
+	str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
+	str = str.replace(/đ/g, "d");
+	str = str.replace(/!|\?|\.|;|,/g, "");
+	return str;
 }
 
 
 // to post data
 app.post('/webhook', function (req, res) {
-  let messaging_events = req.body.entry[0].messaging
-  for (let i = 0; i < messaging_events.length; i++) {
-    let event = req.body.entry[0].messaging[i]
-    let sender = event.sender.id
-    let check = /[0-9()^;:_<>*|./?!@#$%&`~+='"\-{}]{1,1000}$/;
+	let messaging_events = req.body.entry[0].messaging
+	for (let i = 0; i < messaging_events.length; i++) {
+		let event = req.body.entry[0].messaging[i]
+		let sender = event.sender.id
+		let check = /[0-9()^;:_<>*|./?!@#$%&`~+='"\-{}]{1,1000}$/;
 
     // kiểm tra sự kiện có tin nhắn đến
     if (event.message && event.message.text) {
-      let text = event.message.text
-      let temp = "";
-      for (var j = 0; j < text.length; j++) {
-        temp += Convert(text[j]);
-      }
+    	let text = event.message.text
+    	let temp = "";
+    	for (var j = 0; j < text.length; j++) {
+    		temp += Convert(text[j]);
+    	}
       // hàm callback trả về đáp án
       var callback = function(answer, wildCardArray, input){
-        if (text.match(check)) {
-          sendTextMessage(sender, "Vui lòng không nhập biểu tượng cảm xúc, chữ số và ký tự đặc biệt! ;)");
-        }
-        else if (answer !== undefined && answer !== '') {
-          findInfo(sender, answer);
-        }
-        else if (answer === '') {
-          sendTextMessage(sender, "Bên mình chưa có dữ liệu!");
-        }       
-        else{
-          sendTextMessage(sender, "Xin lỗi! Mình chưa hiểu rõ ý của bạn. Vui lòng nhập help để được trợ giúp.");
-        }
+      	if (text.match(check)) {
+      		sendTextMessage(sender, "Vui lòng không nhập biểu tượng cảm xúc, chữ số và ký tự đặc biệt! ;)");
+      	}
+      	else if (answer !== undefined && answer !== '') {
+      		findInfo(sender, answer);
+      	}
+      	else if (answer === '') {
+      		sendTextMessage(sender, "Bên mình chưa có dữ liệu!");
+      	}       
+      	else{
+      		sendTextMessage(sender, "Xin lỗi! Mình chưa hiểu rõ ý của bạn. Vui lòng nhập help để được trợ giúp.");
+      	}
       };
 
       // kiểm tra text với file aiml
       aimlInterpreter.findAnswerInLoadedAIMLFiles(temp, callback)
-    }
-    if (event.postback) {
-      let text = event.postback.payload
-
-      var callback = function(answer, wildCardArray, input){
-        findInfo(sender, answer);
-      };
-
-      aimlInterpreter.findAnswerInLoadedAIMLFiles(text, callback)
-    }
   }
-  res.sendStatus(200)
+  if (event.postback) {
+  	let text = event.postback.payload
+
+  	var callback = function(answer, wildCardArray, input){
+  		findInfo(sender, answer);
+  	};
+
+  	aimlInterpreter.findAnswerInLoadedAIMLFiles(text, callback)
+  }
+}
+res.sendStatus(200)
 })
 
 
 // spin spin sugar
 app.listen(app.get('port'), function() {
-  console.log('running on port', app.get('port'))
+	console.log('running on port', app.get('port'))
 })
