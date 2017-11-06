@@ -270,9 +270,14 @@ function test(sender) {
             "payload": "Cần Thơ"
           },
           {
-            "type":"web_url",
-            "url":"https://www.messenger.com",
-            "title":"Visit Messenger"
+            "type": "postback",
+            "title": "Bến Tre",
+            "payload": "Bến Tre"
+          },
+          {
+            "type": "postback",
+            "title": "Đà Lạt",
+            "payload": "Đà Lạt"
           }
         ]
       }
