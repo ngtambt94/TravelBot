@@ -358,6 +358,10 @@ app.post('/webhook', function (req, res) {
       // kiểm tra text với file aiml
       aimlInterpreter.findAnswerInLoadedAIMLFiles(temp, callback)
     }
+    if (event.postback) {
+      let text = JSON.stringify(event.postback)
+      sendTextMessage(sender, "Postback received: "+text.substring(0, 200), token)
+    }
   }
   res.sendStatus(200)
 })
