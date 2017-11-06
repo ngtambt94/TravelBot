@@ -273,7 +273,7 @@ function DuLich(sender) {
 }
 
 // Tiêu chí chọn khách sạn
-function HoTel(sender) {
+function HoTel(sender, sql) {
 	var ketqua = [];
 	if (sql === "Tiêu chí khách sạn Cần Thơ") {
 		ketqua.push(
@@ -294,8 +294,8 @@ function HoTel(sender) {
 			"type":"template",
 			"payload":{
 				"template_type":"button",
-				"text":"Bạn muốn tìm loại địa điểm nào?",
-				"buttons": ketqua
+				"text":"Bạn muốn tìm khách sạn theo tiêu chí nào?",
+				"buttons": ketqua,
 			}
 		}
 	}
