@@ -2668,6 +2668,6 @@
 	<!-- Làm được gì -->
 	<category>
 		<pattern>* LAM *</pattern>
-		<template><srai>HELP</srai></template>
+		<template>Mình có thể đưa ra một số gợi ý giúp bạn về du lịch ở ba địa điểm Cần Thơ, Bến Tre và Đà Lạt :)</template>
 	</category>
 </aiml>
