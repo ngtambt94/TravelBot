@@ -277,31 +277,6 @@ function Check(sender) {
           "type": "postback",
           "title": "Khách sạn",
           "payload": "Khách sạn Bến Tre"
-        },
-        {
-          "type": "postback",
-          "title": "Địa điểm vui chơi",
-          "payload": "Địa điểm Bến Tre"
-        },
-        {
-          "type": "postback",
-          "title": "Hoạt động",
-          "payload": "Hoạt động Bến Tre"
-        },
-        {
-          "type": "postback",
-          "title": "Nhà hàng",
-          "payload": "Nhà hàng Bến Tre"
-        },
-        {
-          "type": "postback",
-          "title": "Quà nên mua về",
-          "payload": "Quà Bến Tre"
-        },
-        {
-          "type": "postback",
-          "title": "Lễ hội",
-          "payload": "Lễ hội Bến Tre"
         }
         ]
       }
