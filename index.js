@@ -327,7 +327,10 @@ app.post('/webhook', function (req, res) {
 
     // kiểm tra sự kiện có tin nhắn đến
     if (event.message && event.message.text) {
-      let text = event.message.text;
+      if (event.postback)
+        let text = JSON.stringify(event.postback);
+      else
+        let text = event.message.text;
       let temp = "";
       for (var j = 0; j < text.length; j++) {
         temp += convert(text[j]);
