@@ -2627,108 +2627,32 @@
 	</category>
 	<!-- kịch bản từ khóa du lịch -->
 	<category>
+		<pattern>DU LICH</pattern>
+		<template>Du lịch</template>
+	</category>
+	<category>
 		<pattern>* DU LICH *</pattern>
-		<template>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi du lịch ở đâu</template>
-	</category>
-	<category>
-		<pattern>* BIET *</pattern>
-		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi du lịch ở đâu</that>
-		<template>Mình có 3 gợi ý: Cần Thơ, Bến Tre, Đà Lạt</template>
-	</category>
-	<category>
-		<pattern>* BEN TRE *</pattern>
-		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi du lịch ở đâu</that>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* DA LAT* </pattern>
-		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi du lịch ở đâu</that>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* CAN THO *</pattern>
-		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi du lịch ở đâu</that>
-		<template><srai>CAN THO</srai></template>
+		<template><srai>DU LICH</srai></template>
 	</category>
 	<!-- kịch bản đi đâu -->
 	<category>
 		<pattern>* DI DAU *</pattern>
-		<template>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đâu?</template>
-	</category>
-	<category>
-		<pattern>* BIET *</pattern>
-		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đâu?</that>
-		<template>Mình có 3 gợi ý: Cần Thơ, Bến Tre, Đà Lạt</template>
-	</category>
-	<category>
-		<pattern>* BEN TRE *</pattern>
-		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đâu?</that>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* DA LAT *</pattern>
-		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đâu?</that>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* CAN THO *</pattern>
-		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đâu?</that>
-		<template><srai>CAN THO</srai></template>
+		<template><srai>DU LICH</srai></template>
 	</category>
 	<!-- kịch bản đi chơi -->
 	<category>
 		<pattern>* DI CHOI *</pattern>
-		<template>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đến đâu?</template>
-	</category>
-	<category>
-		<pattern>* BIET *</pattern>
-		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đến đâu?</that>
-		<template>Mình có 3 gợi ý: Cần Thơ, Bến Tre, Đà Lạt</template>
-	</category>
-	<category>
-		<pattern>* BEN TRE *</pattern>
-		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đến đâu?</that>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* DA LAT *</pattern>
-		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đến đâu?</that>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* CAN THO *</pattern>
-		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi đến đâu?</that>
-		<template><srai>CAN THO</srai></template>
+		<template><srai>DU LICH</srai></template>
 	</category>
 	<!-- kịch bản tui đi -->
 	<category>
 		<pattern>TUI DI</pattern>
-		<template>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi tới đâu?</template>
+		<template><srai>DU LICH</srai></template>
 	</category>
 	<category>
 		<pattern>* TUI * DI</pattern>
-		<srai>TUI DI</srai>
+		<srai>DU LICH</srai>
 	</category>
-	<category>
-		<pattern>* BIET *</pattern>
-		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi tới đâu?</that>
-		<template>Mình có 3 gợi ý: Cần Thơ, Bến Tre, Đà Lạt</template>
-	</category>
-	<category>
-		<pattern>* BEN TRE *</pattern>
-		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi tới đâu?</that>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* DA LAT *</pattern>
-		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi tới đâu?</that>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* CAN THO *</pattern>
-		<that>Cần Thơ, Đà Lạt, Bến Tre. Bạn muốn đi tới đâu?</that>
-		<template><srai>CAN THO</srai></template>
-	</category>	
 	<!-- kêu mày -->
 	<category>
 		<pattern>* MAY *</pattern>
