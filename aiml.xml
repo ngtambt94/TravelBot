@@ -2543,39 +2543,34 @@
 	<!-- kịch bản món ngon -->
 	<category>
 		<pattern>MON NGON</pattern>
-		<template>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</template>
+		<template>Tìm món ăn</template>
 	</category>
 	<category>
 		<pattern>* MON *</pattern>
 		<srai>MON NGON</srai>
 	</category>
 	<category>
-		<pattern>* NHA HANG *</pattern>
+		<pattern>* DAC SAN *</pattern>
 		<srai>MON NGON</srai>
 	</category>
 	<category>
-		<pattern>* QUAN *</pattern>
+		<pattern>* AN *</pattern>
 		<srai>MON NGON</srai>
 	</category>
 	<category>
-		<pattern>* BEN TRE *</pattern>
-		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
+		<pattern>Mon an o Ben Tre</pattern>
+		<that>Tìm món ăn</that>
 		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5</template>
 	</category>
 	<category>
-		<pattern>* DA LAT *</pattern>
-		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
+		<pattern>Mon an o Da Lat</pattern>
+		<that>Tìm món ăn</that>
 		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5</template>
 	</category>
 	<category>
-		<pattern>* CAN THO *</pattern>
-		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
+		<pattern>Mon an o Can Tho</pattern>
+		<that>Tìm món ăn</that>
 		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
-	</category>
-	<category>
-		<pattern>*</pattern>
-		<that>Cần Thơ, Bến Tre, Đà Lạt. Bạn muốn đi ăn ở đâu?</that>
-		<template>Bên mình chưa có dữ liệu</template>
 	</category>
 	<!-- kịch bản qua đêm -->
 	<category>
@@ -2604,6 +2599,10 @@
 	</category>
 	<category>
 		<pattern>* CHO * NGHI *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO * DUNG *</pattern>
 		<template><srai>QUA DEM</srai></template>
 	</category>
 	<category>
