@@ -2665,4 +2665,9 @@
 		<pattern>* SLEEP *</pattern>
 		<template><srai>NGU NGON</srai></template>
 	</category>
+	<!-- Làm được gì -->
+	<category>
+		<pattern>* LAM *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
 </aiml>
