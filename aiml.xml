@@ -2606,9 +2606,7 @@
 	<!-- kịch bản địa điểm -->
 	<category>
 		<pattern>* DIA DIEM *</pattern>
-		<template>
-			Tìm địa điểm
-		</template>
+		<template>Tìm địa điểm</template>
 	</category>
 	<category>
 		<pattern>Tim mon an</pattern>
@@ -2616,14 +2614,14 @@
 		<template><srai>MON NGON</srai></template>
 	</category>
 	<category>
-		<pattern>Tim cho ngu</pattern>
+		<pattern>Tim cho nghi ngoi</pattern>
 		<that>Tìm địa điểm</that>
 		<template><srai>QUA DEM</srai></template>
 	</category>
 	<category>
 		<pattern>Tim cho vui choi</pattern>
 		<that>Tìm địa điểm</that>
-		<template><srai>TUI DI</srai></template>
+		<template><srai>DU LICH</srai></template>
 	</category>
 	<!-- kịch bản từ khóa du lịch -->
 	<category>
@@ -2642,6 +2640,11 @@
 	<!-- kịch bản đi chơi -->
 	<category>
 		<pattern>* DI CHOI *</pattern>
+		<template><srai>DU LICH</srai></template>
+	</category>
+	<!-- kịch bản tìm chỗ vui chơi -->
+	<category>
+		<pattern>* CHO * CHOI</pattern>
 		<template><srai>DU LICH</srai></template>
 	</category>
 	<!-- kịch bản tui đi -->

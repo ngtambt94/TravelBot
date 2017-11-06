@@ -285,7 +285,7 @@ function DiaDiem(sender) {
         {
           "type": "postback",
           "title": "Nghỉ ngơi",
-          "payload": "Tim cho ngu"
+          "payload": "Tim cho nghi ngoi"
         }
         ]
       }
