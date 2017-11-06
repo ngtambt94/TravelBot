@@ -152,7 +152,7 @@ function sendVideoMessage(sender){
   }) 
 }
 
-// menu help of bot
+// hiển thị dữ liệu từ bot
 function findInfo(sender, answer) {
   var sql = "" + answer;
   conn.connect(function (err){
@@ -255,7 +255,8 @@ function listTest(sender){
 }
 
 
-function sendGenericMessage(sender) {
+
+function test(sender) {
   let messageData = {
     "attachment": {
       "type": "template",
@@ -302,52 +303,8 @@ function sendGenericMessage(sender) {
       console.log('Error: ', response.body.error)
     }
   })
-}function test(sender) {
-  let messageData = {
-    "attachment": {
-      "type": "template",
-      "payload": {
-        "template_type": "generic",
-        "elements": [
-        {
-          "buttons": [{
-            "type": "web_url",
-            "url": "https://www.facebook.com/ngtampl94",
-            "title": "web url"
-          }]
-        }, {
-          "buttons": [{
-            "type": "postback",
-            "title": "Postback",
-            "payload": "T1",
-          }] 
-        },
-        {
-          "buttons": [{
-            "type": "postback",
-            "title": "Postback",
-            "payload": "T2",
-        }]
-      }]
-    } 
-  }
 }
-request({
-  url: 'https://graph.facebook.com/v2.6/me/messages',
-  qs: {access_token:token},
-  method: 'POST',
-  json: {
-    recipient: {id:sender},
-    message: messageData,
-  }
-}, function(error, response, body) {
-  if (error) {
-    console.log('Error sending messages: ', error)
-  } else if (response.body.error) {
-    console.log('Error: ', response.body.error)
-  }
-})
-}
+
 
 
 // chuyển đổi tiếng việt không dấu và loại bỏ dấu câu
