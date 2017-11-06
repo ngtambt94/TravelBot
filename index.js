@@ -279,7 +279,7 @@ function ThongTinDuLich(sender, sql) {
       "type": "postback",
       "title": "Địa điểm vui chơi",
       "payload": "Địa điểm Bến Tre"
-    }
+    },
     {
       "type": "postback",
       "title": "Hoạt động",
@@ -294,7 +294,7 @@ function ThongTinDuLich(sender, sql) {
       "type": "postback",
       "title": "Quà nên mua về",
       "payload": "Quà Bến Tre"
-    }
+    },
     {
       "type": "postback",
       "title": "Lễ hội",
@@ -318,7 +318,7 @@ function ThongTinDuLich(sender, sql) {
       "type": "postback",
       "title": "Địa điểm vui chơi",
       "payload": "Địa điểm Cần Thơ"
-    }
+    },
     {
       "type": "postback",
       "title": "Hoạt động",
@@ -333,7 +333,7 @@ function ThongTinDuLich(sender, sql) {
       "type": "postback",
       "title": "Quà nên mua về",
       "payload": "Quà Cần Thơ"
-    }
+    },
     {
       "type": "postback",
       "title": "Lễ hội",
@@ -357,7 +357,7 @@ function ThongTinDuLich(sender, sql) {
       "type": "postback",
       "title": "Địa điểm vui chơi",
       "payload": "Địa điểm Đà Lạt"
-    }
+    },
     {
       "type": "postback",
       "title": "Hoạt động",
@@ -372,7 +372,7 @@ function ThongTinDuLich(sender, sql) {
       "type": "postback",
       "title": "Quà nên mua về",
       "payload": "Quà Đà Lạt"
-    }
+    },
     {
       "type": "postback",
       "title": "Lễ hội",
