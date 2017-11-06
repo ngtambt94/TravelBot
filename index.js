@@ -170,8 +170,8 @@ function findInfo(sender, answer) {
         else if (sql === "Tìm món ăn") {
           MonAn(sender);
         }
-        else if (sql === "Du lịch Bến Tre" || sql === "Du lịch Đà Lạt" || sql === "Du lịch Cần Thơ") {
-          ThongTinDuLich(sender, sql);
+        else if (sql === "Tìm thông tin Bến Tre" || sql === "Tìm thông tin Đà Lạt" || sql === "Tìm thông tin Cần Thơ") {
+          LuaChon(sender, sql);
         }
         else
           sendTextMessage(sender, answer);
@@ -285,7 +285,7 @@ function DiaDiem(sender) {
         },
         {
           "type": "postback",
-          "title": "Vui chơi",
+          "title": "Du lịch",
           "payload": "Tim cho vui choi"
         },
         {
@@ -404,84 +404,69 @@ function MonAn(sender) {
   })
 }
 
-function Check(sender) {
+// Lựa chọn các tiêu chí ở một địa điểm
+function LuaChon(sender, sql) {
+  var ketqua = [];
+  if (sql === "Tìm thông tin Bến Tre") {
+    ketqua.push(
+    {
+      "title": "Món ăn",
+      "subtitle": "Thông tin về các món ngon của Bến Tre",
+      "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin mon an Ben Tre"
+      }]
+    },
+    {
+      "title": "Địa điểm vui chơi",
+      "subtitle": "Thông tin về các địa điểm ở Bến Tre",
+      "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin dia diem Ben Tre"
+      }]
+    },
+    {
+      "title": "Nhà hàng",
+      "subtitle": "Thông tin về các nhà hàng ở Bến Tre",
+      "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin nha hang Ben Tre"
+      }]
+    },
+    {
+      "title": "Khách sạn",
+      "subtitle": "Thông tin về khách sạn ở Bến Tre",
+      "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin khach san Ben Tre"
+      }]
+    },
+    {
+      "title": "Quà tặng",
+      "subtitle": "Thông tin về các quà tặng nên mua về",
+      "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin qua tang Ben Tre"
+      }]
+    }
+    );
+  }
   let messageData = {
     "attachment": {
       "type": "template",
       "payload": {
         "template_type": "generic",
-        "elements": [
-        {
-          "title": "First card",
-          "subtitle": "Element #1 of an hscroll",
-          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
-          "buttons": [{
-            "type": "postback",
-            "title": "Món ăn",
-            "payload": "Món ăn Bến Tre"
-          }]
-        },
-        {
-          "title": "First card",
-          "subtitle": "Element #1 of an hscroll",
-          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
-          "buttons": [{
-            "type": "postback",
-            "title": "Món ăn",
-            "payload": "Món ăn Bến Tre"
-          }]
-        },
-        {
-          "title": "First card",
-          "subtitle": "Element #1 of an hscroll",
-          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
-          "buttons": [{
-            "type": "postback",
-            "title": "Món ăn",
-            "payload": "Món ăn Bến Tre"
-          }]
-        },
-        {
-          "title": "First card",
-          "subtitle": "Element #1 of an hscroll",
-          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
-          "buttons": [{
-            "type": "postback",
-            "title": "Món ăn",
-            "payload": "Món ăn Bến Tre"
-          }]
-        },
-        {
-          "title": "First card",
-          "subtitle": "Element #1 of an hscroll",
-          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
-          "buttons": [{
-            "type": "postback",
-            "title": "Món ăn",
-            "payload": "Món ăn Bến Tre"
-          }]
-        },
-        {
-          "title": "First card",
-          "subtitle": "Element #1 of an hscroll",
-          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
-          "buttons": [{
-            "type": "postback",
-            "title": "Món ăn",
-            "payload": "Món ăn Bến Tre"
-          }]
-        },
-        {
-          "title": "First card",
-          "subtitle": "Element #1 of an hscroll",
-          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
-          "buttons": [{
-            "type": "postback",
-            "title": "Món ăn",
-            "payload": "Món ăn Bến Tre"
-          }]
-        }
-        ]
+        "elements": ketqua
       }
     }
   }

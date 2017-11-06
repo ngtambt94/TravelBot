@@ -2269,7 +2269,7 @@
 	<!-- kịch bản du lịch theo địa danh bến tre -->
 	<category>
 		<pattern>BEN TRE</pattern>
-		<template>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
+		<template>Tìm thông tin Bến Tre</template>
 	</category>
 	<category>
 		<pattern>* BEN TRE *</pattern>
@@ -2312,40 +2312,33 @@
 		<template><srai>BEN TRE</srai></template>
 	</category>
 	<category>
-		<pattern>* DIA DIEM *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin dia diem Ben Tre</pattern>
+		<that>Tìm thông tin Bến Tre</that>
 		<template>
 			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5
 		</template>
 	</category>
 	<category>
-		<pattern>* NHA HANG *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin nha hang Ben Tre</pattern>
+		<that>Tìm thông tin Bến Tre</that>
 		<template>
 			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 1 limit 0, 5
 		</template>
 	</category>
 	<category>
-		<pattern>* MON *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin mon an Ben Tre</pattern>
+		<that>Tìm thông tin Bến Tre</that>
 		<template>
 			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5
 		</template>
 	</category>
 	<category>
-		<pattern>* AN *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
-		<template>
-			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5
-		</template>
-	</category>
-	<category>
-		<pattern>* KHACH SAN *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin khach san Ben Tre</pattern>
+		<that>Tìm thông tin Bến Tre</that>
 		<template><srai>KHACH SAN BEN TRE</srai></template>
 	</category>
 	<category>
-		<pattern>* QUA *</pattern>
+		<pattern>Thong tin qua tang Ben Tre</pattern>
 		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
 		<template><srai>QUA BEN TRE</srai></template>
 	</category>
