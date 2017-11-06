@@ -604,7 +604,7 @@ function LuaChon(sender, sql) {
 
 
 // chuyển đổi tiếng việt không dấu và loại bỏ dấu câu
-function convert(str){
+function Convert(str){
   str = str.toLowerCase();
   str = str.replace(/à|á|ạ|ả|ã|â|ầ|ấ|ậ|ẩ|ẫ|ă|ằ|ắ|ặ|ẳ|ẵ/g, "a");
   str = str.replace(/è|é|ẹ|ẻ|ẽ|ê|ề|ế|ệ|ể|ễ/g, "e");
@@ -631,15 +631,12 @@ app.post('/webhook', function (req, res) {
       let text = event.message.text
       let temp = "";
       for (var j = 0; j < text.length; j++) {
-        temp += convert(text[j]);
+        temp += Convert(text[j]);
       }
       // hàm callback trả về đáp án
       var callback = function(answer, wildCardArray, input){
         if (text.match(check)) {
           sendTextMessage(sender, "Vui lòng không nhập biểu tượng cảm xúc, chữ số và ký tự đặc biệt! ;)");
-        }
-        else if (text === "t") {
-          Check(sender);
         }
         else if (answer !== undefined && answer !== '') {
           findInfo(sender, answer);
