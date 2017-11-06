@@ -295,9 +295,7 @@ function HoTel(sender) {
 			"payload":{
 				"template_type":"button",
 				"text":"Bạn muốn tìm loại địa điểm nào?",
-				"buttons":[
-				ketqua
-				]
+				"buttons": ketqua
 			}
 		}
 	}
