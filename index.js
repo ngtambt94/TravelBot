@@ -260,6 +260,71 @@ function DuLich(sender) {
   })
 }
 
+function Check(sender) {
+  let messageData = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Bạn muốn đi du lịch ở đâu?",
+        "buttons":[
+        {
+          "type": "postback",
+          "title": "Món ăn",
+          "payload": "Món ăn Bến Tre"
+        },
+        {
+          "type": "postback",
+          "title": "Khách sạn",
+          "payload": "Khách sạn Bến Tre"
+        },
+        {
+          "type": "postback",
+          "title": "Địa điểm vui chơi",
+          "payload": "Địa điểm Bến Tre"
+        },
+        {
+          "type": "postback",
+          "title": "Hoạt động",
+          "payload": "Hoạt động Bến Tre"
+        },
+        {
+          "type": "postback",
+          "title": "Nhà hàng",
+          "payload": "Nhà hàng Bến Tre"
+        },
+        {
+          "type": "postback",
+          "title": "Quà nên mua về",
+          "payload": "Quà Bến Tre"
+        },
+        {
+          "type": "postback",
+          "title": "Lễ hội",
+          "payload": "Lễ hội Bến Tre"
+        }
+        ]
+      }
+    }
+  }
+  request({
+    url: 'https://graph.facebook.com/v2.6/me/messages',
+    qs: {access_token:token},
+    method: 'POST',
+    json: {
+      recipient: {id:sender},
+      message: messageData,
+    }
+  }, function(error, response, body) {
+    if (error) {
+      console.log('Error sending messages: ', error)
+    } else if (response.body.error) {
+      console.log('Error: ', response.body.error)
+    }
+  })
+}
+
+
 // Hàm chọn button thông tin của địa điểm du lịch
 function ThongTinDuLich(sender, sql) {
   var ketqua = [];
@@ -443,6 +508,9 @@ app.post('/webhook', function (req, res) {
       var callback = function(answer, wildCardArray, input){
         if (text.match(check)) {
           sendTextMessage(sender, "Vui lòng không nhập biểu tượng cảm xúc, chữ số và ký tự đặc biệt! ;)");
+        }
+        else if (text === "t") {
+          Check(sender);
         }
         else if (answer !== undefined && answer !== '') {
           findInfo(sender, answer);
