@@ -330,7 +330,7 @@ app.post('/webhook', function (req, res) {
 
       let text = event.message.text;
       if (event.postback) {
-        let text = JSON.stringify(event.postback)
+        let text = event.postback.text;
       }
 
       let temp = "";
