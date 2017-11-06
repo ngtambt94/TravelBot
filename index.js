@@ -158,8 +158,8 @@ function findInfo(sender, answer) {
   conn.connect(function (err){
     conn.query(sql, function (err,results, fields) {
       if (err) {
-        if (sql === "Du lịch Bến Tre") {
-          test(sender);
+        if (sql === "Du lịch") {
+          DuLich(sender);
         }
         else
           sendTextMessage(sender, answer);
@@ -212,55 +212,8 @@ function findInfo(sender, answer) {
   });
 }
 
-
-// send list
-function listTest(sender){
-  let messageData = {
-    "attachment": {
-      "type": "template",
-      "payload": {
-        "template_type": "list",
-        "top_element_style": "compact",
-        "elements": [
-        {
-          "title": "Classic White T-Shirt",
-          "subtitle": "100% Cotton, 200% Comfortable",
-          "default_action": {
-            "type": "web_url",
-            "url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/"
-          },
-          "buttons": [
-          {
-            "title": "Buy",
-            "type": "web_url",
-            "url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/"                     
-          }
-          ]                
-        }
-        ]
-      }
-    }    
-  }
-  request({
-    url: 'https://graph.facebook.com/me/messages',
-    qs: {access_token:token},
-    method: 'POST',
-    json: {
-      recipient: {id:sender},
-      message: messageData,
-    }
-  }, function(error, response, body) {
-    if (error) {
-      console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-      console.log('Error: ', response.body.error)
-    }
-  }) 
-}
-
-
-
-function test(sender) {
+// Hàm chọn button
+function DuLich(sender) {
   let messageData = {
     "attachment":{
       "type":"template",
@@ -341,19 +294,12 @@ app.post('/webhook', function (req, res) {
         if (text.match(check)) {
           sendTextMessage(sender, "Vui lòng không nhập biểu tượng cảm xúc, chữ số và ký tự đặc biệt! ;)");
         }
-        else if (temp === 'img') {
-          // sendGenericMessage(sender);
-          test(sender);
-        }
         else if (answer !== undefined && answer !== '') {
-          // sendTextMessage(sender, answer);
           findInfo(sender, answer);
         }
         else if (answer === '') {
-          // sendTextMessage(sender, answer);
           sendTextMessage(sender, "Bên mình chưa có dữ liệu!");
-        }
-        // không tìm thấy đáp án         
+        }       
         else{
           sendTextMessage(sender, "Xin lỗi! Mình chưa hiểu rõ ý của bạn. Vui lòng nhập help để được trợ giúp.");
         }
