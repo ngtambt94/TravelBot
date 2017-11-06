@@ -262,31 +262,80 @@ function DuLich(sender) {
 
 function Check(sender) {
   let messageData = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Bạn muốn đi du lịch ở đâu?",
-        "buttons":[
+    "attachment": {
+      "type": "template",
+      "payload": {
+        "template_type": "generic",
+        "elements": [
         {
-          "type": "postback",
-          "title": "Món ăn",
-          "payload": "Mon an Ben Tre"
+          "title": "First card",
+          "subtitle": "Element #1 of an hscroll",
+          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+          "buttons": [{
+            "type": "postback",
+            "title": "Món ăn",
+            "payload": "Món ăn Bến Tre"
+          }]
         },
         {
-          "type": "postback",
-          "title": "Khách sạn",
-          "payload": "Khach san Ben Tre"
+          "title": "First card",
+          "subtitle": "Element #1 of an hscroll",
+          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+          "buttons": [{
+            "type": "postback",
+            "title": "Món ăn",
+            "payload": "Món ăn Bến Tre"
+          }]
         },
         {
-          "type": "postback",
-          "title": "Địa điểm vui chơi",
-          "payload": "Dia diem Ben Tre"
+          "title": "First card",
+          "subtitle": "Element #1 of an hscroll",
+          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+          "buttons": [{
+            "type": "postback",
+            "title": "Món ăn",
+            "payload": "Món ăn Bến Tre"
+          }]
         },
         {
-          "type": "postback",
-          "title": "Địa điểm vui chơi",
-          "payload": "Dia diem Ben Tre"
+          "title": "First card",
+          "subtitle": "Element #1 of an hscroll",
+          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+          "buttons": [{
+            "type": "postback",
+            "title": "Món ăn",
+            "payload": "Món ăn Bến Tre"
+          }]
+        },
+        {
+          "title": "First card",
+          "subtitle": "Element #1 of an hscroll",
+          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+          "buttons": [{
+            "type": "postback",
+            "title": "Món ăn",
+            "payload": "Món ăn Bến Tre"
+          }]
+        },
+        {
+          "title": "First card",
+          "subtitle": "Element #1 of an hscroll",
+          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+          "buttons": [{
+            "type": "postback",
+            "title": "Món ăn",
+            "payload": "Món ăn Bến Tre"
+          }]
+        },
+        {
+          "title": "First card",
+          "subtitle": "Element #1 of an hscroll",
+          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+          "buttons": [{
+            "type": "postback",
+            "title": "Món ăn",
+            "payload": "Món ăn Bến Tre"
+          }]
         }
         ]
       }
