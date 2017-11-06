@@ -264,21 +264,21 @@ function test(sender) {
         "template_type":"button",
         "text":"Bạn muốn đi du lịch ở đâu?",
         "buttons":[
-          {
-            "type": "postback",
-            "title": "Cần Thơ",
-            "payload": "Cần Thơ"
-          },
-          {
-            "type": "postback",
-            "title": "Bến Tre",
-            "payload": "Bến Tre"
-          },
-          {
-            "type": "postback",
-            "title": "Đà Lạt",
-            "payload": "Đà Lạt"
-          }
+        {
+          "type": "postback",
+          "title": "Cần Thơ",
+          "payload": "Cần Thơ"
+        },
+        {
+          "type": "postback",
+          "title": "Bến Tre",
+          "payload": "Bến Tre"
+        },
+        {
+          "type": "postback",
+          "title": "Đà Lạt",
+          "payload": "Đà Lạt"
+        }
         ]
       }
     }
@@ -327,11 +327,11 @@ app.post('/webhook', function (req, res) {
 
     // kiểm tra sự kiện có tin nhắn đến
     if ((event.message && event.message.text) || event.postback) {
-      
-      if (event.postback)
-        let text = JSON.stringify(event.postback);
-      else
-        let text = event.message.text;
+
+      let text = event.message.text;
+      if (event.postback) {
+        let text = JSON.stringify(event.postback)
+      }
 
       let temp = "";
       for (var j = 0; j < text.length; j++) {
