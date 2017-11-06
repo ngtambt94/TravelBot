@@ -262,7 +262,7 @@ function DuLich(sender) {
 
 // Hàm chọn button thông tin của địa điểm du lịch
 function ThongTinDuLich(sender, sql) {
-  let ketqua = [];
+  var ketqua = [];
   if (sql === "Du lịch Bến Tre") {
     ketqua.push(
     {
@@ -386,7 +386,7 @@ function ThongTinDuLich(sender, sql) {
       "payload":{
         "template_type":"button",
         "text":"Bạn cần tìm thông tin gì?",
-        "buttons": ketqua,
+        "buttons": ketqua
       }
     }
   }
