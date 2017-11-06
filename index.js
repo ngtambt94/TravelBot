@@ -412,7 +412,7 @@ function LuaChon(sender, sql) {
     {
       "title": "Món ăn",
       "subtitle": "Thông tin về các món ngon của Bến Tre",
-      "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
       "buttons": [{
         "type": "postback",
         "title": "Chi Tiết",
@@ -422,7 +422,7 @@ function LuaChon(sender, sql) {
     {
       "title": "Địa điểm vui chơi",
       "subtitle": "Thông tin về các địa điểm ở Bến Tre",
-      "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/cncr.jpg",
       "buttons": [{
         "type": "postback",
         "title": "Chi Tiết",
@@ -432,7 +432,7 @@ function LuaChon(sender, sql) {
     {
       "title": "Nhà hàng",
       "subtitle": "Thông tin về các nhà hàng ở Bến Tre",
-      "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/monngan.jpg",
       "buttons": [{
         "type": "postback",
         "title": "Chi Tiết",
@@ -442,7 +442,7 @@ function LuaChon(sender, sql) {
     {
       "title": "Khách sạn",
       "subtitle": "Thông tin về khách sạn ở Bến Tre",
-      "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/muongthanh.jpg",
       "buttons": [{
         "type": "postback",
         "title": "Chi Tiết",
@@ -452,11 +452,119 @@ function LuaChon(sender, sql) {
     {
       "title": "Quà tặng",
       "subtitle": "Thông tin về các quà tặng nên mua về",
-      "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ntrai.jpg",
       "buttons": [{
         "type": "postback",
         "title": "Chi Tiết",
         "payload": "Thong tin qua tang Ben Tre"
+      }]
+    }
+    );
+  }
+  else if (sql === "Tìm thông tin Cần thơ") {
+    ketqua.push(
+    {
+      "title": "Món ăn",
+      "subtitle": "Thông tin về các món ngon của Cần Thơ",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin mon an Can Tho"
+      }]
+    },
+    {
+      "title": "Địa điểm vui chơi",
+      "subtitle": "Thông tin về các địa điểm ở Cần Thơ",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/cncr.jpg",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin dia diem Can Tho"
+      }]
+    },
+    {
+      "title": "Nhà hàng",
+      "subtitle": "Thông tin về các nhà hàng ở Cần Thơ",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/monngan.jpg",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin nha hang Can Tho"
+      }]
+    },
+    {
+      "title": "Khách sạn",
+      "subtitle": "Thông tin về khách sạn ở Cần Thơ",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/muongthanh.jpg",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin khach san Can Tho"
+      }]
+    },
+    {
+      "title": "Quà tặng",
+      "subtitle": "Thông tin về các quà tặng nên mua về",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ntrai.jpg",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin qua tang Can Tho"
+      }]
+    }
+    );
+  }
+  else{
+    ketqua.push(
+    {
+      "title": "Món ăn",
+      "subtitle": "Thông tin về các món ngon của Đà Lạt",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin mon an Da Lat"
+      }]
+    },
+    {
+      "title": "Địa điểm vui chơi",
+      "subtitle": "Thông tin về các địa điểm ở Đà Lạt",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/cncr.jpg",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin dia diem Da Lat"
+      }]
+    },
+    {
+      "title": "Nhà hàng",
+      "subtitle": "Thông tin về các nhà hàng ở Đà Lạt",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/monngan.jpg",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin nha hang Da Lat"
+      }]
+    },
+    {
+      "title": "Khách sạn",
+      "subtitle": "Thông tin về khách sạn ở Đà Lạt",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/muongthanh.jpg",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin khach san Da Lat"
+      }]
+    },
+    {
+      "title": "Quà tặng",
+      "subtitle": "Thông tin về các quà tặng nên mua về",
+      "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ntrai.jpg",
+      "buttons": [{
+        "type": "postback",
+        "title": "Chi Tiết",
+        "payload": "Thong tin qua tang Da Lat"
       }]
     }
     );
@@ -467,154 +575,6 @@ function LuaChon(sender, sql) {
       "payload": {
         "template_type": "generic",
         "elements": ketqua
-      }
-    }
-  }
-  request({
-    url: 'https://graph.facebook.com/v2.6/me/messages',
-    qs: {access_token:token},
-    method: 'POST',
-    json: {
-      recipient: {id:sender},
-      message: messageData,
-    }
-  }, function(error, response, body) {
-    if (error) {
-      console.log('Error sending messages: ', error)
-    } else if (response.body.error) {
-      console.log('Error: ', response.body.error)
-    }
-  })
-}
-
-
-// Hàm chọn button thông tin của địa điểm du lịch
-function ThongTinDuLich(sender, sql) {
-  var ketqua = [];
-  if (sql === "Du lịch Bến Tre") {
-    ketqua.push(
-    {
-      "type": "postback",
-      "title": "Món ăn",
-      "payload": "Món ăn Bến Tre"
-    },
-    {
-      "type": "postback",
-      "title": "Khách sạn",
-      "payload": "Khách sạn Bến Tre"
-    },
-    {
-      "type": "postback",
-      "title": "Địa điểm vui chơi",
-      "payload": "Địa điểm Bến Tre"
-    },
-    {
-      "type": "postback",
-      "title": "Hoạt động",
-      "payload": "Hoạt động Bến Tre"
-    },
-    {
-      "type": "postback",
-      "title": "Nhà hàng",
-      "payload": "Nhà hàng Bến Tre"
-    },
-    {
-      "type": "postback",
-      "title": "Quà nên mua về",
-      "payload": "Quà Bến Tre"
-    },
-    {
-      "type": "postback",
-      "title": "Lễ hội",
-      "payload": "Lễ hội Bến Tre"
-    }
-    );
-  }
-  else if (sql === "Du lịch Cần Thơ") {
-    ketqua.push(
-    {
-      "type": "postback",
-      "title": "Món ăn",
-      "payload": "Món ăn Cần Thơ"
-    },
-    {
-      "type": "postback",
-      "title": "Khách sạn",
-      "payload": "Khách sạn Cần Thơ"
-    },
-    {
-      "type": "postback",
-      "title": "Địa điểm vui chơi",
-      "payload": "Địa điểm Cần Thơ"
-    },
-    {
-      "type": "postback",
-      "title": "Hoạt động",
-      "payload": "Hoạt động Cần Thơ"
-    },
-    {
-      "type": "postback",
-      "title": "Nhà hàng",
-      "payload": "Nhà hàng Cần Thơ"
-    },
-    {
-      "type": "postback",
-      "title": "Quà nên mua về",
-      "payload": "Quà Cần Thơ"
-    },
-    {
-      "type": "postback",
-      "title": "Lễ hội",
-      "payload": "Lễ hội Cần Thơ"
-    }
-    );
-  }
-  else{
-    ketqua.push(
-    {
-      "type": "postback",
-      "title": "Món ăn",
-      "payload": "Món ăn Đà Lạt"
-    },
-    {
-      "type": "postback",
-      "title": "Khách sạn",
-      "payload": "Khách sạn Đà Lạt"
-    },
-    {
-      "type": "postback",
-      "title": "Địa điểm vui chơi",
-      "payload": "Địa điểm Đà Lạt"
-    },
-    {
-      "type": "postback",
-      "title": "Hoạt động",
-      "payload": "Hoạt động Đà Lạt"
-    },
-    {
-      "type": "postback",
-      "title": "Nhà hàng",
-      "payload": "Nhà hàng Đà Lạt"
-    },
-    {
-      "type": "postback",
-      "title": "Quà nên mua về",
-      "payload": "Quà Đà Lạt"
-    },
-    {
-      "type": "postback",
-      "title": "Lễ hội",
-      "payload": "Lễ hội Đà Lạt"
-    }
-    );
-  }
-  let messageData = {
-    "attachment":{
-      "type":"template",
-      "payload":{
-        "template_type":"button",
-        "text":"Bạn cần tìm thông tin gì?",
-        "buttons": ketqua
       }
     }
   }

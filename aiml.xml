@@ -2345,7 +2345,7 @@
 	<!-- kịch bản du lịch cần thơ -->
 	<category>
 		<pattern>CAN THO</pattern>
-		<template>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
+		<template>Tìm thông tin Cần Thơ</template>
 	</category>
 	<category>
 		<pattern>* CAN THO *</pattern>
@@ -2388,47 +2388,40 @@
 		<template><srai>CAN THO</srai></template>
 	</category>
 	<category>
-		<pattern>* DIA DIEM *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin dia diem Can Tho</pattern>
+		<that>Tìm thông tin Cần Thơ</that>
 		<template>
 			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 11 limit 0, 5
 		</template>
 	</category>
 	<category>
-		<pattern>* NHA HANG *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin nha hang Can Tho</pattern>
+		<that>Tìm thông tin Cần Thơ</that>
 		<template>
 			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 11 limit 0, 5
 		</template>
 	</category>
 	<category>
-		<pattern>* MON *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin mon an Can Tho</pattern>
+		<that>Tìm thông tin Cần Thơ</that>
 		<template>
 			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5
 		</template>
 	</category>
 	<category>
-		<pattern>* AN *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
-		<template>
-			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5
-		</template>
-	</category>
-	<category>
-		<pattern>* KHACH SAN *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin khach san Can Tho</pattern>
+		<that>Tìm thông tin Cần Thơ</that>
 		<template><srai>KHACH SAN CAN THO</srai></template>
 	</category>
 	<category>
-		<pattern>* QUA *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Cần Thơ: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin qua tang Can Tho</pattern>
+		<that>Tìm thông tin Cần Thơ</that>
 		<template><srai>QUA CAN THO</srai></template>
 	</category>
 	<!-- kịch bản du lịch đà lạt -->
 	<category>
 		<pattern>DA LAT</pattern>
-		<template>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</template>
+		<template>Tìm thông tin Đà Lạt</template>
 	</category>
 	<category>
 		<pattern>* DA LAT *</pattern>
@@ -2471,41 +2464,34 @@
 		<template><srai>DA LAT</srai></template>
 	</category>
 	<category>
-		<pattern>* DIA DIEM *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin dia diem Da Lat</pattern>
+		<that>Tìm thông tin Đà Lạt</that>
 		<template>
 			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 22 limit 0, 5
 		</template>
 	</category>
 	<category>
-		<pattern>* NHA HANG *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin nha hang Da Lat</pattern>
+		<that>Tìm thông tin Đà Lạt</that>
 		<template>
 			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 22 limit 0, 5
 		</template>
 	</category>
 	<category>
-		<pattern>* MON *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin mon an Da Lat</pattern>
+		<that>Tìm thông tin Đà Lạt</that>
 		<template>
 			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5
 		</template>
 	</category>
 	<category>
-		<pattern>* AN *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
-		<template>
-			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5
-		</template>
-	</category>
-	<category>
-		<pattern>* KHACH SAN *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin khach san Da Lat</pattern>
+		<that>Tìm thông tin Đà Lạt</that>
 		<template><srai>KHACH SAN DA LAT</srai></template>
 	</category>
 	<category>
-		<pattern>* QUA *</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Đà Lạt: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<pattern>Thong tin qua tang Da Lat</pattern>
+		<that>Tìm thông tin Đà Lạt</that>
 		<template><srai>QUA DA LAT</srai></template>
 	</category>
 	<!-- kịch bản món ngon và ăn -->
