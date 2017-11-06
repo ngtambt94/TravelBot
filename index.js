@@ -360,6 +360,11 @@ app.post('/webhook', function (req, res) {
     }
     if (event.postback) {
       let text = event.postback.payload
+
+      var callback = function(answer, wildCardArray, input){
+        findInfo(sender, answer);
+      };
+
       aimlInterpreter.findAnswerInLoadedAIMLFiles(text, callback)
     }
   }
