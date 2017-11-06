@@ -164,6 +164,9 @@ function findInfo(sender, answer) {
         else if (sql === "Tìm địa điểm") {
           DiaDiem(sender);
         }
+        else if (sql === "Tìm chỗ ngủ") {
+          ChoNgu(sender);
+        }
         else if (sql === "Du lịch Bến Tre" || sql === "Du lịch Đà Lạt" || sql === "Du lịch Cần Thơ") {
           ThongTinDuLich(sender, sql);
         }
@@ -285,7 +288,52 @@ function DiaDiem(sender) {
         {
           "type": "postback",
           "title": "Nghỉ ngơi",
-          "payload": "Tim cho nghi ngoi"
+          "payload": "Tim khach san"
+        }
+        ]
+      }
+    }
+  }
+  request({
+    url: 'https://graph.facebook.com/v2.6/me/messages',
+    qs: {access_token:token},
+    method: 'POST',
+    json: {
+      recipient: {id:sender},
+      message: messageData,
+    }
+  }, function(error, response, body) {
+    if (error) {
+      console.log('Error sending messages: ', error)
+    } else if (response.body.error) {
+      console.log('Error: ', response.body.error)
+    }
+  })
+}
+
+// Tìm chỗ ngủ
+function ChoNgu(sender) {
+  let messageData = {
+    "attachment":{
+      "type":"template",
+      "payload":{
+        "template_type":"button",
+        "text":"Bạn muốn tìm chỗ ngủ ở đâu?",
+        "buttons":[
+        {
+          "type": "postback",
+          "title": "Bến Tre",
+          "payload": "Cho ngu o Ben Tre"
+        },
+        {
+          "type": "postback",
+          "title": "Cần Thơ",
+          "payload": "Cho ngu o Can Tho"
+        },
+        {
+          "type": "postback",
+          "title": "Đà Lạt",
+          "payload": "Cho ngu o Da Lat"
         }
         ]
       }

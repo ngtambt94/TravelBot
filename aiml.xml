@@ -2580,27 +2580,49 @@
 	<!-- kịch bản qua đêm -->
 	<category>
 		<pattern>QUA DEM</pattern>
-		<template>
-			Mình có 3 gợi ý: Bến Tre, Cần Thơ, Đà Lạt. Bạn muốn qua đêm ở đâu?
-		</template>
+		<template>Tìm chỗ ngủ</template>
 	</category>
 	<category>
 		<pattern>* QUA DEM *</pattern>
 		<template><srai>QUA DEM</srai></template>
 	</category>
 	<category>
-		<pattern>* BEN TRE *</pattern>
-		<that>Mình có 3 gợi ý: Bến Tre, Cần Thơ, Đà Lạt. Bạn muốn qua đêm ở đâu?</that>
+		<pattern>* CHO * TRO *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA NGHI *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO * NGHI *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* TA TUC *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>Cho ngu o Ben Tre</pattern>
+		<that>Tìm chỗ ngủ</that>
 		<template><srai>KHACH SAN BEN TRE</srai></template>
 	</category>
 	<category>
-		<pattern>* CAN THO *</pattern>
-		<that>Mình có 3 gợi ý: Bến Tre, Cần Thơ, Đà Lạt. Bạn muốn qua đêm ở đâu?</that>
+		<pattern>Cho ngu o Can Tho</pattern>
+		<that>Tìm chỗ ngủ</that>
 		<template><srai>KHACH SAN CAN THO</srai></template>
 	</category>
 	<category>
-		<pattern>* DA LAT *</pattern>
-		<that>Mình có 3 gợi ý: Bến Tre, Cần Thơ, Đà Lạt. Bạn muốn qua đêm ở đâu?</that>
+		<pattern>Cho ngu o Da Lat</pattern>
+		<that>Tìm chỗ ngủ</that>
 		<template><srai>KHACH SAN DA LAT</srai></template>
 	</category>
 	<!-- kịch bản địa điểm -->
@@ -2614,7 +2636,7 @@
 		<template><srai>MON NGON</srai></template>
 	</category>
 	<category>
-		<pattern>Tim cho nghi ngoi</pattern>
+		<pattern>Tim khach san</pattern>
 		<that>Tìm địa điểm</that>
 		<template><srai>QUA DEM</srai></template>
 	</category>
