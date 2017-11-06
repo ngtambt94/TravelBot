@@ -271,17 +271,22 @@ function Check(sender) {
         {
           "type": "postback",
           "title": "Món ăn",
-          "payload": "Món ăn Bến Tre"
+          "payload": "Mon an Ben Tre"
         },
         {
           "type": "postback",
           "title": "Khách sạn",
-          "payload": "Khách sạn Bến Tre"
+          "payload": "Khach san Ben Tre"
         },
         {
           "type": "postback",
           "title": "Địa điểm vui chơi",
-          "payload": "Địa điểm Bến Tre"
+          "payload": "Dia diem Ben Tre"
+        },
+        {
+          "type": "postback",
+          "title": "Địa điểm vui chơi",
+          "payload": "Dia diem Ben Tre"
         }
         ]
       }
