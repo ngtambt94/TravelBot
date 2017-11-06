@@ -275,7 +275,7 @@ function test(sender) {
             "payload": "Bến Tre"
           },
           {
-            "type": "text",
+            "type": "postback",
             "title": "Đà Lạt",
             "payload": "Đà Lạt"
           }
