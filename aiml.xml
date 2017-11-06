@@ -1478,19 +1478,17 @@
 	<!-- KHÁCH SẠN Ở BẾN TRE -->
 	<category>
 		<pattern>KHACH SAN BEN TRE</pattern>
-		<template>
-			Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?
-		</template>
+		<template>Tiêu chí khách sạn Bến Tre</template>
 	</category>
 	<category>
-		<pattern>* CAO CAP *</pattern>
-		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
+		<pattern>Khach san cao cap Ben Tre</pattern>
+		<that>Tiêu chí khách sạn Bến Tre</that>
 		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 ORDER BY hotel_chatluongsao desc LIMIT 0,5
 		</template>
 	</category>
 	<category>
-		<pattern>* RE *</pattern>
-		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
+		<pattern>Khach san re Ben Tre</pattern>
+		<that>Tiêu chí khách sạn Bến Tre</that>
 		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 1 ORDER BY hotel_giatu LIMIT 0,5
 		</template>
 	</category>
@@ -2139,19 +2137,17 @@
 	<!-- KHÁCH SẠN Ở ĐÀ LẠT -->
 	<category>
 		<pattern>KHACH SAN DA LAT</pattern>
-		<template>
-			Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?
-		</template>
+		<template>Tiêu chí khách sạn Đà Lạt</template>
 	</category>
 	<category>
-		<pattern>* CAO CAP *</pattern>
-		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
+		<pattern>Khach san cao cap Da Lat</pattern>
+		<that>Tiêu chí khách sạn Đà Lạt</that>
 		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 ORDER BY hotel_chatluongsao desc LIMIT 0,5
 		</template>
 	</category>
 	<category>
-		<pattern>* RE *</pattern>
-		<that>Bạn muốn tìm khách sạn theo tiêu chí nào: giá rẻ hay cao cấp?</that>
+		<pattern>Khach san re Da Lat</pattern>
+		<that>Tiêu chí khách sạn Đà Lạt</that>
 		<template>select hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website from hotels where place_id = 22 ORDER BY hotel_giatu LIMIT 0,5
 		</template>
 	</category>

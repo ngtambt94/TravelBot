@@ -234,7 +234,7 @@ function DuLich(sender) {
 			"type":"template",
 			"payload":{
 				"template_type":"button",
-				"text":"Bạn muốn đi du lịch ở đâu?",
+				"text":"Bạn muốn đi du lịch ở đâu? ;)",
 				"buttons":[
 				{
 					"type": "postback",
@@ -289,12 +289,40 @@ function HoTel(sender, sql) {
 		}
 		);
 	}
+	else if (sql === "Tiêu chí khách sạn Bến Tre") {
+		ketqua.push(
+		{
+			"type": "postback",
+			"title": "Rẻ",
+			"payload": "Khach san re Ben Tre"
+		},
+		{
+			"type": "postback",
+			"title": "Cao Cấp",
+			"payload": "Khach san cao cap Ben Tre"
+		}
+		);
+	}
+	else {
+		ketqua.push(
+		{
+			"type": "postback",
+			"title": "Rẻ",
+			"payload": "Khach san re Da Lat"
+		},
+		{
+			"type": "postback",
+			"title": "Cao Cấp",
+			"payload": "Khach san cao cap Da Lat"
+		}
+		);
+	}
 	let messageData = {
 		"attachment":{
 			"type":"template",
 			"payload":{
 				"template_type":"button",
-				"text":"Bạn muốn tìm khách sạn theo tiêu chí nào?",
+				"text":"Bạn muốn tìm khách sạn theo tiêu chí nào? :)",
 				"buttons": ketqua,
 			}
 		}
@@ -323,7 +351,7 @@ function ChoNgu(sender) {
 			"type":"template",
 			"payload":{
 				"template_type":"button",
-				"text":"Bạn muốn tìm chỗ ngủ ở đâu?",
+				"text":"Bạn muốn tìm chỗ ngủ ở đâu? ;)",
 				"buttons":[
 				{
 					"type": "postback",
@@ -368,7 +396,7 @@ function MonAn(sender) {
 			"type":"template",
 			"payload":{
 				"template_type":"button",
-				"text":"Bạn muốn tìm món ăn ở đâu?",
+				"text":"Bạn muốn tìm món ăn ở đâu? :)",
 				"buttons":[
 				{
 					"type": "postback",
