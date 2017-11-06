@@ -267,17 +267,17 @@ function test(sender) {
         {
           "type": "postback",
           "title": "Cần Thơ",
-          "payload": "Cần Thơ"
+          "payload": "Du lich Can Tho"
         },
         {
           "type": "postback",
           "title": "Bến Tre",
-          "payload": "Bến Tre"
+          "payload": "Du lich Ben Tre"
         },
         {
           "type": "postback",
           "title": "Đà Lạt",
-          "payload": "Đà Lạt"
+          "payload": "Du lich Da Lat"
         }
         ]
       }
@@ -326,13 +326,8 @@ app.post('/webhook', function (req, res) {
     let check = /[0-9()^;:_<>*|./?!@#$%&`~+='"\-{}]{1,1000}$/;
 
     // kiểm tra sự kiện có tin nhắn đến
-    if ((event.message && event.message.text) || event.postback) {
-
+    if (event.message && event.message.text) {
       let text = event.message.text
-      if (event.postback) {
-        let text = event.postback.payload
-      }
-
       let temp = "";
       for (var j = 0; j < text.length; j++) {
         temp += convert(text[j]);
