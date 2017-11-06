@@ -282,11 +282,6 @@ function Check(sender) {
           "type": "postback",
           "title": "Địa điểm vui chơi",
           "payload": "Địa điểm Bến Tre"
-        },
-        {
-          "type": "postback",
-          "title": "Hoạt động",
-          "payload": "Hoạt động Bến Tre"
         }
         ]
       }
