@@ -408,6 +408,8 @@ function MonAn(sender) {
 function LuaChon(sender, sql) {
   var ketqua = [];
   if (sql === "Tìm thông tin Bến Tre") {
+    sendTextMessage(sender, "Bạn muốn tìm thông tin gì ở Bến Tre ;)");
+
     ketqua.push(
     {
       "title": "Món ăn",
@@ -462,6 +464,8 @@ function LuaChon(sender, sql) {
     );
   }
   else if (sql === "Tìm thông tin Cần thơ") {
+    sendTextMessage(sender, "Bạn muốn tìm thông tin gì ở Cần Thơ ;)");
+
     ketqua.push(
     {
       "title": "Món ăn",
@@ -516,6 +520,8 @@ function LuaChon(sender, sql) {
     );
   }
   else{
+    sendTextMessage(sender, "Bạn muốn tìm thông tin gì ở Đà Lạt ;)");
+
     ketqua.push(
     {
       "title": "Món ăn",
