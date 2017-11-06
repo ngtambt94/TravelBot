@@ -158,7 +158,7 @@ function findInfo(sender, answer) {
   conn.connect(function (err){
     conn.query(sql, function (err,results, fields) {
       if (err) {
-        if (sql === "Du lịch") {
+        if (sql === "Du lịch" || sql === "Tìm địa điểm") {
           DuLich(sender);
         }
         else if (sql === "Du lịch Bến Tre" || sql === "Du lịch Đà Lạt" || sql === "Du lịch Cần Thơ") {

@@ -2607,22 +2607,22 @@
 	<category>
 		<pattern>* DIA DIEM *</pattern>
 		<template>
-			Bạn muốn tìm địa điểm nào: ăn uống, qua đêm hay vui chơi?
+			Tìm địa điểm
 		</template>
 	</category>
 	<category>
 		<pattern>* AN *</pattern>
-		<that>Bạn muốn tìm địa điểm nào: ăn uống, qua đêm hay vui chơi?</that>
+		<that>Tìm địa điểm</that>
 		<template><srai>MON NGON</srai></template>
 	</category>
 	<category>
 		<pattern>* QUA DEM *</pattern>
-		<that>Bạn muốn tìm địa điểm nào: ăn uống, qua đêm hay vui chơi?</that>
+		<that>Tìm địa điểm</that>
 		<template><srai>QUA DEM</srai></template>
 	</category>
 	<category>
 		<pattern>* CHOI *</pattern>
-		<that>Bạn muốn tìm địa điểm nào: ăn uống, qua đêm hay vui chơi?</that>
+		<that>Tìm địa điểm</that>
 		<template><srai>TUI DI</srai></template>
 	</category>
 	<!-- kịch bản từ khóa du lịch -->
