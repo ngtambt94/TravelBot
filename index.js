@@ -360,7 +360,7 @@ app.post('/webhook', function (req, res) {
     }
     if (event.postback) {
       let text = event.postback.payload
-      sendTextMessage(sender, "Postback received: " + text)
+      findInfo(sender, text);
     }
   }
   res.sendStatus(200)
