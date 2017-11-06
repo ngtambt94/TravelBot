@@ -2636,7 +2636,7 @@
 	</category>
 	<!-- kịch bản đi đâu -->
 	<category>
-		<pattern>* DI DAU *</pattern>
+		<pattern>* DI * DAU *</pattern>
 		<template><srai>DU LICH</srai></template>
 	</category>
 	<!-- kịch bản đi chơi -->
