@@ -227,6 +227,51 @@ function findInfo(sender, answer) {
 	});
 }
 
+// Hàm chọn địa điểm
+function DiaDiem(sender) {
+	let messageData = {
+		"attachment":{
+			"type":"template",
+			"payload":{
+				"template_type":"button",
+				"text":"Bạn muốn tìm loại địa điểm nào? ;)",
+				"buttons":[
+				{
+					"type": "postback",
+					"title": "Ăn uống",
+					"payload": "Tim mon an"
+				},
+				{
+					"type": "postback",
+					"title": "Qua Đêm",
+					"payload": "Tim khach san"
+				},
+				{
+					"type": "postback",
+					"title": "Chỗ vui chơi",
+					"payload": "Tim cho vui choi"
+				}
+				]
+			}
+		}
+	}
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	})
+}
+
 // Hàm chọn button tìm địa điểm du lịch
 function DuLich(sender) {
 	let messageData = {

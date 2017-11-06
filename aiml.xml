@@ -2598,8 +2598,12 @@
 	</category>
 	<!-- kịch bản địa điểm -->
 	<category>
-		<pattern>* DIA DIEM *</pattern>
+		<pattern>DIA DIEM</pattern>
 		<template>Tìm địa điểm</template>
+	</category>
+	<category>
+		<pattern>* DIA DIEM *</pattern>
+		<template><srai>DIA DIEM</srai></template>
 	</category>
 	<category>
 		<pattern>Tim mon an</pattern>
