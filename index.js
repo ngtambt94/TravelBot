@@ -326,11 +326,13 @@ app.post('/webhook', function (req, res) {
     let check = /[0-9()^;:_<>*|./?!@#$%&`~+='"\-{}]{1,1000}$/;
 
     // kiểm tra sự kiện có tin nhắn đến
-    if (event.message && event.message.text) {
+    if ((event.message && event.message.text) || event.postback) {
+      
       if (event.postback)
         let text = JSON.stringify(event.postback);
       else
         let text = event.message.text;
+
       let temp = "";
       for (var j = 0; j < text.length; j++) {
         temp += convert(text[j]);
