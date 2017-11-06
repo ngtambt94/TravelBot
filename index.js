@@ -262,12 +262,12 @@ function test(sender) {
       "type":"template",
       "payload":{
         "template_type":"button",
-        "text":"What do you want to do next?",
+        "text":"Bạn muốn đi du lịch ở đâu?",
         "buttons":[
           {
-            "type":"web_url",
-            "url":"https://www.messenger.com",
-            "title":"Visit Messenger"
+            "type": "postback",
+            "title": "Cần Thơ",
+            "payload": "Cần Thơ"
           },
           {
             "type":"web_url",
