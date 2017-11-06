@@ -248,7 +248,7 @@ function DiaDiem(sender) {
 				},
 				{
 					"type": "postback",
-					"title": "Chỗ vui chơi",
+					"title": "Du lịch",
 					"payload": "Tim cho vui choi"
 				}
 				]
