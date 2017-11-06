@@ -265,20 +265,16 @@ function test(sender) {
         "elements": [{
           "title": "First card",
           "subtitle": "Element #1 of an hscroll",
-          "image_url": "http://messengerdemo.parseapp.com/img/rift.png",
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
           "buttons": [{
-            "type": "web_url",
-            "url": "https://www.messenger.com",
-            "title": "web url"
-          }, {
             "type": "postback",
             "title": "Cần Thơ",
-            "payload": "Cần Thơ",
+            "payload": "Du lich Can Tho",
           }],
         }, {
           "title": "Second card",
           "subtitle": "Element #2 of an hscroll",
-          "image_url": "http://messengerdemo.parseapp.com/img/gearvr.png",
+          "image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhbeo.jpg",
           "buttons": [{
             "type": "postback",
             "title": "Postback",
