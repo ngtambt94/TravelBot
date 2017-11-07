@@ -2678,6 +2678,14 @@
 		<template><srai>HOAT DONG</srai></template>
 	</category>
 	<category>
+		<pattern>* VUI CHOI *</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>* CO * GI * HAP DAN</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
 		<pattern>Tim hoat dong o Can Tho</pattern>
 		<that>Tìm hoạt động</that>
 		<template><srai>HOAT DONG CAN THO</srai></template>
@@ -2760,6 +2768,54 @@
 	<category>
 		<pattern>* TUI * DI</pattern>
 		<srai>DU LICH</srai>
+	</category>
+	<!-- tìm khách sạn rẻ -->
+	<category>
+		<pattern>KHACH SAN RE</pattern>
+		<template>Tìm khách sạn rẻ</template>
+	</category>
+	<category>
+		<pattern>* RE *</pattern>
+		<template><srai>KHACH SAN RE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san re o Can Tho</pattern>
+		<that>Tìm khách sạn rẻ</that>
+		<template><srai>KHACH SAN RE CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san re o Ben Tre</pattern>
+		<that>Tìm khách sạn rẻ</that>
+		<template><srai>KHACH SAN RE BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san re o Da Lat</pattern>
+		<that>Tìm khách sạn rẻ</that>
+		<template><srai>KHACH SAN RE DA LAT</srai></template>
+	</category>
+	<!-- tìm khách sạn cao cấp -->
+	<category>
+		<pattern>KHACH SAN CAO CAP</pattern>
+		<template>Tìm khách sạn cao cấp</template>
+	</category>
+	<category>
+		<pattern>* CAO CAP *</pattern>
+		<template><srai>KHACH SAN CAO CAP</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san cao cap o Can Tho</pattern>
+		<that>Tìm khách sạn cao cấp</that>
+		<template><srai>KHACH SAN CAO CAP CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san cao cap o Ben TCAO CAP</pattern>
+		<that>Tìm khách sạn cao cấp</that>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san cao cap o Da Lat</pattern>
+		<that>Tìm khách sạn cao cấp</that>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
 	</category>
 	<!-- kêu mày -->
 	<category>
