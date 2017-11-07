@@ -2756,7 +2756,7 @@
 		<template><srai>KHACH SAN CAO CAP CAN THO</srai></template>
 	</category>
 	<category>
-		<pattern>Tim khach san cao cap o Ben TCAO CAP</pattern>
+		<pattern>Tim khach san cao cap o Ben Tre</pattern>
 		<that>Tìm khách sạn cao cấp</that>
 		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
 	</category>
@@ -2816,6 +2816,38 @@
 		<pattern>Cho ngu o Da Lat</pattern>
 		<that>Tìm chỗ ngủ</that>
 		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<!-- lễ hội truyền thống -->
+	<category>
+		<pattern>LE HOI</pattern>
+		<template>Tìm lễ hội</template>
+	</category>
+	<category>
+		<pattern>* LE HOI *</pattern>
+		<template><srai>LE HOI</srai></template>
+	</category>
+	<category>
+		<pattern>* VAN HOA *</pattern>
+		<template><srai>LE HOI</srai></template>
+	</category>
+	<category>
+		<pattern>* TRUYEN THONG *</pattern>
+		<template><srai>LE HOI</srai></template>
+	</category>
+	<category>
+		<pattern>Tim le hoi o Can Tho</pattern>
+		<that>Tìm lễ hội</that>
+		<template><srai>LE HOI CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Tim le hoi o Ben Tre</pattern>
+		<that>Tìm lễ hội</that>
+		<template><srai>LE HOI BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim le hoi o Da Lat</pattern>
+		<that>Tìm lễ hội</that>
+		<template><srai>LE HOI DA LAT</srai></template>
 	</category>
 	<!-- kêu mày -->
 	<category>

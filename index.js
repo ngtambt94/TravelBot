@@ -185,6 +185,9 @@ function findInfo(sender, answer) {
 				else if (sql === "Tìm khách sạn cao cấp") {
 					KhachSanCaoCap(sender);
 				}
+				else if (sql === "Tìm lễ hội") {
+					LeHoi(sender);
+				}
 				else if (sql === "Tiêu chí khách sạn Cần Thơ" || sql === "Tiêu chí khách sạn Bến Tre" || sql === "Tiêu chí khách sạn Đà Lạt") {
 					HoTel(sender, sql);
 				}
@@ -265,6 +268,51 @@ function DiaDiem(sender) {
 					"type": "postback",
 					"title": "Du lịch",
 					"payload": "Tim cho vui choi"
+				}
+				]
+			}
+		}
+	}
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	})
+}
+
+// Tìm lễ hội
+function LeHoi(sender) {
+	let messageData = {
+		"attachment":{
+			"type":"template",
+			"payload":{
+				"template_type":"button",
+				"text":"Bạn muốn tìm lễ hội ở đâu? :)",
+				"buttons":[
+				{
+					"type": "postback",
+					"title": "Cần Thơ",
+					"payload": "Tim le hoi o Can Tho"
+				},
+				{
+					"type": "postback",
+					"title": "Bến Tre",
+					"payload": "Tim le hoi o Ben Tre"
+				},
+				{
+					"type": "postback",
+					"title": "Đà Lạt",
+					"payload": "Tim le hoi o Da Lat"
 				}
 				]
 			}
