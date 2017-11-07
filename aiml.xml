@@ -2893,4 +2893,28 @@
 		<pattern>* LAM *</pattern>
 		<template>Mình có thể đưa ra một số gợi ý giúp bạn về du lịch ở ba địa điểm Cần Thơ, Bến Tre và Đà Lạt :)</template>
 	</category>
+	<category>
+		<pattern>* XIN LOI *</pattern>
+		<template>Thôi buồn rồi :(</template>
+	</category>
+	<category>
+		<pattern>* SORRY *</pattern>
+		<template>Thôi giận rồi :(</template>
+	</category>
+	<category>
+		<pattern>* KE *</pattern>
+		<template>Tạm biệt :(</template>
+	</category>
+	<category>
+		<pattern>* NGOAN *</pattern>
+		<template>Hong! :(</template>
+	</category>
+	<category>
+		<pattern>* GIAN *</pattern>
+		<template>Hong! :(</template>
+	</category>
+	<category>
+		<pattern>* NA NI *</pattern>
+		<template>Tha lỗi cho đó!</template>
+	</category>
 </aiml>
