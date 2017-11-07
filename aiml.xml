@@ -2930,7 +2930,7 @@
 		<template>Hong! :(</template>
 	</category>
 	<category>
-		<pattern>* NA NI *</pattern>
+		<pattern>* NAN NI *</pattern>
 		<template>Tha lỗi cho đó!</template>
 	</category>
 </aiml>
