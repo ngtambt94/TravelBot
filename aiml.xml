@@ -73,6 +73,10 @@
 		<template><srai>TAM LA AI</srai></template>
 	</category>
 	<category>
+		<pattern>* BIET * TAM</pattern>
+		<template><srai>TAM LA AI</srai></template>
+	</category>
+	<category>
 		<pattern>TAM * BAN GAI *</pattern>
 		<template>
 			Tất nhiên là có rồi! Đẹp trai vậy mà?!
