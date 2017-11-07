@@ -2957,6 +2957,10 @@
 		<pattern>* NAN NI *</pattern>
 		<template>Tha lỗi cho đó!</template>
 	</category>
+	<category>
+		<pattern>* CAI GI *</pattern>
+		<template>Cái gì là cái gì? :(</template>
+	</category>
 	<!-- buồn chán -->
 	<category>
 		<pattern>BUON</pattern>
