@@ -1010,10 +1010,10 @@ app.post('/webhook', function (req, res) {
       		findInfo(sender, answer);
       	}
       	else if (answer === '') {
-      		sendTextMessage(sender, "Bên mình chưa có dữ liệu!");
+      		sendTextMessage(sender, "Bên mình chưa có dữ liệu :P");
       	}       
       	else{
-      		sendTextMessage(sender, "Xin lỗi! Mình chưa hiểu rõ ý của bạn. Vui lòng nhập help để được trợ giúp.");
+      		sendTextMessage(sender, "Mình hỏng hiểu :P Nhập help đi nè ;)");
       	}
       };
 

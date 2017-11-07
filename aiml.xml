@@ -2910,6 +2910,18 @@
 		<template>Thôi đừng giải thích :(</template>
 	</category>
 	<category>
+		<pattern>* CO Y *</pattern>
+		<template>Ừa cố tình không à :(</template>
+	</category>
+	<category>
+		<pattern>* CO TINH *</pattern>
+		<template>Ừa cố ý không à :(</template>
+	</category>
+	<category>
+		<pattern>* SAO *</pattern>
+		<template>Không biết! :(</template>
+	</category>
+	<category>
 		<pattern>* HEM *</pattern>
 		<template>Thôi buồn rồi :(</template>
 	</category>
@@ -2932,5 +2944,30 @@
 	<category>
 		<pattern>* NAN NI *</pattern>
 		<template>Tha lỗi cho đó!</template>
+	</category>
+	<!-- buồn chán -->
+	<category>
+		<pattern>BUON</pattern>
+		<template>Đi đâu đó chơi đi nè :)</template>
+	</category>
+	<category>
+		<pattern>* BUON *</pattern>
+		<template><srai>BUON</srai></template>
+	</category>
+	<category>
+		<pattern>* CHAN *</pattern>
+		<template><srai>BUON</srai></template>
+	</category>
+	<category>
+		<pattern>* NAN *</pattern>
+		<template><srai>BUON</srai></template>
+	</category>
+	<category>
+		<pattern>* TUYET VONG *</pattern>
+		<template><srai>BUON</srai></template>
+	</category>
+	<category>
+		<pattern>* THAT VONG *</pattern>
+		<template><srai>BUON</srai></template>
 	</category>
 </aiml>
