@@ -2652,6 +2652,46 @@
 		<that>Tìm nhà hàng</that>
 		<template><srai>NHA HANG DA LAT</srai></template>
 	</category>
+	<!-- kịch bản hoạt động -->
+	<category>
+		<pattern>HOAT DONG</pattern>
+		<template>Tìm hoạt động</template>
+	</category>
+	<category>
+		<pattern>* HOAT DONG *</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>* LAM * GI *</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>* CHOI * GI *</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>* MUA * LAM QUA *</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>* GI * VUI *</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>Tim hoat dong o Can Tho</pattern>
+		<that>Tìm hoạt động</that>
+		<template><srai>HOAT DONG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Tim hoat dong o Ben Tre</pattern>
+		<that>Tìm hoạt động</that>
+		<template><srai>HOAT DONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim hoat dong o Da Lat</pattern>
+		<that>Tìm hoạt động</that>
+		<template><srai>HOAT DONG DA LAT</srai></template>
+	</category>
 	<!-- kịch bản quà tặng -->
 	<category>
 		<pattern>QUA TANG</pattern>
