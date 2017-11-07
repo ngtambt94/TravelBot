@@ -2898,6 +2898,22 @@
 		<template>Thôi buồn rồi :(</template>
 	</category>
 	<category>
+		<pattern>* KHONG *</pattern>
+		<template>Thôi buồn rồi :(</template>
+	</category>
+	<category>
+		<pattern>* HONG *</pattern>
+		<template>Thôi tổn thương rồi :(</template>
+	</category>
+	<category>
+		<pattern>* DAU *</pattern>
+		<template>Thôi đừng giải thích :(</template>
+	</category>
+	<category>
+		<pattern>* HEM *</pattern>
+		<template>Thôi buồn rồi :(</template>
+	</category>
+	<category>
 		<pattern>* SORRY *</pattern>
 		<template>Thôi giận rồi :(</template>
 	</category>
