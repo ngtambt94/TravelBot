@@ -306,6 +306,11 @@
 		<pattern>* CHAO THAN AI *</pattern>
 		<template><srai>CAM ON</srai></template>
 	</category>
+	<!-- làm được gì -->
+	<category>
+		<pattern>* LAM DUOC *</pattern>
+		<template>Mình có thể đưa ra một số gợi ý giúp bạn về du lịch ở ba địa điểm Cần Thơ, Bến Tre và Đà Lạt :)</template>
+	</category>
 	<!-- CẦN THƠ -->
 	<!-- ĐỊA ĐIỂM VUI CHƠI -->
 	<category>
