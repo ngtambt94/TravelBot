@@ -53,7 +53,7 @@
 	<category>
 		<pattern>TAM LA AI</pattern>
 		<template>
-			Tam Nguyen là sinh viên Khoa học máy tính, khóa 39, Trường Đại học Cần Thơ
+			Tam Nguyen là sinh viên Khoa học máy tính, khóa 39, Trường Đại học Cần Thơ :)
 		</template>
 	</category>
 	<category>
@@ -66,6 +66,10 @@
 	</category>
 	<category>
 		<pattern>* LA * TAM</pattern>
+		<template><srai>TAM LA AI</srai></template>
+	</category>
+	<category>
+		<pattern>* LA * DUA NAO</pattern>
 		<template><srai>TAM LA AI</srai></template>
 	</category>
 	<category>
@@ -2894,6 +2898,14 @@
 		<template>Mình có thể đưa ra một số gợi ý giúp bạn về du lịch ở ba địa điểm Cần Thơ, Bến Tre và Đà Lạt :)</template>
 	</category>
 	<category>
+		<pattern>* CO Y *</pattern>
+		<template>Ừa cố tình không à :(</template>
+	</category>
+	<category>
+		<pattern>* CO TINH *</pattern>
+		<template>Ừa cố ý không à :(</template>
+	</category>
+	<category>
 		<pattern>* XIN LOI *</pattern>
 		<template>Thôi buồn rồi :(</template>
 	</category>
@@ -2908,14 +2920,6 @@
 	<category>
 		<pattern>* DAU *</pattern>
 		<template>Thôi đừng giải thích :(</template>
-	</category>
-	<category>
-		<pattern>* CO Y *</pattern>
-		<template>Ừa cố tình không à :(</template>
-	</category>
-	<category>
-		<pattern>* CO TINH *</pattern>
-		<template>Ừa cố ý không à :(</template>
 	</category>
 	<category>
 		<pattern>* SAO *</pattern>
