@@ -2961,6 +2961,10 @@
 		<pattern>* CAI GI *</pattern>
 		<template>Cái gì là cái gì? :(</template>
 	</category>
+	<category>
+		<pattern>* GIAI THICH *</pattern>
+		<template>Thôi người ơi! :(</template>
+	</category>
 	<!-- buồn chán -->
 	<category>
 		<pattern>BUON</pattern>
