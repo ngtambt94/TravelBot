@@ -2935,7 +2935,15 @@
 	</category>
 	<category>
 		<pattern>* KE *</pattern>
-		<template>Tạm biệt :(</template>
+		<template>Bạn ăn hiếp TravelBot :(</template>
+	</category>
+	<category>
+		<pattern>* HOI NAO *</pattern>
+		<template>Mới hồi nãy đó! :(</template>
+	</category>
+	<category>
+		<pattern>* LUC NAO *</pattern>
+		<template>Mới lúc nãy đó! :(</template>
 	</category>
 	<category>
 		<pattern>* NGOAN *</pattern>
@@ -2973,5 +2981,34 @@
 	<category>
 		<pattern>* THAT VONG *</pattern>
 		<template><srai>BUON</srai></template>
+	</category>
+	<!-- CHỬI BẬY -->
+	<category>
+		<pattern>CHO</pattern>
+		<template>Sao chửi TravelBot? :(</template>
+	</category>
+	<category>
+		<pattern>* CHO *</pattern>
+		<template><srai>CHO</srai></template>
+	</category>
+	<category>
+		<pattern>* CO HO *</pattern>
+		<template><srai>CHO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAU *</pattern>
+		<template><srai>CHO</srai></template>
+	</category>
+	<category>
+		<pattern>* HEO *</pattern>
+		<template><srai>CHO</srai></template>
+	</category>
+	<category>
+		<pattern>* LON *</pattern>
+		<template><srai>CHO</srai></template>
+	</category>
+	<category>
+		<pattern>* MAT DAY *</pattern>
+		<template><srai>CHO</srai></template>
 	</category>
 </aiml>
