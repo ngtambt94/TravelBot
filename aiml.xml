@@ -2620,6 +2620,38 @@
 		<that>Tìm địa điểm</that>
 		<template><srai>DU LICH</srai></template>
 	</category>
+	<!-- kịch bản nhà hàng -->
+	<category>
+		<pattern>NHA HANG</pattern>
+		<template>Tìm nhà hàng</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG *</pattern>
+		<template><srai>NHA HANG</srai></template>
+	</category>
+	<category>
+		<pattern>* QUAN *</pattern>
+		<template><srai>NHA HANG</srai></template>
+	</category>
+	<category>
+		<pattern>* AN *</pattern>
+		<template><srai>NHA HANG </srai></template>
+	</category>
+	<category>
+		<pattern>Tim quan an o Can Tho</pattern>
+		<that>Tìm nhà hàng</that>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Tim quan an o Ben Tre</pattern>
+		<that>Tìm nhà hàng</that>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim quan an o Da Lat</pattern>
+		<that>Tìm nhà hàng</that>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
 	<!-- kịch bản từ khóa du lịch -->
 	<category>
 		<pattern>DU LICH</pattern>

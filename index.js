@@ -170,6 +170,9 @@ function findInfo(sender, answer) {
 				else if (sql === "Tìm món ăn") {
 					MonAn(sender);
 				}
+				else if (sql === "Tìm nhà hàng") {
+					NhaHang(sender);
+				}
 				else if (sql === "Tiêu chí khách sạn Cần Thơ" || sql === "Tiêu chí khách sạn Bến Tre" || sql === "Tiêu chí khách sạn Đà Lạt") {
 					HoTel(sender, sql);
 				}
@@ -369,6 +372,52 @@ function HoTel(sender, sql) {
 				"template_type":"button",
 				"text":"Bạn muốn tìm khách sạn theo tiêu chí nào? :)",
 				"buttons": ketqua,
+			}
+		}
+	}
+	request({
+		url: 'https://graph.facebook.com/v2.6/me/messages',
+		qs: {access_token:token},
+		method: 'POST',
+		json: {
+			recipient: {id:sender},
+			message: messageData,
+		}
+	}, function(error, response, body) {
+		if (error) {
+			console.log('Error sending messages: ', error)
+		} else if (response.body.error) {
+			console.log('Error: ', response.body.error)
+		}
+	})
+}
+
+
+// Tìm nhà hàng
+function NhaHang(sender) {
+	let messageData = {
+		"attachment":{
+			"type":"template",
+			"payload":{
+				"template_type":"button",
+				"text":"Bạn muốn tìm chỗ ăn uống ở đâu? ;)",
+				"buttons":[
+				{
+					"type": "postback",
+					"title": "Bến Tre",
+					"payload": "Tim quan an o Ben Tre"
+				},
+				{
+					"type": "postback",
+					"title": "Cần Thơ",
+					"payload": "Tim quan an o Can Tho"
+				},
+				{
+					"type": "postback",
+					"title": "Đà Lạt",
+					"payload": "Tim quan an o Da Lat"
+				}
+				]
 			}
 		}
 	}
