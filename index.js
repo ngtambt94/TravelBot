@@ -982,6 +982,7 @@ function Convert(str){
 	str = str.replace(/ỳ|ý|ỵ|ỷ|ỹ/g, "y");
 	str = str.replace(/đ/g, "d");
 	str = str.replace(/!|\?|\.|;|,/g, "");
+	str = str.toUpperCase();
 	return str;
 }
 
