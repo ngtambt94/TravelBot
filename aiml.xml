@@ -2635,7 +2635,7 @@
 	</category>
 	<category>
 		<pattern>* AN *</pattern>
-		<template><srai>NHA HANG </srai></template>
+		<template><srai>NHA HANG</srai></template>
 	</category>
 	<category>
 		<pattern>Tim quan an o Can Tho</pattern>
@@ -2651,6 +2651,42 @@
 		<pattern>Tim quan an o Da Lat</pattern>
 		<that>Tìm nhà hàng</that>
 		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<!-- kịch bản quà tặng -->
+	<category>
+		<pattern>QUA TANG</pattern>
+		<template>Tìm quà tặng</template>
+	</category>
+	<category>
+		<pattern>* QUA TANG *</pattern>
+		<template><srai>QUA TANG</srai></template>
+	</category>
+	<category>
+		<pattern>* MUA QUA *</pattern>
+		<template><srai>QUA TANG</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA BIEU *</pattern>
+		<template><srai>QUA TANG</srai></template>
+	</category>
+	<category>
+		<pattern>* MUA * LAM QUA *</pattern>
+		<template><srai>QUA TANG</srai></template>
+	</category>
+	<category>
+		<pattern>Tim qua o Can Tho</pattern>
+		<that>Tìm quà tặng</that>
+		<template><srai>QUA CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Tim qua o Ben Tre</pattern>
+		<that>Tìm quà tặng</that>
+		<template><srai>QUA BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim qua o Da Lat</pattern>
+		<that>Tìm quà tặng</that>
+		<template><srai>QUA DA LAT</srai></template>
 	</category>
 	<!-- kịch bản từ khóa du lịch -->
 	<category>
