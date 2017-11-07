@@ -2544,58 +2544,6 @@
 		<that>Tìm món ăn</that>
 		<template>select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
 	</category>
-	<!-- kịch bản qua đêm -->
-	<category>
-		<pattern>QUA DEM</pattern>
-		<template>Tìm chỗ ngủ</template>
-	</category>
-	<category>
-		<pattern>* QUA DEM *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* CHO * TRO *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* KHACH SAN *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* NHA NGHI *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* MOTEL *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* CHO * NGHI *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* CHO * DUNG *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* TA TUC *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>Cho ngu o Ben Tre</pattern>
-		<that>Tìm chỗ ngủ</that>
-		<template><srai>KHACH SAN BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>Cho ngu o Can Tho</pattern>
-		<that>Tìm chỗ ngủ</that>
-		<template><srai>KHACH SAN CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>Cho ngu o Da Lat</pattern>
-		<that>Tìm chỗ ngủ</that>
-		<template><srai>KHACH SAN DA LAT</srai></template>
-	</category>
 	<!-- kịch bản địa điểm -->
 	<category>
 		<pattern>DIA DIEM</pattern>
@@ -2816,6 +2764,58 @@
 		<pattern>Tim khach san cao cap o Da Lat</pattern>
 		<that>Tìm khách sạn cao cấp</that>
 		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<!-- kịch bản qua đêm -->
+	<category>
+		<pattern>QUA DEM</pattern>
+		<template>Tìm chỗ ngủ</template>
+	</category>
+	<category>
+		<pattern>* QUA DEM *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO * TRO *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA NGHI *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO * NGHI *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO * DUNG *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* TA TUC *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>Cho ngu o Ben Tre</pattern>
+		<that>Tìm chỗ ngủ</that>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Cho ngu o Can Tho</pattern>
+		<that>Tìm chỗ ngủ</that>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Cho ngu o Da Lat</pattern>
+		<that>Tìm chỗ ngủ</that>
+		<template><srai>KHACH SAN DA LAT</srai></template>
 	</category>
 	<!-- kêu mày -->
 	<category>
