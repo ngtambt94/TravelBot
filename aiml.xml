@@ -2965,6 +2965,35 @@
 		<pattern>* GIAI THICH *</pattern>
 		<template>Thôi người ơi! :(</template>
 	</category>
+	<category>
+		<pattern>* O *</pattern>
+		<template>Ờ gì mà ờ?! :(</template>
+	</category>
+	<!-- hỏi vì sao -->
+	<category>
+		<pattern>SAO BUON</pattern>
+		<template>Tại bạn ăn hiếp TravelBot :(</template>
+	</category>
+	<category>
+		<pattern>* SAO BUON *</pattern>
+		<template><srai>SAO BUON</srai></template>
+	</category>
+	<category>
+		<pattern>* SAO TON THUONG *</pattern>
+		<template><srai>SAO BUON</srai></template>
+	</category>
+	<category>
+		<pattern>* SAO *</pattern>
+		<template>Sao là sao :(</template>
+	</category>
+	<category>
+		<pattern>* MUON * GI *</pattern>
+		<template>Không biết đâu! :(</template>
+	</category>
+	<category>
+		<pattern>* GI *</pattern>
+		<template>Gì là gì :(</template>
+	</category>
 	<!-- buồn chán -->
 	<category>
 		<pattern>BUON</pattern>
