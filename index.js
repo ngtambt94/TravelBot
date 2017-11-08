@@ -782,7 +782,7 @@ function LuaChon(sender, sql) {
 		{
 			"title": "Món ăn",
 			"subtitle": "Thông tin về các món ngon của Bến Tre",
-			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/comdua.jpg",
 			"buttons": [{
 				"type": "postback",
 				"title": "Chi Tiết",
@@ -792,7 +792,7 @@ function LuaChon(sender, sql) {
 		{
 			"title": "Địa điểm vui chơi",
 			"subtitle": "Thông tin về các địa điểm ở Bến Tre",
-			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/cncr.jpg",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ca.jpg",
 			"buttons": [{
 				"type": "postback",
 				"title": "Chi Tiết",
@@ -802,7 +802,7 @@ function LuaChon(sender, sql) {
 		{
 			"title": "Nhà hàng",
 			"subtitle": "Thông tin về các nhà hàng ở Bến Tre",
-			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/monngan.jpg",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/comhen.jpg",
 			"buttons": [{
 				"type": "postback",
 				"title": "Chi Tiết",
@@ -812,7 +812,7 @@ function LuaChon(sender, sql) {
 		{
 			"title": "Khách sạn",
 			"subtitle": "Thông tin về khách sạn ở Bến Tre",
-			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/muongthanh.jpg",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/vietuc.jpg",
 			"buttons": [{
 				"type": "postback",
 				"title": "Chi Tiết",
@@ -822,7 +822,7 @@ function LuaChon(sender, sql) {
 		{
 			"title": "Quà tặng",
 			"subtitle": "Thông tin về các quà tặng nên mua về",
-			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ntrai.jpg",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/tcmn.jpg",
 			"buttons": [{
 				"type": "postback",
 				"title": "Chi Tiết",
@@ -878,7 +878,7 @@ function LuaChon(sender, sql) {
 		{
 			"title": "Quà tặng",
 			"subtitle": "Thông tin về các quà tặng nên mua về",
-			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ntrai.jpg",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/rm.jpg",
 			"buttons": [{
 				"type": "postback",
 				"title": "Chi Tiết",
@@ -894,7 +894,7 @@ function LuaChon(sender, sql) {
 		{
 			"title": "Món ăn",
 			"subtitle": "Thông tin về các món ngon của Đà Lạt",
-			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcong.jpg",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/banhcan.jpg",
 			"buttons": [{
 				"type": "postback",
 				"title": "Chi Tiết",
@@ -904,7 +904,7 @@ function LuaChon(sender, sql) {
 		{
 			"title": "Địa điểm vui chơi",
 			"subtitle": "Thông tin về các địa điểm ở Đà Lạt",
-			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/cncr.jpg",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/hxh.jpg",
 			"buttons": [{
 				"type": "postback",
 				"title": "Chi Tiết",
@@ -924,7 +924,7 @@ function LuaChon(sender, sql) {
 		{
 			"title": "Khách sạn",
 			"subtitle": "Thông tin về khách sạn ở Đà Lạt",
-			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/muongthanh.jpg",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ks5.jpg",
 			"buttons": [{
 				"type": "postback",
 				"title": "Chi Tiết",
@@ -934,7 +934,7 @@ function LuaChon(sender, sql) {
 		{
 			"title": "Quà tặng",
 			"subtitle": "Thông tin về các quà tặng nên mua về",
-			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/ntrai.jpg",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/dautay.jpg",
 			"buttons": [{
 				"type": "postback",
 				"title": "Chi Tiết",
