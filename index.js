@@ -1005,7 +1005,7 @@ app.post('/webhook', function (req, res) {
       // hàm callback trả về đáp án
       var callback = function(answer, wildCardArray, input){
       	if (text.match(check)) {
-      		sendTextMessage(sender, "Vui lòng không nhập biểu tượng cảm xúc, chữ số và ký tự đặc biệt! ;)");
+      		sendTextMessage(sender, "Vui lòng không nhập chữ số và ký tự đặc biệt! ;)");
       	}
       	else if (answer !== undefined && answer !== '') {
       		findInfo(sender, answer);
