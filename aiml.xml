@@ -216,6 +216,22 @@
 		<template>Tam Nguyen đã tạo ra mình</template>
 	</category>
 	<category>
+		<pattern>* TAO RA *</pattern>
+		<template>Tam Nguyen đã tạo ra mình</template>
+	</category>
+	<category>
+		<pattern>* TAO NEN *</pattern>
+		<template>Tam Nguyen đã tạo ra mình</template>
+	</category>
+	<category>
+		<pattern>* LAM NEN *</pattern>
+		<template>Tam Nguyen đã tạo ra mình</template>
+	</category>
+	<category>
+		<pattern>* TAO RA *</pattern>
+		<template>Tam Nguyen đã tạo ra mình</template>
+	</category>
+	<category>
 		<pattern>AD</pattern>
 		<template><random><li>TravelBot ở đây! Bạn cần giúp gì? :)</li><li>Dạ em ở đây ạ. Em có thể giúp gì ạ? ;)</li><li>Travel sẵn sàng phục vụ! :)</li></random></template>
 	</category>
