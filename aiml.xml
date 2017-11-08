@@ -2930,15 +2930,15 @@
 		<template>Thôi buồn rồi :(</template>
 	</category>
 	<category>
-		<pattern>* KHONG *</pattern>
+		<pattern>KHONG *</pattern>
 		<template>Thôi buồn rồi :(</template>
 	</category>
 	<category>
-		<pattern>* HONG *</pattern>
+		<pattern>HONG *</pattern>
 		<template>Thôi tổn thương rồi :(</template>
 	</category>
 	<category>
-		<pattern>* DAU *</pattern>
+		<pattern>DAU *</pattern>
 		<template>Thôi đừng giải thích :(</template>
 	</category>
 	<category>
