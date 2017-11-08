@@ -3023,4 +3023,13 @@
 		<pattern>* THAT VONG *</pattern>
 		<template><srai>BUON</srai></template>
 	</category>
+	<!-- CHỬI BẬY -->
+	<category>
+		<pattern>CHO</pattern>
+		<template>Sao chửi TravelBot? :(</template>
+	</category>
+	<category>
+		<pattern>* MAT DAY *</pattern>
+		<template><srai>CHO</srai></template>
+	</category>
 </aiml>
