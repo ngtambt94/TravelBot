@@ -3048,4 +3048,8 @@
 		<pattern>* MAT DAY *</pattern>
 		<template><srai>CHO</srai></template>
 	</category>
+	<category>
+		<pattern>* LOL *</pattern>
+		<template>Laugh out loud ;)</template>
+	</category>
 </aiml>
