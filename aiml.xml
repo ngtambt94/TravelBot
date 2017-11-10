@@ -3058,7 +3058,7 @@
 	<!-- buồn chán -->
 	<category>
 		<pattern>BUON</pattern>
-		<template>Đi đâu đó chơi đi nè :)</template>
+		<template><srai>DIA DIEM</srai></template>
 	</category>
 	<category>
 		<pattern>* BUON *</pattern>
