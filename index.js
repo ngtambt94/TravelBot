@@ -198,7 +198,7 @@ function findInfo(sender, answer) {
 					sendTextMessage(sender, answer);
 			}
 			else{
-				sendTextMessage(sender, ";) Top các kết quả có thể bạn quan tâm: ");
+				sendTextMessage(sender, ";) Đây là kết quả có thể bạn quan tâm: ");
         // khai báo mảng chứa lưu kết quả trả về
         var ketqua = [];
         // thêm từng phần tử vào mảng
