@@ -3093,4 +3093,8 @@
 		<pattern>* LOL *</pattern>
 		<template>Laugh out loud ;)</template>
 	</category>
+	<category>
+		<pattern>* MASSAGE *</pattern>
+		<template>Tìm chỗ kín đáo để vợ không phát hiện nhé ;)</template>
+	</category>
 </aiml>
