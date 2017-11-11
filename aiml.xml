@@ -2919,6 +2919,25 @@
 		<that>Tìm lễ hội</that>
 		<template><srai>LE HOI DA LAT</srai></template>
 	</category>
+	<!-- CÁC ĐỊA ĐIỂM CON Ở CẦN THƠ -->
+	<category>
+		<pattern>BEN NINH KIEU O DAU</pattern>
+		<template>
+			Bến Ninh Kiều ở Cần Thơ bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* BEN NINH KIEU * O *</pattern>
+		<template><srai>BEN NINH KIEU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN NINH KIEU * THUOC *</pattern>
+		<template><srai>BEN NINH KIEU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN NINH KIEU *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 101 </template>
+	</category>
 	<!-- kêu mày -->
 	<category>
 		<pattern>* MAY *</pattern>
