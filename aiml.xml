@@ -3197,7 +3197,366 @@
 		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 4 </template>
 	</category>
 	<!-- vườn trái cây cái mơn -->
-	
+	<category>
+		<pattern>TRAI CAY CAI MON O DAU</pattern>
+		<template>
+			Vườn trái cây Cái Mơn ở Bến Tre bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* TRAI CAY CAI MON * O *</pattern>
+		<template><srai>TRAI CAY CAI MON O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* TRAI CAY CAI MON * THUOC *</pattern>
+		<template><srai>TRAI CAY CAI MON O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* TRAI CAY CAI MON *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 5 </template>
+	</category>
+	<!-- lăng mộ nguyễn đình chiểu -->
+	<category>
+		<pattern>NGUYEN DINH CHIEU O DAU</pattern>
+		<template>
+			Lăng mộ Nguyễn Đình Chiểu ở Ba Tri, Bến Tre bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* NGUYEN DINH CHIEU * O *</pattern>
+		<template><srai>NGUYEN DINH CHIEU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NGUYEN DINH CHIEU * THUOC *</pattern>
+		<template><srai>NGUYEN DINH CHIEU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NGUYEN DINH CHIEU *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 6 </template>
+	</category>
+	<!-- lăng mộ phan thanh giản -->
+	<category>
+		<pattern>PHAN THANH GIAN O DAU</pattern>
+		<template>
+			Lăng mộ Phan Thanh Giản ở Ba Tri, Bến Tre bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* PHAN THANH GIAN * O *</pattern>
+		<template><srai>PHAN THANH GIAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* PHAN THANH GIAN * THUOC *</pattern>
+		<template><srai>PHAN THANH GIAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* PHAN THANH GIAN *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 7 </template>
+	</category>
+	<!-- khu du lịch lan vương -->
+	<category>
+		<pattern>LAN VUONG O DAU</pattern>
+		<template>
+			Lăng mộ Phan Thanh Giản ở Ba Tri, Bến Tre bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* LAN VUONG * O *</pattern>
+		<template><srai>LAN VUONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LAN VUONG * THUOC *</pattern>
+		<template><srai>LAN VUONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LAN VUONG *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 8 </template>
+	</category>
+	<!-- cồn tiên -->
+	<category>
+		<pattern>CON TIEN O DAU</pattern>
+		<template>
+			Cồn Tiên ở Bến Tre bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* CON TIEN * O *</pattern>
+		<template><srai>CON TIEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON TIEN * THUOC *</pattern>
+		<template><srai>CON TIEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON TIEN *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 9 </template>
+	</category>
+	<!-- biển cồn bửng -->
+	<category>
+		<pattern>CON BUNG O DAU</pattern>
+		<template>
+			Cồn Bửng ở Bến Tre bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* CON BUNG * O *</pattern>
+		<template><srai>CON BUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON BUNG * THUOC *</pattern>
+		<template><srai>CON BUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON BUNG *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 10 </template>
+	</category>
+	<!-- ĐỊA ĐIỂM CON Ở ĐÀ LẠT -->
+	<!-- vường hoa đà lạt -->
+	<category>
+		<pattern>VUON HOA DA LAT O DAU</pattern>
+		<template>
+			Vườn hoa Đà Lạt ở Đà Lạt bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* VUON HOA DA LAT * O *</pattern>
+		<template><srai>VUON HOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* VUON HOA DA LAT * THUOC *</pattern>
+		<template><srai>VUON HOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* VUON HOA DA LAT *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 168 </template>
+	</category>
+	<!-- hồ xuân hương -->
+	<category>
+		<pattern>HO XUAN HUONG O DAU</pattern>
+		<template>
+			Hồ Xuân Hương ở Đà Lạt bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* HO XUAN HUONG * O *</pattern>
+		<template><srai>HO XUAN HUONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HO XUAN HUONG * THUOC *</pattern>
+		<template><srai>HO XUAN HUONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HO XUAN HUONG *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 169 </template>
+	</category>
+	<!-- nhà thờ chính tòa -->
+	<category>
+		<pattern>NHA THO CHINH TOA DA LAT O DAU</pattern>
+		<template>
+			Nhà thờ chính tòa Đà Lạt ở Đà Lạt bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* NHA THO CHINH TOA DA LAT * O *</pattern>
+		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA THO CHINH TOA DA LAT * THUOC *</pattern>
+		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA THO CHINH TOA * O *</pattern>
+		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA THO CHINH TOA * THUOC *</pattern>
+		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA THO CON GA * O *</pattern>
+		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA THO CON GA * THUOC *</pattern>
+		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA THO CHINH TOA *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 170 </template>
+	</category>
+	<category>
+		<pattern>* NHA THO CON GA *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 170 </template>
+	</category>
+	<!-- Nhà thờ Domaine de Marie -->
+	<category>
+		<pattern>NHA THO DOMAINE DE MARIE O DAU</pattern>
+		<template>
+			Nhà thờ Domaine de Marie ở Đà Lạt bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* NHA THO DOMAINE DE MARIE * O *</pattern>
+		<template><srai>NHA THO DOMAINE DE MARIE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA THO DOMAINE DE MARIE * THUOC *</pattern>
+		<template><srai>NHA THO DOMAINE DE MARIE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LANH DIA DUC BA * O *</pattern>
+		<template><srai>NHA THO DOMAINE DE MARIE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LANH DIA DUC BA * THUOC *</pattern>
+		<template><srai>NHA THO DOMAINE DE MARIE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA THO DOMAINE DE MARIE *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 171 </template>
+	</category>
+	<category>
+		<pattern>* LANH DIA DUC BA *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 171 </template>
+	</category>
+	<!-- núi lang biang -->
+	<category>
+		<pattern>NUI LANG BIANG O DAU</pattern>
+		<template>
+			Núi Lang Biang ở Đà Lạt bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* NUI LANG BIANG * O *</pattern>
+		<template><srai>NUI LANG BIANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NUI LANG BIANG * THUOC *</pattern>
+		<template><srai>NUI LANG BIANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NUI LANG BIANG *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 172 </template>
+	</category>
+	<!-- làng cù lần -->
+	<category>
+		<pattern>LANG CU LAN O DAU</pattern>
+		<template>
+			Làng Cù Lần ở Đà Lạt bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* LANG CU LAN * O *</pattern>
+		<template><srai>LANG CU LAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LANG CU LAN * THUOC *</pattern>
+		<template><srai>LANG CU LAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LANG CU LAN *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 173 </template>
+	</category>
+	<!-- hồ tuyền lâm -->
+	<category>
+		<pattern>HO TUYEN LAM O DAU</pattern>
+		<template>
+			Hồ Tuyền Lâm ở Đà Lạt bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* HO TUYEN LAM * O *</pattern>
+		<template><srai>HO TUYEN LAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HO TUYEN LAM * THUOC *</pattern>
+		<template><srai>HO TUYEN LAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HO TUYEN LAM *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 174 </template>
+	</category>
+	<!-- Thác Datanla -->
+	<category>
+		<pattern>THAC DATANLA O DAU</pattern>
+		<template>
+			Thác Datanla ở Đà Lạt bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* THAC DATANLA * O *</pattern>
+		<template><srai>THAC DATANLA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* THAC DATANLA * THUOC *</pattern>
+		<template><srai>THAC DATANLA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* THAC DATANLA *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 175 </template>
+	</category>
+	<!-- thác voi -->
+	<category>
+		<pattern>THAC VOI O DAU</pattern>
+		<template>
+			Thác Voi ở chùa Linh Ẩn, Đà Lạt bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* THAC VOI * O *</pattern>
+		<template><srai>THAC VOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* THAC VOI * THUOC *</pattern>
+		<template><srai>THAC VOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHUA LINH AN * O *</pattern>
+		<template><srai>THAC VOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHUA LINH AN * THUOC *</pattern>
+		<template><srai>THAC VOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* THAC VOI *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 176 </template>
+	</category>
+	<category>
+		<pattern>* CHUA LINH AN *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 176 </template>
+	</category>
+	<!-- chợ đà lạt và chợ âm phủ -->
+	<category>
+		<pattern>CHO DA LAT O DAU</pattern>
+		<template>
+			Chợ Đà Lạt và chợ Âm Phủ ở chùa Linh Ẩn, Đà Lạt bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* CHO DA LAT * O *</pattern>
+		<template><srai>CHO DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO DA LAT * THUOC *</pattern>
+		<template><srai>CHO DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO AM PHU * O *</pattern>
+		<template><srai>CHO DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO AM PHU * THUOC *</pattern>
+		<template><srai>CHO DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO DA LAT *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 177 </template>
+	</category>
+	<category>
+		<pattern>* CHO AM PHU *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 177 </template>
+	</category>
 	<!-- kêu mày -->
 	<category>
 		<pattern>* MAY *</pattern>
