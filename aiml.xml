@@ -2977,6 +2977,227 @@
 		<pattern>* CAU CAN THO *</pattern>
 		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 99 </template>
 	</category>
+	<!-- nhà cổ bình thủy -->
+	<category>
+		<pattern>NHA CO BINH THUY O DAU</pattern>
+		<template>
+			Nhà cổ Bình Thủy ở Cần Thơ bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* NHA CO BINH THUY * O *</pattern>
+		<template><srai>NHA CO BINH THUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA CO BINH THUY * THUOC *</pattern>
+		<template><srai>NHA CO BINH THUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA CO BINH THUY *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 100 </template>
+	</category>
+	<!-- cầu tình yêu -->
+	<category>
+		<pattern>CAU DI BO O DAU</pattern>
+		<template>
+			Cầu đi bộ ở Cần Thơ bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* CAU DI BO * O *</pattern>
+		<template><srai>CAU DI BO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CAU DI BO * THUOC *</pattern>
+		<template><srai>CAU DI BO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CAU TINH YEU * O *</pattern>
+		<template><srai>CAU DI BO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CAU TINH YEU * THUOC *</pattern>
+		<template><srai>CAU DI BO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CAU DI BO *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 102 </template>
+	</category>
+	<!-- biển cần thơ -->
+	<category>
+		<pattern>BIEN CAN THO O DAU</pattern>
+		<template>
+			Biển Cần Thơ ở Cần Thơ bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* BIEN CAN THO * O *</pattern>
+		<template><srai>BIEN CAN THO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BIEN CAN THO * THUOC *</pattern>
+		<template><srai>BIEN CAN THO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BIEN CAN THO *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 103 </template>
+	</category>
+	<!-- thiền viện trúc lâm -->
+	<category>
+		<pattern>THIEN VIEN TRUC LAM O DAU</pattern>
+		<template>
+			Thiền viện Trúc Lâm Phương Nam ở Cần Thơ bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* THIEN VIEN TRUC LAM * O *</pattern>
+		<template><srai>THIEN VIEN TRUC LAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* THIEN VIEN TRUC LAM * THUOC *</pattern>
+		<template><srai>THIEN VIEN TRUC LAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* THIEN VIEN CAN THO * O *</pattern>
+		<template><srai>THIEN VIEN TRUC LAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* THIEN VIEN CAN THO * THUOC *</pattern>
+		<template><srai>THIEN VIEN TRUC LAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* THIEN VIEN TRUC LAM *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 104 </template>
+	</category>
+	<!-- làng du lịch mỹ khánh -->
+	<category>
+		<pattern>MY KHANH O DAU</pattern>
+		<template>
+			Thiền viện Trúc Lâm Phương Nam ở Cần Thơ bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* MY KHANH * O *</pattern>
+		<template><srai>MY KHANH O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* MY KHANH * THUOC *</pattern>
+		<template><srai>MY KHANH O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* MY KHANH *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 105 </template>
+	</category>
+	<!-- chùa ông -->
+	<category>
+		<pattern>CHUA ONG O DAU</pattern>
+		<template>
+			Chùa Ông ở Cần Thơ bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* CHUA ONG * O *</pattern>
+		<template><srai>CHUA ONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHUA ONG * THUOC *</pattern>
+		<template><srai>CHUA ONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHUA ONG *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 106 </template>
+	</category>
+	<!-- CÁC ĐỊA ĐIỂM CON Ở BẾN TRE -->
+	<!-- cồn phụng -->
+	<category>
+		<pattern>CON PHUNG O DAU</pattern>
+		<template>
+			Cồn Phụng ở Bến Tre bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* CON PHUNG * O *</pattern>
+		<template><srai>CON PHUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON PHUNG * THUOC *</pattern>
+		<template><srai>CON PHUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON PHUNG *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 1 </template>
+	</category>
+	<!-- cồn quy -->
+	<category>
+		<pattern>CON QUY O DAU</pattern>
+		<template>
+			Cồn Quy ở Bến Tre bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* CON QUY * O *</pattern>
+		<template><srai>CON QUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON QUY * THUOC *</pattern>
+		<template><srai>CON QUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON QUI * O *</pattern>
+		<template><srai>CON QUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON QUI * THUOC *</pattern>
+		<template><srai>CON QUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON QUY *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 2 </template>
+	</category>
+	<category>
+		<pattern>* CON QUI *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 2 </template>
+	</category>
+	<!-- cồn ốc -->
+	<category>
+		<pattern>CON OC O DAU</pattern>
+		<template>
+			Cồn Ốc ở Bến Tre bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* CON OC * O *</pattern>
+		<template><srai>CON OC O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON OC * THUOC *</pattern>
+		<template><srai>CON OC O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON OC *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 3 </template>
+	</category>
+	<!-- sân chim vàm hồ -->
+	<category>
+		<pattern>SAN CHIM VAM HO O DAU</pattern>
+		<template>
+			Sân chim Vàm Hồ ở Bến Tre bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* SAN CHIM VAM HO * O *</pattern>
+		<template><srai>SAN CHIM VAM HO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* SAN CHIM VAM HO * THUOC *</pattern>
+		<template><srai>SAN CHIM VAM HO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* SAN CHIM VAM HO *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 4 </template>
+	</category>
+	<!-- vườn trái cây cái mơn -->
+	
 	<!-- kêu mày -->
 	<category>
 		<pattern>* MAY *</pattern>
