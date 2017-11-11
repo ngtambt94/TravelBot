@@ -2337,234 +2337,6 @@
 		<template><srai>QUA DA LAT</srai></template>
 	</category>
 	<!-- KỊCH BẢN THEO TỪ KHÓA VÀ PHÂN CẤP -->
-	<!-- kịch bản du lịch theo địa danh bến tre -->
-	<category>
-		<pattern>BEN TRE</pattern>
-		<template>Tìm thông tin Bến Tre</template>
-	</category>
-	<category>
-		<pattern>* BEN TRE *</pattern>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* DU LICH * BEN TRE</pattern>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* DI * BEN TRE</pattern>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* DEN * BEN TRE</pattern>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* TOI * BEN TRE</pattern>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* GHE * BEN TRE</pattern>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* THAM * BEN TRE</pattern>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* O * BEN TRE</pattern>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* CO * GI * BEN TRE</pattern>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>* BEN TRE * CO * GI</pattern>
-		<template><srai>BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>Thong tin dia diem Ben Tre</pattern>
-		<that>Tìm thông tin Bến Tre</that>
-		<template>
-			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5
-		</template>
-	</category>
-	<category>
-		<pattern>Thong tin nha hang Ben Tre</pattern>
-		<that>Tìm thông tin Bến Tre</that>
-		<template>
-			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 1 limit 0, 5
-		</template>
-	</category>
-	<category>
-		<pattern>Thong tin mon an Ben Tre</pattern>
-		<that>Tìm thông tin Bến Tre</that>
-		<template>
-			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5
-		</template>
-	</category>
-	<category>
-		<pattern>Thong tin khach san Ben Tre</pattern>
-		<that>Tìm thông tin Bến Tre</that>
-		<template><srai>KHACH SAN BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>Thong tin qua tang Ben Tre</pattern>
-		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
-		<template><srai>QUA BEN TRE</srai></template>
-	</category>
-	<!-- kịch bản du lịch cần thơ -->
-	<category>
-		<pattern>CAN THO</pattern>
-		<template>Tìm thông tin Cần Thơ</template>
-	</category>
-	<category>
-		<pattern>* CAN THO *</pattern>
-		<template><srai>CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>* CO * GI * CAN THO</pattern>
-		<template><srai>CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>* CAN THO * CO * GI</pattern>
-		<template><srai>CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>* DU LICH * CAN THO</pattern>
-		<template><srai>CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>* DI * CAN THO</pattern>
-		<template><srai>CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>* DEN * CAN THO</pattern>
-		<template><srai>CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>* TOI * CAN THO</pattern>
-		<template><srai>CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>* GHE * CAN THO</pattern>
-		<template><srai>CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>* THAM * CAN THO</pattern>
-		<template><srai>CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>* O * CAN THO</pattern>
-		<template><srai>CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>Thong tin dia diem Can Tho</pattern>
-		<that>Tìm thông tin Cần Thơ</that>
-		<template>
-			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 11 limit 0, 5
-		</template>
-	</category>
-	<category>
-		<pattern>Thong tin nha hang Can Tho</pattern>
-		<that>Tìm thông tin Cần Thơ</that>
-		<template>
-			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 11 limit 0, 5
-		</template>
-	</category>
-	<category>
-		<pattern>Thong tin mon an Can Tho</pattern>
-		<that>Tìm thông tin Cần Thơ</that>
-		<template>
-			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5
-		</template>
-	</category>
-	<category>
-		<pattern>Thong tin khach san Can Tho</pattern>
-		<that>Tìm thông tin Cần Thơ</that>
-		<template><srai>KHACH SAN CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>Thong tin qua tang Can Tho</pattern>
-		<that>Tìm thông tin Cần Thơ</that>
-		<template><srai>QUA CAN THO</srai></template>
-	</category>
-	<!-- kịch bản du lịch đà lạt -->
-	<category>
-		<pattern>DA LAT</pattern>
-		<template>Tìm thông tin Đà Lạt</template>
-	</category>
-	<category>
-		<pattern>* DA LAT *</pattern>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* CO * GI * DA LAT</pattern>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* DA LAT * CO * GI</pattern>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* DU LICH * DA LAT</pattern>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* DI * DA LAT</pattern>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* DEN * DA LAT</pattern>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* TOI * DA LAT</pattern>
-		<template><srai>DU LICH DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* GHE * DA LAT</pattern>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* THAM * DA LAT</pattern>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>* O * DA LAT</pattern>
-		<template><srai>DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>Thong tin dia diem Da Lat</pattern>
-		<that>Tìm thông tin Đà Lạt</that>
-		<template>
-			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 22 limit 0, 5
-		</template>
-	</category>
-	<category>
-		<pattern>Thong tin nha hang Da Lat</pattern>
-		<that>Tìm thông tin Đà Lạt</that>
-		<template>
-			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 22 limit 0, 5
-		</template>
-	</category>
-	<category>
-		<pattern>Thong tin mon an Da Lat</pattern>
-		<that>Tìm thông tin Đà Lạt</that>
-		<template>
-			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5
-		</template>
-	</category>
-	<category>
-		<pattern>Thong tin khach san Da Lat</pattern>
-		<that>Tìm thông tin Đà Lạt</that>
-		<template><srai>KHACH SAN DA LAT</srai></template>
-	</category>
-	<category>
-		<pattern>Thong tin qua tang Da Lat</pattern>
-		<that>Tìm thông tin Đà Lạt</that>
-		<template><srai>QUA DA LAT</srai></template>
-	</category>
 	<!-- kịch bản địa điểm -->
 	<category>
 		<pattern>DIA DIEM</pattern>
@@ -3556,6 +3328,235 @@
 	<category>
 		<pattern>* CHO AM PHU *</pattern>
 		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 177 </template>
+	</category>
+	<!-- KỊCH BẢN DU LỊCH -->
+	<!-- kịch bản du lịch theo địa danh bến tre -->
+	<category>
+		<pattern>BEN TRE</pattern>
+		<template>Tìm thông tin Bến Tre</template>
+	</category>
+	<category>
+		<pattern>* BEN TRE *</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* DU LICH * BEN TRE</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* DI * BEN TRE</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* DEN * BEN TRE</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* TOI * BEN TRE</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* GHE * BEN TRE</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* THAM * BEN TRE</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* O * BEN TRE</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* CO * GI * BEN TRE</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>* BEN TRE * CO * GI</pattern>
+		<template><srai>BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Thong tin dia diem Ben Tre</pattern>
+		<that>Tìm thông tin Bến Tre</that>
+		<template>
+			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 1 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>Thong tin nha hang Ben Tre</pattern>
+		<that>Tìm thông tin Bến Tre</that>
+		<template>
+			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 1 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>Thong tin mon an Ben Tre</pattern>
+		<that>Tìm thông tin Bến Tre</that>
+		<template>
+			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>Thong tin khach san Ben Tre</pattern>
+		<that>Tìm thông tin Bến Tre</that>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Thong tin qua tang Ben Tre</pattern>
+		<that>Bạn muốn tìm thông tin gì ở Bến Tre: địa điểm vui chơi, món ăn, quà tặng, nhà hàng, khách sạn?</that>
+		<template><srai>QUA BEN TRE</srai></template>
+	</category>
+	<!-- kịch bản du lịch cần thơ -->
+	<category>
+		<pattern>CAN THO</pattern>
+		<template>Tìm thông tin Cần Thơ</template>
+	</category>
+	<category>
+		<pattern>* CAN THO *</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CO * GI * CAN THO</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CAN THO * CO * GI</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* DU LICH * CAN THO</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* DI * CAN THO</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* DEN * CAN THO</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* TOI * CAN THO</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* GHE * CAN THO</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* THAM * CAN THO</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* O * CAN THO</pattern>
+		<template><srai>CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Thong tin dia diem Can Tho</pattern>
+		<that>Tìm thông tin Cần Thơ</that>
+		<template>
+			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 11 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>Thong tin nha hang Can Tho</pattern>
+		<that>Tìm thông tin Cần Thơ</that>
+		<template>
+			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 11 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>Thong tin mon an Can Tho</pattern>
+		<that>Tìm thông tin Cần Thơ</that>
+		<template>
+			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>Thong tin khach san Can Tho</pattern>
+		<that>Tìm thông tin Cần Thơ</that>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Thong tin qua tang Can Tho</pattern>
+		<that>Tìm thông tin Cần Thơ</that>
+		<template><srai>QUA CAN THO</srai></template>
+	</category>
+	<!-- kịch bản du lịch đà lạt -->
+	<category>
+		<pattern>DA LAT</pattern>
+		<template>Tìm thông tin Đà Lạt</template>
+	</category>
+	<category>
+		<pattern>* DA LAT *</pattern>
+		<template><srai>DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* CO * GI * DA LAT</pattern>
+		<template><srai>DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT * CO * GI</pattern>
+		<template><srai>DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DU LICH * DA LAT</pattern>
+		<template><srai>DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DI * DA LAT</pattern>
+		<template><srai>DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* DEN * DA LAT</pattern>
+		<template><srai>DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* TOI * DA LAT</pattern>
+		<template><srai>DU LICH DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* GHE * DA LAT</pattern>
+		<template><srai>DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* THAM * DA LAT</pattern>
+		<template><srai>DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>* O * DA LAT</pattern>
+		<template><srai>DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>Thong tin dia diem Da Lat</pattern>
+		<that>Tìm thông tin Đà Lạt</that>
+		<template>
+			select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>Thong tin nha hang Da Lat</pattern>
+		<that>Tìm thông tin Đà Lạt</that>
+		<template>
+			select restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh from restaurants where place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>Thong tin mon an Da Lat</pattern>
+		<that>Tìm thông tin Đà Lạt</that>
+		<template>
+			select food_ten, food_diachi, food_hinhanh from foods, localfoods where foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5
+		</template>
+	</category>
+	<category>
+		<pattern>Thong tin khach san Da Lat</pattern>
+		<that>Tìm thông tin Đà Lạt</that>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<category>
+		<pattern>Thong tin qua tang Da Lat</pattern>
+		<that>Tìm thông tin Đà Lạt</that>
+		<template><srai>QUA DA LAT</srai></template>
 	</category>
 	<!-- kêu mày -->
 	<category>
