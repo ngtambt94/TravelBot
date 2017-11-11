@@ -2920,6 +2920,7 @@
 		<template><srai>LE HOI DA LAT</srai></template>
 	</category>
 	<!-- CÁC ĐỊA ĐIỂM CON Ở CẦN THƠ -->
+	<!-- bến ninh kiều -->
 	<category>
 		<pattern>BEN NINH KIEU O DAU</pattern>
 		<template>
@@ -2937,6 +2938,44 @@
 	<category>
 		<pattern>* BEN NINH KIEU *</pattern>
 		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 101 </template>
+	</category>
+	<!-- chợ nổi cái răng -->
+	<category>
+		<pattern>CHO NOI CAI RANG O DAU</pattern>
+		<template>
+			Chợ nổi Cái Răng ở Cần Thơ bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* CHO NOI CAI RANG * O *</pattern>
+		<template><srai>CHO NOI CAI RANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO NOI CAI RANG * THUOC *</pattern>
+		<template><srai>CHO NOI CAI RANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO NOI CAI RANG *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 98 </template>
+	</category>
+	<!-- cầu cần thơ -->
+	<category>
+		<pattern>CAU CAN THO O DAU</pattern>
+		<template>
+			Cầu Cần Thơ ở Cần Thơ bạn nhé ;)		
+		</template>
+	</category>
+	<category>
+		<pattern>* CAU CAN THO * O *</pattern>
+		<template><srai>CAU CAN THO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CAU CAN THO * THUOC *</pattern>
+		<template><srai>CAU CAN THO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CAU CAN THO *</pattern>
+		<template>select destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh from destinations where destination_id = 99 </template>
 	</category>
 	<!-- kêu mày -->
 	<category>
