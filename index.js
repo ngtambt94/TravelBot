@@ -199,53 +199,53 @@ function findInfo(sender, answer) {
 			}
 			else{
 				sendTextMessage(sender, ";) Đây là kết quả có thể bạn quan tâm: ");
-        // khai báo mảng chứa lưu kết quả trả về
-        var ketqua = [];
-        var temp_kq = "";
-        // thêm từng phần tử vào mảng
-        for (var i = 0; i < results.length; i++) {
-        	for (var j = 0; j < results[i]['food_ten'].length; j++) {
-        		temp_kq += Convert(results[i]['food_ten'][j]);
-        	}
-        	ketqua.push(
-        	{
-        		"title": results[i]['food_ten'],
-        		"subtitle": results[i]['food_diachi'],
-        		"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[i]['food_hinhanh'],
-        		"buttons": [{
-        			"title": "Xem Chi Tiết",
-        			"type": "postback",
-        			"payload": temp_kq
-        		}],
-        	}
-        	);
-        }
-        let messageData = {
-        	"attachment": {
-        		"type": "template",
-        		"payload": {
-        			"template_type": "generic",
-        			"elements": ketqua,
-        		}
-        	}
-        }
-        request({
-        	url: 'https://graph.facebook.com/v2.6/me/messages',
-        	qs: {access_token:token},
-        	method: 'POST',
-        	json: {
-        		recipient: {id:sender},
-        		message: messageData,
-        	}
-        }, function(error, response, body) {
-        	if (error) {
-        		console.log('Error sending messages: ', error)
-        	} else if (response.body.error) {
-        		console.log('Error: ', response.body.error)
-        	}
-        })
-    }
-});
+		        // khai báo mảng chứa lưu kết quả trả về
+		        var ketqua = [];
+		        var temp_kq = "";
+		        // thêm từng phần tử vào mảng
+		        for (var i = 0; i < results.length; i++) {
+		        	for (var j = 0; j < results[i]['food_ten'].length; j++) {
+		        		temp_kq += Convert(results[i]['food_ten'][j]);
+		        	}
+		        	ketqua.push(
+		        	{
+		        		"title": results[i]['food_ten'],
+		        		"subtitle": results[i]['food_diachi'],
+		        		"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[i]['food_hinhanh'],
+		        		"buttons": [{
+		        			"title": "Xem Chi Tiết",
+		        			"type": "postback",
+		        			"payload": temp_kq
+		        		}],
+		        	}
+		        	);
+		        }
+		        let messageData = {
+		        	"attachment": {
+		        		"type": "template",
+		        		"payload": {
+		        			"template_type": "generic",
+		        			"elements": ketqua,
+		        		}
+		        	}
+		        }
+		        request({
+		        	url: 'https://graph.facebook.com/v2.6/me/messages',
+		        	qs: {access_token:token},
+		        	method: 'POST',
+		        	json: {
+		        		recipient: {id:sender},
+		        		message: messageData,
+		        	}
+		        }, function(error, response, body) {
+		        	if (error) {
+		        		console.log('Error sending messages: ', error)
+		        	} else if (response.body.error) {
+		        		console.log('Error: ', response.body.error)
+		        	}
+		        })
+    		}
+		});
 	});
 }
 
