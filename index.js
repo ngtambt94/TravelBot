@@ -199,11 +199,13 @@ function findInfo(sender, answer) {
 			}
 			else{
 				sendTextMessage(sender, ";) Đây là kết quả có thể bạn quan tâm: ");
+
 		        // khai báo mảng chứa lưu kết quả trả về
 		        var ketqua = [];
-		        var temp_kq = "";
+		        
 		        // thêm từng phần tử vào mảng
 		        for (var i = 0; i < results.length; i++) {
+		        	var temp_kq = "";
 		        	for (var j = 0; j < results[i]['food_ten'].length; j++) {
 		        		temp_kq += Convert(results[i]['food_ten'][j]);
 		        	}
