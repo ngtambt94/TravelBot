@@ -2445,44 +2445,6 @@
 		<that>Tìm quà tặng</that>
 		<template><srai>QUA DA LAT</srai></template>
 	</category>
-	<!-- kịch bản từ khóa du lịch -->
-	<category>
-		<pattern>DU LICH</pattern>
-		<template>Du lịch</template>
-	</category>
-	<category>
-		<pattern>* DU LICH *</pattern>
-		<template><srai>DU LICH</srai></template>
-	</category>
-	<!-- tham quan -->
-	<category>
-		<pattern>* THAM QUAN *</pattern>
-		<template><srai>DU LICH</srai></template>
-	</category>
-	<!-- kịch bản đi đâu -->
-	<category>
-		<pattern>* DI * DAU *</pattern>
-		<template><srai>DU LICH</srai></template>
-	</category>
-	<!-- kịch bản đi chơi -->
-	<category>
-		<pattern>* DI CHOI *</pattern>
-		<template><srai>DU LICH</srai></template>
-	</category>
-	<!-- kịch bản tìm chỗ vui chơi -->
-	<category>
-		<pattern>* CHO * CHOI</pattern>
-		<template><srai>DU LICH</srai></template>
-	</category>
-	<!-- kịch bản tui đi -->
-	<category>
-		<pattern>TUI DI</pattern>
-		<template><srai>DU LICH</srai></template>
-	</category>
-	<category>
-		<pattern>* TUI * DI</pattern>
-		<srai>DU LICH</srai>
-	</category>
 	<!-- kịch bản nhà hàng -->
 	<category>
 		<pattern>NHA HANG</pattern>
@@ -3557,6 +3519,44 @@
 		<pattern>Thong tin qua tang Da Lat</pattern>
 		<that>Tìm thông tin Đà Lạt</that>
 		<template><srai>QUA DA LAT</srai></template>
+	</category>
+	<!-- kịch bản từ khóa du lịch -->
+	<category>
+		<pattern>DU LICH</pattern>
+		<template>Du lịch</template>
+	</category>
+	<category>
+		<pattern>* DU LICH *</pattern>
+		<template><srai>DU LICH</srai></template>
+	</category>
+	<!-- tham quan -->
+	<category>
+		<pattern>* THAM QUAN *</pattern>
+		<template><srai>DU LICH</srai></template>
+	</category>
+	<!-- kịch bản đi đâu -->
+	<category>
+		<pattern>* DI * DAU *</pattern>
+		<template><srai>DU LICH</srai></template>
+	</category>
+	<!-- kịch bản đi chơi -->
+	<category>
+		<pattern>* DI CHOI *</pattern>
+		<template><srai>DU LICH</srai></template>
+	</category>
+	<!-- kịch bản tìm chỗ vui chơi -->
+	<category>
+		<pattern>* CHO * CHOI</pattern>
+		<template><srai>DU LICH</srai></template>
+	</category>
+	<!-- kịch bản tui đi -->
+	<category>
+		<pattern>TUI DI</pattern>
+		<template><srai>DU LICH</srai></template>
+	</category>
+	<category>
+		<pattern>* TUI * DI</pattern>
+		<srai>DU LICH</srai>
 	</category>
 	<!-- kêu mày -->
 	<category>
