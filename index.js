@@ -270,7 +270,7 @@ function DiaDiem(sender) {
 				},
 				{
 					"type": "postback",
-					"title": "Du lịch",
+					"title": "Vui chơi",
 					"payload": "Tim cho vui choi"
 				}
 				]
