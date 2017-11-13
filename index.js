@@ -197,12 +197,16 @@ function findInfo(sender, answer) {
 				else
 					sendTextMessage(sender, answer);
 			}
+			else if (results[0]['food_hinhanh'] === undefined) {
+				sendTextMessage(sender, results[0]['food_ten']);
+				sendTextMessage(sender, results[0]['food_diachi']);
+			}
 			else{
 				sendTextMessage(sender, ";) Đây là kết quả có thể bạn quan tâm: ");
 
 		        // khai báo mảng chứa lưu kết quả trả về
 		        var ketqua = [];
-		        
+
 		        // thêm từng phần tử vào mảng
 		        for (var i = 0; i < results.length; i++) {
 		        	var temp_kq = "";
