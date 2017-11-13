@@ -210,8 +210,8 @@ function findInfo(sender, answer) {
         		"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[i]['food_hinhanh'],
         		"buttons": [{
         			"title": "Chi Tiết",
-        			"type": "web_url",
-        			"url": "https://www.google.com/search?q=" + results[i]['food_ten']
+        			"type": "postback",
+        			"payload": results[i]['food_ten']
         		}],
         	}
         	);
