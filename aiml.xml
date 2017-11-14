@@ -2485,42 +2485,6 @@
 		<that>Tìm nhà hàng</that>
 		<template><srai>NHA HANG DA LAT</srai></template>
 	</category>
-	<!-- kịch bản món ngon và ăn -->
-	<category>
-		<pattern>MON NGON</pattern>
-		<template>Tìm món ăn</template>
-	</category>
-	<category>
-		<pattern>* MON *</pattern>
-		<srai>MON NGON</srai>
-	</category>
-	<category>
-		<pattern>* DAC SAN *</pattern>
-		<srai>MON NGON</srai>
-	</category>
-	<category>
-		<pattern>* AN *</pattern>
-		<srai>MON NGON</srai>
-	</category>
-	<category>
-		<pattern>* DOI *</pattern>
-		<srai>MON NGON</srai>
-	</category>
-	<category>
-		<pattern>Mon an o Ben Tre</pattern>
-		<that>Tìm món ăn</that>
-		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5</template>
-	</category>
-	<category>
-		<pattern>Mon an o Da Lat</pattern>
-		<that>Tìm món ăn</that>
-		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5</template>
-	</category>
-	<category>
-		<pattern>Mon an o Can Tho</pattern>
-		<that>Tìm món ăn</that>
-		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
-	</category>
 	<!-- tìm khách sạn rẻ -->
 	<category>
 		<pattern>KHACH SAN RE</pattern>
@@ -3557,6 +3521,42 @@
 	<category>
 		<pattern>* TUI * DI</pattern>
 		<srai>DU LICH</srai>
+	</category>
+	<!-- kịch bản món ngon và ăn -->
+	<category>
+		<pattern>MON NGON</pattern>
+		<template>Tìm món ăn</template>
+	</category>
+	<category>
+		<pattern>* MON *</pattern>
+		<srai>MON NGON</srai>
+	</category>
+	<category>
+		<pattern>* DAC SAN *</pattern>
+		<srai>MON NGON</srai>
+	</category>
+	<category>
+		<pattern>* AN *</pattern>
+		<srai>MON NGON</srai>
+	</category>
+	<category>
+		<pattern>* DOI *</pattern>
+		<srai>MON NGON</srai>
+	</category>
+	<category>
+		<pattern>Mon an o Ben Tre</pattern>
+		<that>Tìm món ăn</that>
+		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>Mon an o Da Lat</pattern>
+		<that>Tìm món ăn</that>
+		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5</template>
+	</category>
+	<category>
+		<pattern>Mon an o Can Tho</pattern>
+		<that>Tìm món ăn</that>
+		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
 	</category>
 	<!-- kêu mày -->
 	<category>
