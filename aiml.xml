@@ -2975,7 +2975,6 @@
 		<pattern>* CHO AM PHU *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 177 </template>
 	</category>
-	
 	<!-- kịch bản địa điểm -->
 	<category>
 		<pattern>DIA DIEM</pattern>

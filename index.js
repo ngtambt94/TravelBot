@@ -207,7 +207,7 @@ function findInfo(sender, answer) {
 		        // khai báo mảng chứa lưu kết quả trả về
 		        var ketqua = [];
 
-		        // thêm từng phần tử vào mảng
+		        // thêm từng phần tử vào mảng kết quả
 		        for (var i = 0; i < results.length; i++) {
 		        	var temp_kq = "";
 		        	for (var j = 0; j < results[i]['food_ten'].length; j++) {
