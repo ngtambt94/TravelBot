@@ -2337,286 +2337,6 @@
 		<template><srai>QUA DA LAT</srai></template>
 	</category>
 	<!-- KỊCH BẢN THEO TỪ KHÓA VÀ PHÂN CẤP -->
-	<!-- kịch bản địa điểm -->
-	<category>
-		<pattern>DIA DIEM</pattern>
-		<template>Tìm địa điểm</template>
-	</category>
-	<category>
-		<pattern>* DIA DIEM *</pattern>
-		<template><srai>DIA DIEM</srai></template>
-	</category>
-	<category>
-		<pattern>Tim mon an</pattern>
-		<that>Tìm địa điểm</that>
-		<template><srai>MON NGON</srai></template>
-	</category>
-	<category>
-		<pattern>Tim khach san</pattern>
-		<that>Tìm địa điểm</that>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>Tim cho vui choi</pattern>
-		<that>Tìm địa điểm</that>
-		<template><srai>DU LICH</srai></template>
-	</category>
-	<!-- kịch bản hoạt động -->
-	<category>
-		<pattern>HOAT DONG</pattern>
-		<template>Tìm hoạt động</template>
-	</category>
-	<category>
-		<pattern>* HOAT DONG *</pattern>
-		<template><srai>HOAT DONG</srai></template>
-	</category>
-	<category>
-		<pattern>* LAM * GI *</pattern>
-		<template><srai>HOAT DONG</srai></template>
-	</category>
-	<category>
-		<pattern>* CHOI * GI *</pattern>
-		<template><srai>HOAT DONG</srai></template>
-	</category>
-	<category>
-		<pattern>* MUA * LAM QUA *</pattern>
-		<template><srai>HOAT DONG</srai></template>
-	</category>
-	<category>
-		<pattern>* GI * VUI *</pattern>
-		<template><srai>HOAT DONG</srai></template>
-	</category>
-	<category>
-		<pattern>* VUI CHOI *</pattern>
-		<template><srai>HOAT DONG</srai></template>
-	</category>
-	<category>
-		<pattern>* CO * GI * HAP DAN</pattern>
-		<template><srai>HOAT DONG</srai></template>
-	</category>
-	<category>
-		<pattern>Tim hoat dong o Can Tho</pattern>
-		<that>Tìm hoạt động</that>
-		<template><srai>HOAT DONG CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>Tim hoat dong o Ben Tre</pattern>
-		<that>Tìm hoạt động</that>
-		<template><srai>HOAT DONG BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>Tim hoat dong o Da Lat</pattern>
-		<that>Tìm hoạt động</that>
-		<template><srai>HOAT DONG DA LAT</srai></template>
-	</category>
-	<!-- kịch bản quà tặng -->
-	<category>
-		<pattern>QUA TANG</pattern>
-		<template>Tìm quà tặng</template>
-	</category>
-	<category>
-		<pattern>* QUA TANG *</pattern>
-		<template><srai>QUA TANG</srai></template>
-	</category>
-	<category>
-		<pattern>* MUA QUA *</pattern>
-		<template><srai>QUA TANG</srai></template>
-	</category>
-	<category>
-		<pattern>* QUA BIEU *</pattern>
-		<template><srai>QUA TANG</srai></template>
-	</category>
-	<category>
-		<pattern>* MUA * LAM QUA *</pattern>
-		<template><srai>QUA TANG</srai></template>
-	</category>
-	<category>
-		<pattern>Tim qua o Can Tho</pattern>
-		<that>Tìm quà tặng</that>
-		<template><srai>QUA CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>Tim qua o Ben Tre</pattern>
-		<that>Tìm quà tặng</that>
-		<template><srai>QUA BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>Tim qua o Da Lat</pattern>
-		<that>Tìm quà tặng</that>
-		<template><srai>QUA DA LAT</srai></template>
-	</category>
-	<!-- kịch bản nhà hàng -->
-	<category>
-		<pattern>NHA HANG</pattern>
-		<template>Tìm nhà hàng</template>
-	</category>
-	<category>
-		<pattern>* NHA HANG *</pattern>
-		<template><srai>NHA HANG</srai></template>
-	</category>
-	<category>
-		<pattern>* QUAN *</pattern>
-		<template><srai>NHA HANG</srai></template>
-	</category>
-	<category>
-		<pattern>* AN O *</pattern>
-		<template><srai>NHA HANG</srai></template>
-	</category>
-	<category>
-		<pattern>* AN TAI *</pattern>
-		<template><srai>NHA HANG</srai></template>
-	</category>
-	<category>
-		<pattern>* AN NOI *</pattern>
-		<template><srai>NHA HANG</srai></template>
-	</category>
-	<category>
-		<pattern>Tim quan an o Can Tho</pattern>
-		<that>Tìm nhà hàng</that>
-		<template><srai>NHA HANG CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>Tim quan an o Ben Tre</pattern>
-		<that>Tìm nhà hàng</that>
-		<template><srai>NHA HANG BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>Tim quan an o Da Lat</pattern>
-		<that>Tìm nhà hàng</that>
-		<template><srai>NHA HANG DA LAT</srai></template>
-	</category>
-	<!-- tìm khách sạn rẻ -->
-	<category>
-		<pattern>KHACH SAN RE</pattern>
-		<template>Tìm khách sạn rẻ</template>
-	</category>
-	<category>
-		<pattern>* RE *</pattern>
-		<template><srai>KHACH SAN RE</srai></template>
-	</category>
-	<category>
-		<pattern>Tim khach san re o Can Tho</pattern>
-		<that>Tìm khách sạn rẻ</that>
-		<template><srai>KHACH SAN RE CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>Tim khach san re o Ben Tre</pattern>
-		<that>Tìm khách sạn rẻ</that>
-		<template><srai>KHACH SAN RE BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>Tim khach san re o Da Lat</pattern>
-		<that>Tìm khách sạn rẻ</that>
-		<template><srai>KHACH SAN RE DA LAT</srai></template>
-	</category>
-	<!-- tìm khách sạn cao cấp -->
-	<category>
-		<pattern>KHACH SAN CAO CAP</pattern>
-		<template>Tìm khách sạn cao cấp</template>
-	</category>
-	<category>
-		<pattern>* CAO CAP *</pattern>
-		<template><srai>KHACH SAN CAO CAP</srai></template>
-	</category>
-	<category>
-		<pattern>Tim khach san cao cap o Can Tho</pattern>
-		<that>Tìm khách sạn cao cấp</that>
-		<template><srai>KHACH SAN CAO CAP CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>Tim khach san cao cap o Ben Tre</pattern>
-		<that>Tìm khách sạn cao cấp</that>
-		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>Tim khach san cao cap o Da Lat</pattern>
-		<that>Tìm khách sạn cao cấp</that>
-		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
-	</category>
-	<!-- kịch bản qua đêm -->
-	<category>
-		<pattern>QUA DEM</pattern>
-		<template>Tìm chỗ ngủ</template>
-	</category>
-	<category>
-		<pattern>* QUA DEM *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* CHO * TRO *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* KHACH SAN *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* NHA NGHI *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* MOTEL *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* CHO * NGHI *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* CHO * DUNG *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>* TA TUC *</pattern>
-		<template><srai>QUA DEM</srai></template>
-	</category>
-	<category>
-		<pattern>Cho ngu o Ben Tre</pattern>
-		<that>Tìm chỗ ngủ</that>
-		<template><srai>KHACH SAN BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>Cho ngu o Can Tho</pattern>
-		<that>Tìm chỗ ngủ</that>
-		<template><srai>KHACH SAN CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>Cho ngu o Da Lat</pattern>
-		<that>Tìm chỗ ngủ</that>
-		<template><srai>KHACH SAN DA LAT</srai></template>
-	</category>
-	<!-- lễ hội truyền thống -->
-	<category>
-		<pattern>LE HOI</pattern>
-		<template>Tìm lễ hội</template>
-	</category>
-	<category>
-		<pattern>* LE HOI *</pattern>
-		<template><srai>LE HOI</srai></template>
-	</category>
-	<category>
-		<pattern>* VAN HOA *</pattern>
-		<template><srai>LE HOI</srai></template>
-	</category>
-	<category>
-		<pattern>* TRUYEN THONG *</pattern>
-		<template><srai>LE HOI</srai></template>
-	</category>
-	<category>
-		<pattern>Tim le hoi o Can Tho</pattern>
-		<that>Tìm lễ hội</that>
-		<template><srai>LE HOI CAN THO</srai></template>
-	</category>
-	<category>
-		<pattern>Tim le hoi o Ben Tre</pattern>
-		<that>Tìm lễ hội</that>
-		<template><srai>LE HOI BEN TRE</srai></template>
-	</category>
-	<category>
-		<pattern>Tim le hoi o Da Lat</pattern>
-		<that>Tìm lễ hội</that>
-		<template><srai>LE HOI DA LAT</srai></template>
-	</category>
 	<!-- CÁC ĐỊA ĐIỂM CON Ở CẦN THƠ -->
 	<!-- bến ninh kiều -->
 	<category>
@@ -3254,6 +2974,287 @@
 	<category>
 		<pattern>* CHO AM PHU *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 177 </template>
+	</category>
+	
+	<!-- kịch bản địa điểm -->
+	<category>
+		<pattern>DIA DIEM</pattern>
+		<template>Tìm địa điểm</template>
+	</category>
+	<category>
+		<pattern>* DIA DIEM *</pattern>
+		<template><srai>DIA DIEM</srai></template>
+	</category>
+	<category>
+		<pattern>Tim mon an</pattern>
+		<that>Tìm địa điểm</that>
+		<template><srai>MON NGON</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san</pattern>
+		<that>Tìm địa điểm</that>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>Tim cho vui choi</pattern>
+		<that>Tìm địa điểm</that>
+		<template><srai>DU LICH</srai></template>
+	</category>
+	<!-- kịch bản hoạt động -->
+	<category>
+		<pattern>HOAT DONG</pattern>
+		<template>Tìm hoạt động</template>
+	</category>
+	<category>
+		<pattern>* HOAT DONG *</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>* LAM * GI *</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>* CHOI * GI *</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>* MUA * LAM QUA *</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>* GI * VUI *</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>* VUI CHOI *</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>* CO * GI * HAP DAN</pattern>
+		<template><srai>HOAT DONG</srai></template>
+	</category>
+	<category>
+		<pattern>Tim hoat dong o Can Tho</pattern>
+		<that>Tìm hoạt động</that>
+		<template><srai>HOAT DONG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Tim hoat dong o Ben Tre</pattern>
+		<that>Tìm hoạt động</that>
+		<template><srai>HOAT DONG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim hoat dong o Da Lat</pattern>
+		<that>Tìm hoạt động</that>
+		<template><srai>HOAT DONG DA LAT</srai></template>
+	</category>
+	<!-- kịch bản quà tặng -->
+	<category>
+		<pattern>QUA TANG</pattern>
+		<template>Tìm quà tặng</template>
+	</category>
+	<category>
+		<pattern>* QUA TANG *</pattern>
+		<template><srai>QUA TANG</srai></template>
+	</category>
+	<category>
+		<pattern>* MUA QUA *</pattern>
+		<template><srai>QUA TANG</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA BIEU *</pattern>
+		<template><srai>QUA TANG</srai></template>
+	</category>
+	<category>
+		<pattern>* MUA * LAM QUA *</pattern>
+		<template><srai>QUA TANG</srai></template>
+	</category>
+	<category>
+		<pattern>Tim qua o Can Tho</pattern>
+		<that>Tìm quà tặng</that>
+		<template><srai>QUA CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Tim qua o Ben Tre</pattern>
+		<that>Tìm quà tặng</that>
+		<template><srai>QUA BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim qua o Da Lat</pattern>
+		<that>Tìm quà tặng</that>
+		<template><srai>QUA DA LAT</srai></template>
+	</category>
+	<!-- kịch bản nhà hàng -->
+	<category>
+		<pattern>NHA HANG</pattern>
+		<template>Tìm nhà hàng</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG *</pattern>
+		<template><srai>NHA HANG</srai></template>
+	</category>
+	<category>
+		<pattern>* QUAN *</pattern>
+		<template><srai>NHA HANG</srai></template>
+	</category>
+	<category>
+		<pattern>* AN O *</pattern>
+		<template><srai>NHA HANG</srai></template>
+	</category>
+	<category>
+		<pattern>* AN TAI *</pattern>
+		<template><srai>NHA HANG</srai></template>
+	</category>
+	<category>
+		<pattern>* AN NOI *</pattern>
+		<template><srai>NHA HANG</srai></template>
+	</category>
+	<category>
+		<pattern>Tim quan an o Can Tho</pattern>
+		<that>Tìm nhà hàng</that>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Tim quan an o Ben Tre</pattern>
+		<that>Tìm nhà hàng</that>
+		<template><srai>NHA HANG BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim quan an o Da Lat</pattern>
+		<that>Tìm nhà hàng</that>
+		<template><srai>NHA HANG DA LAT</srai></template>
+	</category>
+	<!-- tìm khách sạn rẻ -->
+	<category>
+		<pattern>KHACH SAN RE</pattern>
+		<template>Tìm khách sạn rẻ</template>
+	</category>
+	<category>
+		<pattern>* RE *</pattern>
+		<template><srai>KHACH SAN RE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san re o Can Tho</pattern>
+		<that>Tìm khách sạn rẻ</that>
+		<template><srai>KHACH SAN RE CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san re o Ben Tre</pattern>
+		<that>Tìm khách sạn rẻ</that>
+		<template><srai>KHACH SAN RE BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san re o Da Lat</pattern>
+		<that>Tìm khách sạn rẻ</that>
+		<template><srai>KHACH SAN RE DA LAT</srai></template>
+	</category>
+	<!-- tìm khách sạn cao cấp -->
+	<category>
+		<pattern>KHACH SAN CAO CAP</pattern>
+		<template>Tìm khách sạn cao cấp</template>
+	</category>
+	<category>
+		<pattern>* CAO CAP *</pattern>
+		<template><srai>KHACH SAN CAO CAP</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san cao cap o Can Tho</pattern>
+		<that>Tìm khách sạn cao cấp</that>
+		<template><srai>KHACH SAN CAO CAP CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san cao cap o Ben Tre</pattern>
+		<that>Tìm khách sạn cao cấp</that>
+		<template><srai>KHACH SAN CAO CAP BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim khach san cao cap o Da Lat</pattern>
+		<that>Tìm khách sạn cao cấp</that>
+		<template><srai>KHACH SAN CAO CAP DA LAT</srai></template>
+	</category>
+	<!-- kịch bản qua đêm -->
+	<category>
+		<pattern>QUA DEM</pattern>
+		<template>Tìm chỗ ngủ</template>
+	</category>
+	<category>
+		<pattern>* QUA DEM *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO * TRO *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* KHACH SAN *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA NGHI *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* MOTEL *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO * NGHI *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO * DUNG *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* TA TUC *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>Cho ngu o Ben Tre</pattern>
+		<that>Tìm chỗ ngủ</that>
+		<template><srai>KHACH SAN BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Cho ngu o Can Tho</pattern>
+		<that>Tìm chỗ ngủ</that>
+		<template><srai>KHACH SAN CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Cho ngu o Da Lat</pattern>
+		<that>Tìm chỗ ngủ</that>
+		<template><srai>KHACH SAN DA LAT</srai></template>
+	</category>
+	<!-- lễ hội truyền thống -->
+	<category>
+		<pattern>LE HOI</pattern>
+		<template>Tìm lễ hội</template>
+	</category>
+	<category>
+		<pattern>* LE HOI *</pattern>
+		<template><srai>LE HOI</srai></template>
+	</category>
+	<category>
+		<pattern>* VAN HOA *</pattern>
+		<template><srai>LE HOI</srai></template>
+	</category>
+	<category>
+		<pattern>* TRUYEN THONG *</pattern>
+		<template><srai>LE HOI</srai></template>
+	</category>
+	<category>
+		<pattern>Tim le hoi o Can Tho</pattern>
+		<that>Tìm lễ hội</that>
+		<template><srai>LE HOI CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>Tim le hoi o Ben Tre</pattern>
+		<that>Tìm lễ hội</that>
+		<template><srai>LE HOI BEN TRE</srai></template>
+	</category>
+	<category>
+		<pattern>Tim le hoi o Da Lat</pattern>
+		<that>Tìm lễ hội</that>
+		<template><srai>LE HOI DA LAT</srai></template>
 	</category>
 	<!-- KỊCH BẢN DU LỊCH -->
 	<!-- kịch bản du lịch theo địa danh bến tre -->
