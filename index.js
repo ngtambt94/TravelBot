@@ -18,10 +18,14 @@ var conn = mysql.createConnection({
 // messenger facebook
 'use strict'
 
+const logger = require('morgan');
+const http = require('http');
 const express = require('express')
 const bodyParser = require('body-parser')
 const request = require('request')
 const app = express()
+
+app.use(logger('dev'));
 
 app.set('port', (process.env.PORT || 5000))
 
@@ -30,6 +34,8 @@ app.use(bodyParser.urlencoded({extended: false}))
 
 // parse application/json
 app.use(bodyParser.json())
+
+var server = http.createServer(app);
 
 // index
 app.get('/', function (req, res) {
@@ -966,5 +972,5 @@ res.sendStatus(200)
 
 // spin spin sugar
 app.listen(app.get('port'), function() {
-	console.log('running on port', app.get('port'))
+	console.log('Tam Nguyen\'s Chatbot is listening at', app.get('port'))
 })
