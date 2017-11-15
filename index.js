@@ -197,10 +197,10 @@ function findInfo(sender, answer) {
 				else
 					sendTextMessage(sender, answer);
 			}
-			else if (results[0]['food_hinhanh'] === undefined) {
-				sendTextMessage(sender, results[0]['food_ten']);
-				sendTextMessage(sender, results[0]['food_diachi']);
-			}
+			// else if (results[0]['food_hinhanh'] === undefined) {
+			// 	sendTextMessage(sender, results[0]['food_ten']);
+			// 	sendTextMessage(sender, results[0]['food_diachi']);
+			// }
 			else{
 				sendTextMessage(sender, ";) Đây là kết quả có thể bạn quan tâm: ");
 
