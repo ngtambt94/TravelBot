@@ -949,7 +949,7 @@ app.post('/webhook', function (req, res) {
       		sendTextMessage(sender, "Bên mình chưa có dữ liệu :P");
       	}       
       	else{
-      		sendTextMessage(sender, "Mình hỏng hiểu :P Nhập help đi nè ;)");
+      		sendTextMessage(sender, text+" là gì dạ mình hỏng hiểu. Nhập help đi nè :P");
       	}
       };
 
