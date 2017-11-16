@@ -423,7 +423,15 @@
 		<template><srai>NHA HANG CAN THO</srai></template>
 	</category>
 	<category>
-		<pattern>* AN O * CAN THO *</pattern>
+		<pattern>* QUAN AN * CAN THO *</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO AN * CAN THO *</pattern>
+		<template><srai>NHA HANG CAN THO</srai></template>
+	</category>
+	<category>
+		<pattern>* TIEM AN * CAN THO *</pattern>
 		<template><srai>NHA HANG CAN THO</srai></template>
 	</category>
 	<category>
@@ -3556,17 +3564,17 @@
 		<srai>MON NGON</srai>
 	</category>
 	<category>
-		<pattern>Mon an o Ben Tre</pattern>
+		<pattern>Mon an Ben Tre</pattern>
 		<that>Tìm món ăn</that>
 		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5</template>
 	</category>
 	<category>
-		<pattern>Mon an o Da Lat</pattern>
+		<pattern>Mon an Da Lat</pattern>
 		<that>Tìm món ăn</that>
 		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5</template>
 	</category>
 	<category>
-		<pattern>Mon an o Can Tho</pattern>
+		<pattern>Mon an Can Tho</pattern>
 		<that>Tìm món ăn</that>
 		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
 	</category>

@@ -674,17 +674,17 @@ function MonAn(sender) {
 				{
 					"type": "postback",
 					"title": "Bến Tre",
-					"payload": "Mon an o Ben Tre"
+					"payload": "Mon an Ben Tre"
 				},
 				{
 					"type": "postback",
 					"title": "Cần Thơ",
-					"payload": "Mon an o Can Tho"
+					"payload": "Mon an Can Tho"
 				},
 				{
 					"type": "postback",
 					"title": "Đà Lạt",
-					"payload": "Mon an o Da Lat"
+					"payload": "Mon an Da Lat"
 				}
 				]
 			}
