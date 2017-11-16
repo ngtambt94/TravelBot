@@ -2355,7 +2355,7 @@
 	</category>
 	<category>
 		<pattern>* BEN NINH KIEU *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 101 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 101</template>
 	</category>
 	<!-- chợ nổi cái răng -->
 	<category>
@@ -2374,7 +2374,7 @@
 	</category>
 	<category>
 		<pattern>* CHO NOI CAI RANG *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 98 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 98</template>
 	</category>
 	<!-- cầu cần thơ -->
 	<category>
@@ -2393,7 +2393,7 @@
 	</category>
 	<category>
 		<pattern>* CAU CAN THO *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 99 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 99</template>
 	</category>
 	<!-- nhà cổ bình thủy -->
 	<category>
@@ -2412,7 +2412,7 @@
 	</category>
 	<category>
 		<pattern>* NHA CO BINH THUY *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 100 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 100</template>
 	</category>
 	<!-- cầu tình yêu -->
 	<category>
@@ -2439,7 +2439,7 @@
 	</category>
 	<category>
 		<pattern>* CAU DI BO *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 102 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 102</template>
 	</category>
 	<!-- biển cần thơ -->
 	<category>
@@ -2458,7 +2458,7 @@
 	</category>
 	<category>
 		<pattern>* BIEN CAN THO *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 103 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 103</template>
 	</category>
 	<!-- thiền viện trúc lâm -->
 	<category>
@@ -2485,7 +2485,7 @@
 	</category>
 	<category>
 		<pattern>* THIEN VIEN TRUC LAM *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 104 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 104</template>
 	</category>
 	<!-- làng du lịch mỹ khánh -->
 	<category>
@@ -2504,7 +2504,7 @@
 	</category>
 	<category>
 		<pattern>* MY KHANH *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 105 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 105</template>
 	</category>
 	<!-- chùa ông -->
 	<category>
@@ -2523,7 +2523,7 @@
 	</category>
 	<category>
 		<pattern>* CHUA ONG *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 106 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 106</template>
 	</category>
 	<!-- CÁC ĐỊA ĐIỂM CON Ở BẾN TRE -->
 	<!-- cồn phụng -->
@@ -2543,7 +2543,7 @@
 	</category>
 	<category>
 		<pattern>* CON PHUNG *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 1 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 1</template>
 	</category>
 	<!-- cồn quy -->
 	<category>
@@ -2570,11 +2570,11 @@
 	</category>
 	<category>
 		<pattern>* CON QUY *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 2 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 2</template>
 	</category>
 	<category>
 		<pattern>* CON QUI *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 2 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 2</template>
 	</category>
 	<!-- cồn ốc -->
 	<category>
@@ -2593,7 +2593,7 @@
 	</category>
 	<category>
 		<pattern>* CON OC *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 3 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 3</template>
 	</category>
 	<!-- sân chim vàm hồ -->
 	<category>
@@ -2612,7 +2612,7 @@
 	</category>
 	<category>
 		<pattern>* SAN CHIM VAM HO *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 4 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 4</template>
 	</category>
 	<!-- vườn trái cây cái mơn -->
 	<category>
@@ -2631,7 +2631,7 @@
 	</category>
 	<category>
 		<pattern>* TRAI CAY CAI MON *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 5 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 5</template>
 	</category>
 	<!-- lăng mộ nguyễn đình chiểu -->
 	<category>
@@ -2650,7 +2650,7 @@
 	</category>
 	<category>
 		<pattern>* NGUYEN DINH CHIEU *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 6 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 6</template>
 	</category>
 	<!-- lăng mộ phan thanh giản -->
 	<category>
@@ -2669,7 +2669,7 @@
 	</category>
 	<category>
 		<pattern>* PHAN THANH GIAN *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 7 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 7</template>
 	</category>
 	<!-- khu du lịch lan vương -->
 	<category>
@@ -2688,7 +2688,7 @@
 	</category>
 	<category>
 		<pattern>* LAN VUONG *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 8 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 8</template>
 	</category>
 	<!-- cồn tiên -->
 	<category>
@@ -2707,7 +2707,7 @@
 	</category>
 	<category>
 		<pattern>* CON TIEN *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 9 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 9</template>
 	</category>
 	<!-- biển cồn bửng -->
 	<category>
@@ -2726,7 +2726,7 @@
 	</category>
 	<category>
 		<pattern>* CON BUNG *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 10 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 10</template>
 	</category>
 	<!-- ĐỊA ĐIỂM CON Ở ĐÀ LẠT -->
 	<!-- vường hoa đà lạt -->
@@ -2746,7 +2746,7 @@
 	</category>
 	<category>
 		<pattern>* VUON HOA DA LAT *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 168 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 168</template>
 	</category>
 	<!-- hồ xuân hương -->
 	<category>
@@ -2765,7 +2765,7 @@
 	</category>
 	<category>
 		<pattern>* HO XUAN HUONG *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 169 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 169</template>
 	</category>
 	<!-- nhà thờ chính tòa -->
 	<category>
@@ -2800,11 +2800,11 @@
 	</category>
 	<category>
 		<pattern>* NHA THO CHINH TOA *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 170 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 170</template>
 	</category>
 	<category>
 		<pattern>* NHA THO CON GA *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 170 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 170</template>
 	</category>
 	<!-- Nhà thờ Domaine de Marie -->
 	<category>
@@ -2831,11 +2831,11 @@
 	</category>
 	<category>
 		<pattern>* NHA THO DOMAINE DE MARIE *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 171 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 171</template>
 	</category>
 	<category>
 		<pattern>* LANH DIA DUC BA *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 171 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 171</template>
 	</category>
 	<!-- núi lang biang -->
 	<category>
@@ -2845,16 +2845,28 @@
 		</template>
 	</category>
 	<category>
-		<pattern>* NUI LANG BIANG * O *</pattern>
+		<pattern>* LANG BIANG * O *</pattern>
 		<template><srai>NUI LANG BIANG O DAU</srai></template>
 	</category>
 	<category>
-		<pattern>* NUI LANG BIANG * THUOC *</pattern>
+		<pattern>* LANG BIANG * THUOC *</pattern>
 		<template><srai>NUI LANG BIANG O DAU</srai></template>
 	</category>
 	<category>
-		<pattern>* NUI LANG BIANG *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 172 </template>
+		<pattern>* LANGBIANG * O *</pattern>
+		<template><srai>NUI LANG BIANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LANGBIANG * THUOC *</pattern>
+		<template><srai>NUI LANG BIANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LANG BIANG *</pattern>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 172</template>
+	</category>
+	<category>
+		<pattern>* LANGBIANG *</pattern>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 172</template>
 	</category>
 	<!-- làng cù lần -->
 	<category>
@@ -2873,7 +2885,7 @@
 	</category>
 	<category>
 		<pattern>* LANG CU LAN *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 173 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 173</template>
 	</category>
 	<!-- hồ tuyền lâm -->
 	<category>
@@ -2892,7 +2904,7 @@
 	</category>
 	<category>
 		<pattern>* HO TUYEN LAM *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 174 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 174</template>
 	</category>
 	<!-- Thác Datanla -->
 	<category>
@@ -2911,7 +2923,7 @@
 	</category>
 	<category>
 		<pattern>* THAC DATANLA *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 175 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 175</template>
 	</category>
 	<!-- thác voi -->
 	<category>
@@ -2938,11 +2950,11 @@
 	</category>
 	<category>
 		<pattern>* THAC VOI *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 176 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 176</template>
 	</category>
 	<category>
 		<pattern>* CHUA LINH AN *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 176 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 176</template>
 	</category>
 	<!-- chợ đà lạt và chợ âm phủ -->
 	<category>
@@ -2969,11 +2981,11 @@
 	</category>
 	<category>
 		<pattern>* CHO DA LAT *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 177 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 177</template>
 	</category>
 	<category>
 		<pattern>* CHO AM PHU *</pattern>
-		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 177 </template>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 177</template>
 	</category>
 	<!-- kịch bản địa điểm -->
 	<category>
@@ -3594,10 +3606,6 @@
 	</category>
 	<!-- Làm được gì -->
 	<category>
-		<pattern>* LAM *</pattern>
-		<template>Mình có thể đưa ra một số gợi ý giúp bạn về du lịch ở ba địa điểm Cần Thơ, Bến Tre và Đà Lạt :)</template>
-	</category>
-	<category>
 		<pattern>* CO Y *</pattern>
 		<template>Ừa cố tình không à :(</template>
 	</category>
@@ -3735,5 +3743,10 @@
 	<category>
 		<pattern>* MASSAGE *</pattern>
 		<template>Tìm chỗ kín đáo để vợ không phát hiện nhé ;)</template>
+	</category>
+	<!-- làm được gì -->
+	<category>
+		<pattern>* LAM *</pattern>
+		<template>Mình có thể đưa ra một số gợi ý giúp bạn về du lịch ở ba địa điểm Cần Thơ, Bến Tre và Đà Lạt :)</template>
 	</category>
 </aiml>
