@@ -1,340 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aiml>
-	<!-- chào hỏi -->
-	<category>
-		<pattern>XIN CHAO *</pattern>
-		<template><random><li>Xin chào! ;) Mình có thể giúp gì cho bạn?</li><li>Halo! :) Mình là TravelBot</li><li>Hii! ;) Chào mừng bạn đến với TravelBot.</li></random></template>
-	</category>
-	<category>
-		<pattern>* XIN CHAO</pattern>
-		<template><srai>XIN CHAO *</srai></template>
-	</category>
-	<category>
-		<pattern>CHAO *</pattern>
-		<template><srai>XIN CHAO *</srai></template>
-	</category>
-	<category>
-		<pattern>HI *</pattern>
-		<template><srai>XIN CHAO *</srai></template>
-	</category>
-	<category>
-		<pattern>HII *</pattern>
-		<template><srai>XIN CHAO *</srai></template>
-	</category>
-	<category>
-		<pattern>HELLO *</pattern>
-		<template><srai>XIN CHAO *</srai></template>
-	</category>
-	<category>
-		<pattern>HALO *</pattern>
-		<template><srai>XIN CHAO *</srai></template>
-	</category>
-	<category>
-		<pattern>HELO *</pattern>
-		<template><srai>XIN CHAO *</srai></template>
-	</category>
-	<category>
-		<pattern>BAN KHOE KHONG</pattern>
-		<template><random><li>Không thể tốt hơn! :)</li><li>Mình luôn khỏe mạnh để sẵn sàng giúp đỡ bạn! ;)</li><li>Khỏe re luôn. Hôm nay bạn cần gì? ;)</li></random></template>
-	</category>
-	<category>
-		<pattern>* BAN * KHOE KHONG *</pattern>
-		<template><srai>BAN KHOE KHONG</srai></template>
-	</category>
-	<category>
-		<pattern>HOW ARE YOU *</pattern>
-		<template><srai>BAN KHOE KHONG</srai></template>
-	</category>
-	<category>
-		<pattern>HOM NAY * THE NAO *</pattern>
-		<template><srai>BAN KHOE KHONG</srai></template>
-	</category>
-	<!-- thông tin thêm -->
-	<category>
-		<pattern>TAM LA AI</pattern>
-		<template>
-			Tam Nguyen là sinh viên Khoa học máy tính, khóa 39, Trường Đại học Cần Thơ :)
-		</template>
-	</category>
-	<category>
-		<pattern>* TAM LA *</pattern>
-		<template><srai>TAM LA AI</srai></template>
-	</category>
-	<category>
-		<pattern>* TAM NGUYEN LA *</pattern>
-		<template><srai>TAM LA AI</srai></template>
-	</category>
-	<category>
-		<pattern>* LA * TAM</pattern>
-		<template><srai>TAM LA AI</srai></template>
-	</category>
-	<category>
-		<pattern>* LA * DUA NAO</pattern>
-		<template><srai>TAM LA AI</srai></template>
-	</category>
-	<category>
-		<pattern>* BIET * TAM</pattern>
-		<template><srai>TAM LA AI</srai></template>
-	</category>
-	<category>
-		<pattern>TAM * BAN GAI *</pattern>
-		<template>
-			Tất nhiên là có rồi! Đẹp trai vậy mà?!
-		</template>
-	</category>
-	<category>
-		<pattern>BAN GAI TAM</pattern>
-		<template>
-			Quyen Tran cute
-		</template>
-	</category>
-	<category>
-		<pattern>* BAN GAI * TAM *</pattern>
-		<template><srai>BAN GAI TAM</srai></template>
-	</category>
-	<category>
-		<pattern>* BAN GAI TAM</pattern>
-		<template><srai>BAN GAI TAM</srai></template>
-	</category>
-	<category>
-		<pattern>* QUYEN TRAN *</pattern>
-		<template>
-			Quyen Tran là bạn gái Tam Nguyen. Mình không thể thông tin thêm. ;)
-		</template>
-	</category>
-	<!-- trợ giúp -->
-	<category>
-		<pattern>HELP</pattern>
-		<template>
-			Chào bạn! :) Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
-		</template>
-	</category>
-	<category>
-		<pattern>* HELP *</pattern>
-		<template><srai>HELP</srai></template>
-	</category>
-	<category>
-		<pattern>* GIUP *</pattern>
-		<template><srai>HELP</srai></template>
-	</category>
-	<category>
-		<pattern>* CUU *</pattern>
-		<template><srai>HELP</srai></template>
-	</category>
-	<category>
-		<pattern>* TU VAN *</pattern>
-		<template><srai>HELP</srai></template>
-	</category>
-	<category>
-		<pattern>E</pattern>
-		<template><srai>HELP</srai></template>
-	</category>
-	<category>
-		<pattern>BAN GI * OI *</pattern>
-		<template><srai>HELP</srai></template>
-	</category>
-	<category>
-		<pattern>* CHO * HOI *</pattern>
-		<template><srai>HELP</srai></template>
-	</category>
-	<category>
-		<pattern>* THAC MAC *</pattern>
-		<template><srai>HELP</srai></template>
-	</category>
-	<category>
-		<pattern>WHO ARE YOU</pattern>
-		<template>
-			Mình là TravelBot! ;) Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
-		</template>
-	</category>
-	<category>
-		<pattern>* WHO ARE YOU *</pattern>
-		<template><srai>WHO ARE YOU</srai></template>
-	</category>
-	<category>
-		<pattern>* LA AI *</pattern>
-		<template><srai>WHO ARE YOU</srai></template>
-	</category>
-	<category>
-		<pattern>* LA CAI * GI *</pattern>
-		<template><srai>WHO ARE YOU</srai></template>
-	</category>
-	<category>
-		<pattern>* LA GI *</pattern>
-		<template><srai>WHO ARE YOU</srai></template>
-	</category>
-	<category>
-		<pattern>* GIOI THIEU *</pattern>
-		<template><srai>WHO ARE YOU</srai></template>
-	</category>
-	<category>
-		<pattern>* TEN * GI *</pattern>
-		<template><srai>WHO ARE YOU</srai></template>
-	</category>
-	<category>
-		<pattern>TRANG * CO GI *</pattern>
-		<template><srai>WHO ARE YOU</srai></template>
-	</category>
-	<category>
-		<pattern>TRANG * CO * GI *</pattern>
-		<template><srai>WHO ARE YOU</srai></template>
-	</category>
-	<category>
-		<pattern>TRANG * LAM * GI *</pattern>
-		<template><srai>WHO ARE YOU</srai></template>
-	</category>
-	<category>
-		<pattern>WEB * CO GI *</pattern>
-		<template><srai>WHO ARE YOU</srai></template>
-	</category>
-	<category>
-		<pattern>WEB * CO * GI *</pattern>
-		<template><srai>WHO ARE YOU</srai></template>
-	</category>
-	<category>
-		<pattern>WEB * LAM * GI *</pattern>
-		<template><srai>WHO ARE YOU</srai></template>
-	</category>
-	<category>
-		<pattern>DEN TU DAU</pattern>
-		<template>Mình đến từ sự siêng năng và cần cù của Tam Nguyen!</template>
-	</category>
-	<category>
-		<pattern>* DEN * TU DAU</pattern>
-		<template><srai>DEN TU DAU</srai></template>
-	</category>
-	<category>
-		<pattern>* DEN * NAO</pattern>
-		<template><srai>DEN TU DAU</srai></template>
-	</category>
-	<category>
-		<pattern>* TU * DEN</pattern>
-		<template><srai>DEN TU DAU</srai></template>
-	</category>
-	<category>
-		<pattern>* TAO * BAN</pattern>
-		<template>Tam Nguyen đã tạo ra mình</template>
-	</category>
-	<category>
-		<pattern>* TAO RA *</pattern>
-		<template>Tam Nguyen đã tạo ra mình</template>
-	</category>
-	<category>
-		<pattern>* TAO NEN *</pattern>
-		<template>Tam Nguyen đã tạo ra mình</template>
-	</category>
-	<category>
-		<pattern>* LAM NEN *</pattern>
-		<template>Tam Nguyen đã tạo ra mình</template>
-	</category>
-	<category>
-		<pattern>* TAO RA *</pattern>
-		<template>Tam Nguyen đã tạo ra mình</template>
-	</category>
-	<category>
-		<pattern>AD</pattern>
-		<template><random><li>TravelBot ở đây! Bạn cần giúp gì? :)</li><li>Dạ em ở đây ạ. Em có thể giúp gì ạ? ;)</li><li>Travel sẵn sàng phục vụ! :)</li></random></template>
-	</category>
-	<category>
-		<pattern>* AD *</pattern>
-		<template><srai>AD</srai></template>
-	</category>
-	<category>
-		<pattern>WTF</pattern>
-		<template>
-			Mình là người văn minh thì đừng nên nói bậy nè! ;)
-		</template>
-	</category>
-	<category>
-		<pattern>* WTF *</pattern>
-		<template><srai>WTF</srai></template>
-	</category>
-	<category>
-		<pattern>* FUCK *</pattern>
-		<template><srai>WTF</srai></template>
-	</category>
-	<category>
-		<pattern>* SHIT *</pattern>
-		<template><srai>WTF</srai></template>
-	</category>
-	<category>
-		<pattern>UM</pattern>
-		<template>
-			OK! Bạn cần gì nào?
-		</template>
-	</category>
-	<category>
-		<pattern>AH</pattern>
-		<template><srai>UM</srai></template>
-	</category>
-	<category>
-		<pattern>OH</pattern>
-		<template><srai>UM</srai></template>
-	</category>
-	<category>
-		<pattern>U</pattern>
-		<template><srai>UM</srai></template>
-	</category>
-	<category>
-		<pattern>UH</pattern>
-		<template><srai>UM</srai></template>
-	</category>
-	<category>
-		<pattern>THIET HON</pattern>
-		<template><random><li>Tin minh đi :)</li><li>Mình nói thiệt ;)</li><li>Thiệt mà! Phải tin mình chứ :)</li></random></template>
-	</category>
-	<category>
-		<pattern>* THIET HON *</pattern>
-		<template><srai>THIET HON</srai></template>
-	</category>
-	<category>
-		<pattern>* THIET KHONG *</pattern>
-		<template><srai>THIET HON</srai></template>
-	</category>
-	<category>
-		<pattern>* THIET HA *</pattern>
-		<template><srai>THIET HON</srai></template>
-	</category>
-	<!-- CẢM ƠN -->
-	<category>
-		<pattern>CAM ON</pattern>
-		<template>
-			Cảm ơn bạn đã sử dụng TravelBot. Hẹn gặp lại. ;)
-		</template>
-	</category>
-	<category>
-		<pattern>* CAM ON *</pattern>
-		<template><srai>CAM ON</srai></template>
-	</category>
-	<category>
-		<pattern>* THANK *</pattern>
-		<template><srai>CAM ON</srai></template>
-	</category>
-	<category>
-		<pattern>* BYE *</pattern>
-		<template><srai>CAM ON</srai></template>
-	</category>
-	<category>
-		<pattern>* TAM BIET *</pattern>
-		<template><srai>CAM ON</srai></template>
-	</category>
-	<category>
-		<pattern>* VINH BIET *</pattern>
-		<template><srai>CAM ON</srai></template>
-	</category>
-	<category>
-		<pattern>* PIPI *</pattern>
-		<template><srai>CAM ON</srai></template>
-	</category>
-	<category>
-		<pattern>* CHAO THAN AI *</pattern>
-		<template><srai>CAM ON</srai></template>
-	</category>
-	<!-- làm được gì -->
-	<category>
-		<pattern>* LAM DUOC *</pattern>
-		<template>Mình có thể đưa ra một số gợi ý giúp bạn về du lịch ở ba địa điểm Cần Thơ, Bến Tre và Đà Lạt :)</template>
-	</category>
 	<!-- CẦN THƠ -->
 	<!-- ĐỊA ĐIỂM VUI CHƠI -->
 	<category>
@@ -3577,6 +3242,341 @@
 		<pattern>Mon an Can Tho</pattern>
 		<that>Tìm món ăn</that>
 		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
+	</category>
+	<!-- chào hỏi -->
+	<category>
+		<pattern>XIN CHAO *</pattern>
+		<template><random><li>Xin chào! ;) Mình có thể giúp gì cho bạn?</li><li>Halo! :) Mình là TravelBot</li><li>Hii! ;) Chào mừng bạn đến với TravelBot.</li></random></template>
+	</category>
+	<category>
+		<pattern>* XIN CHAO</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>CHAO *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>HI *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>HII *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>HELLO *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>HALO *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>HELO *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>BAN KHOE KHONG</pattern>
+		<template><random><li>Không thể tốt hơn! :)</li><li>Mình luôn khỏe mạnh để sẵn sàng giúp đỡ bạn! ;)</li><li>Khỏe re luôn. Hôm nay bạn cần gì? ;)</li></random></template>
+	</category>
+	<category>
+		<pattern>* BAN * KHOE KHONG *</pattern>
+		<template><srai>BAN KHOE KHONG</srai></template>
+	</category>
+	<category>
+		<pattern>HOW ARE YOU *</pattern>
+		<template><srai>BAN KHOE KHONG</srai></template>
+	</category>
+	<category>
+		<pattern>HOM NAY * THE NAO *</pattern>
+		<template><srai>BAN KHOE KHONG</srai></template>
+	</category>
+	<!-- thông tin thêm -->
+	<category>
+		<pattern>TAM LA AI</pattern>
+		<template>
+			Tam Nguyen là sinh viên Khoa học máy tính, khóa 39, Trường Đại học Cần Thơ :)
+		</template>
+	</category>
+	<category>
+		<pattern>* TAM LA *</pattern>
+		<template><srai>TAM LA AI</srai></template>
+	</category>
+	<category>
+		<pattern>* TAM NGUYEN LA *</pattern>
+		<template><srai>TAM LA AI</srai></template>
+	</category>
+	<category>
+		<pattern>* LA * TAM</pattern>
+		<template><srai>TAM LA AI</srai></template>
+	</category>
+	<category>
+		<pattern>* LA * DUA NAO</pattern>
+		<template><srai>TAM LA AI</srai></template>
+	</category>
+	<category>
+		<pattern>* BIET * TAM</pattern>
+		<template><srai>TAM LA AI</srai></template>
+	</category>
+	<category>
+		<pattern>TAM * BAN GAI *</pattern>
+		<template>
+			Tất nhiên là có rồi! Đẹp trai vậy mà?!
+		</template>
+	</category>
+	<category>
+		<pattern>BAN GAI TAM</pattern>
+		<template>
+			Quyen Tran cute
+		</template>
+	</category>
+	<category>
+		<pattern>* BAN GAI * TAM *</pattern>
+		<template><srai>BAN GAI TAM</srai></template>
+	</category>
+	<category>
+		<pattern>* BAN GAI TAM</pattern>
+		<template><srai>BAN GAI TAM</srai></template>
+	</category>
+	<category>
+		<pattern>* QUYEN TRAN *</pattern>
+		<template>
+			Quyen Tran là bạn gái Tam Nguyen. Mình không thể thông tin thêm. ;)
+		</template>
+	</category>
+	<!-- trợ giúp -->
+	<category>
+		<pattern>HELP</pattern>
+		<template>
+			Chào bạn! :) Bạn cần giúp gì? Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
+		</template>
+	</category>
+	<category>
+		<pattern>* HELP *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>* GIUP *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>* CUU *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>* TU VAN *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>E</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>BAN GI * OI *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO * HOI *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>* THAC MAC *</pattern>
+		<template><srai>HELP</srai></template>
+	</category>
+	<category>
+		<pattern>WHO ARE YOU</pattern>
+		<template>
+			Mình là TravelBot! ;) Chatbot được tạo bởi Tam Nguyen. Chuyên môn của mình là cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt
+		</template>
+	</category>
+	<category>
+		<pattern>* WHO ARE YOU *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>* LA AI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>* LA CAI * GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>* LA GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>* GIOI THIEU *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>* TEN * GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>TRANG * CO GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>TRANG * CO * GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>TRANG * LAM * GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>WEB * CO GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>WEB * CO * GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>WEB * LAM * GI *</pattern>
+		<template><srai>WHO ARE YOU</srai></template>
+	</category>
+	<category>
+		<pattern>DEN TU DAU</pattern>
+		<template>Mình đến từ sự siêng năng và cần cù của Tam Nguyen!</template>
+	</category>
+	<category>
+		<pattern>* DEN * TU DAU</pattern>
+		<template><srai>DEN TU DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DEN * NAO</pattern>
+		<template><srai>DEN TU DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* TU * DEN</pattern>
+		<template><srai>DEN TU DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* TAO * BAN</pattern>
+		<template>Tam Nguyen đã tạo ra mình</template>
+	</category>
+	<category>
+		<pattern>* TAO RA *</pattern>
+		<template>Tam Nguyen đã tạo ra mình</template>
+	</category>
+	<category>
+		<pattern>* TAO NEN *</pattern>
+		<template>Tam Nguyen đã tạo ra mình</template>
+	</category>
+	<category>
+		<pattern>* LAM NEN *</pattern>
+		<template>Tam Nguyen đã tạo ra mình</template>
+	</category>
+	<category>
+		<pattern>* TAO RA *</pattern>
+		<template>Tam Nguyen đã tạo ra mình</template>
+	</category>
+	<category>
+		<pattern>AD</pattern>
+		<template><random><li>TravelBot ở đây! Bạn cần giúp gì? :)</li><li>Dạ em ở đây ạ. Em có thể giúp gì ạ? ;)</li><li>Travel sẵn sàng phục vụ! :)</li></random></template>
+	</category>
+	<category>
+		<pattern>* AD *</pattern>
+		<template><srai>AD</srai></template>
+	</category>
+	<category>
+		<pattern>WTF</pattern>
+		<template>
+			Mình là người văn minh thì đừng nên nói bậy nè! ;)
+		</template>
+	</category>
+	<category>
+		<pattern>* WTF *</pattern>
+		<template><srai>WTF</srai></template>
+	</category>
+	<category>
+		<pattern>* FUCK *</pattern>
+		<template><srai>WTF</srai></template>
+	</category>
+	<category>
+		<pattern>* SHIT *</pattern>
+		<template><srai>WTF</srai></template>
+	</category>
+	<category>
+		<pattern>UM</pattern>
+		<template>
+			OK! Bạn cần gì nào?
+		</template>
+	</category>
+	<category>
+		<pattern>AH</pattern>
+		<template><srai>UM</srai></template>
+	</category>
+	<category>
+		<pattern>OH</pattern>
+		<template><srai>UM</srai></template>
+	</category>
+	<category>
+		<pattern>U</pattern>
+		<template><srai>UM</srai></template>
+	</category>
+	<category>
+		<pattern>UH</pattern>
+		<template><srai>UM</srai></template>
+	</category>
+	<category>
+		<pattern>THIET HON</pattern>
+		<template><random><li>Tin minh đi :)</li><li>Mình nói thiệt ;)</li><li>Thiệt mà! Phải tin mình chứ :)</li></random></template>
+	</category>
+	<category>
+		<pattern>* THIET HON *</pattern>
+		<template><srai>THIET HON</srai></template>
+	</category>
+	<category>
+		<pattern>* THIET KHONG *</pattern>
+		<template><srai>THIET HON</srai></template>
+	</category>
+	<category>
+		<pattern>* THIET HA *</pattern>
+		<template><srai>THIET HON</srai></template>
+	</category>
+	<!-- CẢM ƠN -->
+	<category>
+		<pattern>CAM ON</pattern>
+		<template>
+			Cảm ơn bạn đã sử dụng TravelBot. Hẹn gặp lại. ;)
+		</template>
+	</category>
+	<category>
+		<pattern>* CAM ON *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<category>
+		<pattern>* THANK *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<category>
+		<pattern>* BYE *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<category>
+		<pattern>* TAM BIET *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<category>
+		<pattern>* VINH BIET *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<category>
+		<pattern>* PIPI *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<category>
+		<pattern>* CHAO THAN AI *</pattern>
+		<template><srai>CAM ON</srai></template>
+	</category>
+	<!-- làm được gì -->
+	<category>
+		<pattern>* LAM DUOC *</pattern>
+		<template>Mình có thể đưa ra một số gợi ý giúp bạn về du lịch ở ba địa điểm Cần Thơ, Bến Tre và Đà Lạt :)</template>
 	</category>
 	<!-- kêu mày -->
 	<category>
