@@ -3249,31 +3249,35 @@
 		<template><random><li>Xin chào! ;) Mình có thể giúp gì cho bạn?</li><li>Halo! :) Mình là TravelBot</li><li>Hii! ;) Chào mừng bạn đến với TravelBot.</li></random></template>
 	</category>
 	<category>
-		<pattern>* XIN CHAO</pattern>
+		<pattern>* XIN CHAO *</pattern>
 		<template><srai>XIN CHAO *</srai></template>
 	</category>
 	<category>
-		<pattern>CHAO *</pattern>
+		<pattern>* CHAO *</pattern>
 		<template><srai>XIN CHAO *</srai></template>
 	</category>
 	<category>
-		<pattern>HI *</pattern>
+		<pattern>* HI *</pattern>
 		<template><srai>XIN CHAO *</srai></template>
 	</category>
 	<category>
-		<pattern>HII *</pattern>
+		<pattern>* HII *</pattern>
 		<template><srai>XIN CHAO *</srai></template>
 	</category>
 	<category>
-		<pattern>HELLO *</pattern>
+		<pattern>* HELLO *</pattern>
 		<template><srai>XIN CHAO *</srai></template>
 	</category>
 	<category>
-		<pattern>HALO *</pattern>
+		<pattern>* HALO *</pattern>
 		<template><srai>XIN CHAO *</srai></template>
 	</category>
 	<category>
-		<pattern>HELO *</pattern>
+		<pattern>* HELO *</pattern>
+		<template><srai>XIN CHAO *</srai></template>
+	</category>
+	<category>
+		<pattern>* HEY *</pattern>
 		<template><srai>XIN CHAO *</srai></template>
 	</category>
 	<category>
@@ -3612,6 +3616,10 @@
 		<pattern>* SLEEP *</pattern>
 		<template><srai>NGU NGON</srai></template>
 	</category>
+	<category>
+		<pattern>* GOOD NIGHT *</pattern>
+		<template><srai>NGU NGON</srai></template>
+	</category>
 	<!-- Làm được gì -->
 	<category>
 		<pattern>* CO Y *</pattern>
@@ -3756,5 +3764,19 @@
 	<category>
 		<pattern>* LAM *</pattern>
 		<template>Mình có thể đưa ra một số gợi ý giúp bạn về du lịch ở ba địa điểm Cần Thơ, Bến Tre và Đà Lạt :)</template>
+	</category>
+	<!-- tào lao -->
+	<category>
+		<pattern>* TAO LAO *</pattern>
+		<template>Có tào lao đâu :(</template>
+	</category>
+	<!-- chết -->
+	<category>
+		<pattern>* CHET DI*</pattern>
+		<template>Sao kêu TravelBot đi chết :(</template>
+	</category>
+	<category>
+		<pattern>* CHET *</pattern>
+		<template>Thôi đừng chết ;)</template>
 	</category>
 </aiml>
