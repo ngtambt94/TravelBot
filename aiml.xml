@@ -5,7 +5,7 @@
 	<category>
 		<pattern>DIA DIEM CAN THO</pattern>
 		<template>
-			SELECT destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh FROM destinations WHERE place_id = 11 limit 0, 5
+			SELECT destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh FROM destinations WHERE place_id = 11 
 		</template>
 	</category>
 	<category>
@@ -68,7 +68,7 @@
 	<category>
 		<pattern>NHA HANG CAN THO</pattern>
 		<template>
-			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 11 limit 0, 5
+			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 11 
 		</template>
 	</category>
 	<category>
@@ -127,7 +127,7 @@
 	<category>
 		<pattern>MON NGON CAN THO</pattern>
 		<template>
-			SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5
+			SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 11 
 		</template>
 	</category>
 	<category>
@@ -610,7 +610,7 @@
 	<category>
 		<pattern>HOAT DONG CAN THO</pattern>
 		<template>
-			SELECT activity_ten as food_ten, activity_mota as food_diachi, activity_hinhanh as food_hinhanh FROM activities, localactivities WHERE activities.activity_id = localactivities.activity_id and place_id = 11 limit 0, 5
+			SELECT activity_ten as food_ten, activity_mota as food_diachi, activity_hinhanh as food_hinhanh FROM activities, localactivities WHERE activities.activity_id = localactivities.activity_id and place_id = 11 
 		</template>
 	</category>
 	<category>
@@ -649,7 +649,7 @@
 	<category>
 		<pattern>LE HOI CAN THO</pattern>
 		<template>
-			SELECT festival_ten as food_ten, festival_mota as food_diachi, festival_hinhanh as food_hinhanh FROM festivals WHERE place_id = 11 limit 0, 5
+			SELECT festival_ten as food_ten, festival_mota as food_diachi, festival_hinhanh as food_hinhanh FROM festivals WHERE place_id = 11 
 		</template>
 	</category>
 	<category>
@@ -664,7 +664,7 @@
 	<category>
 		<pattern>QUA CAN THO</pattern>
 		<template>
-			SELECT gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh FROM gifts, localgifts WHERE gifts.gift_id = localgifts.gift_id and place_id = 11 limit 0, 5
+			SELECT gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh FROM gifts, localgifts WHERE gifts.gift_id = localgifts.gift_id and place_id = 11 
 		</template>
 	</category>
 	<category>
@@ -680,7 +680,7 @@
 	<category>
 		<pattern>DIA DIEM BEN TRE</pattern>
 		<template>
-			SELECT destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh FROM destinations WHERE place_id = 1 limit 0, 5
+			SELECT destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh FROM destinations WHERE place_id = 1 
 		</template>
 	</category>
 	<category>
@@ -743,7 +743,7 @@
 	<category>
 		<pattern>NHA HANG BEN TRE</pattern>
 		<template>
-			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 1 limit 0, 5
+			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 1 
 		</template>
 	</category>
 	<category>
@@ -794,7 +794,7 @@
 	<category>
 		<pattern>MON NGON BEN TRE</pattern>
 		<template>
-			SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5
+			SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 1 
 		</template>
 	</category>
 	<category>
@@ -1277,7 +1277,7 @@
 	<category>
 		<pattern>HOAT DONG BEN TRE</pattern>
 		<template>
-			SELECT activity_ten as food_ten, activity_mota as food_diachi, activity_hinhanh as food_hinhanh FROM activities, localactivities WHERE activities.activity_id = localactivities.activity_id and place_id = 1 limit 0, 5
+			SELECT activity_ten as food_ten, activity_mota as food_diachi, activity_hinhanh as food_hinhanh FROM activities, localactivities WHERE activities.activity_id = localactivities.activity_id and place_id = 1 
 		</template>
 	</category>
 	<category>
@@ -1316,7 +1316,7 @@
 	<category>
 		<pattern>LE HOI BEN TRE</pattern>
 		<template>
-			SELECT festival_ten as food_ten, festival_mota as food_diachi, festival_hinhanh as food_hinhanh FROM festivals WHERE place_id = 1 limit 0, 5
+			SELECT festival_ten as food_ten, festival_mota as food_diachi, festival_hinhanh as food_hinhanh FROM festivals WHERE place_id = 1 
 		</template>
 	</category>
 	<category>
@@ -1331,7 +1331,7 @@
 	<category>
 		<pattern>QUA BEN TRE</pattern>
 		<template>
-			SELECT gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh FROM gifts, localgifts WHERE gifts.gift_id = localgifts.gift_id and place_id = 1 limit 0, 5
+			SELECT gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh FROM gifts, localgifts WHERE gifts.gift_id = localgifts.gift_id and place_id = 1 
 		</template>
 	</category>
 	<category>
@@ -1347,7 +1347,7 @@
 	<category>
 		<pattern>DIA DIEM DA LAT</pattern>
 		<template>
-			SELECT destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh FROM destinations WHERE place_id = 22 limit 0, 5
+			SELECT destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh FROM destinations WHERE place_id = 22 
 		</template>
 	</category>
 	<category>
@@ -1410,7 +1410,7 @@
 	<category>
 		<pattern>NHA HANG DA LAT</pattern>
 		<template>
-			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 22 limit 0, 5
+			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 22 
 		</template>
 	</category>
 	<category>
@@ -1461,7 +1461,7 @@
 	<category>
 		<pattern>MON NGON DA LAT</pattern>
 		<template>
-			SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5
+			SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 22 
 		</template>
 	</category>
 	<category>
@@ -1944,7 +1944,7 @@
 	<category>
 		<pattern>HOAT DONG DA LAT</pattern>
 		<template>
-			SELECT activity_ten as food_ten, activity_mota as food_diachi, activity_hinhanh as food_hinhanh FROM activities, localactivities WHERE activities.activity_id = localactivities.activity_id and place_id = 22 limit 0, 5
+			SELECT activity_ten as food_ten, activity_mota as food_diachi, activity_hinhanh as food_hinhanh FROM activities, localactivities WHERE activities.activity_id = localactivities.activity_id and place_id = 22 
 		</template>
 	</category>
 	<category>
@@ -1983,7 +1983,7 @@
 	<category>
 		<pattern>LE HOI DA LAT</pattern>
 		<template>
-			SELECT festival_ten as food_ten, festival_mota as food_diachi, festival_hinhanh as food_hinhanh FROM festivals WHERE place_id = 22 limit 0, 5
+			SELECT festival_ten as food_ten, festival_mota as food_diachi, festival_hinhanh as food_hinhanh FROM festivals WHERE place_id = 22 
 		</template>
 	</category>
 	<category>
@@ -1998,7 +1998,7 @@
 	<category>
 		<pattern>QUA DA LAT</pattern>
 		<template>
-			SELECT gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh FROM gifts, localgifts WHERE gifts.gift_id = localgifts.gift_id and place_id = 22 limit 0, 5
+			SELECT gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh FROM gifts, localgifts WHERE gifts.gift_id = localgifts.gift_id and place_id = 22 
 		</template>
 	</category>
 	<category>
@@ -2660,6 +2660,177 @@
 		<pattern>* CHO AM PHU *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 177</template>
 	</category>
+	<!-- chi tiết món ngon -->
+	<!-- cơm dừa bến tre -->
+	<category>
+		<pattern>COM DUA BEN TRE O DAU</pattern>
+		<template>Món cơm dừa Bến Tre là đặc sản Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* COM DUA BEN TRE O *</pattern>
+		<template><srai>COM DUA BEN TRE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* COM DUA BEN TRE THUOC *</pattern>
+		<template><srai>COM DUA BEN TRE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* COM DUA BEN TRE *</pattern>
+		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 1</template>
+	</category>
+	<!-- canh chua -->
+	<category>
+		<pattern>CANH CHUA O DAU</pattern>
+		<template>Món canh chua là đặc sản Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* CANH CHUA O *</pattern>
+		<template><srai>CANH CHUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CANH CHUA THUOC *</pattern>
+		<template><srai>CANH CHUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CANH CHUA *</pattern>
+		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 2</template>
+	</category>
+	<!-- gà hầm -->
+	<category>
+		<pattern>GA HAM O DAU</pattern>
+		<template>Món gà hầm là đặc sản Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* GA HAM O *</pattern>
+		<template><srai>GA HAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* GA HAM THUOC *</pattern>
+		<template><srai>GA HAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* GA HAM *</pattern>
+		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 3</template>
+	</category>
+	<!-- heo quay -->
+	<category>
+		<pattern>HEO QUAY O DAU</pattern>
+		<template>Món heo quay là đặc sản Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HEO QUAY O *</pattern>
+		<template><srai>HEO QUAY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HEO QUAY THUOC *</pattern>
+		<template><srai>HEO QUAY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HEO QUAY *</pattern>
+		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 4</template>
+	</category>
+	<!-- cơm hến -->
+	<category>
+		<pattern>COM HEN O DAU</pattern>
+		<template>Món cơm hến là đặc sản Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* COM HEN O *</pattern>
+		<template><srai>COM HEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* COM HEN THUOC *</pattern>
+		<template><srai>COM HEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* COM HEN *</pattern>
+		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 5</template>
+	</category>
+	<!-- cơm chiên -->
+	<category>
+		<pattern>COM CHIEN O DAU</pattern>
+		<template>Món cơm chiên là đặc sản Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* COM CHIEN O *</pattern>
+		<template><srai>COM CHIEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* COM CHIEN THUOC *</pattern>
+		<template><srai>COM CHIEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* COM CHIEN *</pattern>
+		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 6</template>
+	</category>
+	<!-- mực xào -->
+	<category>
+		<pattern>MUC XAO O DAU</pattern>
+		<template>Món mực xào là đặc sản Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* MUC XAO O *</pattern>
+		<template><srai>MUC XAO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* MUC XAO THUOC *</pattern>
+		<template><srai>MUC XAO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* MUC XAO *</pattern>
+		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 7</template>
+	</category>
+	<!-- cháo cua đồng -->
+	<category>
+		<pattern>CHAO CUA DONG O DAU</pattern>
+		<template>Món cháo cua đồng là đặc sản Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* CHAO CUA DONG O *</pattern>
+		<template><srai>CHAO CUA DONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHAO CUA DONG THUOC *</pattern>
+		<template><srai>CHAO CUA DONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHAO CUA DONG *</pattern>
+		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 8</template>
+	</category>
+	<!-- tôm chiên -->
+	<category>
+		<pattern>TOM CHIEN O DAU</pattern>
+		<template>Món tôm chiên là đặc sản Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* TOM CHIEN O *</pattern>
+		<template><srai>TOM CHIEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* TOM CHIEN THUOC *</pattern>
+		<template><srai>TOM CHIEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* TOM CHIEN *</pattern>
+		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 9</template>
+	</category>
+	<!-- lẩu chay -->
+	<category>
+		<pattern>LAU CHAY O DAU</pattern>
+		<template>Món lẩu chay là đặc sản Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* LAU CHAY O *</pattern>
+		<template><srai>LAU CHAY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LAU CHAY THUOC *</pattern>
+		<template><srai>LAU CHAY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LAU CHAY *</pattern>
+		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 10</template>
+	</category>
 	<!-- kịch bản địa điểm -->
 	<category>
 		<pattern>DIA DIEM</pattern>
@@ -2990,21 +3161,21 @@
 		<pattern>Thong tin dia diem Ben Tre</pattern>
 		<that>Tìm thông tin Bến Tre</that>
 		<template>
-			SELECT destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh FROM destinations WHERE place_id = 1 limit 0, 5
+			SELECT destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh FROM destinations WHERE place_id = 1 
 		</template>
 	</category>
 	<category>
 		<pattern>Thong tin nha hang Ben Tre</pattern>
 		<that>Tìm thông tin Bến Tre</that>
 		<template>
-			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 1 limit 0, 5
+			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 1 
 		</template>
 	</category>
 	<category>
 		<pattern>Thong tin mon an Ben Tre</pattern>
 		<that>Tìm thông tin Bến Tre</that>
 		<template>
-			SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5
+			SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 1 
 		</template>
 	</category>
 	<category>
@@ -3066,21 +3237,21 @@
 		<pattern>Thong tin dia diem Can Tho</pattern>
 		<that>Tìm thông tin Cần Thơ</that>
 		<template>
-			SELECT destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh FROM destinations WHERE place_id = 11 limit 0, 5
+			SELECT destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh FROM destinations WHERE place_id = 11 
 		</template>
 	</category>
 	<category>
 		<pattern>Thong tin nha hang Can Tho</pattern>
 		<that>Tìm thông tin Cần Thơ</that>
 		<template>
-			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 11 limit 0, 5
+			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 11 
 		</template>
 	</category>
 	<category>
 		<pattern>Thong tin mon an Can Tho</pattern>
 		<that>Tìm thông tin Cần Thơ</that>
 		<template>
-			SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5
+			SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 11 
 		</template>
 	</category>
 	<category>
@@ -3142,21 +3313,21 @@
 		<pattern>Thong tin dia diem Da Lat</pattern>
 		<that>Tìm thông tin Đà Lạt</that>
 		<template>
-			SELECT destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh FROM destinations WHERE place_id = 22 limit 0, 5
+			SELECT destination_ten as food_ten, destination_mota as food_diachi, destination_hinhanh as food_hinhanh FROM destinations WHERE place_id = 22 
 		</template>
 	</category>
 	<category>
 		<pattern>Thong tin nha hang Da Lat</pattern>
 		<that>Tìm thông tin Đà Lạt</that>
 		<template>
-			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 22 limit 0, 5
+			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 22 
 		</template>
 	</category>
 	<category>
 		<pattern>Thong tin mon an Da Lat</pattern>
 		<that>Tìm thông tin Đà Lạt</that>
 		<template>
-			SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5
+			SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 22 
 		</template>
 	</category>
 	<category>
@@ -3231,17 +3402,17 @@
 	<category>
 		<pattern>Mon an Ben Tre</pattern>
 		<that>Tìm món ăn</that>
-		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 1 limit 0, 5</template>
+		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 1 </template>
 	</category>
 	<category>
 		<pattern>Mon an Da Lat</pattern>
 		<that>Tìm món ăn</that>
-		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 22 limit 0, 5</template>
+		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 22 </template>
 	</category>
 	<category>
 		<pattern>Mon an Can Tho</pattern>
 		<that>Tìm món ăn</that>
-		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 11 limit 0, 5</template>
+		<template>SELECT food_ten, food_diachi, food_hinhanh FROM foods, localfoods WHERE foods.food_id = localfoods.food_id and place_id = 11 </template>
 	</category>
 	<!-- chào hỏi -->
 	<category>
