@@ -68,7 +68,7 @@
 	<category>
 		<pattern>NHA HANG CAN THO</pattern>
 		<template>
-			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 11 
+			SELECT restaurant_ten as food_ten, restaurant_diachi as food_diachi, restaurant_hinhanh as food_hinhanh FROM restaurants WHERE place_id = 11 LIMIT 0,10
 		</template>
 	</category>
 	<category>
@@ -664,7 +664,7 @@
 	<category>
 		<pattern>QUA CAN THO</pattern>
 		<template>
-			SELECT gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh FROM gifts, localgifts WHERE gifts.gift_id = localgifts.gift_id and place_id = 11 
+			SELECT gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh, gift_website as web FROM gifts, localgifts WHERE gifts.gift_id = localgifts.gift_id and place_id = 11 
 		</template>
 	</category>
 	<category>
@@ -1331,7 +1331,7 @@
 	<category>
 		<pattern>QUA BEN TRE</pattern>
 		<template>
-			SELECT gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh FROM gifts, localgifts WHERE gifts.gift_id = localgifts.gift_id and place_id = 1 
+			SELECT gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh, gift_website as web FROM gifts, localgifts WHERE gifts.gift_id = localgifts.gift_id and place_id = 1 
 		</template>
 	</category>
 	<category>
@@ -1998,7 +1998,7 @@
 	<category>
 		<pattern>QUA DA LAT</pattern>
 		<template>
-			SELECT gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh FROM gifts, localgifts WHERE gifts.gift_id = localgifts.gift_id and place_id = 22 
+			SELECT gift_ten as food_ten, gift_mota as food_diachi, gift_hinhanh as food_hinhanh, gift_website as web FROM gifts, localgifts WHERE gifts.gift_id = localgifts.gift_id and place_id = 22 
 		</template>
 	</category>
 	<category>
@@ -2346,21 +2346,21 @@
 	</category>
 	<!-- khu du lịch lan vương -->
 	<category>
-		<pattern>LAN VUONG O DAU</pattern>
+		<pattern>KHU DU LICH LAN VUONG O DAU</pattern>
 		<template>
-			Lăng mộ Phan Thanh Giản ở Ba Tri, Bến Tre bạn nhé ;)		
+			Khu du lịch Lan Vương ở Bến Tre bạn nhé ;)		
 		</template>
 	</category>
 	<category>
-		<pattern>* LAN VUONG * O *</pattern>
-		<template><srai>LAN VUONG O DAU</srai></template>
+		<pattern>* KHU DU LICH LAN VUONG * O *</pattern>
+		<template><srai>KHU DU LICH LAN VUONG O DAU</srai></template>
 	</category>
 	<category>
-		<pattern>* LAN VUONG * THUOC *</pattern>
-		<template><srai>LAN VUONG O DAU</srai></template>
+		<pattern>* KHU DU LICH LAN VUONG * THUOC *</pattern>
+		<template><srai>KHU DU LICH LAN VUONG O DAU</srai></template>
 	</category>
 	<category>
-		<pattern>* LAN VUONG *</pattern>
+		<pattern>* KHU DU LICH LAN VUONG *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 8</template>
 	</category>
 	<!-- cồn tiên -->
@@ -2660,6 +2660,196 @@
 		<pattern>* CHO AM PHU *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 177</template>
 	</category>
+	<!-- chi tiết lế hội -->
+	<!-- lễ hội bến tre -->
+	<category>
+		<pattern>HOI TRAI CAY NGON O DAU</pattern>
+		<template>Ngày hội trái cây ngon được tổ chức ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HOI TRAI CAY NGON * O *</pattern>
+		<template><srai>HOI TRAI CAY NGON O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI TRAI CAY NGON * THUOC *</pattern>
+		<template><srai>HOI TRAI CAY NGON O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI TRAI CAY NGON *</pattern>
+		<template>SELECT festival_mota as food_diachi FROM festivals WHERE festival_id = 1</template>
+	</category>
+	<!-- lễ hội truyền thống văn hóa tỉnh -->
+	<category>
+		<pattern>HOI TRUYEN THONG VAN HOA TINH O DAU</pattern>
+		<template>Ngày hội truyền thống văn hóa tỉnh được tổ chức ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HOI TRUYEN THONG VAN HOA TINH * O *</pattern>
+		<template><srai>HOI TRUYEN THONG VAN HOA TINH O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI TRUYEN THONG VAN HOA TINH * THUOC *</pattern>
+		<template><srai>HOI TRUYEN THONG VAN HOA TINH O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI TRUYEN THONG VAN HOA TINH *</pattern>
+		<template>SELECT festival_mota as food_diachi FROM festivals WHERE festival_id = 2</template>
+	</category>
+	<!-- lễ hội tế thần cá ông -->
+	<category>
+		<pattern>HOI TE THAN CA ONG O DAU</pattern>
+		<template>Ngày hội tế thần cá ông được tổ chức ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HOI TE THAN CA ONG * O *</pattern>
+		<template><srai>HOI TE THAN CA ONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI TE THAN CA ONG * THUOC *</pattern>
+		<template><srai>HOI TE THAN CA ONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI TE THAN CA ONG *</pattern>
+		<template>SELECT festival_mota as food_diachi FROM festivals WHERE festival_id = 3</template>
+	</category>
+	<!-- lễ hội dừa -->
+	<category>
+		<pattern>HOI DUA O DAU</pattern>
+		<template>Ngày hội dừa được tổ chức ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HOI DUA * O *</pattern>
+		<template><srai>HOI DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI DUA * THUOC *</pattern>
+		<template><srai>HOI DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI DUA *</pattern>
+		<template>SELECT festival_mota as food_diachi FROM festivals WHERE festival_id = 4</template>
+	</category>
+	<!-- hội dình phú lễ -->
+	<category>
+		<pattern>HOI DINH PHU LE O DAU</pattern>
+		<template>Ngày hội đình Phú Lễ được tổ chức ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HOI DINH PHU LE * O *</pattern>
+		<template><srai>HOI DINH PHU LE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI DINH PHU LE * THUOC *</pattern>
+		<template><srai>HOI DINH PHU LE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI DINH PHU LE *</pattern>
+		<template>SELECT festival_mota as food_diachi FROM festivals WHERE festival_id = 5</template>
+	</category>
+	<!-- nguyễn đình chiểu -->
+	<category>
+		<pattern>HOI NGUYEN DINH CHIEU O DAU</pattern>
+		<template>Ngày hội Nguyễn Đình Chiểu được tổ chức ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HOI NGUYEN DINH CHIEU * O *</pattern>
+		<template><srai>HOI NGUYEN DINH CHIEU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI NGUYEN DINH CHIEU * THUOC *</pattern>
+		<template><srai>HOI NGUYEN DINH CHIEU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI NGUYEN DINH CHIEU *</pattern>
+		<template>SELECT festival_mota as food_diachi FROM festivals WHERE festival_id = 6</template>
+	</category>
+	<!-- lễ hội cần thơ -->
+	<!-- đình bình thủy -->
+	<category>
+		<pattern>HOI DINH BINH THUY O DAU</pattern>
+		<template>Ngày hội đình Bình Thủy được tổ chức ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HOI DINH BINH THUY * O *</pattern>
+		<template><srai>HOI DINH BINH THUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI DINH BINH THUY * THUOC *</pattern>
+		<template><srai>HOI DINH BINH THUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI DINH BINH THUY *</pattern>
+		<template>SELECT festival_mota as food_diachi FROM festivals WHERE festival_id = 37</template>
+	</category>
+	<!-- đấu đèn -->
+	<category>
+		<pattern>HOI DAU DEN O DAU</pattern>
+		<template>Ngày hội đấu đèn được tổ chức ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HOI DAU DEN * O *</pattern>
+		<template><srai>HOI DAU DEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI DAU DEN * THUOC *</pattern>
+		<template><srai>HOI DAU DEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI DAU DEN *</pattern>
+		<template>SELECT festival_mota as food_diachi FROM festivals WHERE festival_id = 38</template>
+	</category>
+	<!-- chi tiết lễ hội đà lạt -->
+	<!-- festival hoa đà lạt -->
+	<category>
+		<pattern>FESTIVAL HOA DA LAT O DAU</pattern>
+		<template>Festival hoa Đà Lạt được tổ chức ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* FESTIVAL HOA DA LAT * O *</pattern>
+		<template><srai>FESTIVAL HOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* FESTIVAL HOA DA LAT * THUOC *</pattern>
+		<template><srai>FESTIVAL HOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* FESTIVAL HOA DA LAT *</pattern>
+		<template>SELECT festival_mota as food_diachi FROM festivals WHERE festival_id = 60</template>
+	</category>
+	<!-- lễ hội trà -->
+	<category>
+		<pattern>HOI TRA O DAU</pattern>
+		<template>Lễ hội trà được tổ chức ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HOI TRA * O *</pattern>
+		<template><srai>HOI TRA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI TRA * THUOC *</pattern>
+		<template><srai>HOI TRA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI TRA *</pattern>
+		<template>SELECT festival_mota as food_diachi FROM festivals WHERE festival_id = 61</template>
+	</category>
+	<!-- lễ hội cồng chiên -->
+	<category>
+		<pattern>HOI CONG CHIEN O DAU</pattern>
+		<template>Lễ hội cồng chiên được tổ chức ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HOI CONG CHIEN * O *</pattern>
+		<template><srai>HOI CONG CHIEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI CONG CHIEN * THUOC *</pattern>
+		<template><srai>HOI CONG CHIEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOI CONG CHIEN *</pattern>
+		<template>SELECT festival_mota as food_diachi FROM festivals WHERE festival_id = 62</template>
+	</category>
 	<!-- chi tiết món ngon -->
 	<!-- cơm dừa bến tre -->
 	<category>
@@ -2678,7 +2868,7 @@
 		<pattern>* COM DUA BEN TRE *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 1</template>
 	</category>
-	<!-- BANH TRANG MY LONG -->
+	<!-- bánh tráng mỹ lông -->
 	<category>
 		<pattern>BANH TRANG MY LONG O DAU</pattern>
 		<template>Món bánh trang Mỹ Lồng - bánh phồng Sơn Đốc là đặc sản Bến Tre bạn nhé ;)</template>
@@ -2707,7 +2897,7 @@
 		<pattern>* BANH PHONG SON DOC *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 2</template>
 	</category>
-	<!-- gà hầm -->
+	<!-- chuối đập -->
 	<category>
 		<pattern>CHUOI DAP O DAU</pattern>
 		<template>Món chuối đập là đặc sản Bến Tre bạn nhé ;)</template>
@@ -2724,7 +2914,7 @@
 		<pattern>* CHUOI DAP *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 3</template>
 	</category>
-	<!-- BANH XEO OC GAO -->
+	<!-- bánh xèo ốc gạo -->
 	<category>
 		<pattern>BANH XEO OC GAO O DAU</pattern>
 		<template>Món bánh xèo ốc gạo là đặc sản Bến Tre bạn nhé ;)</template>
@@ -2741,7 +2931,7 @@
 		<pattern>* BANH XEO OC GAO *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 4</template>
 	</category>
-	<!-- bánh cnah bột xắt -->
+	<!-- bánh canh bột xắt -->
 	<category>
 		<pattern>BANH CANH BOT XAT O DAU</pattern>
 		<template>Món bánh canh bột xắt là đặc sản Bến Tre bạn nhé ;)</template>
@@ -3590,6 +3780,887 @@
 	<category>
 		<pattern>* TUAN PHAM *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 160</template>
+	</category>
+	<!-- chi tiết nhà hàng -->
+	<!-- nhà hàng bến tre -->
+	<!-- nhà hàng nam sơn -->
+	<category>
+		<pattern>NHA HANG NAM SON O DAU</pattern>
+		<template>Nhà hàng Nam Sơn ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG NAM SON * O *</pattern>
+		<template><srai>NHA HANG NAM SON O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG NAM SON * THUOC *</pattern>
+		<template><srai>NHA HANG NAM SON O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG NAM SON *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 1</template>
+	</category>
+	<!-- nhà hàng trúc giang -->
+	<category>
+		<pattern>NHA HANG TRUC GIANG O DAU</pattern>
+		<template>Nhà hàng Trúc Giang ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG TRUC GIANG * O *</pattern>
+		<template><srai>NHA HANG TRUC GIANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG TRUC GIANG * THUOC *</pattern>
+		<template><srai>NHA HANG TRUC GIANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG TRUC GIANG *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 2</template>
+	</category>
+	<!-- nhà hàng nổi bến tre -->
+	<category>
+		<pattern>NHA HANG NOI BEN TRE O DAU</pattern>
+		<template>Nhà hàng nổi Bến Tre ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG NOI BEN TRE * O *</pattern>
+		<template><srai>NHA HANG NOI BEN TRE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG NOI BEN TRE * THUOC *</pattern>
+		<template><srai>NHA HANG NOI BEN TRE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG NOI BEN TRE *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 3</template>
+	</category>
+	<!-- nhà hàng đông châu -->
+	<category>
+		<pattern>NHA HANG DONG CHAU O DAU</pattern>
+		<template>Nhà hàng Đông Châu ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG DONG CHAU * O *</pattern>
+		<template><srai>NHA HANG DONG CHAU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG DONG CHAU * THUOC *</pattern>
+		<template><srai>NHA HANG DONG CHAU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG DONG CHAU *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 4</template>
+	</category>
+	<!-- chuồn chuồn ớt -->
+	<category>
+		<pattern>CHUON CHUON OT O DAU</pattern>
+		<template>Quán Chuồn Chuồn Ớt ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* CHUON CHUON OT * O *</pattern>
+		<template><srai>CHUON CHUON OT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHUON CHUON OT * THUOC *</pattern>
+		<template><srai>CHUON CHUON OT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHUON CHUON OT *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 5</template>
+	</category>
+	<!-- vườn ẩm thực út an -->
+	<category>
+		<pattern>VUON AM THUC UT AN O DAU</pattern>
+		<template>Vườn ẩm thực Út An ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* VUON AM THUC UT AN * O *</pattern>
+		<template><srai>VUON AM THUC UT AN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* VUON AM THUC UT AN * THUOC *</pattern>
+		<template><srai>VUON AM THUC UT AN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* VUON AM THUC UT AN *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 6</template>
+	</category>
+	<!-- nhà hàng hải sản mekong -->
+	<category>
+		<pattern>NHA HANG HAI SAN MEKONG O DAU</pattern>
+		<template>Nhà hàng hải sản Mekong River ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HAI SAN MEKONG * O *</pattern>
+		<template><srai>NHA HANG HAI SAN MEKONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HAI SAN MEKONG * THUOC *</pattern>
+		<template><srai>NHA HANG HAI SAN MEKONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* MEKONG RIVER * O *</pattern>
+		<template><srai>NHA HANG HAI SAN MEKONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* MEKONG RIVER * THUOC *</pattern>
+		<template><srai>NHA HANG HAI SAN MEKONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HAI SAN MEKONG *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 7</template>
+	</category>
+	<category>
+		<pattern>* MEKONG RIVER *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 7</template>
+	</category>
+	<!-- nhà hàng sông nước miền tây -->
+	<category>
+		<pattern>NHA HANG SONG NUOC MIEN TAY O DAU</pattern>
+		<template>Nhà hàng sông nước miền tây ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG SONG NUOC MIEN TAY * O *</pattern>
+		<template><srai>NHA HANG SONG NUOC MIEN TAY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG SONG NUOC MIEN TAY * THUOC *</pattern>
+		<template><srai>NHA HANG SONG NUOC MIEN TAY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG SONG NUOC MIEN TAY *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 8</template>
+	</category>
+	<!-- lan vương -->
+	<category>
+		<pattern>LAN VUONG O DAU</pattern>
+		<template>Khu du lịch Lan Vương ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* LAN VUONG * O *</pattern>
+		<template><srai>LAN VUONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LAN VUONG * THUOC *</pattern>
+		<template><srai>LAN VUONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LAN VUONG *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 9</template>
+	</category>
+	<!-- cồn phụng -->
+	<category>
+		<pattern>CON PHUNG O DAU</pattern>
+		<template>Cồn Phụng ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* CON PHUNG * O *</pattern>
+		<template><srai>CON PHUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON PHUNG * THUOC *</pattern>
+		<template><srai>CON PHUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON PHUNG *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 10</template>
+	</category>
+	<!-- chi tiết nhà hàng cần thơ -->
+	<!-- bình thủy quán -->
+	<category>
+		<pattern>BINH THUY QUAN O DAU</pattern>
+		<template>Bình Thủy Quán ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* BINH THUY QUAN * O *</pattern>
+		<template><srai>BINH THUY QUAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BINH THUY QUAN * THUOC *</pattern>
+		<template><srai>BINH THUY QUAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BINH THUY QUAN *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 97</template>
+	</category>
+	<!-- bốn mùa hải sản -->
+	<category>
+		<pattern>BON MUA HAI SAN O DAU</pattern>
+		<template>Bốn mùa hải sản ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* BON MUA HAI SAN * O *</pattern>
+		<template><srai>BON MUA HAI SAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BON MUA HAI SAN * THUOC *</pattern>
+		<template><srai>BON MUA HAI SAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BON MUA HAI SAN *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 98</template>
+	</category>
+	<!-- nhà hàng ninh kiều -->
+	<category>
+		<pattern>NHA HANG NINH KIEU O DAU</pattern>
+		<template>Nhà hàng Ninh Kiều ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG NINH KIEU * O *</pattern>
+		<template><srai>NHA HANG NINH KIEU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG NINH KIEU * THUOC *</pattern>
+		<template><srai>NHA HANG NINH KIEU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG NINH KIEU *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 99</template>
+	</category>
+	<!-- nhà hàng cây bưởi -->
+	<category>
+		<pattern>CAY BUOI O DAU</pattern>
+		<template>Nhà hàng Cây Bưởi ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* CAY BUOI * O *</pattern>
+		<template><srai>CAY BUOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CAY BUOI * THUOC *</pattern>
+		<template><srai>CAY BUOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CAY BUOI *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 100</template>
+	</category>
+	<!-- nhà hàng nam bộ -->
+	<category>
+		<pattern>NHA HANG NAM BO O DAU</pattern>
+		<template>Nhà hàng Nam Bộ ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG NAM BO * O *</pattern>
+		<template><srai>NHA HANG NAM BO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG NAM BO * THUOC *</pattern>
+		<template><srai>NHA HANG NAM BO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG NAM BO *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 101</template>
+	</category>
+	<!-- nhà hàng Phương Nam -->
+	<category>
+		<pattern>NHA HANG PHUONG NAM O DAU</pattern>
+		<template>Nhà hàng Phương Nam ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG PHUONG NAM * O *</pattern>
+		<template><srai>NHA HANG PHUONG NAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG PHUONG NAM * THUOC *</pattern>
+		<template><srai>NHA HANG PHUONG NAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG PHUONG NAM *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 102</template>
+	</category>
+	<!-- nhà hàng hoa cau -->
+	<category>
+		<pattern>NHA HANG HOA CAU O DAU</pattern>
+		<template>Nhà hàng Hoa Cau ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HOA CAU * O *</pattern>
+		<template><srai>NHA HANG HOA CAU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HOA CAU * THUOC *</pattern>
+		<template><srai>NHA HANG HOA CAU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HOA CAU *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 103</template>
+	</category>
+	<!-- nhà hàng hoa sứ -->
+	<category>
+		<pattern>NHA HANG HOA SU O DAU</pattern>
+		<template>Nhà hàng Hoa Sứ ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HOA SU * O *</pattern>
+		<template><srai>NHA HANG HOA SU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HOA SU * THUOC *</pattern>
+		<template><srai>NHA HANG HOA SU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HOA SU *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 104</template>
+	</category>
+	<!-- nhà hàng mekong -->
+	<category>
+		<pattern>NHA HANG MEKONG O DAU</pattern>
+		<template>Nhà hàng Mekong ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG MEKONG * O *</pattern>
+		<template><srai>NHA HANG MEKONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG MEKONG * THUOC *</pattern>
+		<template><srai>NHA HANG MEKONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG MEKONG *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 105</template>
+	</category>
+	<!-- nhà hàng hoàng cung -->
+	<category>
+		<pattern>NHA HANG HOANG CUNG O DAU</pattern>
+		<template>Nhà hàng Hoàng Cung ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HOANG CUNG * O *</pattern>
+		<template><srai>NHA HANG HOANG CUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HOANG CUNG * THUOC *</pattern>
+		<template><srai>NHA HANG HOANG CUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HOANG CUNG *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 106</template>
+	</category>
+	<!-- chi tiết nhà hàng đà lạt -->
+	<!-- nhà hàng long hoa -->
+	<category>
+		<pattern>NHA HANG LONG HOA O DAU</pattern>
+		<template>Nhà hàng Long Hoa ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG LONG HOA * O *</pattern>
+		<template><srai>NHA HANG LONG HOA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG LONG HOA * THUOC *</pattern>
+		<template><srai>NHA HANG LONG HOA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG LONG HOA *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 137</template>
+	</category>
+	<!-- nhà hàng red sun -->
+	<category>
+		<pattern>NHA HANG RED SUN O DAU</pattern>
+		<template>Nhà hàng RED SUN ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG RED SUN * O *</pattern>
+		<template><srai>NHA HANG RED SUN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG RED SUN * THUOC *</pattern>
+		<template><srai>NHA HANG RED SUN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG RED SUN *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 138</template>
+	</category>
+	<!-- nhà hàng hồng loan -->
+	<category>
+		<pattern>NHA HANG HONG LOAN O DAU</pattern>
+		<template>Nhà hàng Hồng Loan ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HONG LOAN * O *</pattern>
+		<template><srai>NHA HANG HONG LOAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HONG LOAN * THUOC *</pattern>
+		<template><srai>NHA HANG HONG LOAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG HONG LOAN *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 139</template>
+	</category>
+	<!-- nhà hàng phương hoàng -->
+	<category>
+		<pattern>NHA HANG PHUONG HOANG O DAU</pattern>
+		<template>Nhà hàng Phương Hoàng ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG PHUONG HOANG * O *</pattern>
+		<template><srai>NHA HANG PHUONG HOANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG PHUONG HOANG * THUOC *</pattern>
+		<template><srai>NHA HANG PHUONG HOANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG PHUONG HOANG *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 140</template>
+	</category>
+	<!-- nhà hàng như ngọc -->
+	<category>
+		<pattern>NHU NGOC O DAU</pattern>
+		<template>Cơm niêu Như Ngọc ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHU NGOC * O *</pattern>
+		<template><srai>NHU NGOC O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHU NGOC * THUOC *</pattern>
+		<template><srai>NHU NGOC O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHU NGOC *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 141</template>
+	</category>
+	<!-- nhà hàng thah thuy -->
+	<category>
+		<pattern>NHA HANG THANH THUY O DAU</pattern>
+		<template>Nhà hàng Thanh Thuy ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NHA HANG THANH THUY * O *</pattern>
+		<template><srai>NHA HANG THANH THUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG THANH THUY * THUOC *</pattern>
+		<template><srai>NHA HANG THANH THUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA HANG THANH THUY *</pattern>
+		<template>SELECT restaurant_diachi as food_diachi FROM restaurants WHERE restaurant_id = 142</template>
+	</category>
+	<!-- chi tiết quà tặng -->
+	<!-- bến tre -->
+	<!-- trái cây -->
+	<category>
+		<pattern>* TRAI CAY *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 1</template>
+	</category>
+	<!-- kẹo dừa -->
+	<category>
+		<pattern>KEO DUA O DAU</pattern>
+		<template>Kẹo dừa là quà tặng nên mua ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* KEO DUA * O *</pattern>
+		<template><srai>KEO DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* KEO DUA * THUOC *</pattern>
+		<template><srai>KEO DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* KEO DUA *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 2</template>
+	</category>
+	<!-- rượu dừa -->
+	<category>
+		<pattern>RUOU DUA O DAU</pattern>
+		<template>Rượu dừa là quà tặng nên mua ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* RUOU DUA * O *</pattern>
+		<template><srai>RUOU DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* RUOU DUA * THUOC *</pattern>
+		<template><srai>RUOU DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* RUOU DUA *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 3</template>
+	</category>
+	<!-- quà lưu niệm từ dừa -->
+	<category>
+		<pattern>QUA LUU NIEM TU DUA O DAU</pattern>
+		<template>Quà lưu niệm dừa là quà tặng nên mua ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* QUA LUU NIEM TU DUA * O *</pattern>
+		<template><srai>QUA LUU NIEM TU DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA LUU NIEM TU DUA * THUOC *</pattern>
+		<template><srai>QUA LUU NIEM TU DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* QUA LUU NIEM TU DUA *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 4</template>
+	</category>
+	<!-- bánh tráng mỹ lồng -->
+	<category>
+		<pattern>BANH TRANG MY LONG O DAU</pattern>
+		<template>Bánh tráng Mỹ Lồng là quà tặng nên mua ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* BANH TRANG MY LONG * O *</pattern>
+		<template><srai>BANH TRANG MY LONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH TRANG MY LONG * THUOC *</pattern>
+		<template><srai>BANH TRANG MY LONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH TRANG MY LONG *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 5</template>
+	</category>
+	<!-- bánh phồng sơn đốc -->
+	<category>
+		<pattern>BANH PHONG SON DOC O DAU</pattern>
+		<template>Bánh phồng Sơn Đốc là quà tặng nên mua ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* BANH PHONG SON DOC * O *</pattern>
+		<template><srai>BANH PHONG SON DOC O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH PHONG SON DOC * THUOC *</pattern>
+		<template><srai>BANH PHONG SON DOC O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH PHONG SON DOC *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 6</template>
+	</category>
+	<!-- xà phồng dừa -->
+	<category>
+		<pattern>XA PHONG DUA O DAU</pattern>
+		<template>Xà phòng dừa là quà tặng nên mua ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* XA PHONG DUA * O *</pattern>
+		<template><srai>XA PHONG DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* XA PHONG DUA * THUOC *</pattern>
+		<template><srai>XA PHONG DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* XA PHONG DUA *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 7</template>
+	</category>
+	<!-- mứt dừa -->
+	<category>
+		<pattern>MUT DUA O DAU</pattern>
+		<template>Mứt dừa là quà tặng nên mua ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* MUT DUA * O *</pattern>
+		<template><srai>MUT DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* MUT DUA * THUOC *</pattern>
+		<template><srai>MUT DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* MUT DUA *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 8</template>
+	</category>
+	<!-- bánh tráng chuối -->
+	<category>
+		<pattern>BANH TRANG CHUOI O DAU</pattern>
+		<template>Bánh tráng chuối là quà tặng nên mua ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* BANH TRANG CHUOI * O *</pattern>
+		<template><srai>BANH TRANG CHUOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH TRANG CHUOI * THUOC *</pattern>
+		<template><srai>BANH TRANG CHUOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH TRANG CHUOI *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 9</template>
+	</category>
+	<!-- rượu phú lễ -->
+	<category>
+		<pattern>RUOU PHU LE O DAU</pattern>
+		<template>Rượu Phú Lễ là quà tặng nên mua ở Bến Tre bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* RUOU PHU LE * O *</pattern>
+		<template><srai>RUOU PHU LE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* RUOU PHU LE * THUOC *</pattern>
+		<template><srai>RUOU PHU LE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* RUOU PHU LE *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 10</template>
+	</category>
+	<!-- chi tiết quà cần thơ -->
+	<!-- bánh tét lá cẩm -->
+	<category>
+		<pattern>BANH TET LA CAM O DAU</pattern>
+		<template>Bánh tét lá cẩm là quà tặng nên mua ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* BANH TET LA CAM * O *</pattern>
+		<template><srai>BANH TET LA CAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH TET LA CAM * THUOC *</pattern>
+		<template><srai>BANH TET LA CAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH TET LA CAM *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 45</template>
+	</category>
+	<!-- ca cao phong điền -->
+	<category>
+		<pattern>CA CAO PHONG DIEN O DAU</pattern>
+		<template>Ca cao Phong Điền là quà tặng nên mua ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* CA CAO PHONG DIEN * O *</pattern>
+		<template><srai>CA CAO PHONG DIEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CA CAO PHONG DIEN * THUOC *</pattern>
+		<template><srai>CA CAO PHONG DIEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CA CAO PHONG DIEN *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 46</template>
+	</category>
+	<!-- nem nướng thanh vân -->
+	<category>
+		<pattern>NEM NUONG THANH VAN O DAU</pattern>
+		<template>Nem nướng Thanh Vân là quà tặng nên mua ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* NEM NUONG THANH VAN * O *</pattern>
+		<template><srai>NEM NUONG THANH VAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NEM NUONG THANH VAN * THUOC *</pattern>
+		<template><srai>NEM NUONG THANH VAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NEM NUONG THANH VAN *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 47</template>
+	</category>
+	<!-- rượu mận sáu tia -->
+	<category>
+		<pattern>RUOU MAN O DAU</pattern>
+		<template>Rượu mận Sáu Tia là quà tặng nên mua ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* RUOU MAN * O *</pattern>
+		<template><srai>RUOU MAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* RUOU MAN * THUOC *</pattern>
+		<template><srai>RUOU MAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* RUOU MAN *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 48</template>
+	</category>
+	<!-- bánh tráng thuận hưng -->
+	<category>
+		<pattern>BANH TRANG THUAN HUNG O DAU</pattern>
+		<template>Bánh tráng Thuận Hưng là quà tặng nên mua ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* BANH TRANG THUAN HUNG * O *</pattern>
+		<template><srai>BANH TRANG THUAN HUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH TRANG THUAN HUNG * THUOC *</pattern>
+		<template><srai>BANH TRANG THUAN HUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH TRANG THUAN HUNG *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 49</template>
+	</category>
+	<!-- hoa quả -->
+	<category>
+		<pattern>HOA QUA O DAU</pattern>
+		<template>Hoa quả là quà tặng nên mua ở Cần Thơ bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HOA QUA * O *</pattern>
+		<template><srai>HOA QUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOA QUA * THUOC *</pattern>
+		<template><srai>HOA QUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOA QUA *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 50</template>
+	</category>
+	<!-- chi tiết quà tặng đà lạt -->
+	<category>
+		<pattern>RUOU VANG DA LAT O DAU</pattern>
+		<template>Rượu vang Đà Lạt là quà tặng nên mua ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* RUOU VANG DA LAT * O *</pattern>
+		<template><srai>RUOU VANG DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* RUOU VANG DA LAT * THUOC *</pattern>
+		<template><srai>RUOU VANG DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* RUOU VANG DA LAT *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 73</template>
+	</category>
+	<!-- bánh mứt hoa qua sấy-->
+	<category>
+		<pattern>BANH MUT O DAU</pattern>
+		<template>Rượu vang Đà Lạt là quà tặng nên mua ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* BANH MUT * O *</pattern>
+		<template><srai>BANH MUT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH MUT * THUOC *</pattern>
+		<template><srai>BANH MUT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH MUT *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 74</template>
+	</category>
+	<category>
+		<pattern>* HOA QUA SAY * O *</pattern>
+		<template><srai>BANH MUT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOA QUA SAY * THUOC *</pattern>
+		<template><srai>BANH MUT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOA QUA SAY *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 74</template>
+	</category>
+	<!-- trà atiso -->
+	<category>
+		<pattern>TRA ATISO O DAU</pattern>
+		<template>Trà atiso là quà tặng nên mua ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* TRA ATISO * O *</pattern>
+		<template><srai>TRA ATISO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* TRA ATISO * THUOC *</pattern>
+		<template><srai>TRA ATISO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* TRA ATISO *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 75</template>
+	</category>
+	<!-- dâu tây -->
+	<category>
+		<pattern>DAU TAY O DAU</pattern>
+		<template>Dâu tây là quà tặng nên mua ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* DAU TAY * O *</pattern>
+		<template><srai>DAU TAY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DAU TAY * THUOC *</pattern>
+		<template><srai>DAU TAY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DAU TAY *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 76</template>
+	</category>
+	<!-- hoa tươi và hoa khô -->
+	<category>
+		<pattern>HOA TUOI O DAU</pattern>
+		<template>Hoa tươi và hoa khô là quà tặng nên mua ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* HOA TUOI * O *</pattern>
+		<template><srai>HOA TUOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOA TUOI * THUOC *</pattern>
+		<template><srai>HOA TUOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOA TUOI *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 77</template>
+	</category>
+	<category>
+		<pattern>* HOA KHO * O *</pattern>
+		<template><srai>HOA TUOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOA KHO * THUOC *</pattern>
+		<template><srai>HOA TUOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* HOA KHO *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 77</template>
+	</category>
+	<!-- đồ len -->
+	<category>
+		<pattern>DO LEN O DAU</pattern>
+		<template>Áo len, đồ lưu niệm từ len là quà tặng nên mua ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* DO LEN * O *</pattern>
+		<template><srai>DO LEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DO LEN * THUOC *</pattern>
+		<template><srai>DO LEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DO LEN *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 78</template>
+	</category>
+	<!-- tranh thêu -->
+	<category>
+		<pattern>TRANH THEU O DAU</pattern>
+		<template>Tranh thêu tay trên lụa là quà tặng nên mua ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* TRANH THEU * O *</pattern>
+		<template><srai>TRANH THEU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* TRANH THEU * THUOC *</pattern>
+		<template><srai>TRANH THEU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* TRANH THEU *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 79</template>
+	</category>
+	<!-- thổ cẩm -->
+	<category>
+		<pattern>THO CAM O DAU</pattern>
+		<template>Thổ cẩm là quà tặng nên mua ở Đà Lạt bạn nhé ;)</template>
+	</category>
+	<category>
+		<pattern>* THO CAM * O *</pattern>
+		<template><srai>THO CAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* THO CAM * THUOC *</pattern>
+		<template><srai>THO CAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* THO CAM *</pattern>
+		<template>SELECT gift_mota as food_diachi FROM gifts WHERE gift_id = 80</template>
 	</category>
 	<!-- kịch bản địa điểm -->
 	<category>
