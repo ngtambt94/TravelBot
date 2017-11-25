@@ -123,7 +123,7 @@ function findInfo(sender, answer) {
 					sendTextMessage(sender, answer);
 			}
 			else if (results[0]['food_hinhanh'] === undefined) {
-				sendTextMessage(sender, results[0]['food_ten']);
+				// sendTextMessage(sender, results[0]['food_ten']);
 				sendTextMessage(sender, results[0]['food_diachi']);
 			}
 			else{
@@ -134,49 +134,66 @@ function findInfo(sender, answer) {
 
 		    // thêm từng phần tử vào mảng
 		    for (var i = 0; i < results.length; i++) {
-		     	var temp_kq = "";
-		     	for (var j = 0; j < results[i]['food_ten'].length; j++) {
-		     		temp_kq += Convert(results[i]['food_ten'][j]);
-		     	}
-		     	ketqua.push(
-  		     	{
-  		     		"title": results[i]['food_ten'],
-  		     		"subtitle": results[i]['food_diachi'],
-  		     		"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[i]['food_hinhanh'],
-  		     		"buttons": [{
-  		      		"title": "Xem Chi Tiết",
-  		    	 	 "type": "postback",
-  		    		  "payload": temp_kq
-  		     		}],
-  		      }
-		      );
+		    	var temp_kq = "";
+		    	for (var j = 0; j < results[i]['food_ten'].length; j++) {
+		    		temp_kq += Convert(results[i]['food_ten'][j]);
+		    	}
+		    	if (results[i]['web'] === undefined || results[i]['web'] === "") {
+		    		ketqua.push(
+		    		{
+		    			"title": results[i]['food_ten'],
+		    			"subtitle": results[i]['food_diachi'],
+		    			"image_url": "hottps://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[i]['food_hinhanh'],
+		    			"buttons": [{
+		    				"title": "Xem Chi Tiết",
+		    				"type": "postback",
+		    				"payload": temp_kq
+		    			}],
+		    		}
+		    		);
+		    	}
+		    	else{
+		    		ketqua.push(
+		    		{
+		    			"title": results[i]['food_ten'],
+		    			"subtitle": results[i]['food_diachi'],
+		    			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/" + results[i]['food_hinhanh'],
+		    			"buttons": [{
+		    				"title": "Xem Chi Tiết",
+		    				"type": "web_url",
+		    				"url": results[i]['web']
+		    			}],
+		    		}
+		    		);
+		    	}
 		    }
+
 		    let messageData = {
-        	"attachment": {
-         		"type": "template",
-         		"payload": {
-         			"template_type": "generic",
-         			"elements": ketqua,
-         		}
-       	  }
+		    	"attachment": {
+		    		"type": "template",
+		    		"payload": {
+		    			"template_type": "generic",
+		    			"elements": ketqua,
+		    		}
+		    	}
 		    }
 		    request({
-		     	url: 'https://graph.facebook.com/v2.6/me/messages',
-		     	qs: {access_token:token},
-		     	method: 'POST',
+		    	url: 'https://graph.facebook.com/v2.6/me/messages',
+		    	qs: {access_token:token},
+		    	method: 'POST',
 		    	json: {
-		     		recipient: {id:sender},
-		     		message: messageData,
-		     	}
+		    		recipient: {id:sender},
+		    		message: messageData,
+		    	}
 		    }, function(error, response, body) {
-		     	if (error) {
+		    	if (error) {
 		    		console.log('Error sending messages: ', error)
-		     	} else if (response.body.error) {
-		     		console.log('Error: ', response.body.error)
-		     	}
+		    	} else if (response.body.error) {
+		    		console.log('Error: ', response.body.error)
+		    	}
 		    })
-      }
-    });
+		}
+	});
 	});
 }
 
@@ -955,15 +972,15 @@ app.post('/webhook', function (req, res) {
 
       // kiểm tra text với file aiml
       aimlInterpreter.findAnswerInLoadedAIMLFiles(temp, callback)
-    }
-    if (event.postback) {
-     let text = event.postback.payload
+  }
+  if (event.postback) {
+  	let text = event.postback.payload
 
-     var callback = function(answer, wildCardArray, input){
-      findInfo(sender, answer);
-    };
+  	var callback = function(answer, wildCardArray, input){
+  		findInfo(sender, answer);
+  	};
 
-    aimlInterpreter.findAnswerInLoadedAIMLFiles(text, callback)
+  	aimlInterpreter.findAnswerInLoadedAIMLFiles(text, callback)
   }
 }
 res.sendStatus(200)
