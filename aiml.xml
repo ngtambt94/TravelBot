@@ -211,7 +211,7 @@
 	<!-- KHÁCH SẠN RẺ Ở CẦN THƠ -->
 	<category>
 		<pattern>KHACH SAN RE CAN THO</pattern>
-		<template>SELECT hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website as web as web FROM hotels WHERE place_id = 11 ORDER BY hotel_giatu LIMIT 0,5
+		<template>SELECT hotel_ten as food_ten, hotel_diachi as food_diachi, hotel_hinhanh as food_hinhanh, hotel_website as web FROM hotels WHERE place_id = 11 ORDER BY hotel_giatu LIMIT 0,5
 		</template>
 	</category>
 	<category>
