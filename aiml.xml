@@ -2027,6 +2027,14 @@
 		<template><srai>BEN NINH KIEU O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BEN NINH KIEU * DIA CHI *</pattern>
+		<template><srai>BEN NINH KIEU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BEN NINH KIEU *</pattern>
+		<template><srai>BEN NINH KIEU O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BEN NINH KIEU *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 101</template>
 	</category>
@@ -2034,7 +2042,7 @@
 	<category>
 		<pattern>CHO NOI CAI RANG O DAU</pattern>
 		<template>
-			Chợ nổi Cái Răng ở Cần Thơ bạn nhé ;)		
+			Chợ nổi Cái Răng nằm trên nhánh sông Hậu đoạn qua Quận Cái Răng, Cần Thơ bạn nhé ;)		
 		</template>
 	</category>
 	<category>
@@ -2043,6 +2051,14 @@
 	</category>
 	<category>
 		<pattern>* CHO NOI CAI RANG * THUOC *</pattern>
+		<template><srai>CHO NOI CAI RANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO NOI CAI RANG * DIA CHI *</pattern>
+		<template><srai>CHO NOI CAI RANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CHO NOI CAI RANG *</pattern>
 		<template><srai>CHO NOI CAI RANG O DAU</srai></template>
 	</category>
 	<category>
@@ -2065,6 +2081,14 @@
 		<template><srai>CAU CAN THO O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CAU CAN THO * DIA CHI *</pattern>
+		<template><srai>CAU CAN THO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CAU CAN THO *</pattern>
+		<template><srai>CAU CAN THO O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CAU CAN THO *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 99</template>
 	</category>
@@ -2072,7 +2096,7 @@
 	<category>
 		<pattern>NHA CO BINH THUY O DAU</pattern>
 		<template>
-			Nhà cổ Bình Thủy ở Cần Thơ bạn nhé ;)		
+			Nhà cổ Bình Thủy ở 144 Bùi Hữu Nghĩa, quận Bình Thủy, thành phố Cần Thơ bạn nhé ;)
 		</template>
 	</category>
 	<category>
@@ -2081,6 +2105,14 @@
 	</category>
 	<category>
 		<pattern>* NHA CO BINH THUY * THUOC *</pattern>
+		<template><srai>NHA CO BINH THUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA CO BINH THUY * DIA CHI *</pattern>
+		<template><srai>NHA CO BINH THUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * NHA CO BINH THUY *</pattern>
 		<template><srai>NHA CO BINH THUY O DAU</srai></template>
 	</category>
 	<category>
@@ -2111,6 +2143,22 @@
 		<template><srai>CAU DI BO O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CAU DI BO * DIA CHI *</pattern>
+		<template><srai>CAU DI BO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CAU DI BO *</pattern>
+		<template><srai>CAU DI BO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CAU TINH YEU * DIA CHI *</pattern>
+		<template><srai>CAU DI BO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CAU TINH YEU *</pattern>
+		<template><srai>CAU DI BO O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CAU DI BO *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 102</template>
 	</category>
@@ -2130,6 +2178,14 @@
 		<template><srai>BIEN CAN THO O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BIEN CAN THO * DIA CHI *</pattern>
+		<template><srai>BIEN CAN THO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BIEN CAN THO *</pattern>
+		<template><srai>BIEN CAN THO O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BIEN CAN THO *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 103</template>
 	</category>
@@ -2137,7 +2193,7 @@
 	<category>
 		<pattern>THIEN VIEN TRUC LAM O DAU</pattern>
 		<template>
-			Thiền viện Trúc Lâm Phương Nam ở Cần Thơ bạn nhé ;)		
+			Thiền viện Trúc Lâm Phương Nam ở ĐT923, Mỹ Khánh, Phong Điền, Cần Thơ bạn nhé ;)
 		</template>
 	</category>
 	<category>
@@ -2157,14 +2213,34 @@
 		<template><srai>THIEN VIEN TRUC LAM O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* THIEN VIEN TRUC LAM * DIA CHI *</pattern>
+		<template><srai>THIEN VIEN TRUC LAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * THIEN VIEN TRUC LAM *</pattern>
+		<template><srai>THIEN VIEN TRUC LAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* THIEN VIEN CAN THO * DIA CHI *</pattern>
+		<template><srai>THIEN VIEN TRUC LAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * THIEN VIEN CAN THO *</pattern>
+		<template><srai>THIEN VIEN TRUC LAM O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* THIEN VIEN TRUC LAM *</pattern>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 104</template>
+	</category>
+	<category>
+		<pattern>* THIEN VIEN CAN THO *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 104</template>
 	</category>
 	<!-- làng du lịch mỹ khánh -->
 	<category>
 		<pattern>MY KHANH O DAU</pattern>
 		<template>
-			Thiền viện Trúc Lâm Phương Nam ở Cần Thơ bạn nhé ;)		
+			Khu du lịch Mỹ Khánh 335 Lộ Vòng Cung, Mỹ Khánh, Phong Điền, Cần Thơ bạn nhé ;)	
 		</template>
 	</category>
 	<category>
@@ -2176,6 +2252,14 @@
 		<template><srai>MY KHANH O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* MY KHANH * DIA CHI *</pattern>
+		<template><srai>MY KHANH O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * MY KHANH *</pattern>
+		<template><srai>MY KHANH O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* MY KHANH *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 105</template>
 	</category>
@@ -2183,7 +2267,7 @@
 	<category>
 		<pattern>CHUA ONG O DAU</pattern>
 		<template>
-			Chùa Ông ở Cần Thơ bạn nhé ;)		
+			Chùa Ông ở gần Bến Ninh Kiều, Cần Thơ bạn nhé ;)		
 		</template>
 	</category>
 	<category>
@@ -2195,6 +2279,14 @@
 		<template><srai>CHUA ONG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CHUA ONG * DIA CHI *</pattern>
+		<template><srai>CHUA ONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CHUA ONG *</pattern>
+		<template><srai>CHUA ONG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CHUA ONG *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 106</template>
 	</category>
@@ -2202,9 +2294,7 @@
 	<!-- cồn phụng -->
 	<category>
 		<pattern>CON PHUNG O DAU</pattern>
-		<template>
-			Cồn Phụng ở Bến Tre bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 1</template>
 	</category>
 	<category>
 		<pattern>* CON PHUNG * O *</pattern>
@@ -2215,15 +2305,21 @@
 		<template><srai>CON PHUNG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CON PHUNG * DIA CHI *</pattern>
+		<template><srai>CON PHUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CON PHUNG *</pattern>
+		<template><srai>CON PHUNG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CON PHUNG *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 1</template>
 	</category>
 	<!-- cồn quy -->
 	<category>
 		<pattern>CON QUY O DAU</pattern>
-		<template>
-			Cồn Quy ở Bến Tre bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 2</template>
 	</category>
 	<category>
 		<pattern>* CON QUY * O *</pattern>
@@ -2242,6 +2338,22 @@
 		<template><srai>CON QUY O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CON QUY * DIA CHI *</pattern>
+		<template><srai>CON QUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CON QUY *</pattern>
+		<template><srai>CON QUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CON QUI * DIA CHI *</pattern>
+		<template><srai>CON QUY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CON QUI *</pattern>
+		<template><srai>CON QUY O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CON QUY *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 2</template>
 	</category>
@@ -2252,9 +2364,7 @@
 	<!-- cồn ốc -->
 	<category>
 		<pattern>CON OC O DAU</pattern>
-		<template>
-			Cồn Ốc ở Bến Tre bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 3</template>
 	</category>
 	<category>
 		<pattern>* CON OC * O *</pattern>
@@ -2265,15 +2375,21 @@
 		<template><srai>CON OC O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CON OC * DIA CHI *</pattern>
+		<template><srai>CON OC O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CON OC *</pattern>
+		<template><srai>CON OC O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CON OC *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 3</template>
 	</category>
 	<!-- sân chim vàm hồ -->
 	<category>
 		<pattern>SAN CHIM VAM HO O DAU</pattern>
-		<template>
-			Sân chim Vàm Hồ ở Bến Tre bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 4</template>
 	</category>
 	<category>
 		<pattern>* SAN CHIM VAM HO * O *</pattern>
@@ -2284,15 +2400,21 @@
 		<template><srai>SAN CHIM VAM HO O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* SAN CHIM VAM HO * DIA CHI *</pattern>
+		<template><srai>SAN CHIM VAM HO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * SAN CHIM VAM HO *</pattern>
+		<template><srai>SAN CHIM VAM HO O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* SAN CHIM VAM HO *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 4</template>
 	</category>
 	<!-- vườn trái cây cái mơn -->
 	<category>
 		<pattern>TRAI CAY CAI MON O DAU</pattern>
-		<template>
-			Vườn trái cây Cái Mơn ở Bến Tre bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 5</template>
 	</category>
 	<category>
 		<pattern>* TRAI CAY CAI MON * O *</pattern>
@@ -2303,15 +2425,21 @@
 		<template><srai>TRAI CAY CAI MON O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* TRAI CAY CAI MON * DIA CHI *</pattern>
+		<template><srai>TRAI CAY CAI MON O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * TRAI CAY CAI MON *</pattern>
+		<template><srai>TRAI CAY CAI MON O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* TRAI CAY CAI MON *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 5</template>
 	</category>
 	<!-- lăng mộ nguyễn đình chiểu -->
 	<category>
 		<pattern>NGUYEN DINH CHIEU O DAU</pattern>
-		<template>
-			Lăng mộ Nguyễn Đình Chiểu ở Ba Tri, Bến Tre bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 6</template>
 	</category>
 	<category>
 		<pattern>* NGUYEN DINH CHIEU * O *</pattern>
@@ -2322,15 +2450,21 @@
 		<template><srai>NGUYEN DINH CHIEU O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* NGUYEN DINH CHIEU * DIA CHI *</pattern>
+		<template><srai>NGUYEN DINH CHIEU O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * NGUYEN DINH CHIEU *</pattern>
+		<template><srai>NGUYEN DINH CHIEU O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* NGUYEN DINH CHIEU *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 6</template>
 	</category>
 	<!-- lăng mộ phan thanh giản -->
 	<category>
 		<pattern>PHAN THANH GIAN O DAU</pattern>
-		<template>
-			Lăng mộ Phan Thanh Giản ở Ba Tri, Bến Tre bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 7</template>
 	</category>
 	<category>
 		<pattern>* PHAN THANH GIAN * O *</pattern>
@@ -2341,15 +2475,21 @@
 		<template><srai>PHAN THANH GIAN O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* PHAN THANH GIAN * DIA CHI *</pattern>
+		<template><srai>PHAN THANH GIAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * PHAN THANH GIAN *</pattern>
+		<template><srai>PHAN THANH GIAN O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* PHAN THANH GIAN *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 7</template>
 	</category>
 	<!-- khu du lịch lan vương -->
 	<category>
 		<pattern>KHU DU LICH LAN VUONG O DAU</pattern>
-		<template>
-			Khu du lịch Lan Vương ở Bến Tre bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 8</template>
 	</category>
 	<category>
 		<pattern>* KHU DU LICH LAN VUONG * O *</pattern>
@@ -2360,15 +2500,21 @@
 		<template><srai>KHU DU LICH LAN VUONG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* KHU DU LICH LAN VUONG * DIA CHI *</pattern>
+		<template><srai>KHU DU LICH LAN VUONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * KHU DU LICH LAN VUONG *</pattern>
+		<template><srai>KHU DU LICH LAN VUONG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* KHU DU LICH LAN VUONG *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 8</template>
 	</category>
 	<!-- cồn tiên -->
 	<category>
 		<pattern>CON TIEN O DAU</pattern>
-		<template>
-			Cồn Tiên ở Bến Tre bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 9</template>
 	</category>
 	<category>
 		<pattern>* CON TIEN * O *</pattern>
@@ -2379,15 +2525,21 @@
 		<template><srai>CON TIEN O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CON TIEN * DIA CHI *</pattern>
+		<template><srai>CON TIEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CON TIEN *</pattern>
+		<template><srai>CON TIEN O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CON TIEN *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 9</template>
 	</category>
 	<!-- biển cồn bửng -->
 	<category>
 		<pattern>CON BUNG O DAU</pattern>
-		<template>
-			Cồn Bửng ở Bến Tre bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 10</template>
 	</category>
 	<category>
 		<pattern>* CON BUNG * O *</pattern>
@@ -2398,6 +2550,14 @@
 		<template><srai>CON BUNG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CON BUNG * DIA CHI *</pattern>
+		<template><srai>CON BUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CON BUNG *</pattern>
+		<template><srai>CON BUNG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CON BUNG *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 10</template>
 	</category>
@@ -2405,9 +2565,7 @@
 	<!-- vường hoa đà lạt -->
 	<category>
 		<pattern>VUON HOA DA LAT O DAU</pattern>
-		<template>
-			Vườn hoa Đà Lạt ở Đà Lạt bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 168</template>
 	</category>
 	<category>
 		<pattern>* VUON HOA DA LAT * O *</pattern>
@@ -2418,15 +2576,21 @@
 		<template><srai>VUON HOA DA LAT O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* VUON HOA DA LAT * DIA CHI *</pattern>
+		<template><srai>VUON HOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * VUON HOA DA LAT *</pattern>
+		<template><srai>VUON HOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* VUON HOA DA LAT *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 168</template>
 	</category>
 	<!-- hồ xuân hương -->
 	<category>
 		<pattern>HO XUAN HUONG O DAU</pattern>
-		<template>
-			Hồ Xuân Hương ở Đà Lạt bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 169</template>
 	</category>
 	<category>
 		<pattern>* HO XUAN HUONG * O *</pattern>
@@ -2437,22 +2601,28 @@
 		<template><srai>HO XUAN HUONG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* HO XUAN HUONG * DIA CHI *</pattern>
+		<template><srai>HO XUAN HUONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * HO XUAN HUONG *</pattern>
+		<template><srai>HO XUAN HUONG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* HO XUAN HUONG *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 169</template>
 	</category>
 	<!-- nhà thờ chính tòa -->
 	<category>
 		<pattern>NHA THO CHINH TOA DA LAT O DAU</pattern>
-		<template>
-			Nhà thờ chính tòa Đà Lạt ở Đà Lạt bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 170</template>
 	</category>
 	<category>
-		<pattern>* NHA THO CHINH TOA DA LAT * O *</pattern>
+		<pattern>* NHA THO CHINH TOA * O *</pattern>
 		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
 	</category>
 	<category>
-		<pattern>* NHA THO CHINH TOA DA LAT * THUOC *</pattern>
+		<pattern>* NHA THO CHINH TOA * THUOC *</pattern>
 		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
 	</category>
 	<category>
@@ -2472,6 +2642,22 @@
 		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* NHA THO CHINH TOA * DIA CHI *</pattern>
+		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * NHA THO CHINH TOA *</pattern>
+		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NHA THO CON GA * DIA CHI *</pattern>
+		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * NHA THO CON GA *</pattern>
+		<template><srai>NHA THO CHINH TOA DA LAT O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* NHA THO CHINH TOA *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 170</template>
 	</category>
@@ -2482,9 +2668,7 @@
 	<!-- Nhà thờ Domaine de Marie -->
 	<category>
 		<pattern>NHA THO DOMAINE DE MARIE O DAU</pattern>
-		<template>
-			Nhà thờ Domaine de Marie ở Đà Lạt bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 171</template>
 	</category>
 	<category>
 		<pattern>* NHA THO DOMAINE DE MARIE * O *</pattern>
@@ -2503,6 +2687,22 @@
 		<template><srai>NHA THO DOMAINE DE MARIE O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* NHA THO DOMAINE DE MARIE * DIA CHI *</pattern>
+		<template><srai>NHA THO DOMAINE DE MARIE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * NHA THO DOMAINE DE MARIE *</pattern>
+		<template><srai>NHA THO DOMAINE DE MARIE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* LANH DIA DUC BA * DIA CHI *</pattern>
+		<template><srai>NHA THO DOMAINE DE MARIE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * LANH DIA DUC BA *</pattern>
+		<template><srai>NHA THO DOMAINE DE MARIE O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* NHA THO DOMAINE DE MARIE *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 171</template>
 	</category>
@@ -2513,9 +2713,7 @@
 	<!-- núi lang biang -->
 	<category>
 		<pattern>NUI LANG BIANG O DAU</pattern>
-		<template>
-			Núi Lang Biang ở Đà Lạt bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 172</template>
 	</category>
 	<category>
 		<pattern>* LANG BIANG * O *</pattern>
@@ -2534,6 +2732,14 @@
 		<template><srai>NUI LANG BIANG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* LANG BIANG * DIA CHI *</pattern>
+		<template><srai>NUI LANG BIANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * LANG BIANG *</pattern>
+		<template><srai>NUI LANG BIANG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* LANG BIANG *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 172</template>
 	</category>
@@ -2544,9 +2750,7 @@
 	<!-- làng cù lần -->
 	<category>
 		<pattern>LANG CU LAN O DAU</pattern>
-		<template>
-			Làng Cù Lần ở Đà Lạt bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 173</template>
 	</category>
 	<category>
 		<pattern>* LANG CU LAN * O *</pattern>
@@ -2557,15 +2761,21 @@
 		<template><srai>LANG CU LAN O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* LANG CU LAN * DIA CHI *</pattern>
+		<template><srai>LANG CU LAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * LANG CU LAN *</pattern>
+		<template><srai>LANG CU LAN O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* LANG CU LAN *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 173</template>
 	</category>
 	<!-- hồ tuyền lâm -->
 	<category>
 		<pattern>HO TUYEN LAM O DAU</pattern>
-		<template>
-			Hồ Tuyền Lâm ở Đà Lạt bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 174</template>
 	</category>
 	<category>
 		<pattern>* HO TUYEN LAM * O *</pattern>
@@ -2576,15 +2786,21 @@
 		<template><srai>HO TUYEN LAM O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* HO TUYEN LAM * DIA CHI *</pattern>
+		<template><srai>HO TUYEN LAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * HO TUYEN LAM *</pattern>
+		<template><srai>HO TUYEN LAM O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* HO TUYEN LAM *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 174</template>
 	</category>
 	<!-- Thác Datanla -->
 	<category>
 		<pattern>THAC DATANLA O DAU</pattern>
-		<template>
-			Thác Datanla ở Đà Lạt bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 175</template>
 	</category>
 	<category>
 		<pattern>* THAC DATANLA * O *</pattern>
@@ -2595,15 +2811,21 @@
 		<template><srai>THAC DATANLA O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* THAC DATANLA * DIA CHI *</pattern>
+		<template><srai>THAC DATANLA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * THAC DATANLA *</pattern>
+		<template><srai>THAC DATANLA O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* THAC DATANLA *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 175</template>
 	</category>
 	<!-- thác voi -->
 	<category>
 		<pattern>THAC VOI O DAU</pattern>
-		<template>
-			Thác Voi ở chùa Linh Ẩn, Đà Lạt bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 176</template>
 	</category>
 	<category>
 		<pattern>* THAC VOI * O *</pattern>
@@ -2622,6 +2844,22 @@
 		<template><srai>THAC VOI O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* THAC VOI * DIA CHI *</pattern>
+		<template><srai>THAC VOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * THAC VOI *</pattern>
+		<template><srai>THAC VOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHUA LINH AN * DIA CHI *</pattern>
+		<template><srai>THAC VOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CHUA LINH AN *</pattern>
+		<template><srai>THAC VOI O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* THAC VOI *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 176</template>
 	</category>
@@ -2632,9 +2870,7 @@
 	<!-- chợ đà lạt và chợ âm phủ -->
 	<category>
 		<pattern>CHO DA LAT O DAU</pattern>
-		<template>
-			Chợ Đà Lạt và chợ Âm Phủ ở chùa Linh Ẩn, Đà Lạt bạn nhé ;)		
-		</template>
+		<template>SELECT destination_diachi as food_diachi FROM destinations WHERE destination_id = 177</template>
 	</category>
 	<category>
 		<pattern>* CHO DA LAT * O *</pattern>
@@ -2655,6 +2891,22 @@
 	<category>
 		<pattern>* CHO DA LAT *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 177</template>
+	</category>
+	<category>
+		<pattern>* CHO DA LAT * DIA CHI *</pattern>
+		<template><srai>CHO DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CHO DA LAT *</pattern>
+		<template><srai>CHO DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO AM PHU * DIA CHI *</pattern>
+		<template><srai>CHO DA LAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CHO AM PHU *</pattern>
+		<template><srai>CHO DA LAT O DAU</srai></template>
 	</category>
 	<category>
 		<pattern>* CHO AM PHU *</pattern>
@@ -2854,7 +3106,7 @@
 	<!-- cơm dừa bến tre -->
 	<category>
 		<pattern>COM DUA BEN TRE O DAU</pattern>
-		<template>Món cơm dừa Bến Tre là đặc sản Bến Tre bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 1</template>
 	</category>
 	<category>
 		<pattern>* COM DUA BEN TRE * O *</pattern>
@@ -2865,13 +3117,21 @@
 		<template><srai>COM DUA BEN TRE O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* COM DUA BEN TRE * DIA CHI *</pattern>
+		<template><srai>COM DUA BEN TRE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * COM DUA BEN TRE *</pattern>
+		<template><srai>COM DUA BEN TRE O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* COM DUA BEN TRE *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 1</template>
 	</category>
 	<!-- bánh tráng mỹ lông -->
 	<category>
 		<pattern>BANH TRANG MY LONG O DAU</pattern>
-		<template>Món bánh trang Mỹ Lồng - bánh phồng Sơn Đốc là đặc sản Bến Tre bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 2</template>
 	</category>
 	<category>
 		<pattern>* BANH TRANG MY LONG O *</pattern>
@@ -2897,10 +3157,26 @@
 		<pattern>* BANH PHONG SON DOC *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 2</template>
 	</category>
+	<category>
+		<pattern>* BANH TRANG MY LONG * DIA CHI *</pattern>
+		<template><srai>BANH TRANG MY LONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BANH TRANG MY LONG *</pattern>
+		<template><srai>BANH TRANG MY LONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH PHONG SON DOC * DIA CHI *</pattern>
+		<template><srai>BANH TRANG MY LONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BANH PHONG SON DOC *</pattern>
+		<template><srai>BANH TRANG MY LONG O DAU</srai></template>
+	</category>
 	<!-- chuối đập -->
 	<category>
 		<pattern>CHUOI DAP O DAU</pattern>
-		<template>Món chuối đập là đặc sản Bến Tre bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 3</template>
 	</category>
 	<category>
 		<pattern>* CHUOI DAP O *</pattern>
@@ -2911,13 +3187,21 @@
 		<template><srai>CHUOI DAP O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CHUOI DAP * DIA CHI *</pattern>
+		<template><srai>CHUOI DAP O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CHUOI DAP *</pattern>
+		<template><srai>CHUOI DAP O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CHUOI DAP *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 3</template>
 	</category>
 	<!-- bánh xèo ốc gạo -->
 	<category>
 		<pattern>BANH XEO OC GAO O DAU</pattern>
-		<template>Món bánh xèo ốc gạo là đặc sản Bến Tre bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 4</template>
 	</category>
 	<category>
 		<pattern>* BANH XEO OC GAO O *</pattern>
@@ -2928,13 +3212,21 @@
 		<template><srai>BANH XEO OC GAO O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BANH XEO OC GAO * DIA CHI *</pattern>
+		<template><srai>BANH XEO OC GAO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BANH XEO OC GAO *</pattern>
+		<template><srai>BANH XEO OC GAO O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BANH XEO OC GAO *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 4</template>
 	</category>
 	<!-- bánh canh bột xắt -->
 	<category>
 		<pattern>BANH CANH BOT XAT O DAU</pattern>
-		<template>Món bánh canh bột xắt là đặc sản Bến Tre bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 5</template>
 	</category>
 	<category>
 		<pattern>* BANH CANH BOT XAT O *</pattern>
@@ -2945,13 +3237,21 @@
 		<template><srai>BANH CANH BOT XAT O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BANH CANH BOT XAT * DIA CHI *</pattern>
+		<template><srai>BANH CANH BOT XAT O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BANH CANH BOT XAT *</pattern>
+		<template><srai>BANH CANH BOT XAT O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BANH CANH BOT XAT *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 5</template>
 	</category>
 	<!-- chuột dừa -->
 	<category>
 		<pattern>CHUOT DUA O DAU</pattern>
-		<template>Món chuột dừa là đặc sản Bến Tre bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 6</template>
 	</category>
 	<category>
 		<pattern>* CHUOT DUA O *</pattern>
@@ -2962,13 +3262,21 @@
 		<template><srai>CHUOT DUA O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CHUOT DUA * DIA CHI *</pattern>
+		<template><srai>CHUOT DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CHUOT DUA *</pattern>
+		<template><srai>CHUOT DUA O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CHUOT DUA *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 6</template>
 	</category>
 	<!-- đuông dừa -->
 	<category>
 		<pattern>DUONG DUA O DAU</pattern>
-		<template>Món đuông dừa là đặc sản Bến Tre bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 7</template>
 	</category>
 	<category>
 		<pattern>* DUONG DUA O *</pattern>
@@ -2979,13 +3287,21 @@
 		<template><srai>DUONG DUA O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* DUONG DUA * DIA CHI *</pattern>
+		<template><srai>DUONG DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * DUONG DUA *</pattern>
+		<template><srai>DUONG DUA O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* DUONG DUA *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 7</template>
 	</category>
 	<!-- cháo cua đồng -->
 	<category>
 		<pattern>CHAO CUA DONG O DAU</pattern>
-		<template>Món cháo cua đồng là đặc sản Bến Tre bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 8</template>
 	</category>
 	<category>
 		<pattern>* CHAO CUA DONG O *</pattern>
@@ -2996,13 +3312,21 @@
 		<template><srai>CHAO CUA DONG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CHAO CUA DONG * DIA CHI *</pattern>
+		<template><srai>CHAO CUA DONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CHAO CUA DONG *</pattern>
+		<template><srai>CHAO CUA DONG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CHAO CUA DONG *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 8</template>
 	</category>
 	<!-- kẹo dừa -->
 	<category>
 		<pattern>KEO DUA O DAU</pattern>
-		<template>Kẹo dừa là đặc sản Bến Tre bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 9</template>
 	</category>
 	<category>
 		<pattern>* KEO DUA O *</pattern>
@@ -3013,13 +3337,21 @@
 		<template><srai>KEO DUA O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* KEO DUA * DIA CHI *</pattern>
+		<template><srai>KEO DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * KEO DUA *</pattern>
+		<template><srai>KEO DUA O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* KEO DUA *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 9</template>
 	</category>
 	<!-- củ hủ dừa -->
 	<category>
 		<pattern>CU HU DUA O DAU</pattern>
-		<template>Củ hủ dừa là đặc sản Bến Tre bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 10</template>
 	</category>
 	<category>
 		<pattern>* CU HU DUA O *</pattern>
@@ -3030,6 +3362,14 @@
 		<template><srai>CU HU DUA O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CU HU DUA * DIA CHI *</pattern>
+		<template><srai>CU HU DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CU HU DUA *</pattern>
+		<template><srai>CU HU DUA O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CU HU DUA *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 10</template>
 	</category>
@@ -3037,7 +3377,7 @@
 	<!-- lẩu mắm dạ lý -->
 	<category>
 		<pattern>LAU MAM DA LY O DAU</pattern>
-		<template>Món lẩu mắm Dạ Lý là món ngon Cần Thơ bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 92</template>
 	</category>
 	<category>
 		<pattern>* LAU MAM DA LY O *</pattern>
@@ -3048,13 +3388,21 @@
 		<template><srai>LAU MAM DA LY O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* LAU MAM DA LY * DIA CHI *</pattern>
+		<template><srai>LAU MAM DA LY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * LAU MAM DA LY *</pattern>
+		<template><srai>LAU MAM DA LY O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* LAU MAM DA LY *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 92</template>
 	</category>
 	<!-- vịt nấu chao -->
 	<category>
 		<pattern>VIT NAU CHAO O DAU</pattern>
-		<template>Món vịt nấu chao là món ngon Cần Thơ bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 93</template>
 	</category>
 	<category>
 		<pattern>* VIT NAU CHAO O *</pattern>
@@ -3065,13 +3413,21 @@
 		<template><srai>VIT NAU CHAO O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* VIT NAU CHAO * DIA CHI *</pattern>
+		<template><srai>VIT NAU CHAO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * VIT NAU CHAO *</pattern>
+		<template><srai>VIT NAU CHAO O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* VIT NAU CHAO *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 93</template>
 	</category>
 	<!-- nem nướng thanh vân -->
 	<category>
 		<pattern>NEM NUONG THANH VAN O DAU</pattern>
-		<template>Món nem nướng Thanh Vân là món ngon Cần Thơ bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 94</template>
 	</category>
 	<category>
 		<pattern>* NEM NUONG THANH VAN O *</pattern>
@@ -3082,30 +3438,66 @@
 		<template><srai>NEM NUONG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* NEM NUONG THANH VAN * DIA CHI *</pattern>
+		<template><srai>NEM NUONG THANH VAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * NEM NUONG THANH VAN *</pattern>
+		<template><srai>NEM NUONG THANH VAN O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* NEM NUONG THANH VAN *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 94</template>
 	</category>
 	<!-- bánh xèo 7 Tới -->
 	<category>
-		<pattern>BANH XEO O DAU</pattern>
-		<template>Món bánh xèo 7 Tới là món ngon Cần Thơ bạn nhé ;)</template>
+		<pattern>BANH XEO 7 TOI O DAU</pattern>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 95</template>
 	</category>
 	<category>
-		<pattern>* BANH XEO * O *</pattern>
-		<template><srai>BANH XEO O DAU</srai></template>
+		<pattern>* BANH XEO 7 TOI * O *</pattern>
+		<template><srai>BANH XEO 7 TOI O DAU</srai></template>
 	</category>
 	<category>
-		<pattern>* BANH XEO * THUOC *</pattern>
-		<template><srai>BANH XEO O DAU</srai></template>
+		<pattern>* BANH XEO 7 TOI * THUOC *</pattern>
+		<template><srai>BANH XEO 7 TOI O DAU</srai></template>
 	</category>
 	<category>
-		<pattern>* BANH XEO *</pattern>
+		<pattern>* BANH XEO BAY TOI * O *</pattern>
+		<template><srai>BANH XEO 7 TOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH XEO BAY TOI * THUOC *</pattern>
+		<template><srai>BANH XEO 7 TOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH XEO 7 TOI * DIA CHI *</pattern>
+		<template><srai>BANH XEO 7 TOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BANH XEO 7 TOI *</pattern>
+		<template><srai>BANH XEO 7 TOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH XEO BAY TOI * DIA CHI *</pattern>
+		<template><srai>BANH XEO 7 TOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BANH XEO BAY TOI *</pattern>
+		<template><srai>BANH XEO 7 TOI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* BANH XEO BAY TOI *</pattern>
+		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 95</template>
+	</category>
+	<category>
+		<pattern>* BANH XEO 7 TOI *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 95</template>
 	</category>
 	<!-- bánh cống cô út -->
 	<category>
 		<pattern>BANH CONG O DAU</pattern>
-		<template>Món bánh cống Cô Út Tới là món ngon Cần Thơ bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 96</template>
 	</category>
 	<category>
 		<pattern>* BANH CONG * O *</pattern>
@@ -3116,6 +3508,14 @@
 		<template><srai>BANH CONG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BANH CONG * DIA CHI *</pattern>
+		<template><srai>BANH CONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BANH CONG *</pattern>
+		<template><srai>BANH CONG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BANH CONG *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 96</template>
 	</category>
@@ -3123,7 +3523,7 @@
 	<!-- bánh canh -->
 	<category>
 		<pattern>BANH CANH O DAU</pattern>
-		<template>Món bánh canh là món ngon Đà Lạt bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 140</template>
 	</category>
 	<category>
 		<pattern>* BANH CANH * O *</pattern>
@@ -3134,13 +3534,21 @@
 		<template><srai>BANH CANH O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BANH CANH * DIA CHI *</pattern>
+		<template><srai>BANH CANH O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BANH CANH *</pattern>
+		<template><srai>BANH CANH O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BANH CANH *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 140</template>
 	</category>
 	<!-- bánh căn -->
 	<category>
 		<pattern>BANH CAN O DAU</pattern>
-		<template>Món bánh căn là món ngon Đà Lạt bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 139</template>
 	</category>
 	<category>
 		<pattern>* BANH CAN * O *</pattern>
@@ -3151,13 +3559,21 @@
 		<template><srai>BANH CAN O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BANH CAN * DIA CHI *</pattern>
+		<template><srai>BANH CAN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BANH CAN *</pattern>
+		<template><srai>BANH CAN O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BANH CAN *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 139</template>
 	</category>
 	<!-- bánh bèo -->
 	<category>
 		<pattern>BANH BEO O DAU</pattern>
-		<template>Món bánh bèo là món ngon Đà Lạt bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 141</template>
 	</category>
 	<category>
 		<pattern>* BANH BEO * O *</pattern>
@@ -3168,13 +3584,21 @@
 		<template><srai>BANH BEO O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BANH BEO * DIA CHI *</pattern>
+		<template><srai>BANH BEO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BANH BEO *</pattern>
+		<template><srai>BANH BEO O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BANH BEO *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 141</template>
 	</category>
 	<!-- bún bò ấp ánh sáng -->
 	<category>
 		<pattern>BUN BO O DAU</pattern>
-		<template>Món bún bò ấp Ánh Sáng là món ngon Đà Lạt bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 142</template>
 	</category>
 	<category>
 		<pattern>* BUN BO * O *</pattern>
@@ -3185,13 +3609,21 @@
 		<template><srai>BUN BO O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BUN BO * DIA CHI *</pattern>
+		<template><srai>BUN BO O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BUN BO *</pattern>
+		<template><srai>BUN BO O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BUN BO *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 142</template>
 	</category>
 	<!-- nem nướng bà hùng -->
 	<category>
 		<pattern>NEM NUONG BA HUNG O DAU</pattern>
-		<template>Món nem nướng Bà Hùng và nem nướng Bà Nghĩa là món ngon Đà Lạt bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 143</template>
 	</category>
 	<category>
 		<pattern>* NEM NUONG BA HUNG * O *</pattern>
@@ -3210,6 +3642,22 @@
 		<template><srai>NEM NUONG BA HUNG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* NEM NUONG BA HUNG * DIA CHI *</pattern>
+		<template><srai>NEM NUONG BA HUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * NEM NUONG BA HUNG *</pattern>
+		<template><srai>NEM NUONG BA HUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* NEM NUONG BA NGHIA * DIA CHI *</pattern>
+		<template><srai>NEM NUONG BA HUNG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * NEM NUONG BA NGHIA *</pattern>
+		<template><srai>NEM NUONG BA HUNG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* NEM NUONG BA HUNG *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 143</template>
 	</category>
@@ -3220,7 +3668,7 @@
 	<!-- bánh ướt lòng gà -->
 	<category>
 		<pattern>BANH UOT LONG GA O DAU</pattern>
-		<template>Món  là món ngon Đà Lạt bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 144</template>
 	</category>
 	<category>
 		<pattern>* BANH UOT LONG GA * O *</pattern>
@@ -3231,13 +3679,21 @@
 		<template><srai>BANH UOT LONG GA O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BANH UOT LONG GA * DIA CHI *</pattern>
+		<template><srai>BANH UOT LONG GA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BANH UOT LONG GA *</pattern>
+		<template><srai>BANH UOT LONG GA O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BANH UOT LONG GA *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 144</template>
 	</category>
 	<!-- bánh tráng nướng -->
 	<category>
 		<pattern>BANH TRANG NUONG O DAU</pattern>
-		<template>Món bánh là món ngon Đà Lạt bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 145</template>
 	</category>
 	<category>
 		<pattern>* BANH TRANG NUONG * O *</pattern>
@@ -3248,13 +3704,21 @@
 		<template><srai>BANH TRANG NUONG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BANH TRANG NUONG * DIA CHI *</pattern>
+		<template><srai>BANH TRANG NUONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BANH TRANG NUONG *</pattern>
+		<template><srai>BANH TRANG NUONG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BANH TRANG NUONG *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 145</template>
 	</category>
 	<!-- món xắp xắp -->
 	<category>
 		<pattern>MON XAP XAP O DAU</pattern>
-		<template>Món sắp sắp là món ngon Đà Lạt bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 146</template>
 	</category>
 	<category>
 		<pattern>* MON XAP XAP * O *</pattern>
@@ -3265,13 +3729,21 @@
 		<template><srai>MON XAP XAP O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* MON XAP XAP * DIA CHI *</pattern>
+		<template><srai>MON XAP XAP O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * MON XAP XAP *</pattern>
+		<template><srai>MON XAP XAP O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* MON XAP XAP *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 146</template>
 	</category>
 	<!-- chả ram bắp -->
 	<category>
 		<pattern>CHA RAM BAP O DAU</pattern>
-		<template>Món chả ram bắp là món ngon Đà Lạt bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 147</template>
 	</category>
 	<category>
 		<pattern>* CHA RAM BAP * O *</pattern>
@@ -3282,13 +3754,21 @@
 		<template><srai>CHA RAM BAP O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CHA RAM BAP * DIA CHI *</pattern>
+		<template><srai>CHA RAM BAP O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CHA RAM BAP *</pattern>
+		<template><srai>CHA RAM BAP O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CHA RAM BAP *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 147</template>
 	</category>
 	<!-- dâu tây kem -->
 	<category>
 		<pattern>DAU TAY KEM O DAU</pattern>
-		<template>Món dâu tây kem là món ngon Đà Lạt bạn nhé ;)</template>
+		<template>SELECT food_diachi FROM foods WHERE food_id = 148</template>
 	</category>
 	<category>
 		<pattern>* DAU TAY KEM * O *</pattern>
@@ -3299,6 +3779,14 @@
 		<template><srai>DAU TAY KEM O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* DAU TAY KEM * DIA CHI *</pattern>
+		<template><srai>DAU TAY KEM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * DAU TAY KEM *</pattern>
+		<template><srai>DAU TAY KEM O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* DAU TAY KEM *</pattern>
 		<template>SELECT food_mota as food_diachi FROM foods WHERE food_id = 148</template>
 	</category>
@@ -3306,7 +3794,7 @@
 	<!-- khác sạn việt úc -->
 	<category>
 		<pattern>VIET UC O DAU</pattern>
-		<template>Khách sạn Việt Úc ở Bến Tre bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 1</template>
 	</category>
 	<category>
 		<pattern>* VIET UC * O *</pattern>
@@ -3317,13 +3805,21 @@
 		<template><srai>VIET UC O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* VIET UC * DIA CHI *</pattern>
+		<template><srai>VIET UC O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * VIET UC *</pattern>
+		<template><srai>VIET UC O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* VIET UC *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 1</template>
 	</category>
 	<!-- khách sạn hàm luông -->
 	<category>
 		<pattern>HAM LUONG O DAU</pattern>
-		<template>Khách sạn Hàm Luông ở Bến Tre bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 2</template>
 	</category>
 	<category>
 		<pattern>* HAM LUONG * O *</pattern>
@@ -3334,13 +3830,21 @@
 		<template><srai>HAM LUONG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* HAM LUONG * DIA CHI *</pattern>
+		<template><srai>HAM LUONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * HAM LUONG *</pattern>
+		<template><srai>HAM LUONG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* HAM LUONG *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 2</template>
 	</category>
 	<!-- khách sạn hoa dừa -->
 	<category>
 		<pattern>HOA DUA O DAU</pattern>
-		<template>Khách sạn Hoa Dừa ở Bến Tre bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 3</template>
 	</category>
 	<category>
 		<pattern>* HOA DUA * O *</pattern>
@@ -3351,13 +3855,21 @@
 		<template><srai>HOA DUA O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* HOA DUA * DIA CHI *</pattern>
+		<template><srai>HOA DUA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * HOA DUA *</pattern>
+		<template><srai>HOA DUA O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* HOA DUA *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 3</template>
 	</category>
 	<!-- nhơn thạnh homstay -->
 	<category>
 		<pattern>NHON THANH O DAU</pattern>
-		<template>Nhơn Thạnh Homestay ở Bến Tre bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 4</template>
 	</category>
 	<category>
 		<pattern>* NHON THANH * O *</pattern>
@@ -3368,13 +3880,21 @@
 		<template><srai>NHON THANH O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* NHON THANH * DIA CHI *</pattern>
+		<template><srai>NHON THANH O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * NHON THANH *</pattern>
+		<template><srai>NHON THANH O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* NHON THANH *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 4</template>
 	</category>
 	<!-- khách sạn hùng vương -->
 	<category>
 		<pattern>HUNG VUONG O DAU</pattern>
-		<template>Khách sạn Hùng Vương ở Bến Tre bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 5</template>
 	</category>
 	<category>
 		<pattern>* HUNG VUONG * O *</pattern>
@@ -3385,13 +3905,21 @@
 		<template><srai>HUNG VUONG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* HUNG VUONG * DIA CHI *</pattern>
+		<template><srai>HUNG VUONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * HUNG VUONG *</pattern>
+		<template><srai>HUNG VUONG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* HUNG VUONG *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 5</template>
 	</category>
 	<!-- homestay hồng thái -->
 	<category>
 		<pattern>HONG THAI O DAU</pattern>
-		<template>Hồng Thái Homestay ở Bến Tre bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 6</template>
 	</category>
 	<category>
 		<pattern>* HONG THAI * O *</pattern>
@@ -3402,13 +3930,21 @@
 		<template><srai>HONG THAI O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* HONG THAI * DIA CHI *</pattern>
+		<template><srai>HONG THAI O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * HONG THAI *</pattern>
+		<template><srai>HONG THAI O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* HONG THAI *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 6</template>
 	</category>
 	<!-- forever green resort -->
 	<category>
 		<pattern>FOREVER GREEN O DAU</pattern>
-		<template>Forever Green Resort ở Bến Tre bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 7</template>
 	</category>
 	<category>
 		<pattern>* FOREVER GREEN * O *</pattern>
@@ -3419,13 +3955,21 @@
 		<template><srai>FOREVER GREEN O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* FOREVER GREEN * DIA CHI *</pattern>
+		<template><srai>FOREVER GREEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * FOREVER GREEN *</pattern>
+		<template><srai>FOREVER GREEN O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* FOREVER GREEN *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 7</template>
 	</category>
 	<!-- charming countryside homestay -->
 	<category>
 		<pattern>CHARMING COUNTRYSIDE O DAU</pattern>
-		<template>Charming Countryside Homestay ở Bến Tre bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 8</template>
 	</category>
 	<category>
 		<pattern>* CHARMING COUNTRYSIDE * O *</pattern>
@@ -3436,13 +3980,21 @@
 		<template><srai>CHARMING COUNTRYSIDE O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CHARMING COUNTRYSIDE * DIA CHI *</pattern>
+		<template><srai>CHARMING COUNTRYSIDE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CHARMING COUNTRYSIDE *</pattern>
+		<template><srai>CHARMING COUNTRYSIDE O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CHARMING COUNTRYSIDE *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 8</template>
 	</category>
 	<!-- Jardin du Mekong Homestay -->
 	<category>
 		<pattern>JARDIN DU MEKONG O DAU</pattern>
-		<template>Jardin du Mekong Homestay ở Bến Tre bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 9</template>
 	</category>
 	<category>
 		<pattern>* JARDIN DU MEKONG * O *</pattern>
@@ -3453,13 +4005,21 @@
 		<template><srai>JARDIN DU MEKONG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* JARDIN DU MEKONG * DIA CHI *</pattern>
+		<template><srai>JARDIN DU MEKONG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * JARDIN DU MEKONG *</pattern>
+		<template><srai>JARDIN DU MEKONG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* JARDIN DU MEKONG *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 9</template>
 	</category>
 	<!-- Ben Tre Oasis hotel -->
 	<category>
 		<pattern>BEN TRE OASIS O DAU</pattern>
-		<template>Ben Tre Oasis hotel ở Bến Tre bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 10</template>
 	</category>
 	<category>
 		<pattern>* BEN TRE OASIS * O *</pattern>
@@ -3470,6 +4030,14 @@
 		<template><srai>BEN TRE OASIS O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BEN TRE OASIS * DIA CHI *</pattern>
+		<template><srai>BEN TRE OASIS O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BEN TRE OASIS *</pattern>
+		<template><srai>BEN TRE OASIS O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BEN TRE OASIS *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 10</template>
 	</category>
@@ -3477,7 +4045,7 @@
 	<!-- Fortuneland -->
 	<category>
 		<pattern>FORTUNELAND O DAU</pattern>
-		<template>FORTUNELAND hotel ở Cần Thơ bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 101</template>
 	</category>
 	<category>
 		<pattern>* FORTUNELAND * O *</pattern>
@@ -3488,13 +4056,21 @@
 		<template><srai>FORTUNELAND O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* FORTUNELAND * DIA CHI *</pattern>
+		<template><srai>FORTUNELAND O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * FORTUNELAND *</pattern>
+		<template><srai>FORTUNELAND O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* FORTUNELAND *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 101</template>
 	</category>
 	<!-- holiday one -->
 	<category>
 		<pattern>HOLIDAY ONE O DAU</pattern>
-		<template>Khách sạn Holiday One ở Cần Thơ bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 102</template>
 	</category>
 	<category>
 		<pattern>* HOLIDAY ONE * O *</pattern>
@@ -3505,13 +4081,21 @@
 		<template><srai>HOLIDAY ONE O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* HOLIDAY ONE * DIA CHI *</pattern>
+		<template><srai>HOLIDAY ONE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * HOLIDAY ONE *</pattern>
+		<template><srai>HOLIDAY ONE O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* HOLIDAY ONE *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 102</template>
 	</category>
 	<!-- viva green -->
 	<category>
 		<pattern>VIVA GREEN O DAU</pattern>
-		<template>Khách sạn VIVA GREEN ở Cần Thơ bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 103</template>
 	</category>
 	<category>
 		<pattern>* VIVA GREEN * O *</pattern>
@@ -3522,13 +4106,21 @@
 		<template><srai>VIVA GREEN O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* VIVA GREEN * DIA CHI *</pattern>
+		<template><srai>VIVA GREEN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * VIVA GREEN *</pattern>
+		<template><srai>VIVA GREEN O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* VIVA GREEN *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 103</template>
 	</category>
 	<!-- khách sạn asia -->
 	<category>
 		<pattern>ASIA O DAU</pattern>
-		<template>Khách sạn ASIA ở Cần Thơ bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 104</template>
 	</category>
 	<category>
 		<pattern>* ASIA * O *</pattern>
@@ -3539,13 +4131,21 @@
 		<template><srai>ASIA O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* ASIA * DIA CHI *</pattern>
+		<template><srai>ASIA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * ASIA *</pattern>
+		<template><srai>ASIA O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* ASIA *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 104</template>
 	</category>
 	<!-- madella -->
 	<category>
 		<pattern>MADELLA O DAU</pattern>
-		<template>Khách sạn MADELLA ở Cần Thơ bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 105</template>
 	</category>
 	<category>
 		<pattern>* MADELLA * O *</pattern>
@@ -3556,13 +4156,21 @@
 		<template><srai>MADELLA O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* MADELLA * DIA CHI *</pattern>
+		<template><srai>MADELLA O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * MADELLA *</pattern>
+		<template><srai>MADELLA O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* MADELLA *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 105</template>
 	</category>
 	<!-- hậu giang 2 -->
 	<category>
 		<pattern>HAU GIANG 2 O DAU</pattern>
-		<template>Khách sạn Hậu Giang 2 ở Cần Thơ bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 106</template>
 	</category>
 	<category>
 		<pattern>* HAU GIANG 2 * O *</pattern>
@@ -3573,13 +4181,21 @@
 		<template><srai>HAU GIANG 2 O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* HAU GIANG 2 * DIA CHI *</pattern>
+		<template><srai>HAU GIANG 2 O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * HAU GIANG 2 *</pattern>
+		<template><srai>HAU GIANG 2 O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* HAU GIANG 2 *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 106</template>
 	</category>
 	<!-- khách sạn lâm hoàng -->
 	<category>
 		<pattern>LAM HOANG O DAU</pattern>
-		<template>Khách sạn Lâm Hoàng ở Cần Thơ bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 107</template>
 	</category>
 	<category>
 		<pattern>* LAM HOANG * O *</pattern>
@@ -3590,13 +4206,21 @@
 		<template><srai>LAM HOANG O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* LAM HOANG * DIA CHI *</pattern>
+		<template><srai>LAM HOANG O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * LAM HOANG *</pattern>
+		<template><srai>LAM HOANG O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* LAM HOANG *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 107</template>
 	</category>
 	<!-- hưng homestay -->
 	<category>
 		<pattern>HUNG HOMESTAY O DAU</pattern>
-		<template>Hưng homestay ở Cần Thơ bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 108</template>
 	</category>
 	<category>
 		<pattern>* HUNG HOMESTAY * O *</pattern>
@@ -3607,6 +4231,14 @@
 		<template><srai>HUNG HOMESTAY O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* HUNG HOMESTAY * DIA CHI *</pattern>
+		<template><srai>HUNG HOMESTAY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * HUNG HOMESTAY *</pattern>
+		<template><srai>HUNG HOMESTAY O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* HUNG HOMESTAY *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 108</template>
 	</category>
@@ -3614,7 +4246,7 @@
 	<!-- dalat palace -->
 	<category>
 		<pattern>DALAT PALACE O DAU</pattern>
-		<template>DaLat Palace ở Đà Lạt bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 151</template>
 	</category>
 	<category>
 		<pattern>* DALAT PALACE * O *</pattern>
@@ -3625,13 +4257,21 @@
 		<template><srai>DALAT PALACE O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* DALAT PALACE * DIA CHI *</pattern>
+		<template><srai>DALAT PALACE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * DALAT PALACE *</pattern>
+		<template><srai>DALAT PALACE O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* DALAT PALACE *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 151</template>
 	</category>
 	<!-- da lạt lake -->
 	<category>
 		<pattern>DA LAT EDENSEE LAKE O DAU</pattern>
-		<template>DA LAT EDENSEE LAKE ở Đà Lạt bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 152</template>
 	</category>
 	<category>
 		<pattern>* DA LAT EDENSEE LAKE * O *</pattern>
@@ -3642,13 +4282,41 @@
 		<template><srai>DA LAT EDENSEE LAKE O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* DA LAT EDENSEE LAKE * DIA CHI *</pattern>
+		<template><srai>DA LAT EDENSEE LAKE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * DA LAT EDENSEE LAKE *</pattern>
+		<template><srai>DA LAT EDENSEE LAKE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DALAT EDENSEE LAKE * O *</pattern>
+		<template><srai>DA LAT EDENSEE LAKE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DALAT EDENSEE LAKE * THUOC *</pattern>
+		<template><srai>DA LAT EDENSEE LAKE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DALAT EDENSEE LAKE * DIA CHI *</pattern>
+		<template><srai>DA LAT EDENSEE LAKE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * DALAT EDENSEE LAKE *</pattern>
+		<template><srai>DA LAT EDENSEE LAKE O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* DA LAT EDENSEE LAKE *</pattern>
+		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 152</template>
+	</category>
+	<category>
+		<pattern>* DALAT EDENSEE LAKE *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 152</template>
 	</category>
 	<!-- dalat terrasse -->
 	<category>
 		<pattern>DALAT TERRASSE DES ROSES O DAU</pattern>
-		<template>DALAT TERRASSE DES ROSES ở Đà Lạt bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 153</template>
 	</category>
 	<category>
 		<pattern>* DALAT TERRASSE DES ROSES * O *</pattern>
@@ -3659,13 +4327,41 @@
 		<template><srai>DALAT TERRASSE DES ROSES O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* DALAT TERRASSE DES ROSES * DIA CHI *</pattern>
+		<template><srai>DALAT TERRASSE DES ROSES O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * DALAT TERRASSE DES ROSES *</pattern>
+		<template><srai>DALAT TERRASSE DES ROSES O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* DALAT TERRASSE DES ROSES *</pattern>
+		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 153</template>
+	</category>
+	<category>
+		<pattern>* DA LAT TERRASSE DES ROSES * O *</pattern>
+		<template><srai>DALAT TERRASSE DES ROSES O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT TERRASSE DES ROSES * THUOC *</pattern>
+		<template><srai>DALAT TERRASSE DES ROSES O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT TERRASSE DES ROSES * DIA CHI *</pattern>
+		<template><srai>DALAT TERRASSE DES ROSES O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * DA LAT TERRASSE DES ROSES *</pattern>
+		<template><srai>DALAT TERRASSE DES ROSES O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DA LAT TERRASSE DES ROSES *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 153</template>
 	</category>
 	<!-- bình an resort -->
 	<category>
 		<pattern>BINH AN O DAU</pattern>
-		<template>Bình An resort ở Đà Lạt bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 154</template>
 	</category>
 	<category>
 		<pattern>* BINH AN * O *</pattern>
@@ -3676,13 +4372,21 @@
 		<template><srai>BINH AN O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* BINH AN * DIA CHI *</pattern>
+		<template><srai>BINH AN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * BINH AN *</pattern>
+		<template><srai>BINH AN O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* BINH AN *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 154</template>
 	</category>
 	<!-- royal -->
 	<category>
 		<pattern>ROYAL O DAU</pattern>
-		<template>Khách sạn Royal ở Đà Lạt bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 155</template>
 	</category>
 	<category>
 		<pattern>* ROYAL * O *</pattern>
@@ -3693,13 +4397,21 @@
 		<template><srai>ROYAL O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* ROYAL * DIA CHI *</pattern>
+		<template><srai>ROYAL O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * ROYAL *</pattern>
+		<template><srai>ROYAL O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* ROYAL *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 155</template>
 	</category>
 	<!-- mountain town -->
 	<category>
 		<pattern>MOUNTAIN TOWN O DAU</pattern>
-		<template>Khách sạn MOUNTAIN TOWN ở Đà Lạt bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 156</template>
 	</category>
 	<category>
 		<pattern>* MOUNTAIN TOWN * O *</pattern>
@@ -3710,13 +4422,21 @@
 		<template><srai>MOUNTAIN TOWN O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* MOUNTAIN TOWN * DIA CHI *</pattern>
+		<template><srai>MOUNTAIN TOWN O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * MOUNTAIN TOWN *</pattern>
+		<template><srai>MOUNTAIN TOWN O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* MOUNTAIN TOWN *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 156</template>
 	</category>
 	<!-- khánh lâm -->
 	<category>
 		<pattern>KHANH LAM O DAU</pattern>
-		<template>Khách sạn Khánh Lâm ở Đà Lạt bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 157</template>
 	</category>
 	<category>
 		<pattern>* KHANH LAM * O *</pattern>
@@ -3727,13 +4447,21 @@
 		<template><srai>KHANH LAM O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* KHANH LAM * DIA CHI *</pattern>
+		<template><srai>KHANH LAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * KHANH LAM *</pattern>
+		<template><srai>KHANH LAM O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* KHANH LAM *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 157</template>
 	</category>
 	<!-- crazy house -->
 	<category>
 		<pattern>CRAZY HOUSE O DAU</pattern>
-		<template>CRAZY HOUSE ở Đà Lạt bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 158</template>
 	</category>
 	<category>
 		<pattern>* CRAZY HOUSE * O *</pattern>
@@ -3744,13 +4472,21 @@
 		<template><srai>CRAZY HOUSE O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CRAZY HOUSE * DIA CHI *</pattern>
+		<template><srai>CRAZY HOUSE O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CRAZY HOUSE *</pattern>
+		<template><srai>CRAZY HOUSE O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CRAZY HOUSE *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 158</template>
 	</category>
 	<!-- cam ly -->
 	<category>
 		<pattern>CAMLY O DAU</pattern>
-		<template>CAMLY ở Đà Lạt bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 159</template>
 	</category>
 	<category>
 		<pattern>* CAMLY * O *</pattern>
@@ -3761,13 +4497,21 @@
 		<template><srai>CAMLY O DAU</srai></template>
 	</category>
 	<category>
+		<pattern>* CAMLY * DIA CHI *</pattern>
+		<template><srai>CAMLY O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * CAMLY *</pattern>
+		<template><srai>CAMLY O DAU</srai></template>
+	</category>
+	<category>
 		<pattern>* CAMLY *</pattern>
 		<template>SELECT hotel_mota as food_diachi FROM hotels WHERE hotel_id = 159</template>
 	</category>
 	<!-- tuấn phạm -->
 	<category>
 		<pattern>TUAN PHAM O DAU</pattern>
-		<template>Village Tuấn Phạm ở Đà Lạt bạn nhé ;)</template>
+		<template>SELECT hotel_diachi as food_diachi FROM hotels WHERE hotel_id = 160</template>
 	</category>
 	<category>
 		<pattern>* TUAN PHAM * O *</pattern>
@@ -3775,6 +4519,14 @@
 	</category>
 	<category>
 		<pattern>* TUAN PHAM * THUOC *</pattern>
+		<template><srai>TUAN PHAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* TUAN PHAM * DIA CHI *</pattern>
+		<template><srai>TUAN PHAM O DAU</srai></template>
+	</category>
+	<category>
+		<pattern>* DIA CHI * TUAN PHAM *</pattern>
 		<template><srai>TUAN PHAM O DAU</srai></template>
 	</category>
 	<category>
