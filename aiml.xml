@@ -2015,7 +2015,7 @@
 	<category>
 		<pattern>BEN NINH KIEU O DAU</pattern>
 		<template>
-			Bến Ninh Kiều ở Cần Thơ bạn nhé ;)		
+			106 Hai Bà Trưng, Tân An, Ninh Kiều, Cần Thơ		
 		</template>
 	</category>
 	<category>
@@ -2123,7 +2123,7 @@
 	<category>
 		<pattern>CAU DI BO O DAU</pattern>
 		<template>
-			Cầu đi bộ ở Cần Thơ bạn nhé ;)		
+			Cầu đi bộ ở gần Bến Ninh Kiều, Cần Thơ bạn nhé ;)		
 		</template>
 	</category>
 	<category>
@@ -2162,11 +2162,15 @@
 		<pattern>* CAU DI BO *</pattern>
 		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 102</template>
 	</category>
+	<category>
+		<pattern>* CAU TINH YEU *</pattern>
+		<template>SELECT destination_ten as food_ten, destination_mota as food_diachi FROM destinations WHERE destination_id = 102</template>
+	</category>
 	<!-- biển cần thơ -->
 	<category>
 		<pattern>BIEN CAN THO O DAU</pattern>
 		<template>
-			Biển Cần Thơ ở Cần Thơ bạn nhé ;)		
+			Sông Hậu, Cái Khế, Cần Thơ	
 		</template>
 	</category>
 	<category>
@@ -5440,10 +5444,30 @@
 	</category>
 	<!-- trang có gì -->
 	<category>
-		<pattern>* TRANG * LAM *</pattern>
+		<pattern>TRANG NAY LAM GI</pattern>
 		<template>
 			Mình có thể cung cấp một số gợi ý về du lịch như địa điểm, món ăn, hoạt động vui chơi, ... ở Bến Tre, Cần Thơ và Đà Lạt ;)
 		</template>
+	</category>
+	<category>
+		<pattern>* TRANG * LAM *</pattern>
+		<template><srai>TRANG NAY LAM GI</srai></template>
+	</category>
+	<category>
+		<pattern>* TRANG * CO * GI</pattern>
+		<template><srai>TRANG NAY LAM GI</srai></template>
+	</category>
+	<category>
+		<pattern>* TRANG * CO * CHI</pattern>
+		<template><srai>TRANG NAY LAM GI</srai></template>
+	</category>
+	<category>
+		<pattern>* BAN * LAM *</pattern>
+		<template><srai>TRANG NAY LAM GI</srai></template>
+	</category>
+	<category>
+		<pattern>* BAN * CO *</pattern>
+		<template><srai>TRANG NAY LAM GI</srai></template>
 	</category>
 	<!-- kịch bản hoạt động -->
 	<category>
@@ -5644,6 +5668,10 @@
 	</category>
 	<category>
 		<pattern>* CHO * NGHI *</pattern>
+		<template><srai>QUA DEM</srai></template>
+	</category>
+	<category>
+		<pattern>* CHO * NGU *</pattern>
 		<template><srai>QUA DEM</srai></template>
 	</category>
 	<category>

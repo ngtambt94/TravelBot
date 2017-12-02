@@ -830,7 +830,7 @@ function LuaChon(sender, sql) {
 		{
 			"title": "Quà tặng",
 			"subtitle": "Thông tin về các quà tặng nên mua về",
-			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/rm.jpg",
+			"image_url": "https://raw.githubusercontent.com/ngtambt94/TravelBot/master/source/img/rm.png",
 			"buttons": [{
 				"type": "postback",
 				"title": "Chi Tiết",
